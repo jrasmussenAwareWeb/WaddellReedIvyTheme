@@ -8,7 +8,7 @@ export default {
     sassSourceMap: false,
     // Please configure
     serverOptions: {
-        server: 'http://sxa90', //need to be changed
+        server: 'http://dev.ivy.sc', //need to be changed
         removeScriptPath: '/-/script/v2/master/RemoveMedia',
         uploadScriptPath: '/sitecore modules/PowerShell/Services/RemoteScriptCall.ashx',
         updateTemplatePath: '/-/script/v2/master/ChangeTemplate',
