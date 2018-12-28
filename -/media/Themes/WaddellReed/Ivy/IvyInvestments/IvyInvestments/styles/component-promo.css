@@ -60,12 +60,16 @@ $font-medium:16px;*/
   margin: 10px 0;
 }
 
-.promo h3, .promo h4, .promo p {
+.promo h3, .promo h4 {
   margin: 5px 0;
 }
 
 .promo h5, .promo h6 {
   margin: 5px 0 0;
+}
+
+.promo p {
+  margin: 0 0 20px 0;
 }
 
 .promo strong {
@@ -103,54 +107,6 @@ $font-medium:16px;*/
   color: #000000;
 }
 
-.promo table {
-  height: auto !important;
-  border: 2px solid #c2c2c2;
-}
-
-.promo table, .promo table tr, .promo table th, .promo table td {
-  border: solid 2px #c2c2c2;
-  background: #FFFFFF;
-  border-collapse: collapse;
-  vertical-align: middle;
-}
-
-.promo table tr, .promo table th, .promo table td {
-  padding: 5px;
-}
-
-.promo table caption {
-  background-color: #d9d9d6;
-  overflow: hidden;
-  padding: 10px;
-  font-size: 20px;
-  font-weight: bold;
-  margin-left: 0;
-}
-
-.promo table tr {
-  border: none;
-}
-
-.promo table th, .promo table td {
-  border-width: 2px 0 0 2px;
-}
-
-.promo table th {
-  background-color: #e5e5e3;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 7px;
-}
-
-.promo table th:first-child {
-  border-left: 0;
-}
-
-.promo table td:first-child {
-  border-left: 0;
-}
-
 .promo.absolute-bottom-link {
   position: relative;
 }
@@ -178,7 +134,7 @@ $font-medium:16px;*/
   width: 50%;
 }
 
-@media only screen and (max-width: 959px) {
+@media only screen and (max-width: 991px) {
   .promo.promo-hero.promo-hero-half {
     float: none;
     width: 100%;
@@ -204,7 +160,7 @@ $font-medium:16px;*/
   text-decoration: none;
 }
 
-@media only screen and (max-width: 959px) {
+@media only screen and (max-width: 991px) {
   .promo.promo-hero .field-promotext {
     width: 100%;
     margin: 0;
@@ -245,7 +201,7 @@ $font-medium:16px;*/
   margin: 0 0 30px 0;
 }
 
-@media only screen and (max-width: 959px) {
+@media only screen and (max-width: 991px) {
   .promo-shadow > .component-content {
     margin: 0 10px 30px 10px;
   }

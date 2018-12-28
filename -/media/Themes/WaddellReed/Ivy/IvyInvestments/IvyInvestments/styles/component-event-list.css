@@ -125,12 +125,16 @@ $font-medium:16px;*/
   margin: 10px 0;
 }
 
-.event-list h3, .event-list h4, .event-list p {
+.event-list h3, .event-list h4 {
   margin: 5px 0;
 }
 
 .event-list h5, .event-list h6 {
   margin: 5px 0 0;
+}
+
+.event-list p {
+  margin: 0 0 20px 0;
 }
 
 .event-list strong {
@@ -170,14 +174,20 @@ $font-medium:16px;*/
 
 .event-list table {
   height: auto !important;
-  border: 2px solid #c2c2c2;
 }
 
 .event-list table, .event-list table tr, .event-list table th, .event-list table td {
-  border: solid 2px #c2c2c2;
   background: #FFFFFF;
   border-collapse: collapse;
   vertical-align: middle;
+}
+
+.event-list table th, .event-list table td {
+  border-top: solid 1px #c2c2c2;
+}
+
+.event-list table thead th {
+  border-bottom: solid 2px #c2c2c2;
 }
 
 .event-list table tr, .event-list table th, .event-list table td {
@@ -197,12 +207,7 @@ $font-medium:16px;*/
   border: none;
 }
 
-.event-list table th, .event-list table td {
-  border-width: 2px 0 0 2px;
-}
-
 .event-list table th {
-  background-color: #e5e5e3;
   font-size: 16px;
   font-weight: bold;
   padding: 7px;
@@ -214,6 +219,44 @@ $font-medium:16px;*/
 
 .event-list table td:first-child {
   border-left: 0;
+}
+
+.event-list .table-sm th,
+.event-list .table-sm td {
+  padding: 0.3rem;
+}
+
+.event-list .table-bordered {
+  border: 1px solid #c2c2c2;
+}
+
+.event-list .table-bordered th,
+.event-list .table-bordered td {
+  border: 1px solid #c2c2c2;
+}
+
+.event-list .table-bordered thead th,
+.event-list .table-bordered thead td {
+  border-bottom-width: 2px;
+}
+
+.event-list .table-borderless th,
+.event-list .table-borderless td,
+.event-list .table-borderless thead th,
+.event-list .table-borderless tbody + tbody {
+  border: 0;
+}
+
+.event-list .table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.event-list .table-striped tbody tr:nth-of-type(odd) th, .event-list .table-striped tbody tr:nth-of-type(odd) td {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.event-list .table-hover tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.075);
 }
 
 .event-list h1, .event-list h2, .event-list h3, .event-list h4, .event-list h5, .event-list h6 {

@@ -135,9 +135,11 @@ $font-medium:16px;*/
 .link-list.footer li {
   font-family: "ProximaBold", arial, helvetica, sans-serif;
   font-size: 14px;
+  line-height: 1.65;
 }
 
 .link-list.footer li a {
+  font-weight: bold;
   padding-left: 0;
 }
 

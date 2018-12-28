@@ -1314,6 +1314,15 @@ $font-medium:16px;*/
   border: 1px solid #004d33;
 }
 
+.search-box.navigation:hover {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.search-box.navigation:focus {
+  background: black;
+}
+
 .search-box.navigation label {
   position: absolute;
   width: 1px;
@@ -1323,6 +1332,10 @@ $font-medium:16px;*/
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+.search-box.navigation .component-content > .twitter-typeahead {
+  margin: 0;
 }
 
 .search-box.navigation input {
@@ -1336,6 +1349,11 @@ $font-medium:16px;*/
   text-transform: uppercase;
   font-size: 13px;
   color: #fff;
+  padding: 10px 40px 10px 8px;
+}
+
+.search-box.navigation .search-box-input:focus, .search-box.navigation input[type="text"]:focus {
+  background: #000 !important;
 }
 
 .search-box.navigation button {
@@ -1345,6 +1363,9 @@ $font-medium:16px;*/
   line-height: 0;
   color: #fff;
   cursor: pointer;
+  padding: 8px 8px;
+  position: absolute;
+  right: 0;
 }
 
 .search-box.navigation button:after {
@@ -1360,7 +1381,7 @@ $font-medium:16px;*/
   content: "";
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 767px) {
   .search-box.navigation {
     background: #FFFFFF;
     border: 1px solid #c2c2c2;

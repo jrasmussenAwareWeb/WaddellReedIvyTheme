@@ -1,0 +1,137 @@
+// Spacing
+$spacer: 1rem !default;
+
+// Tables
+//
+// Customizes the `.table` component with basic values, each used across all table variations.
+
+$table-cell-padding:          .75rem !default;
+$table-cell-padding-sm:       .3rem !default;
+
+$table-bg:                    transparent !default;
+$table-accent-bg:             rgba($bg-black, .05) !default;
+$table-hover-bg:              rgba($bg-black, .075) !default;
+$table-active-bg:             $table-hover-bg !default;
+
+$table-border-width:          1px !default;
+$table-border-color:          $border-gray !default;
+
+$table-head-bg:               $bg-light-gray !default;
+$table-head-color:            $bg-light-gray !default;
+
+$table-dark-bg:               $bg-light-gray !default;
+$table-dark-accent-bg:        rgba($bg-basic-color, .05) !default;
+$table-dark-hover-bg:         rgba($bg-basic-color, .075) !default;
+$table-dark-border-color:     lighten($border-gray, 7.5%) !default;
+$table-dark-color:            $bg-light-gray !default;
+
+$table-striped-order:         odd !default;
+
+$table-caption-color:         $text-disabled !default;
+
+table {
+  height: auto !important;
+  //border: 1px solid $border-gray;
+  &, tr, th, td {
+      background: $bg-basic-color;
+      border-collapse: collapse;
+      vertical-align: middle;
+  }
+  th, td {
+    border-top: solid 1px $border-gray;
+  }
+  thead th {
+    border-bottom: solid 2px $border-gray;
+  }
+  tr, th, td {
+      padding: 5px;
+  }
+  caption {
+      background-color: $bg-light-gray;
+      overflow: hidden;
+      padding: 10px;
+      font-size: $font-big;
+      font-weight: bold;
+      margin-left: 0;
+  }
+  tr {
+      border: none;
+  }
+  //th, td {
+      //border-width: 2px 0 0 2px;
+  //}
+  th {
+      //background-color: lighten($bg-light-gray, 5%);
+      font-size: $font-normal;
+      font-weight: bold;
+      padding: 7px;
+      &:first-child {
+          border-left: 0;
+      }
+  }
+  td {
+      &:first-child {
+          border-left: 0;
+      }
+  }
+}
+
+// Condensed table w/ half padding
+.table-sm {
+  th,
+  td {
+    padding: $table-cell-padding-sm;
+  }
+}
+
+
+// Border versions
+// Add or remove borders all around the table and between all the columns.
+.table-bordered {
+  border: $table-border-width solid $table-border-color;
+
+  th,
+  td {
+    border: $table-border-width solid $table-border-color;
+  }
+
+  thead {
+    th,
+    td {
+      border-bottom-width: (2 * $table-border-width);
+    }
+  }
+}
+
+.table-borderless {
+  th,
+  td,
+  thead th,
+  tbody + tbody {
+    border: 0;
+  }
+}
+
+// Zebra-striping
+// Default zebra-stripe styles (alternating gray and transparent backgrounds)
+
+.table-striped {
+  tbody tr:nth-of-type(#{$table-striped-order}) {
+    background-color: $table-accent-bg;
+    th, td {
+      background-color: $table-accent-bg;
+    }
+  }
+}
+
+
+// Hover effect
+// Placed here since it has to come after the potential zebra striping
+
+.table-hover {
+  tbody tr {
+    &:hover {
+      background-color: $table-hover-bg;
+    }
+  }
+}

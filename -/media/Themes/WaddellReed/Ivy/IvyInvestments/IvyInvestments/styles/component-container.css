@@ -36,7 +36,7 @@ $font-medium:16px;*/
   border: none;
 }
 
-@media only screen and (max-width: 959px) {
+@media only screen and (max-width: 991px) {
   .title-row-box > .component-content .title {
     margin: 23px 0 0 20px;
   }
@@ -63,7 +63,7 @@ $font-medium:16px;*/
   clear: both;
 }
 
-@media only screen and (min-width: 381px) and (max-width: 959px) {
+@media only screen and (min-width: 768px) {
   .title-row-box > .component-content .breadcrumb {
     margin: 23px 20px 0 0;
   }
@@ -75,7 +75,7 @@ $font-medium:16px;*/
   }
 }
 
-@media only screen and (max-width: 959px) {
+@media only screen and (max-width: 991px) {
   .title-row-box .alpha {
     vertical-align: middle;
     box-sizing: border-box;

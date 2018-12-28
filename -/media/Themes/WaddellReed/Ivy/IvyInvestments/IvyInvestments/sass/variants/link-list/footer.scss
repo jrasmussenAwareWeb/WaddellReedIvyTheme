@@ -7,7 +7,10 @@
     li {
             @include proximabold();
             font-size: $font-small;
+            //Added NW
+            line-height: 1.65;
         a {
+            font-weight: bold;
             padding-left:0;
             &:before {
             content: none;

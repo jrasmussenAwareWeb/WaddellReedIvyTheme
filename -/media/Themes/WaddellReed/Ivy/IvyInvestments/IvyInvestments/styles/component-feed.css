@@ -76,7 +76,7 @@ $font-medium:16px;*/
   padding: 20px;
 }
 
-@media only screen and (max-width: 639px) {
+@media only screen and (min-width: 576px) {
   .feed.feed-grid .feed-item {
     width: 100%;
   }

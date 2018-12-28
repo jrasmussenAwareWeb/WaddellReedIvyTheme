@@ -1,11 +1,11 @@
 @import "vars";
 
 /* breakpoints */
-
-$break-desktop: 960px;
+$break-large: 1200px;
+$break-desktop: 992px;
 $break-mobile: 380px;
-$break-mobile-horizontal: 640px;
-$break-mobile-large: 786px;
+$break-mobile-horizontal: 576px;
+$break-mobile-large: 768px;
 
 @mixin wrapper() {
     //max-width: 960px;
@@ -73,17 +73,22 @@ $break-mobile-large: 786px;
         }
     }
     @else if $media==mobile-horizontal {
-        @media only screen and (max-width: $break-mobile-horizontal - 1) {
+        @media only screen and (min-width: $break-mobile-horizontal) {
             @content;
         }
     }
     @else if $media==mobile-large {
-        @media only screen and (max-width: $break-mobile-large) {
+        @media only screen and (max-width: $break-mobile-large - 1) {
             @content;
         }
     }
     @else if $media==tablet {
-        @media only screen and (min-width: $break-mobile + 1) and (max-width: $break-desktop - 1) {
+        @media only screen and (min-width: $break-mobile-large) {
+            @content;
+        }
+    }
+    @else if $media==tablet-only {
+        @media only screen and (min-width: $break-mobile-large) and (max-width: $break-desktop - 1) {
             @content;
         }
     }
@@ -94,6 +99,11 @@ $break-mobile-large: 786px;
     }
     @else if $media==desktop {
         @media only screen and (min-width: $break-desktop) {
+            @content;
+        }
+    }
+    @else if $media==large {
+        @media only screen and (min-width: $break-large) {
             @content;
         }
     }

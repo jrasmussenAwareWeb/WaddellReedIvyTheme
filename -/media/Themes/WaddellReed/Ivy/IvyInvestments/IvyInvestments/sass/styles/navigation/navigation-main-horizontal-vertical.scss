@@ -323,18 +323,26 @@
             height:auto;
             margin-top:30px;
             >.navigation-title {
-                border:1px solid $text-green;
+                //border:1px solid $text-green;
                 >a {
-                    margin-top:0;
-                    color:$text-green;
+                    //margin-top:0;
+                    margin: 0;
+                    color:$text-white;
+                    background-color: $text-green;
+                    border: solid 2px $text-green;
                     text-align:center;
                     &:before {
                         font-size:inherit;
                         @include fa-icon();
-                        transform: translateY(-50%);
+                        //transform: translateY(-50%);
                         position:relative;
-                        left:-8px;
-                        top:9px;
+                        //left:-8px;
+                        //top:9px;
+                        margin-right: 6px;
+                    }
+                    &:hover {
+                        color:$text-green;
+                        background-color: $text-white;
                     }
                 }
             }

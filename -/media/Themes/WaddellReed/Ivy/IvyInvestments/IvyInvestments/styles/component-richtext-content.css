@@ -112,12 +112,16 @@ $font-medium:16px;*/
   margin: 10px 0;
 }
 
-.content h3, .content h4, .content p, .rich-text h3, .rich-text h4, .rich-text p {
+.content h3, .content h4, .rich-text h3, .rich-text h4 {
   margin: 5px 0;
 }
 
 .content h5, .content h6, .rich-text h5, .rich-text h6 {
   margin: 5px 0 0;
+}
+
+.content p, .rich-text p {
+  margin: 0 0 20px 0;
 }
 
 .content strong, .rich-text strong {
@@ -157,14 +161,20 @@ $font-medium:16px;*/
 
 .content table, .rich-text table {
   height: auto !important;
-  border: 2px solid #c2c2c2;
 }
 
 .content table, .content table tr, .content table th, .content table td, .rich-text table, .rich-text table tr, .rich-text table th, .rich-text table td {
-  border: solid 2px #c2c2c2;
   background: #FFFFFF;
   border-collapse: collapse;
   vertical-align: middle;
+}
+
+.content table th, .content table td, .rich-text table th, .rich-text table td {
+  border-top: solid 1px #c2c2c2;
+}
+
+.content table thead th, .rich-text table thead th {
+  border-bottom: solid 2px #c2c2c2;
 }
 
 .content table tr, .content table th, .content table td, .rich-text table tr, .rich-text table th, .rich-text table td {
@@ -184,12 +194,7 @@ $font-medium:16px;*/
   border: none;
 }
 
-.content table th, .content table td, .rich-text table th, .rich-text table td {
-  border-width: 2px 0 0 2px;
-}
-
 .content table th, .rich-text table th {
-  background-color: #e5e5e3;
   font-size: 16px;
   font-weight: bold;
   padding: 7px;
@@ -201,6 +206,50 @@ $font-medium:16px;*/
 
 .content table td:first-child, .rich-text table td:first-child {
   border-left: 0;
+}
+
+.content .table-sm th,
+.content .table-sm td, .rich-text .table-sm th,
+.rich-text .table-sm td {
+  padding: 0.3rem;
+}
+
+.content .table-bordered, .rich-text .table-bordered {
+  border: 1px solid #c2c2c2;
+}
+
+.content .table-bordered th,
+.content .table-bordered td, .rich-text .table-bordered th,
+.rich-text .table-bordered td {
+  border: 1px solid #c2c2c2;
+}
+
+.content .table-bordered thead th,
+.content .table-bordered thead td, .rich-text .table-bordered thead th,
+.rich-text .table-bordered thead td {
+  border-bottom-width: 2px;
+}
+
+.content .table-borderless th,
+.content .table-borderless td,
+.content .table-borderless thead th,
+.content .table-borderless tbody + tbody, .rich-text .table-borderless th,
+.rich-text .table-borderless td,
+.rich-text .table-borderless thead th,
+.rich-text .table-borderless tbody + tbody {
+  border: 0;
+}
+
+.content .table-striped tbody tr:nth-of-type(odd), .rich-text .table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.content .table-striped tbody tr:nth-of-type(odd) th, .content .table-striped tbody tr:nth-of-type(odd) td, .rich-text .table-striped tbody tr:nth-of-type(odd) th, .rich-text .table-striped tbody tr:nth-of-type(odd) td {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.content .table-hover tbody tr:hover, .rich-text .table-hover tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.075);
 }
 
 .rich-text strong, .content strong {

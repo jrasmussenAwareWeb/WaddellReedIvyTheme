@@ -10,7 +10,7 @@ $font-medium:16px;*/
   margin: 20px 0;
 }
 
-@media only screen and (min-width: 381px) and (max-width: 959px) {
+@media only screen and (min-width: 768px) {
   .boxed {
     padding: 10px;
   }
@@ -232,7 +232,7 @@ $font-medium:16px;*/
   min-height: 240px;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 767px) {
   .parallax-background > .component-content {
     background-attachment: scroll;
   }
