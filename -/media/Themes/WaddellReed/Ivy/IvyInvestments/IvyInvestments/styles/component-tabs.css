@@ -1,4 +1,10 @@
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 .tabs {
   overflow: hidden;
   position: relative;
@@ -10,9 +16,9 @@
 
 .tab-slider {
   position: absolute;
-  background: #f7f7f7;
+  background: #d9d9d6;
   cursor: pointer;
-  border: 2px solid #89C6CC;
+  border: 2px solid #000000;
   vertical-align: center;
   width: 15px;
   text-indent: -9999px;
@@ -26,20 +32,20 @@
 .tabs-heading li {
   border-top-width: 2px;
   border-top-style: solid;
-  border-top-color: #f7f7f7;
+  border-top-color: #d9d9d6;
   border-left-width: 1px;
   border-left-style: solid;
-  border-left-color: #f7f7f7;
+  border-left-color: #d9d9d6;
   border-right-width: 1px;
   border-right-style: solid;
-  border-right-color: #f7f7f7;
+  border-right-color: #d9d9d6;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #89C6CC;
+  border-bottom-color: #000000;
   float: left;
   display: block;
   margin-left: 1px;
-  background: #f7f7f7;
+  background: #d9d9d6;
   width: auto;
   cursor: pointer;
 }
@@ -69,16 +75,16 @@
   background: #FFFFFF;
   border-top-width: 2px;
   border-top-style: solid;
-  border-top-color: #89C6CC;
+  border-top-color: #000000;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #89C6CC;
+  border-bottom-color: #000000;
   border-left-width: 1px;
   border-left-style: solid;
-  border-left-color: #d2d2d2;
+  border-left-color: #c2c2c2;
   border-right-width: 1px;
   border-right-style: solid;
-  border-right-color: #d2d2d2;
+  border-right-color: #c2c2c2;
 }
 
 .tabs-heading li.active a {
@@ -88,7 +94,7 @@
 .tabs-heading li:hover {
   border-top-width: 2px;
   border-top-style: solid;
-  border-top-color: #89C6CC;
+  border-top-color: #000000;
   background: #FFFFFF;
 }
 
@@ -99,7 +105,7 @@
 .tabs-container {
   border-top-width: 1px;
   border-top-style: solid;
-  border-top-color: #89C6CC;
+  border-top-color: #000000;
   background: transparent;
   margin-top: -1px;
 }
@@ -119,6 +125,12 @@
   display: block;
 }
 
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
 .tabs.tabs-bottom .tabs-container {
   margin: 0;
@@ -142,13 +154,13 @@
   border-top: none;
   border-bottom-width: 2px;
   border-bottom-style: solid;
-  border-bottom-color: #89C6CC;
+  border-bottom-color: #000000;
   border-left-width: 1px;
   border-left-style: solid;
-  border-left-color: #d2d2d2;
+  border-left-color: #c2c2c2;
   border-right-width: 1px;
   border-right-style: solid;
-  border-right-color: #d2d2d2;
+  border-right-color: #c2c2c2;
 }
 
 .tabs.tabs-bottom .tabs-heading li.active a {
@@ -159,19 +171,25 @@
 .tabs.tabs-bottom .tabs-heading li:hover {
   border-bottom-width: 2px;
   border-bottom-style: solid;
-  border-bottom-color: #89C6CC;
+  border-bottom-color: #000000;
   background: #FFFFFF;
 }
 
 .tabs.tabs-bottom .tabs-container {
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #89C6CC;
+  border-bottom-color: #000000;
   border-top: none;
   background: transparent;
   margin-bottom: 1px;
 }
 
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
 .tabs.tabs-scrollable .tabs-heading {
   list-style: none;
@@ -212,6 +230,12 @@
   margin-top: -4px;
 }
 
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
 .tabs.tabs-vertical.tabs-vertical-right .tabs-heading {
   float: right;
@@ -221,25 +245,25 @@
 .tabs.tabs-vertical.tabs-vertical-right .tabs-heading li {
   border-top-width: 1px;
   border-top-style: solid;
-  border-top-color: #f7f7f7;
+  border-top-color: #d9d9d6;
   border-left-width: 1px;
   border-left-style: solid;
-  border-left-color: #f7f7f7;
+  border-left-color: #d9d9d6;
   border-right-width: 2px;
   border-right-style: solid;
-  border-right-color: #89C6CC;
+  border-right-color: #000000;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #f7f7f7;
+  border-bottom-color: #d9d9d6;
 }
 
 .tabs.tabs-vertical.tabs-vertical-right .tabs-heading li.active {
   border-right-width: 2px;
   border-right-style: solid;
-  border-right-color: #89C6CC;
+  border-right-color: #000000;
   border-left-width: 1px;
   border-left-style: solid;
-  border-left-color: #89C6CC;
+  border-left-color: #000000;
 }
 
 .tabs.tabs-vertical.tabs-vertical-right .tabs-heading li.active a {
@@ -249,19 +273,25 @@
 .tabs.tabs-vertical.tabs-vertical-right .tabs-heading li:hover {
   border-left-width: 1px;
   border-left-style: solid;
-  border-left-color: #89C6CC;
+  border-left-color: #000000;
 }
 
 .tabs.tabs-vertical.tabs-vertical-right .tabs-container {
   float: right;
   border-right-width: 1px;
   border-right-style: solid;
-  border-right-color: #89C6CC;
+  border-right-color: #000000;
   border-top: none;
   margin-left: -1px;
   border-left: none;
 }
 
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
 .tabs.tabs-vertical .tabs-heading {
   width: 30%;
@@ -274,22 +304,22 @@
   width: 100%;
   border-top-width: 1px;
   border-top-style: solid;
-  border-top-color: #f7f7f7;
+  border-top-color: #d9d9d6;
   border-left-width: 2px;
   border-left-style: solid;
-  border-left-color: #f7f7f7;
+  border-left-color: #d9d9d6;
   border-right-width: 1px;
   border-right-style: solid;
-  border-right-color: #89C6CC;
+  border-right-color: #000000;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #f7f7f7;
+  border-bottom-color: #d9d9d6;
 }
 
 .tabs.tabs-vertical .tabs-heading li.active {
   border-left-width: 2px;
   border-left-style: solid;
-  border-left-color: #89C6CC;
+  border-left-color: #000000;
 }
 
 .tabs.tabs-vertical .tabs-heading li.active a {
@@ -303,7 +333,7 @@
 .tabs.tabs-vertical .tabs-heading li:hover {
   border-left-width: 2px;
   border-left-style: solid;
-  border-left-color: #89C6CC;
+  border-left-color: #000000;
 }
 
 .tabs.tabs-vertical .tabs-container {
@@ -314,5 +344,5 @@
   border-top: none;
   border-left-width: 1px;
   border-left-style: solid;
-  border-left-color: #89C6CC;
+  border-left-color: #000000;
 }

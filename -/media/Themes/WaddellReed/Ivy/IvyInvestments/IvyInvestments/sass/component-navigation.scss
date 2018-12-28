@@ -1,6 +1,7 @@
 @import "abstracts/mixins";
 @import "abstracts/vars";
-@import "base/fontawesome/font-awesome-mix-var";
+@import "base/fontawesome/font-awesome-mix-var"; 
+
 .navigation {
     background: $nav-bg;
     .level1, .level0 {
@@ -44,6 +45,7 @@
     .submenu>ul {
         padding-left: 10px;
     }
+    
     @import "variants/navigation/*";
 }
 @import "styles/navigation/*";

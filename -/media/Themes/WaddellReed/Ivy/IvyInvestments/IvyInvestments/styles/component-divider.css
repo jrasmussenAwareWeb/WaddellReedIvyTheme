@@ -1,3 +1,6 @@
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
 .divider hr {
   margin: 10px 0;
@@ -5,7 +8,7 @@
   height: 0;
   border-top-width: 1px;
   border-top-style: solid;
-  border-top-color: #d2d2d2;
+  border-top-color: #c2c2c2;
 }
 
 .white-space-divider hr {

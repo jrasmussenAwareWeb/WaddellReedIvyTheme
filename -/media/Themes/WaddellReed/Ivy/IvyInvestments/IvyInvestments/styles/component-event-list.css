@@ -1,5 +1,11 @@
 @charset "UTF-8";
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 .event-list li, .event-list li > .scLooseFrameZone {
   background: #FFFFFF;
   display: -webkit-inline-box;
@@ -9,7 +15,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #747474;
+  color: #000000;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
@@ -23,6 +29,9 @@
 }
 
 .event-list {
+  /*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
   /* breakpoints */
   background: transparent;
 }
@@ -135,7 +144,7 @@
 }
 
 .event-list li {
-  font-size: 13px;
+  font-size: 16px;
   margin-left: 15px;
 }
 
@@ -156,16 +165,16 @@
 }
 
 .event-list a:hover {
-  color: #878787;
+  color: #000000;
 }
 
 .event-list table {
   height: auto !important;
-  border: 2px solid #d2d2d2;
+  border: 2px solid #c2c2c2;
 }
 
 .event-list table, .event-list table tr, .event-list table th, .event-list table td {
-  border: solid 2px #d2d2d2;
+  border: solid 2px #c2c2c2;
   background: #FFFFFF;
   border-collapse: collapse;
   vertical-align: middle;
@@ -176,7 +185,7 @@
 }
 
 .event-list table caption {
-  background-color: #f7f7f7;
+  background-color: #d9d9d6;
   overflow: hidden;
   padding: 10px;
   font-size: 20px;
@@ -193,8 +202,8 @@
 }
 
 .event-list table th {
-  background-color: white;
-  font-size: 13px;
+  background-color: #e5e5e3;
+  font-size: 16px;
   font-weight: bold;
   padding: 7px;
 }
@@ -210,7 +219,7 @@
 .event-list h1, .event-list h2, .event-list h3, .event-list h4, .event-list h5, .event-list h6 {
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #89C6CC;
+  border-bottom-color: #000000;
 }
 
 .event-list ul {
@@ -220,7 +229,7 @@
 .event-list li {
   border-width: 1px;
   border-style: solid;
-  border-color: #d2d2d2;
+  border-color: #c2c2c2;
   margin-left: 0;
   box-sizing: border-box;
   padding: 15px 15px 40px 15px;
@@ -302,13 +311,13 @@
 
 .event-list .event-list-link a {
   font-size: 1em;
-  color: #747474;
+  color: #000000;
 }
 
 .event-list .event-list-link a:hover {
-  color: #878787;
+  color: #000000;
   text-decoration: none;
-  border-bottom: 1px solid #89C6CC;
+  border-bottom: 1px solid #000000;
 }
 
 .event-list .event-list-link:before {
@@ -316,5 +325,5 @@
 }
 
 .event-list .scWebEditInput {
-  font-family: "Open Sans", Helvetica, Verdana, Tahoma, sans-serif;
+  font-family: "Open Sans", arial, helvetica, sans-serif;
 }

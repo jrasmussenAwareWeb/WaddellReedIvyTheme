@@ -18,4 +18,11 @@
 .content {
     @import "variants/page-content/*";
 }
+
+.rich-text, .content {
+  strong {
+    font-weight:normal;
+    @include proximabold();
+}
+}
 @import "styles/rich-text/*";

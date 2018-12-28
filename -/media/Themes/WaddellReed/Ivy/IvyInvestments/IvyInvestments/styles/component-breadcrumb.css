@@ -1,5 +1,11 @@
 @charset "UTF-8";
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 .breadcrumb.component {
   background: transparent;
 }
@@ -18,7 +24,7 @@
   text-decoration: none;
   font-size: 15px;
   font-weight: 400;
-  color: #747474;
+  color: #000000;
 }
 
 .breadcrumb.component ol {
@@ -73,13 +79,13 @@
   background: #FFFFFF;
   border-width: 1px;
   border-style: solid;
-  border-color: #d2d2d2;
+  border-color: #c2c2c2;
 }
 
 .breadcrumb.component li > ol li {
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #d2d2d2;
+  border-bottom-color: #c2c2c2;
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -132,6 +138,12 @@
   border-bottom-width: 0;
 }
 
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
 .breadcrumb.breadcrumb-hide li {
   white-space: nowrap;
@@ -154,6 +166,12 @@
   display: none;
 }
 
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
 .breadcrumb.triangle-separator .separator {
   display: inline-block;
@@ -168,5 +186,5 @@
 .breadcrumb.triangle-separator .separator:before {
   content: "";
   display: block;
-  font-size: 16px;
+  font-size: 18px;
 }

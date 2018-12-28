@@ -6,8 +6,10 @@ $break-desktop: 960px;
 $break-mobile: 380px;
 $break-mobile-horizontal: 640px;
 $break-mobile-large: 786px;
+
 @mixin wrapper() {
-    max-width: 960px;
+    //max-width: 960px;
+    max-width:1170px;
     margin: 0 auto !important;
 }
 @mixin clearfix {
@@ -17,28 +19,48 @@ $break-mobile-large: 786px;
         clear: both;
     }
 }
-    @mixin headings($from: 1, $to: 6) {
-        @for $i from $from through $to {
-            h#{$i} {
-                @content
-            }
+@mixin headings($from: 1, $to: 6) {
+    @for $i from $from through $to {
+        h#{$i} {
+            @content
         }
     }
+}
+
+@mixin sronly {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
 @mixin font-size($sizeValue: 1.6) {
     font-size: ($sizeValue * 10) + px;
     font-size: $sizeValue + rem;
 }
-    @mixin proxima-font($weight:semibold) {
-        @if($weight==semibold) {
-            font-family: "ProximaNova-Semibold", arial, helvetica, sans-serif;
-        }
-        @else if($weight==light) {
-            font-family: "ProximaNova-Light", arial, helvetica, sans-serif;
-        }
-    }
+
 @mixin opensans-font-stack() {
-    font-family: "Open Sans", Helvetica, Verdana, Tahoma, sans-serif;
+    font-family: "Open Sans", arial, helvetica, sans-serif;
 }
+@mixin copernicus() {
+    font-family: "CopernicusBook", arial, helvetica, sans-serif;
+}
+@mixin proxima() {
+    font-family: "Proxima", arial, helvetica, sans-serif;
+}
+
+@mixin proximabold() {
+    font-family: "ProximaBold", arial, helvetica, sans-serif;
+}
+
+@mixin proximaboldcondensed() {
+    font-family: "ProximaBoldCondensed", arial, helvetica, sans-serif;
+}
+
 @mixin loading-gif() {
     background-image: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSJibGFjayI+DQogIDxwYXRoICBvcGFjaXR5PSIuMjUiIGQ9Ik0xNiAwIEExNiAxNiAwIDAgMCAxNiAzMiBBMTYgMTYgMCAwIDAgMTYgMCBNMTYgNCBBMTIgMTIgMCAwIDEgMTYgMjggQTEyIDEyIDAgMCAxIDE2IDQiLz4NCiAgPHBhdGggZmlsbD0nIzFhODBiNicgZD0iTTE2IDAgQTE2IDE2IDAgMCAxIDMyIDE2IEwyOCAxNiBBMTIgMTIgMCAwIDAgMTYgNHoiPg0KICAgIDxhbmltYXRlVHJhbnNmb3JtIGF0dHJpYnV0ZU5hbWU9InRyYW5zZm9ybSIgdHlwZT0icm90YXRlIiBmcm9tPSIwIDE2IDE2IiB0bz0iMzYwIDE2IDE2IiBkdXI9IjAuOHMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPg0KICA8L3BhdGg+DQo8L3N2Zz4NCg==);
     background-position: center center;

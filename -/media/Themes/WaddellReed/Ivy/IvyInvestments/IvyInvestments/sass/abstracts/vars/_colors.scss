@@ -2,31 +2,53 @@
 $bg-transparent:transparent !default;
 $bg-basic-color:#FFFFFF !default;
 $bg-basic-color-active: #cccccc !default;
-$bg-light-gray: #f7f7f7 !default;
+//$bg-light-gray: #f7f7f7 !default;
 $bg-light-gray-active: #dadada !default;
 $bg-blue:#89C6CC;
 $bg-blue-active: #15909c !default;
-$bg-submenu:#edebeb !default;
-$bg-submenu-active:#f6f6f6 !default;
+//$bg-submenu:#edebeb !default;
+//$bg-submenu-active:#f6f6f6 !default;
 $bg-black:#000;
 $bg-black-active:#3d3d3d;
+
+//Ivy Specific
+$bg-light-gray:#d9d9d6 !default;
+$bg-submenu:#FFFFFF !default;
+$bg-submenu-active:#f6f6f6 !default;
+
 //Text colors
 $text-white:#fff !default;
 $text-heading-color: #222 !default;
-$text-basic:#747474 !default;
-$text-basic-active:#878787 !default;
+//$text-basic:#747474 !default;
+//$text-basic-active:#878787 !default;
 $text-blue:#89C6CC !default;
 $text-blue-active:#15909c !default;
 $text-submenu-active: #222 !default;
 $text-disabled: #aaa !default;
 $text-black: #000 !default;
 $text-red:#de232f;
+
+//Ivy Specific
+$text-basic:#000000 !default;
+$text-basic-active:#000000 !default;
+$text-green:#009639;
+
+
 //Border colors
-$border-gray: #d2d2d2 !default;
+//$border-gray: #d2d2d2 !default;
 $border-white: #ffffff !default;
-$border-basic-color: #89C6CC !default;
+//$border-basic-color: #89C6CC !default;
 $border-basic-active:#15909c !default;
-$border-nav-submenu:#e1e1e1;
+//$border-nav-submenu:#e1e1e1;
+
+//Ivy Specific
+$border-gray: #c2c2c2 !default;
+$border-dark-gray: #b7b7b7 !default;
+$border-basic-color: #000000 !default;
+$border-nav-submenu:#000000;
+$border-green:#006747;
+$border-dark-green:#004d33;
+
 //Styles for each component separately
 //Accordion
 $accordion-header-bg: transparent;
@@ -115,6 +137,7 @@ $link-list-item-bg:transparent;
 $link-list-item-color:$text-basic;
 $link-list-item-color-active:$text-basic-active;
 $link-list-item-border-active:$border-basic-color;
+
 //Login
 $login-bg:transparent;
 //Logout
@@ -179,6 +202,7 @@ $nav-bg-submenu-active:$bg-submenu-active;
 $nav-border-submenu:$border-basic-color;
 $nav-submenu-item-border:$border-gray;
 $nav-submenu-border-active:$border-basic-color;
+
 //Social Media Share
 $social-media-share-bg:transparent;
 //Tabs

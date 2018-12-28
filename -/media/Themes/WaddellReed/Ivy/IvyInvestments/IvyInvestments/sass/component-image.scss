@@ -14,5 +14,6 @@
         font-size: $font-small;
         color: $image-caption-color;
     }
+    @import "variants/image/*";
 }
 @import "styles/image/*";

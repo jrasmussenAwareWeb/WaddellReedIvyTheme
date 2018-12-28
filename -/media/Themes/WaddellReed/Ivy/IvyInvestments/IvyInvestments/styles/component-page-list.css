@@ -1,13 +1,25 @@
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
 .page-list {
   background-color: transparent;
+  /*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
   /* breakpoints */
+  /*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 }
 
 .page-list .item {
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #89C6CC;
+  border-bottom-color: #000000;
   background: transparent;
   padding: 15px;
   overflow: hidden;
@@ -29,11 +41,11 @@
   background-color: transparent;
   text-decoration: none;
   font-size: 1em;
-  color: #747474;
-  border-bottom: 1px solid #89C6CC;
+  color: #000000;
+  border-bottom: 1px solid #000000;
 }
 
 .page-list a:hover {
-  color: #878787;
+  color: #000000;
   text-decoration: none;
 }

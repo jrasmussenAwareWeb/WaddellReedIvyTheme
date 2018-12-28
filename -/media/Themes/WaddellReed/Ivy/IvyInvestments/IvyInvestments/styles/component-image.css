@@ -1,3 +1,6 @@
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 .image img {
   max-width: 100%;
   height: auto;
@@ -11,8 +14,19 @@
 .image .image-caption {
   display: block;
   font-style: italic;
-  font-size: 11px;
-  color: #747474;
+  font-size: 14px;
+  color: #000000;
+}
+
+.image.brokercheck img {
+  max-width: 180px;
+}
+
+.image.brokercheck .image-caption {
+  font-style: normal;
+  font-size: 12px;
+  text-transform: uppercase;
+  max-width: 200px;
 }
 
 .image-default-size img {

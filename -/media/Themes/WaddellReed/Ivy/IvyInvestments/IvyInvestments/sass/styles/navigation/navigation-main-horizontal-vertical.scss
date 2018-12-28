@@ -1,6 +1,7 @@
 @import "../../abstracts/vars";
 @import "../../abstracts/mixins";
 @import "../../base/fontawesome/font-awesome-mix-var";
+
 //Drop Down Navigation Common Part
 .navigation.navigation-main {
     .component-content>nav {
@@ -10,32 +11,18 @@
         }
     }
     .rel-level1 {
-        float: left;
-        &.active {
-            >.navigation-title>a {
-                border-color: $nav-border-root;
-            }
-        }
+        float: right;
+        height:95px;
+        padding:0 20px;
         >.navigation-title>a {
             border-width: 2px 0 0 0;
             border-color: transparent;
-            &:hover {
-                border-color: $nav-border-root;
-            }
+            margin-top:30px;
         }
         &.submenu {
             >.navigation-title a {
                 position: relative;
-                padding-right: 15px;
-                &:after {
-                    @include fa-icon();
-                    font-size: 10px;
-                    content: $fa-var-chevron-down;
-                    position: absolute;
-                    transform: translateY(-50%);
-                    top: 50%;
-                    right: 0;
-                }
+                padding-right: 0;
             }
         }
         //submenu
@@ -46,7 +33,7 @@
             z-index: 10;
             position: absolute;
             top: 100%;
-            background: $nav-bg-submenu;
+            background: $nav-bg-submenu-active;
             margin-left: 0;
             margin-top: -$borderSize;
             border-top: $borderSize solid $nav-border-submenu;
@@ -54,6 +41,8 @@
             border-bottom: 1px solid $nav-submenu-item-border;
         }
         &.show {
+            background-color:$bg-black;
+            >.navigation-title>a {color:$text-white}
             >a {
                 &+ul {
                     display: block !important;
@@ -101,8 +90,10 @@
                 }
             }
         }
+        
     }
-    // Additional styles fot drop down horizontal navigation 
+
+    // Additional styles fot drop down horizontal navigation (main)
     &.navigation-main-horizontal {
         .submenu>ul {
             padding-left: 0;
@@ -124,17 +115,95 @@
                 width: 100%;
                 clear: both;
                 left: 0;
+                //overwrite the sm-10 column sizing
+                width:165%;
+                left:-30%;
+            }
+            //hide the 3rd column
+            @include respond-to(tablet) {
+                >ul {
+                    >.rel-level2:last-child {
+                            display:none;
+                    }
+                }
             }
         }
         .rel-level2 {
+            padding:0 25px !important; //why important?
+            //overwrite default bg
+            &.black, &.gray {
+                border-top:10px solid #000;
+                border-right:0;
+            }
+            &.black {
+                background:#000;
+                li {
+                    border-bottom:1px solid #4d4d4d;
+                    >.navigation-title {
+                        >a {
+                            color:$text-white;
+                            &:hover, &:focus {
+                                color:$text-green;
+                            }
+                        }
+                    }
+                    &:last-of-type {
+                        border-bottom:0;
+                    }
+                }
+            }
+            &.gray {
+                background:#f2f2f2;
+            }
             float: left;
             padding: 10px;
             @include border-basic(right, $nav-submenu-item-border, 1px);
             flex-grow: 1;
             flex-basis: 23%;
+            >span {
+                display:none;
+            }
+        }
+        .rel-level2, .rel-level3 {
+            li {
+                >.navigation-title {
+                    >a {
+                        padding:15px 0; 
+                    }
+                }
+            }
+        }
+        .rel-level3 {
+            @include proximabold();
+            .navigation-required {
+                float:left; 
+                margin-right:10px;
+                position:relative;
+                top:11px;
+                left:3px;
+                color:$text-white;
+            }
+            h4, h4 > a {
+                color:$text-green;
+                font-size:24px;
+                text-decoration:none;
+                &:hover, &:focus {
+                    color:$text-basic;
+                }
+            }
+            img {
+                width:100%;
+                height:auto;
+            }
+            .item-decoration, .item-fake {
+                @include proxima();
+            }
+        }
+        .rel-level4 {
+            @include proxima();
         }
     }
-    // Additional styles fot drop down vertical navigation 
+    // Additional styles for drop down vertical navigation (umbrella & account)
     &.navigation-main-vertical {
         .rel-level1>ul {
             padding-left: 0;
@@ -146,4 +215,185 @@
             }
         }
     }
+
+    // Additional styles for the the umbrella navigation
+    &.navigation-umbrella {
+        max-width:210px;
+        .level1, .level0 {
+            >.navigation-title>a {
+                font-size: $navigation-font-small;
+            }
+        }
+        .rel-level1 {
+            float:none;
+            background:$bg-basic-color;
+            width:100%;
+            height:auto;
+            padding:0;
+            >.navigation-title {
+                border:1px solid $border-white;
+                >a {
+                    @include proximabold();
+                    color:$text-green;
+                    margin-top:0;
+                    padding-left:15px;
+                    padding-right:15px;
+                    padding-bottom:4px;
+                }
+            }
+            >ul {
+                >li {
+                    padding:5px 15px;
+                }
+            }
+            &.submenu {
+                >.navigation-title {
+                    a {
+                        &:after {
+                            font-size:inherit;
+                            @include fa-icon();
+                            font-size:inherit;
+                            //content: $fa-var-chevron-down; 
+                            content: $fa-var-caret-down; 
+                            position: absolute;
+                            transform: translateY(-50%);
+                            top: 50%;
+                            right: 10px;
+                        }
+                    }
+                }
+            }
+            //submenu
+            >ul {
+                width:100%;
+                z-index:11;
+                background:$bg-submenu;
+                margin-top: 0;
+                border-top: 0;
+            }
+             &.show {
+                background:$bg-submenu;
+                >.navigation-title {
+                    border-left: 1px solid $border-dark-green;
+                    border-right:1px solid $border-dark-green;
+                    >a {
+                    color:$text-basic;
+                    }
+                }
+                //submenu
+                >ul {
+                    border-left: 1px solid $border-dark-green;
+                    border-right:1px solid $border-dark-green;
+                    border-bottom: 1px solid $border-dark-green;
+                }
+            }
+        }
+        .rel-level2 {
+            &:hover, &:focus {
+                background: $bg-submenu;
+            }
+            div {
+                >a {
+                   font-size: $navigation-font-small;
+                   text-align:left;
+                   padding:0 5px 8px 0;
+                   border-bottom:1px solid $border-dark-green;
+                    &:hover, &:focus {
+                         color:$text-green;
+                    }
+                }
+            }
+            &:last-child {
+                div {
+                    >a {
+                        border-bottom:0;
+                    }
+                }
+            }
+        }
+    }
+    // Additional styles for the the account & login navigation
+    &.navigation-account, &.navigation-login {
+        .sxaToogleNavBtn {
+            display:none !important;
+        }
+        .rel-level1 {
+            padding:0;
+            width:100%;
+            height:auto;
+            margin-top:30px;
+            >.navigation-title {
+                border:1px solid $text-green;
+                >a {
+                    margin-top:0;
+                    color:$text-green;
+                    text-align:center;
+                    &:before {
+                        font-size:inherit;
+                        @include fa-icon();
+                        transform: translateY(-50%);
+                        position:relative;
+                        left:-8px;
+                        top:9px;
+                    }
+                }
+            }
+            &.show {
+            background-color:transparent;
+            }
+            &.active {
+                >.navigation-title {
+                    >a {
+                        color:$text-green;
+                    }
+                }
+            }
+        }
+    }
+
+
+    // Additional styles for the the account navigation
+    &.navigation-account {
+        .rel-level1 {
+            > ul {
+                width:100%;
+            }
+            >.navigation-title {
+                background:$text-green;
+                >a {
+                    color:$text-white;
+                    &:before {
+                        content: $fa-var-sign-out; 
+                    }
+                }
+            }
+            &.active {
+                >.navigation-title {
+                    >a {
+                        color:$text-white;
+                    }
+                }
+            }
+        }
+        .rel-level2 {
+            div {
+                >a {
+                    text-align:left;
+                }
+            }
+        }
+    }
+    // Additional styles for the the login navigation
+    &.navigation-login {
+        .rel-level1 {
+            >.navigation-title {
+                >a {
+                    &:before {
+                        content: $fa-var-sign-in; 
+                    }
+                }
+            }
+        }
+    }
+
 }

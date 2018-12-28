@@ -26,6 +26,7 @@
 }
 .container-gray-background {
     background: $bg-light-gray;
+    min-height:60px;
 }
 .container-clean-background {
     background: $bg-basic-color;
@@ -34,5 +35,11 @@
     background: $bg-black-active;
 }
 .container-color-background {
-    background: $bg-blue;
+    //background: $bg-blue;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#009639+0,006c46+100,006c46+100 */
+    background: #009639; /* Old browsers */
+    background: -moz-linear-gradient(left, #009639 0%, #006c46 100%, #006c46 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #009639 0%,#006c46 100%,#006c46 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #009639 0%,#006c46 100%,#006c46 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009639', endColorstr='#006c46',GradientType=1 ); /* IE6-9 */
 }

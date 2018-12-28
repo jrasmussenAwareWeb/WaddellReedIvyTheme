@@ -4,3 +4,16 @@
     background: $link-bg;
     @import "base/reset/links";
 }
+
+#header .link {
+    padding:5px 0;
+    text-align:center;
+    border-left:1px solid $border-dark-green;
+    a {
+        @include proximabold();
+        font-size:$font-normal;
+        color:$text-white;
+        text-decoration:none;
+        border-bottom:0;
+    }
+}

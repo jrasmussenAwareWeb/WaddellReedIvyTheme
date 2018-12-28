@@ -1,18 +1,44 @@
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 .link {
   background: transparent;
+  /*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
   /* breakpoints */
+  /*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 }
 
 .link a {
   background-color: transparent;
   text-decoration: none;
   font-size: 1em;
-  color: #747474;
-  border-bottom: 1px solid #89C6CC;
+  color: #000000;
+  border-bottom: 1px solid #000000;
 }
 
 .link a:hover {
-  color: #878787;
+  color: #000000;
   text-decoration: none;
+}
+
+#header .link {
+  padding: 5px 0;
+  text-align: center;
+  border-left: 1px solid #004d33;
+}
+
+#header .link a {
+  font-family: "ProximaBold", arial, helvetica, sans-serif;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 0;
 }

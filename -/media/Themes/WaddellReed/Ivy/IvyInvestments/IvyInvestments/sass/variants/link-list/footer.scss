@@ -1,0 +1,22 @@
+&.footer {
+    h1, h2, h3, h4, h5, h6 {
+        border:0;
+        text-indent:-9999px;
+        line-height:0;
+    }
+    li {
+            @include proximabold();
+            font-size: $font-small;
+        a {
+            padding-left:0;
+            &:before {
+            content: none;
+            }
+            &:hover, &:focus {
+                color:$text-green;
+                text-decoration:none;
+                border:0;
+            }
+        }
+    }
+}

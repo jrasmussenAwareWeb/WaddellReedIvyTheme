@@ -1,0 +1,50 @@
+.search-box.navigation {
+    padding:0;
+    background:rgba(0, 0, 0, 0.2);
+    border: 1px solid $border-dark-green;
+    label { 
+        @include sronly;
+    }
+    input {
+    box-shadow: none; 
+    width: 100%;
+    border:none;
+    background:transparent !important;
+    }
+    .search-box-input, input[type="text"] {
+        text-transform: uppercase;
+        font-size:13px;
+        color:$text-white;
+    }
+    button {
+        border:0;
+        background:transparent !important;
+        text-indent:-9999px;
+        line-height:0;
+        color:$text-white;
+        cursor:pointer;
+        &:after {
+            text-indent:0;
+            display:block !important;
+            line-height:initial;
+            @include fa-icon();
+            content: $fa-var-search;
+        }
+    }
+    @include respond-to(mobile-large) {
+        background:$bg-basic-color;
+        border:1px solid $border-gray;
+        //without a column sizing
+        padding:0 10px 0 0;
+        margin:15px; //this creates random space
+        width:95%;
+        .search-box-input, input[type="text"] {
+            color:$text-basic;
+            font-size:12px;
+        }
+        button {
+            padding:5px 0;
+            color:$text-green;
+        }
+    }
+}

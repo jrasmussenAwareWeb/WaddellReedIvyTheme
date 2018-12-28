@@ -1,38 +1,50 @@
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
 .search-results {
+  /*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
   /* breakpoints */
+  /*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 }
 
 .search-results label {
   background: transparent;
-  color: #747474;
+  color: #000000;
 }
 
 .search-results input, .search-results button {
   display: inline-block;
   box-sizing: border-box;
   background: #FFFFFF !important;
-  border: 1px solid #d2d2d2;
+  border: 1px solid #c2c2c2;
   border-radius: 0 !important;
-  color: #747474;
+  color: #000000;
   font-weight: normal;
   padding: 8px 2%;
   clear: both;
   height: auto;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .search-results input:focus {
-  border: 1px solid #d2d2d2;
+  border: 1px solid #c2c2c2;
 }
 
 .search-results input[type="submit"], .search-results input[type="reset"], .search-results input[type="button"], .search-results button {
-  border: 1px solid #89C6CC;
+  border: 1px solid #000000;
   padding: 5px 20px;
 }
 
 .search-results input[type="submit"]:hover, .search-results input[type="reset"]:hover, .search-results input[type="button"]:hover, .search-results button:hover {
-  background: #f7f7f7 !important;
+  background: #d9d9d6 !important;
 }
 
 .search-results input::-moz-focus-inner, .search-results button::-moz-focus-inner {
@@ -46,10 +58,9 @@
 
 .search-results input[type="text"], .search-results input[type="email"], .search-results input[type="password"], .search-results textarea, .search-results select {
   box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
-  color: #747474;
   width: 100%;
   background: #fff;
-  border: 1px solid #d2d2d2;
+  border: 1px solid #c2c2c2;
 }
 
 .search-results select {
@@ -71,7 +82,7 @@
 .search-results.vertical .search-result-list > li, .search-results.component-details .search-result-list > li, .search-results.standard-fields .search-result-list > li {
   border-width: 1px 1px 2px 1px;
   border-style: solid;
-  border-color: #d2d2d2;
+  border-color: #c2c2c2;
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
@@ -87,7 +98,7 @@
 }
 
 .search-results.vertical .search-result-list > li .field-title a, .search-results.component-details .search-result-list > li .field-title a, .search-results.standard-fields .search-result-list > li .field-title a {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 20px;
   text-decoration: none;
   font-weight: normal;
@@ -124,7 +135,7 @@
   box-sizing: border-box;
   border-width: 1px 1px 2px 1px;
   border-style: solid;
-  border-color: #d2d2d2;
+  border-color: #c2c2c2;
   position: relative;
   min-height: 120px;
   margin: 0 2% 10px 0;

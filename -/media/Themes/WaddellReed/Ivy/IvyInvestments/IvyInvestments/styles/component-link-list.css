@@ -1,5 +1,11 @@
 @charset "UTF-8";
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 .link-list {
   background: transparent;
 }
@@ -7,7 +13,7 @@
 .link-list h1, .link-list h2, .link-list h3, .link-list h4, .link-list h5, .link-list h6 {
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #89C6CC;
+  border-bottom-color: #000000;
 }
 
 .link-list > .component-content ul {
@@ -17,12 +23,12 @@
 .link-list > .component-content li {
   background: transparent;
   display: block;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .link-list > .component-content li a {
   display: inline;
-  color: #747474;
+  color: #000000;
   position: relative;
   padding-left: 10px;
   font-size: 1em;
@@ -43,19 +49,18 @@
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  font-size: 10px;
 }
 
 .link-list > .component-content li a:hover {
-  color: #878787;
+  color: #000000;
   text-decoration: none;
-  border-bottom: 1px solid #89C6CC;
+  border-bottom: 1px solid #000000;
 }
 
 .link-list .button-default, .link-list .default {
   border-width: 1px;
   border-style: solid;
-  border-color: #d2d2d2;
+  border-color: #c2c2c2;
   font-size: 12px;
   font-size: 1.2rem;
   display: inline-block;
@@ -66,13 +71,13 @@
   text-align: center;
   text-decoration: none;
   background: #f6f6f6;
-  color: #747474;
+  color: #000000;
   font-weight: bold;
 }
 
 .link-list .button-default:hover, .link-list .default:hover {
-  color: #747474;
-  background: #f7f7f7;
+  color: #000000;
+  background: #d9d9d6;
 }
 
 .link-list .button-success, .link-list .success {
@@ -80,7 +85,7 @@
   font-size: 1.2rem;
   border-width: 1px;
   border-style: solid;
-  border-color: #d2d2d2;
+  border-color: #c2c2c2;
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
@@ -103,7 +108,7 @@
   font-size: 1.2rem;
   border-width: 1px;
   border-style: solid;
-  border-color: #d2d2d2;
+  border-color: #c2c2c2;
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
@@ -121,6 +126,109 @@
   background: #c34e30;
 }
 
+.link-list.footer h1, .link-list.footer h2, .link-list.footer h3, .link-list.footer h4, .link-list.footer h5, .link-list.footer h6 {
+  border: 0;
+  text-indent: -9999px;
+  line-height: 0;
+}
+
+.link-list.footer li {
+  font-family: "ProximaBold", arial, helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.link-list.footer li a {
+  padding-left: 0;
+}
+
+.link-list.footer li a:before {
+  content: none;
+}
+
+.link-list.footer li a:hover, .link-list.footer li a:focus {
+  color: #009639;
+  text-decoration: none;
+  border: 0;
+}
+
+.link-list.social h1, .link-list.social h2, .link-list.social h3, .link-list.social h4, .link-list.social h5, .link-list.social h6 {
+  border: 0;
+  text-indent: -9999px;
+  line-height: 0;
+}
+
+.link-list.social > .component-content {
+  text-align: center;
+}
+
+.link-list.social > .component-content ul {
+  margin: 20px auto;
+}
+
+.link-list.social > .component-content li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.link-list.social > .component-content li > a {
+  padding: 0 15px;
+  text-indent: -9999px;
+  line-height: 0;
+  color: transparent;
+}
+
+.link-list.social > .component-content li > a:before {
+  text-indent: 0;
+  line-height: initial;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.4em;
+  color: #000000;
+}
+
+.link-list.social > .component-content li > a:hover {
+  border-bottom: 0;
+}
+
+.link-list.social > .component-content li > a:hover:before {
+  color: #009639;
+}
+
+.link-list.social > .component-content li > a.facebook:before {
+  content: "";
+}
+
+.link-list.social > .component-content li > a.twitter:before {
+  content: "";
+}
+
+.link-list.social > .component-content li > a.linkedin:before {
+  content: "";
+}
+
+.link-list.social > .component-content li > a.youtube:before {
+  content: "";
+}
+
+.link-list.social > .component-content li > a.rss:before {
+  content: "";
+}
+
+.link-list.social > .component-content li.first a:before {
+  content: "";
+}
+
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
 .link-list.list-vertical h3 {
   background: #FFFFFF;
@@ -129,7 +237,7 @@
   padding: 3px 5px;
   border-width: 1px;
   border-style: solid;
-  border-color: #d2d2d2;
+  border-color: #c2c2c2;
 }
 
 .link-list.list-vertical a {

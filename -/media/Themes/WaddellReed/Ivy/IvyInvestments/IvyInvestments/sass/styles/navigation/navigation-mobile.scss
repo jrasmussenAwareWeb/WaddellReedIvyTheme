@@ -2,15 +2,20 @@
 @import "../../abstracts/mixins";
 @import "../../base/fontawesome/font-awesome-mix-var";
 .navigation.navigation-mobile {
+    padding:0;
     nav>ul {
         border: none;
-        @include border-basic();
+        //@include border-basic();
     }
     .rel-level1 {
         cursor: pointer;
         margin: 0;
         background: $bg-basic-color;
         >ul {
+            padding-left: 25px;
+            display: none;
+            background: $bg-submenu;
+            //background:#d9d9d6; //test this out for visual seperation rather than a line on open
             li {
                 position: relative;
                 a:before {
@@ -18,15 +23,24 @@
                     content: $fa-var-chevron-right;
                     display: block;
                     position: absolute;
-                    left: 0;
-                    font-size: 10px;
-                    top: 20px;
+                    left: -5px;
+                    top: 23px;
                     transform: translateY(-50%);
+                    font-size:0.8em;
+                    color:$text-green;
+                }
+                
+            }
+        }
+        /*&:last-of-type {
+            border-bottom:1px solid $border-dark-gray;
+        }*/
+        &.active {
+            >.navigation-title {
+                >a {
+                    color:$text-green;
                 }
             }
-            padding-left: 25px;
-            display: none;
-            background: $nav-bg-submenu;
         }
         &.submenu {
             &.active {
@@ -47,28 +61,42 @@
                     display: block;
                     position: absolute;
                     right: 10px;
-                    font-size: 10px;
-                    top: 20px;
+                    //font-size: 10px;
+                    top: 15px;
                     transform: translateY(-50%);
                     transform: rotate(0);
                     transition: 0.6s;
                     transform-style: preserve-3d;
+                    font-size:1em;
+                    color:$text-green;
+                }
+            }
+            &.first {
+                &.last {
+                    &:not(.no-child) { 
+                        &:not(.active) {
+                            border-bottom: 1px solid $border-dark-gray;
+                        }
+                    }
                 }
             }
         }
         >.navigation-title {
-            border-bottom: 1px solid $border-basic-color;
+            padding: 10px;
             margin: 0;
+            //border-bottom: 1px solid $border-basic-color;
+            border-bottom: 1px solid $border-dark-gray;
+            //border-top: 1px solid $border-dark-gray; //this needs to be only on show 
             &:last-child {
                 border-bottom: none;
             }
-        }
-        .navigation-title {
-            padding: 10px;
             >a {
+                padding:3px 5px;
                 text-decoration: none;
                 color: $text-basic;
                 display: inline;
+                border-width:0;
+                font-size:$font-normal;
             }
         }
     }
@@ -76,9 +104,36 @@
         display: list-item;
         .navigation-title>a {
             font-weight: 500;
+            &:hover, &:focus {
+                color:$text-green;
+            }
         }
         ul {
             display: none;
+        }
+    }
+    &.navigation-login, &.navigation-account, &.navigation-umbrella {
+        .rel-level1 {
+            background:$text-green;
+            >.navigation-title {
+                    > a {
+                        color:$text-white;
+                    }
+                }
+            &.active {
+                >.navigation-title {
+                    >a {
+                        color:$text-white;
+                    }
+                }
+            }
+            &.submenu {
+                >.navigation-title {
+                    &:before {
+                        color:$text-white;
+                    }
+                }
+            }
         }
     }
 }

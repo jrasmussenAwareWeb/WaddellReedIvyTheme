@@ -1,41 +1,53 @@
 @charset "UTF-8";
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
 .facet-component {
   box-sizing: border-box;
   background: transparent;
+  /*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
   /* breakpoints */
+  /*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 }
 
 .facet-component label {
   background: transparent;
-  color: #747474;
+  color: #000000;
 }
 
 .facet-component input, .facet-component button {
   display: inline-block;
   box-sizing: border-box;
   background: #FFFFFF !important;
-  border: 1px solid #d2d2d2;
+  border: 1px solid #c2c2c2;
   border-radius: 0 !important;
-  color: #747474;
+  color: #000000;
   font-weight: normal;
   padding: 8px 2%;
   clear: both;
   height: auto;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .facet-component input:focus {
-  border: 1px solid #d2d2d2;
+  border: 1px solid #c2c2c2;
 }
 
 .facet-component input[type="submit"], .facet-component input[type="reset"], .facet-component input[type="button"], .facet-component button {
-  border: 1px solid #89C6CC;
+  border: 1px solid #000000;
   padding: 5px 20px;
 }
 
 .facet-component input[type="submit"]:hover, .facet-component input[type="reset"]:hover, .facet-component input[type="button"]:hover, .facet-component button:hover {
-  background: #f7f7f7 !important;
+  background: #d9d9d6 !important;
 }
 
 .facet-component input::-moz-focus-inner, .facet-component button::-moz-focus-inner {
@@ -49,10 +61,9 @@
 
 .facet-component input[type="text"], .facet-component input[type="email"], .facet-component input[type="password"], .facet-component textarea, .facet-component select {
   box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
-  color: #747474;
   width: 100%;
   background: #fff;
-  border: 1px solid #d2d2d2;
+  border: 1px solid #c2c2c2;
 }
 
 .facet-component select {
@@ -80,7 +91,7 @@
 .facet-component .facet-heading {
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #89C6CC;
+  border-bottom-color: #000000;
   padding: 0 0 5px 0;
   margin: 0 0 5px 0;
   position: relative;
@@ -89,7 +100,7 @@
 .facet-component .facet-heading .facet-title {
   display: inline-block;
   vertical-align: middle;
-  color: #747474;
+  color: #000000;
   padding-right: 25px;
 }
 
@@ -102,7 +113,7 @@
   width: 15px;
   cursor: pointer;
   position: absolute;
-  color: #747474;
+  color: #000000;
   right: 3px;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -115,17 +126,17 @@
   background: #e0e0e0;
   border-color: #adadad;
   text-decoration: none;
-  color: #747474;
+  color: #000000;
 }
 
 .facet-component .facet-heading .clear-filter.has-active-facet {
   background: #e0e0e0;
-  color: #747474;
+  color: #000000;
 }
 
 .facet-component .facet-heading .clear-filter.has-active-facet:hover {
   background: #e0e0e0;
-  color: #747474;
+  color: #000000;
 }
 
 .facet-single-selection-list .facet-dropdown {
@@ -141,7 +152,7 @@
 }
 
 .facet-single-selection-list .facet-value label {
-  color: #747474;
+  color: #000000;
 }
 
 .facet-single-selection-list .facet-value.active-facet label, .facet-single-selection-list .facet-value.active-facet .facet-count.highlighted, .facet-single-selection-list .facet-value.active-facet span {
@@ -160,8 +171,11 @@
   margin-bottom: 5px;
 }
 
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 .ui-datepicker-title select {
-  color: #747474;
+  color: #000000;
 }
 
 .facet-dropdown {
@@ -175,7 +189,7 @@
   vertical-align: middle;
   border-width: 1px;
   border-style: solid;
-  border-color: #d2d2d2;
+  border-color: #c2c2c2;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
@@ -235,40 +249,49 @@
   margin: 5px 2%;
 }
 
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 .radius-filter {
+  /*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
   /* breakpoints */
+  /*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 }
 
 .radius-filter label {
   background: transparent;
-  color: #747474;
+  color: #000000;
 }
 
 .radius-filter input, .radius-filter button {
   display: inline-block;
   box-sizing: border-box;
   background: #FFFFFF !important;
-  border: 1px solid #d2d2d2;
+  border: 1px solid #c2c2c2;
   border-radius: 0 !important;
-  color: #747474;
+  color: #000000;
   font-weight: normal;
   padding: 8px 2%;
   clear: both;
   height: auto;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .radius-filter input:focus {
-  border: 1px solid #d2d2d2;
+  border: 1px solid #c2c2c2;
 }
 
 .radius-filter input[type="submit"], .radius-filter input[type="reset"], .radius-filter input[type="button"], .radius-filter button {
-  border: 1px solid #89C6CC;
+  border: 1px solid #000000;
   padding: 5px 20px;
 }
 
 .radius-filter input[type="submit"]:hover, .radius-filter input[type="reset"]:hover, .radius-filter input[type="button"]:hover, .radius-filter button:hover {
-  background: #f7f7f7 !important;
+  background: #d9d9d6 !important;
 }
 
 .radius-filter input::-moz-focus-inner, .radius-filter button::-moz-focus-inner {
@@ -282,10 +305,9 @@
 
 .radius-filter input[type="text"], .radius-filter input[type="email"], .radius-filter input[type="password"], .radius-filter textarea, .radius-filter select {
   box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
-  color: #747474;
   width: 100%;
   background: #fff;
-  border: 1px solid #d2d2d2;
+  border: 1px solid #c2c2c2;
 }
 
 .radius-filter select {
@@ -313,7 +335,7 @@
   display: block;
   border-width: 1px 1px 1px 0;
   border-style: solid;
-  border-color: #d2d2d2;
+  border-color: #c2c2c2;
   float: left;
   padding: 5px 5px;
   cursor: pointer;
@@ -335,7 +357,7 @@
 }
 
 .ui-slider .ui-widget-header {
-  border: 1px solid #89C6CC;
+  border: 1px solid #000000;
   background: #89C6CC;
   font-weight: bold;
 }
@@ -351,38 +373,38 @@
 /* Interaction states
 ----------------------------------*/
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
-  border: 1px solid #d2d2d2;
-  background: #f7f7f7;
+  border: 1px solid #c2c2c2;
+  background: #d9d9d6;
   font-weight: normal;
-  color: #747474;
+  color: #000000;
 }
 
 .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
-  color: #747474;
+  color: #000000;
   text-decoration: none;
 }
 
 .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
-  border: 1px solid #d2d2d2;
+  border: 1px solid #c2c2c2;
   background: #dadada;
   font-weight: normal;
-  color: #747474;
+  color: #000000;
 }
 
 .ui-state-hover a, .ui-state-hover a:hover, .ui-state-hover a:link, .ui-state-hover a:visited, .ui-state-focus a, .ui-state-focus a:hover, .ui-state-focus a:link, .ui-state-focus a:visited {
-  color: #747474;
+  color: #000000;
   text-decoration: none;
 }
 
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
-  border: 1px solid #d2d2d2;
+  border: 1px solid #c2c2c2;
   background: #dadada;
   font-weight: normal;
-  color: #747474;
+  color: #000000;
 }
 
 .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
-  color: #747474;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -458,39 +480,45 @@
 }
 
 .load-more {
+  /*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
   /* breakpoints */
+  /*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 }
 
 .load-more label {
   background: transparent;
-  color: #747474;
+  color: #000000;
 }
 
 .load-more input, .load-more button {
   display: inline-block;
   box-sizing: border-box;
   background: #FFFFFF !important;
-  border: 1px solid #d2d2d2;
+  border: 1px solid #c2c2c2;
   border-radius: 0 !important;
-  color: #747474;
+  color: #000000;
   font-weight: normal;
   padding: 8px 2%;
   clear: both;
   height: auto;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .load-more input:focus {
-  border: 1px solid #d2d2d2;
+  border: 1px solid #c2c2c2;
 }
 
 .load-more input[type="submit"], .load-more input[type="reset"], .load-more input[type="button"], .load-more button {
-  border: 1px solid #89C6CC;
+  border: 1px solid #000000;
   padding: 5px 20px;
 }
 
 .load-more input[type="submit"]:hover, .load-more input[type="reset"]:hover, .load-more input[type="button"]:hover, .load-more button:hover {
-  background: #f7f7f7 !important;
+  background: #d9d9d6 !important;
 }
 
 .load-more input::-moz-focus-inner, .load-more button::-moz-focus-inner {
@@ -504,10 +532,9 @@
 
 .load-more input[type="text"], .load-more input[type="email"], .load-more input[type="password"], .load-more textarea, .load-more select {
   box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
-  color: #747474;
   width: 100%;
   background: #fff;
-  border: 1px solid #d2d2d2;
+  border: 1px solid #c2c2c2;
 }
 
 .load-more select {
@@ -522,45 +549,63 @@
   padding: 5px;
 }
 
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
 .location-filter {
   position: relative;
   padding: 5px 10px 15px 10px;
   margin: 0 0 20px 0;
+  /*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
   /* breakpoints */
+  /*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+  /*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+  /*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
   /* breakpoints */
 }
 
 .location-filter label {
   background: transparent;
-  color: #747474;
+  color: #000000;
 }
 
 .location-filter input, .location-filter button {
   display: inline-block;
   box-sizing: border-box;
   background: #FFFFFF !important;
-  border: 1px solid #d2d2d2;
+  border: 1px solid #c2c2c2;
   border-radius: 0 !important;
-  color: #747474;
+  color: #000000;
   font-weight: normal;
   padding: 8px 2%;
   clear: both;
   height: auto;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .location-filter input:focus {
-  border: 1px solid #d2d2d2;
+  border: 1px solid #c2c2c2;
 }
 
 .location-filter input[type="submit"], .location-filter input[type="reset"], .location-filter input[type="button"], .location-filter button {
-  border: 1px solid #89C6CC;
+  border: 1px solid #000000;
   padding: 5px 20px;
 }
 
 .location-filter input[type="submit"]:hover, .location-filter input[type="reset"]:hover, .location-filter input[type="button"]:hover, .location-filter button:hover {
-  background: #f7f7f7 !important;
+  background: #d9d9d6 !important;
 }
 
 .location-filter input::-moz-focus-inner, .location-filter button::-moz-focus-inner {
@@ -574,10 +619,9 @@
 
 .location-filter input[type="text"], .location-filter input[type="email"], .location-filter input[type="password"], .location-filter textarea, .location-filter select {
   box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
-  color: #747474;
   width: 100%;
   background: #fff;
-  border: 1px solid #d2d2d2;
+  border: 1px solid #c2c2c2;
 }
 
 .location-filter select {
@@ -602,18 +646,18 @@
 .location-filter .tt-menu {
   background: #FFFFFF;
   width: 100%;
-  border: 1px solid #d2d2d2;
+  border: 1px solid #c2c2c2;
 }
 
 .location-filter .tt-hint {
-  color: #747474;
+  color: #000000;
 }
 
 .location-filter .tt-dropdown-menu {
   width: 250px;
   margin-top: 5px;
-  background-color: #f7f7f7;
-  border: 1px solid #d2d2d2;
+  background-color: #d9d9d6;
+  border: 1px solid #c2c2c2;
   max-height: 300px;
   overflow-y: auto;
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
@@ -621,7 +665,7 @@
 
 .location-filter .tt-suggestion {
   padding: 4px 10px;
-  color: #747474;
+  color: #000000;
   overflow: hidden;
 }
 
@@ -694,7 +738,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #f7f7f7;
+  background-color: #d9d9d6;
   opacity: 0.8;
   z-index: 10;
 }
@@ -740,6 +784,9 @@
   color: transparent;
 }
 
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 .page-selector {
   text-align: center;
   padding: 10px 0 0 0;
@@ -765,7 +812,7 @@
 .page-selector .page-selector-item-link {
   border-width: 1px;
   border-style: solid;
-  border-color: #d2d2d2;
+  border-color: #c2c2c2;
   display: block;
   text-decoration: none;
   font-weight: normal;
@@ -793,39 +840,45 @@
 }
 
 .page-size {
+  /*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
   /* breakpoints */
+  /*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 }
 
 .page-size label {
   background: transparent;
-  color: #747474;
+  color: #000000;
 }
 
 .page-size input, .page-size button {
   display: inline-block;
   box-sizing: border-box;
   background: #FFFFFF !important;
-  border: 1px solid #d2d2d2;
+  border: 1px solid #c2c2c2;
   border-radius: 0 !important;
-  color: #747474;
+  color: #000000;
   font-weight: normal;
   padding: 8px 2%;
   clear: both;
   height: auto;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .page-size input:focus {
-  border: 1px solid #d2d2d2;
+  border: 1px solid #c2c2c2;
 }
 
 .page-size input[type="submit"], .page-size input[type="reset"], .page-size input[type="button"], .page-size button {
-  border: 1px solid #89C6CC;
+  border: 1px solid #000000;
   padding: 5px 20px;
 }
 
 .page-size input[type="submit"]:hover, .page-size input[type="reset"]:hover, .page-size input[type="button"]:hover, .page-size button:hover {
-  background: #f7f7f7 !important;
+  background: #d9d9d6 !important;
 }
 
 .page-size input::-moz-focus-inner, .page-size button::-moz-focus-inner {
@@ -839,10 +892,9 @@
 
 .page-size input[type="text"], .page-size input[type="email"], .page-size input[type="password"], .page-size textarea, .page-size select {
   box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
-  color: #747474;
   width: 100%;
   background: #fff;
-  border: 1px solid #d2d2d2;
+  border: 1px solid #c2c2c2;
 }
 
 .page-size select {
@@ -878,6 +930,12 @@
   display: inline-block;
 }
 
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
 .facet-single-selection-list {
   display: block;
@@ -904,6 +962,12 @@
   color: #888888;
 }
 
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
 .variant-selector.component {
   margin: 30px 0 0 0;
@@ -961,7 +1025,19 @@
 }
 
 .search-box {
+  /*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
   /* breakpoints */
+  /*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+  /*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+  /*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
   /* breakpoints */
   position: relative;
   padding-right: 10px;
@@ -970,34 +1046,34 @@
 
 .search-box label {
   background: transparent;
-  color: #747474;
+  color: #000000;
 }
 
 .search-box input, .search-box button {
   display: inline-block;
   box-sizing: border-box;
   background: #FFFFFF !important;
-  border: 1px solid #d2d2d2;
+  border: 1px solid #c2c2c2;
   border-radius: 0 !important;
-  color: #747474;
+  color: #000000;
   font-weight: normal;
   padding: 8px 2%;
   clear: both;
   height: auto;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .search-box input:focus {
-  border: 1px solid #d2d2d2;
+  border: 1px solid #c2c2c2;
 }
 
 .search-box input[type="submit"], .search-box input[type="reset"], .search-box input[type="button"], .search-box button {
-  border: 1px solid #89C6CC;
+  border: 1px solid #000000;
   padding: 5px 20px;
 }
 
 .search-box input[type="submit"]:hover, .search-box input[type="reset"]:hover, .search-box input[type="button"]:hover, .search-box button:hover {
-  background: #f7f7f7 !important;
+  background: #d9d9d6 !important;
 }
 
 .search-box input::-moz-focus-inner, .search-box button::-moz-focus-inner {
@@ -1011,10 +1087,9 @@
 
 .search-box input[type="text"], .search-box input[type="email"], .search-box input[type="password"], .search-box textarea, .search-box select {
   box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
-  color: #747474;
   width: 100%;
   background: #fff;
-  border: 1px solid #d2d2d2;
+  border: 1px solid #c2c2c2;
 }
 
 .search-box select {
@@ -1039,18 +1114,18 @@
 .search-box .tt-menu {
   background: #FFFFFF;
   width: 100%;
-  border: 1px solid #d2d2d2;
+  border: 1px solid #c2c2c2;
 }
 
 .search-box .tt-hint {
-  color: #747474;
+  color: #000000;
 }
 
 .search-box .tt-dropdown-menu {
   width: 250px;
   margin-top: 5px;
-  background-color: #f7f7f7;
-  border: 1px solid #d2d2d2;
+  background-color: #d9d9d6;
+  border: 1px solid #c2c2c2;
   max-height: 300px;
   overflow-y: auto;
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
@@ -1058,7 +1133,7 @@
 
 .search-box .tt-suggestion {
   padding: 4px 10px;
-  color: #747474;
+  color: #000000;
   overflow: hidden;
 }
 
@@ -1131,7 +1206,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #f7f7f7;
+  background-color: #d9d9d6;
   opacity: 0.8;
   z-index: 10;
 }
@@ -1193,6 +1268,12 @@
   margin-top: 0;
 }
 
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
 .loupe-search-btn .search-box-button-with-redirect {
   position: relative;
@@ -1227,40 +1308,116 @@
   color: #fff;
 }
 
+.search-box.navigation {
+  padding: 0;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid #004d33;
+}
+
+.search-box.navigation label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.search-box.navigation input {
+  box-shadow: none;
+  width: 100%;
+  border: none;
+  background: transparent !important;
+}
+
+.search-box.navigation .search-box-input, .search-box.navigation input[type="text"] {
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #fff;
+}
+
+.search-box.navigation button {
+  border: 0;
+  background: transparent !important;
+  text-indent: -9999px;
+  line-height: 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search-box.navigation button:after {
+  text-indent: 0;
+  display: block !important;
+  line-height: initial;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+}
+
+@media only screen and (max-width: 786px) {
+  .search-box.navigation {
+    background: #FFFFFF;
+    border: 1px solid #c2c2c2;
+    padding: 0 10px 0 0;
+    margin: 15px;
+    width: 95%;
+  }
+  .search-box.navigation .search-box-input, .search-box.navigation input[type="text"] {
+    color: #000000;
+    font-size: 12px;
+  }
+  .search-box.navigation button {
+    padding: 5px 0;
+    color: #009639;
+  }
+}
+
 .sort-results {
+  /*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
   /* breakpoints */
+  /*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 }
 
 .sort-results label {
   background: transparent;
-  color: #747474;
+  color: #000000;
 }
 
 .sort-results input, .sort-results button {
   display: inline-block;
   box-sizing: border-box;
   background: #FFFFFF !important;
-  border: 1px solid #d2d2d2;
+  border: 1px solid #c2c2c2;
   border-radius: 0 !important;
-  color: #747474;
+  color: #000000;
   font-weight: normal;
   padding: 8px 2%;
   clear: both;
   height: auto;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .sort-results input:focus {
-  border: 1px solid #d2d2d2;
+  border: 1px solid #c2c2c2;
 }
 
 .sort-results input[type="submit"], .sort-results input[type="reset"], .sort-results input[type="button"], .sort-results button {
-  border: 1px solid #89C6CC;
+  border: 1px solid #000000;
   padding: 5px 20px;
 }
 
 .sort-results input[type="submit"]:hover, .sort-results input[type="reset"]:hover, .sort-results input[type="button"]:hover, .sort-results button:hover {
-  background: #f7f7f7 !important;
+  background: #d9d9d6 !important;
 }
 
 .sort-results input::-moz-focus-inner, .sort-results button::-moz-focus-inner {
@@ -1274,10 +1431,9 @@
 
 .sort-results input[type="text"], .sort-results input[type="email"], .sort-results input[type="password"], .sort-results textarea, .sort-results select {
   box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
-  color: #747474;
   width: 100%;
   background: #fff;
-  border: 1px solid #d2d2d2;
+  border: 1px solid #c2c2c2;
 }
 
 .sort-results select {

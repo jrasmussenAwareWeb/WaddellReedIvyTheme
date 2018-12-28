@@ -1,4 +1,10 @@
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 .feed {
   background: transparent;
 }
@@ -6,13 +12,13 @@
 .feed h1, .feed h2, .feed h3, .feed h4, .feed h5, .feed h6 {
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #d2d2d2;
+  border-bottom-color: #c2c2c2;
 }
 
 .feed .feed-item {
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #d2d2d2;
+  border-bottom-color: #c2c2c2;
   padding: 10px 10px 10px 0px;
   margin-left: 10px;
   background: transparent;
@@ -51,6 +57,12 @@
   margin: 0 4px;
 }
 
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
 .feed.feed-grid .feed-item {
   display: inline-block;
@@ -58,7 +70,7 @@
   box-sizing: border-box;
   border-width: 1px;
   border-style: solid;
-  border-color: #d2d2d2;
+  border-color: #c2c2c2;
   width: 32%;
   margin: 0 1% 10px 0;
   padding: 20px;

@@ -1,5 +1,11 @@
 @charset "UTF-8";
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 .on-page-editor .gallery-inner img {
   max-width: 100%;
 }
@@ -18,7 +24,7 @@
 
 .gallery .galleria-counter {
   color: #fff;
-  font-family: "Open Sans", Helvetica, Verdana, Tahoma, sans-serif;
+  font-family: "Open Sans", arial, helvetica, sans-serif;
 }
 
 .gallery .galleria-loader {
@@ -28,21 +34,21 @@
 
 .gallery .galleria-info-text {
   background-color: #FFFFFF;
-  border: 1px solid #d2d2d2;
+  border: 1px solid #c2c2c2;
 }
 
 .gallery .galleria-info-title {
-  color: #747474;
+  color: #000000;
   font-size: 12px;
   font-weight: bold;
-  font-family: "Open Sans", Helvetica, Verdana, Tahoma, sans-serif;
+  font-family: "Open Sans", arial, helvetica, sans-serif;
 }
 
 .gallery .galleria-info-description {
   font-size: 12px;
   font-style: italic;
-  font-family: "Open Sans", Helvetica, Verdana, Tahoma, sans-serif;
-  color: #747474;
+  font-family: "Open Sans", arial, helvetica, sans-serif;
+  color: #000000;
 }
 
 .gallery .galleria-info-close {
@@ -63,7 +69,7 @@
 }
 
 .gallery .galleria-info-link {
-  color: #747474;
+  color: #000000;
   background: none;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -101,7 +107,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 28px;
-  color: #747474;
+  color: #000000;
 }
 
 .gallery .galleria-image-nav-left:before {
@@ -142,8 +148,8 @@
 
 .gallery .galleria-thumb-nav-right:before {
   content: "";
-  font-size: 13px;
-  color: #747474;
+  font-size: 16px;
+  color: #000000;
   display: block;
 }
 
@@ -160,8 +166,8 @@
 
 .gallery .galleria-thumb-nav-left:before {
   content: "";
-  font-size: 13px;
-  color: #747474;
+  font-size: 16px;
+  color: #000000;
   display: block;
 }
 

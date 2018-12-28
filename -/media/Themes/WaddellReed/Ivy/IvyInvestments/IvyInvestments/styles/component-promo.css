@@ -1,3 +1,9 @@
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
 .promo {
   background: #FFFFFF;
@@ -10,7 +16,7 @@
   position: relative;
   border-width: 1px;
   border-style: solid;
-  border-color: #d2d2d2;
+  border-color: #c2c2c2;
 }
 
 .promo > .component-content:after {
@@ -73,7 +79,7 @@
 }
 
 .promo li {
-  font-size: 13px;
+  font-size: 16px;
   margin-left: 15px;
 }
 
@@ -94,16 +100,16 @@
 }
 
 .promo a:hover {
-  color: #878787;
+  color: #000000;
 }
 
 .promo table {
   height: auto !important;
-  border: 2px solid #d2d2d2;
+  border: 2px solid #c2c2c2;
 }
 
 .promo table, .promo table tr, .promo table th, .promo table td {
-  border: solid 2px #d2d2d2;
+  border: solid 2px #c2c2c2;
   background: #FFFFFF;
   border-collapse: collapse;
   vertical-align: middle;
@@ -114,7 +120,7 @@
 }
 
 .promo table caption {
-  background-color: #f7f7f7;
+  background-color: #d9d9d6;
   overflow: hidden;
   padding: 10px;
   font-size: 20px;
@@ -131,8 +137,8 @@
 }
 
 .promo table th {
-  background-color: white;
-  font-size: 13px;
+  background-color: #e5e5e3;
+  font-size: 16px;
   font-weight: bold;
   padding: 7px;
 }
@@ -155,6 +161,12 @@
   right: 10px;
 }
 
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
 .promo.promo-hero {
   position: relative;
@@ -207,12 +219,18 @@
   }
 }
 
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
 .promo-shadow {
   max-width: 960px;
   padding: 0;
   border-top-width: 3px;
-  border-top-color: #89C6CC;
+  border-top-color: #000000;
   border-style: solid;
   overflow: visible;
   position: relative;

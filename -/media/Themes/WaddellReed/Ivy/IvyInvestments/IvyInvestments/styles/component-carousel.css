@@ -1,9 +1,15 @@
 @charset "UTF-8";
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 .carousel {
   border-width: 1px;
   border-style: solid;
-  border-color: #d2d2d2;
+  border-color: #c2c2c2;
   position: relative;
   box-sizing: border-box;
   padding: 10px;
@@ -100,7 +106,7 @@
 }
 
 .carousel .nav .nav-items .sxa-numbers:hover {
-  color: #878787;
+  color: #000000;
 }
 
 .carousel .nav .nav-items .sxa-numbers.active {
@@ -118,7 +124,7 @@
 
 .carousel .nav a.next-text:hover, .carousel .nav a.next-text:active {
   text-decoration: none;
-  color: #878787;
+  color: #000000;
 }
 
 .carousel .nav a.next-text:after {

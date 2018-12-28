@@ -1,1 +1,37 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
+
+
+@font-face {
+  font-family: 'CopernicusBook';
+  src: url('/ivyinvestments/-/media/Themes/WaddellReed/Ivy/IvyInvestments/IvyInvestments/fonts/CopernicusBook/Copernicus-Book_eot.eot'); /* IE9 Compat Modes */
+  src: url('/ivyinvestments/-/media/Themes/WaddellReed/Ivy/IvyInvestments/IvyInvestments/fonts/CopernicusBook/Copernicus-Book_eot.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/ivyinvestments/-/media/Themes/WaddellReed/Ivy/IvyInvestments/IvyInvestments/fonts/CopernicusBook/Copernicus-Book_woff.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+ 
+@font-face {
+  font-family: 'Proxima';
+  src: url('/ivyinvestments/-/media/Themes/WaddellReed/Ivy/IvyInvestments/IvyInvestments/fonts/Proxima/30D7BA_8_0_eot.eot'); /* IE9 Compat Modes */
+  src: url('/ivyinvestments/-/media/Themes/WaddellReed/Ivy/IvyInvestments/IvyInvestments/fonts/Proxima/30D7BA_8_0_eot.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       //url('/ivyinvestments/-/media/Themes/WaddellReed/Ivy/IvyInvestments/IvyInvestments/fonts/Proxima/30D7BA_8_0_ttf.ttf')  format('truetype'), /* Safari, Android, iOS */
+      url('/ivyinvestments/-/media/Themes/WaddellReed/Ivy/IvyInvestments/IvyInvestments/fonts/Proxima/30D7BA_8_0_woff.woff') format('woff'), /* Pretty Modern Browsers */
+      url('/ivyinvestments/-/media/Themes/WaddellReed/Ivy/IvyInvestments/IvyInvestments/fonts/Proxima/30D7BA_8_0_woff2.woff2') format('woff2'); /* Super Modern Browsers */
+}
+
+
+@font-face {
+  font-family: 'ProximaBold';
+  src: url('/ivyinvestments/-/media/Themes/WaddellReed/Ivy/IvyInvestments/IvyInvestments/fonts/ProximaBold/30D7BA_5_0_eot.eot'); /* IE9 Compat Modes */
+  src: url('/ivyinvestments/-/media/Themes/WaddellReed/Ivy/IvyInvestments/IvyInvestments/fonts/ProximaBold/30D7BA_5_0_eot.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/ivyinvestments/-/media/Themes/WaddellReed/Ivy/IvyInvestments/IvyInvestments/fonts/ProximaBold/30D7BA_5_0_ttf.ttf')  format('truetype'), /* Safari, Android, iOS */
+      url('/ivyinvestments/-/media/Themes/WaddellReed/Ivy/IvyInvestments/IvyInvestments/fonts/ProximaBold/30D7BA_5_0_woff.woff') format('woff'), /* Pretty Modern Browsers */
+      url('/ivyinvestments/-/media/Themes/WaddellReed/Ivy/IvyInvestments/IvyInvestments/fonts/ProximaBold/30D7BA_5_0_woff2.woff2') format('woff2'); /* Super Modern Browsers */
+}
+
+@font-face {
+  font-family: 'ProximaBoldCondensed';
+  src: url('/ivyinvestments/-/media/Themes/WaddellReed/Ivy/IvyInvestments/IvyInvestments/fonts/ProximaBoldCondensed/30D7BA_E_0_eot.eot'); /* IE9 Compat Modes */
+  src: url('/ivyinvestments/-/media/Themes/WaddellReed/Ivy/IvyInvestments/IvyInvestments/fonts/ProximaBoldCondensed/30D7BA_E_0_eot.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/ivyinvestments/-/media/Themes/WaddellReed/Ivy/IvyInvestments/IvyInvestments/fonts/ProximaBoldCondensed/30D7BA_E_0_ttf.ttf')  format('truetype'), /* Safari, Android, iOS */
+      url('/ivyinvestments/-/media/Themes/WaddellReed/Ivy/IvyInvestments/IvyInvestments/fonts/ProximaBoldCondensed/30D7BA_E_0_woff.woff') format('woff'); /* Pretty Modern Browsers */
+}

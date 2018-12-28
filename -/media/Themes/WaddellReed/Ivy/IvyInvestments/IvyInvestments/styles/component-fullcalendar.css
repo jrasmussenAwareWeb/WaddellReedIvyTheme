@@ -1,6 +1,15 @@
 @charset "UTF-8";
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
 .event-calendar {
+  /*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
   /* breakpoints */
   background: #FFFFFF;
   overflow: hidden;
@@ -117,7 +126,7 @@
 }
 
 .event-calendar li {
-  font-size: 13px;
+  font-size: 16px;
   margin-left: 15px;
 }
 
@@ -138,16 +147,16 @@
 }
 
 .event-calendar a:hover {
-  color: #878787;
+  color: #000000;
 }
 
 .event-calendar table {
   height: auto !important;
-  border: 2px solid #d2d2d2;
+  border: 2px solid #c2c2c2;
 }
 
 .event-calendar table, .event-calendar table tr, .event-calendar table th, .event-calendar table td {
-  border: solid 2px #d2d2d2;
+  border: solid 2px #c2c2c2;
   background: #FFFFFF;
   border-collapse: collapse;
   vertical-align: middle;
@@ -158,7 +167,7 @@
 }
 
 .event-calendar table caption {
-  background-color: #f7f7f7;
+  background-color: #d9d9d6;
   overflow: hidden;
   padding: 10px;
   font-size: 20px;
@@ -175,8 +184,8 @@
 }
 
 .event-calendar table th {
-  background-color: white;
-  font-size: 13px;
+  background-color: #e5e5e3;
+  font-size: 16px;
   font-weight: bold;
   padding: 7px;
 }
@@ -210,7 +219,7 @@
 }
 
 .event-calendar table {
-  border: 1px solid #d2d2d2;
+  border: 1px solid #c2c2c2;
 }
 
 .event-calendar table, .event-calendar table tr, .event-calendar table th, .event-calendar table td {
@@ -223,6 +232,9 @@
 }
 
 .calendar-tooltip {
+  /*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
   /* breakpoints */
 }
 
@@ -334,7 +346,7 @@
 }
 
 .calendar-tooltip li {
-  font-size: 13px;
+  font-size: 16px;
   margin-left: 15px;
 }
 
@@ -355,16 +367,16 @@
 }
 
 .calendar-tooltip a:hover {
-  color: #878787;
+  color: #000000;
 }
 
 .calendar-tooltip table {
   height: auto !important;
-  border: 2px solid #d2d2d2;
+  border: 2px solid #c2c2c2;
 }
 
 .calendar-tooltip table, .calendar-tooltip table tr, .calendar-tooltip table th, .calendar-tooltip table td {
-  border: solid 2px #d2d2d2;
+  border: solid 2px #c2c2c2;
   background: #FFFFFF;
   border-collapse: collapse;
   vertical-align: middle;
@@ -375,7 +387,7 @@
 }
 
 .calendar-tooltip table caption {
-  background-color: #f7f7f7;
+  background-color: #d9d9d6;
   overflow: hidden;
   padding: 10px;
   font-size: 20px;
@@ -392,8 +404,8 @@
 }
 
 .calendar-tooltip table th {
-  background-color: white;
-  font-size: 13px;
+  background-color: #e5e5e3;
+  font-size: 16px;
   font-weight: bold;
   padding: 7px;
 }

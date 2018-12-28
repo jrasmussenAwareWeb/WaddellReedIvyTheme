@@ -1,12 +1,21 @@
 @charset "UTF-8";
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
 .content, .rich-text {
   background: transparent;
-  color: #747474;
+  color: #000000;
   border: transparent;
   line-height: 1.5;
   font-size: 12px;
   overflow: hidden;
+  /*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
   /* breakpoints */
 }
 
@@ -122,7 +131,7 @@
 }
 
 .content li, .rich-text li {
-  font-size: 13px;
+  font-size: 16px;
   margin-left: 15px;
 }
 
@@ -143,16 +152,16 @@
 }
 
 .content a:hover, .rich-text a:hover {
-  color: #878787;
+  color: #000000;
 }
 
 .content table, .rich-text table {
   height: auto !important;
-  border: 2px solid #d2d2d2;
+  border: 2px solid #c2c2c2;
 }
 
 .content table, .content table tr, .content table th, .content table td, .rich-text table, .rich-text table tr, .rich-text table th, .rich-text table td {
-  border: solid 2px #d2d2d2;
+  border: solid 2px #c2c2c2;
   background: #FFFFFF;
   border-collapse: collapse;
   vertical-align: middle;
@@ -163,7 +172,7 @@
 }
 
 .content table caption, .rich-text table caption {
-  background-color: #f7f7f7;
+  background-color: #d9d9d6;
   overflow: hidden;
   padding: 10px;
   font-size: 20px;
@@ -180,8 +189,8 @@
 }
 
 .content table th, .rich-text table th {
-  background-color: white;
-  font-size: 13px;
+  background-color: #e5e5e3;
+  font-size: 16px;
   font-weight: bold;
   padding: 7px;
 }
@@ -194,6 +203,17 @@
   border-left: 0;
 }
 
+.rich-text strong, .content strong {
+  font-weight: normal;
+  font-family: "ProximaBold", arial, helvetica, sans-serif;
+}
+
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
 .rich-text-lists ul, .field-featurelist ul {
   box-sizing: border-box;
@@ -220,7 +240,7 @@
   position: absolute;
   top: 3px;
   left: 0;
-  color: #747474;
+  color: #000000;
   text-align: center;
   content: "\f00c";
   width: 20px;
@@ -237,7 +257,7 @@
   position: absolute;
   top: 3px;
   left: 0;
-  color: #747474;
+  color: #000000;
   text-align: center;
   content: "\f046";
   width: 20px;

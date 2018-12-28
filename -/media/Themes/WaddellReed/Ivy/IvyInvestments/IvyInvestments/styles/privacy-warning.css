@@ -1,3 +1,9 @@
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
 .privacy-warning {
   font-size: 14px;
@@ -61,7 +67,7 @@
   font-size: 1.3rem;
   border-width: 1px;
   border-style: solid;
-  border-color: #d2d2d2;
+  border-color: #c2c2c2;
   text-decoration: none;
   font-weight: bold;
   background: #FFFFFF;

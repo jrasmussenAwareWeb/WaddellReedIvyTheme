@@ -3,24 +3,46 @@
 @import "abstracts/functions";
 @import "base/fonts/fonts";
 @import "base/fontawesome/font-awesome";
+@import "base/fontawesome5/fontawesome";
 html {
     font-size: 62.5%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 body {
-    @include opensans-font-stack();
+    //@include opensans-font-stack();
+    //@include proxima-font();
+
+    @include proxima();
     position: relative;
     overflow: auto;
     color: $text-basic;
-    font-size: 14px;
+    //font-size: 14px;
     line-height: 1.5;
+    font-size: $font-normal;
     background: $page-bg;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    @include respond-to(tablet) {
+        line-height: 1.5;
+        font-size: $font-medium;
+    }
     &.on-page-editor {
         background: $page-bg-editor !important;
+
+        //aware sitecore experience editor fixes
+        .scEnabledChrome {
+            display: block !important;
+            /*TODO: target hidden breakpoints in bootstrap 4
+                .agroupofclassesthatarehiddenforbs4 {
+                   background:red !important;
+                }
+            */
+            .d-md-none {
+                background:rgba(0,0,0,0.5) !important;
+            }
+        }
     }
 }
 
@@ -39,31 +61,50 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: bold;
+    //font-weight: bold;
+    @include copernicus();
+    color:$text-green;
+    line-height:1.4;
 }
 
+
+/*H1 – H6: line-height: 1.4
+H1: (tablet and larger) 36px, (phone) 30px
+H2: (tablet and larger) 34px, (phone) 30px
+H3: (tablet and larger) 30px, (phone) 26px
+H4: (tablet and larger) 24px, (phone) 22px
+H5: (tablet and larger) 20px, (phone) 18px
+H6: 18px
+*/ 
+
 h1 {
-    font-size: 2em;
+    //font-size: 2em;
+    font-size:36px;
 }
 
 h2 {
-    font-size: 1.5em;
+    //font-size: 1.5em;
+    font-size:34px;
 }
 
 h3 {
-    font-size: 1.2em;
+    //font-size: 1.2em;
+    font-size:30px;
 }
 
 h4 {
-    font-size: 1em;
+    //font-size: 1em;
+    font-size:24px;
 }
 
 h5 {
-    font-size: 0.83em;
+    //font-size: 0.83em;
+    font-size:20px;
 }
 
 h6 {
-    font-size: 0.67em;
+    //font-size: 0.67em;
+    font-size:18px;
 }
 
 .xa-variable {
@@ -82,3 +123,66 @@ h6 {
 }
 
 //End navigation bar fix
+
+//Ivy Specific
+#header .image {
+    padding-top:10px;
+    img {
+        //max-width:300px;
+        @include respond-to(mobile-large) {
+            max-width:180px;
+        }
+
+    }
+}
+
+@include respond-to(mobile-large) {
+    #header {
+        position:fixed;
+        z-index:10;
+        background:$bg-submenu;
+        border-bottom:1px solid $border-dark-gray;
+    }
+}
+
+#return-to-top {
+    position: fixed;
+    bottom: 39%;
+    right: 22%;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.8);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    border:3px solid $text-green;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 13px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}

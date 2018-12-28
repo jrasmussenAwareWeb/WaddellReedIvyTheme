@@ -1,5 +1,11 @@
 @charset "UTF-8";
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 .sxa-archive .level-1 {
   display: block !important;
   padding-left: 10px;
@@ -52,7 +58,13 @@
 }
 
 .sxa-archive .archive-items .archive-item {
+  /*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
   /* breakpoints */
+  /*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
   cursor: default;
 }
 
@@ -60,11 +72,11 @@
   background-color: transparent;
   text-decoration: none;
   font-size: 1em;
-  color: #747474;
-  border-bottom: 1px solid #89C6CC;
+  color: #000000;
+  border-bottom: 1px solid #000000;
 }
 
 .sxa-archive .archive-items .archive-item a:hover {
-  color: #878787;
+  color: #000000;
   text-decoration: none;
 }

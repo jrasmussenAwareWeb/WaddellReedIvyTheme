@@ -1,3 +1,9 @@
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
 .form {
   margin: 10px 0;
@@ -37,7 +43,7 @@
 .form fieldset {
   border-width: 1px;
   border-style: solid;
-  border-color: #d2d2d2;
+  border-color: #c2c2c2;
   padding: 15px;
   margin: 10px 0;
   position: relative;
@@ -85,7 +91,7 @@
   position: absolute;
   border-width: 1px;
   border-style: solid;
-  border-color: #d2d2d2;
+  border-color: #c2c2c2;
   left: 0px;
   top: -15px;
   padding: 4px 8px;
@@ -98,7 +104,7 @@
 .form input, .form select, .form textarea {
   border-width: 1px;
   border-style: solid;
-  border-color: #d2d2d2;
+  border-color: #c2c2c2;
   padding: 2px 4px;
   max-width: 98%;
 }
@@ -127,7 +133,7 @@
 .form input[type="submit"], .form button {
   border-width: 1px;
   border-style: solid;
-  border-color: #d2d2d2;
+  border-color: #c2c2c2;
   background: #FFFFFF;
   cursor: pointer;
   margin-left: 0;
@@ -139,7 +145,7 @@
   box-sizing: border-box;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #d2d2d2;
+  border-bottom-color: #c2c2c2;
   width: 95%;
   padding: 2px;
 }
@@ -196,7 +202,7 @@
 .form select {
   border-width: 1px;
   border-style: solid;
-  border-color: #d2d2d2;
+  border-color: #c2c2c2;
   max-height: 30px;
   position: relative;
   text-indent: 2px;

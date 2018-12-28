@@ -1,3 +1,9 @@
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
 .boxed {
   box-sizing: border-box;
@@ -17,10 +23,16 @@
 }
 
 .boxed > div {
-  max-width: 960px;
+  max-width: 1170px;
   margin: 0 auto !important;
 }
 
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
 .component-content-clearfix .component-content:after {
   content: "";
@@ -34,6 +46,9 @@
   clear: both;
 }
 
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 .highlighted-top {
   background: #ffffff;
   border-top-width: 3px;
@@ -86,6 +101,9 @@
   margin: 0 0 10px 0;
 }
 
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 .indent {
   margin: 0 40px;
 }
@@ -98,11 +116,17 @@
   margin-bottom: 20px;
 }
 
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
 .link-button .button-default, .link-button .default {
   border-width: 1px;
   border-style: solid;
-  border-color: #d2d2d2;
+  border-color: #c2c2c2;
   font-size: 12px;
   font-size: 1.2rem;
   display: inline-block;
@@ -113,13 +137,13 @@
   text-align: center;
   text-decoration: none;
   background: #f6f6f6;
-  color: #747474;
+  color: #000000;
   font-weight: bold;
 }
 
 .link-button .button-default:hover, .link-button .default:hover {
-  color: #747474;
-  background: #f7f7f7;
+  color: #000000;
+  background: #d9d9d6;
 }
 
 .link-button .button-success, .link-button .success {
@@ -127,7 +151,7 @@
   font-size: 1.2rem;
   border-width: 1px;
   border-style: solid;
-  border-color: #d2d2d2;
+  border-color: #c2c2c2;
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
@@ -150,7 +174,7 @@
   font-size: 1.2rem;
   border-width: 1px;
   border-style: solid;
-  border-color: #d2d2d2;
+  border-color: #c2c2c2;
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
@@ -184,6 +208,12 @@
   text-align: center !important;
 }
 
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
 .cover-background > .component-content, .fix-background > .component-content, .parallax-background > .component-content {
   background-repeat: no-repeat;
@@ -209,7 +239,8 @@
 }
 
 .container-gray-background {
-  background: #f7f7f7;
+  background: #d9d9d6;
+  min-height: 60px;
 }
 
 .container-clean-background {
@@ -221,5 +252,15 @@
 }
 
 .container-color-background {
-  background: #89C6CC;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#009639+0,006c46+100,006c46+100 */
+  background: #009639;
+  /* Old browsers */
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #009639 0%, #006c46 100%, #006c46 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#009639), color-stop(100%, #006c46), to(#006c46));
+  background: linear-gradient(to right, #009639 0%, #006c46 100%, #006c46 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009639', endColorstr='#006c46',GradientType=1 );
+  /* IE6-9 */
 }

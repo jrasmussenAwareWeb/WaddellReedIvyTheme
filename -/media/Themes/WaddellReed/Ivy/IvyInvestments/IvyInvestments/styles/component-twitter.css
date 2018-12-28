@@ -1,9 +1,15 @@
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
 .twitter h1, .twitter h2, .twitter h3, .twitter h4, .twitter h5, .twitter h6 {
   padding-bottom: 6px;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #d2d2d2;
+  border-bottom-color: #c2c2c2;
 }
 
 .twitter .twitter-follow-button {
@@ -13,7 +19,7 @@
 .twitter .tweet-item {
   border-top-width: 1px;
   border-top-style: solid;
-  border-top-color: #89C6CC;
+  border-top-color: #000000;
   padding: 10px 10px 10px 0px;
   margin-left: 10px;
   overflow: hidden;

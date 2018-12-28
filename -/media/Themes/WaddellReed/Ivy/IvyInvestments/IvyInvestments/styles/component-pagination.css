@@ -1,10 +1,16 @@
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
 /* breakpoints */
 .list-pagination {
   background: transparent;
 }
 
 .list-pagination nav {
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .list-pagination nav > span, .list-pagination nav > a {
@@ -13,7 +19,7 @@
   padding: 4px 8px;
   border-width: 1px;
   border-style: solid;
-  border-color: #d2d2d2;
+  border-color: #c2c2c2;
   font-size: 1em;
   font-weight: bold;
 }
@@ -37,7 +43,7 @@
   color: #89C6CC;
   border-width: 1px;
   border-style: solid;
-  border-color: #d2d2d2;
+  border-color: #c2c2c2;
 }
 
 .list-pagination nav > span.inactive {
@@ -48,5 +54,5 @@
   background: none;
   border-width: 1px;
   border-style: solid;
-  border-color: #d2d2d2;
+  border-color: #c2c2c2;
 }

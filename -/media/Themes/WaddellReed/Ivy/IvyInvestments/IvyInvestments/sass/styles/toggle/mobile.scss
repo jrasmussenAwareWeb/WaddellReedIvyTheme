@@ -1,0 +1,35 @@
+&.mobile {
+    text-align: right;
+    position: absolute;
+    z-index:1;
+    .toggle-content { 
+        margin-top:98px;
+        background-color:$bg-submenu;
+        >.row {
+            text-align:left;
+            background-color:$bg-submenu;
+            border-top:1px solid $border-dark-gray;
+        }
+    }
+     summary.toggle-header {
+         position:absolute;
+         top:20px;
+         right:5px;
+        &::-webkit-details-marker {
+            display: none
+        }
+        &:before {
+            @include fa-icon();
+            font-size:1.4em;
+            color:$text-green;
+            content: $fa-var-bars;
+        }
+     }
+     details[open] {
+        .toggle-header {
+            &:before {
+            content: $fa-var-close;
+            }
+        }
+     }
+}
