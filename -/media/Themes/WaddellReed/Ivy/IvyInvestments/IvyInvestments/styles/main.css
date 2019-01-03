@@ -8815,6 +8815,19 @@ h6 {
   box-sizing: initial;
 }
 
+/*010219 something happened after changing layout from flex to other classes and back to flex within sitecore. 
+it is now adding additional 'rows' so we have to correct - added assembla ticket #10 as bug*/
+#header.container-fluid > .row,
+#footer.container-fluid > .row {
+  display: block;
+}
+
+#header.container-fluid > .row > .row,
+#footer.container-fluid > .row > .row {
+  display: block;
+}
+
+/**/
 #header .image {
   padding-top: 10px;
 }

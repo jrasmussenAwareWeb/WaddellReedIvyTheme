@@ -2,21 +2,23 @@
     padding:0;
     background:rgba(0, 0, 0, 0.2);
     border: 1px solid $border-dark-green;
-    //Added NW
-    &:hover{
-        color: $text-white;
-        background: rgba(0, 0, 0, .6);
-    }
-    //Added NW
-    &:focus{
-        background: rgba(0, 0, 0, 1);
+    @include respond-to(desktop) {
+        //Added NW
+        &:hover{
+            color: $text-white;
+            background: rgba(0, 0, 0, .6);
+        }
+        //Added NW
+        &:focus{
+            background: rgba(0, 0, 0, 1);
+        }
+        //Added NW
+        .component-content > .twitter-typeahead {
+            margin: 0;
+        }
     }
     label { 
         @include sronly;
-    }
-    //Added NW
-    .component-content > .twitter-typeahead {
-        margin: 0;
     }
     input {
     box-shadow: none; 
@@ -28,10 +30,12 @@
         text-transform: uppercase;
         font-size:13px;
         color: $text-white;
-        padding: 10px 40px 10px 8px;
-        //Added NW
-        &:focus{
-            background: $bg-black !important;
+        @include respond-to(desktop) {
+            //Added NW
+            padding: 10px 40px 10px 8px;
+            &:focus{
+                background: $bg-black !important;
+            }
         }
     }
     button {
@@ -41,10 +45,12 @@
         line-height:0;
         color:$text-white;
         cursor:pointer;
-        //Added NW
-        padding: 8px 8px;
-        position: absolute;
-        right: 0;
+        @include respond-to(desktop) {
+            //Added NW
+            padding: 8px 8px;
+            position: absolute;
+            right: 0;
+        }
         &:after {
             text-indent:0;
             display:block !important;

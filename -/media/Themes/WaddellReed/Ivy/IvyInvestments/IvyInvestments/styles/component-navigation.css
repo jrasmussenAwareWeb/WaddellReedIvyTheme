@@ -353,7 +353,7 @@ $font-medium:16px;*/
   left: -30%;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .navigation.navigation-main.navigation-main-horizontal .rel-level1 > ul > .rel-level2:last-child {
     display: none;
   }
@@ -421,6 +421,17 @@ $font-medium:16px;*/
   top: 11px;
   left: 3px;
   color: #fff;
+}
+
+.navigation.navigation-main.navigation-main-horizontal .rel-level3 .navigation-required:before {
+  font-size: inherit;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
 }
 
 .navigation.navigation-main.navigation-main-horizontal .rel-level3 h4, .navigation.navigation-main.navigation-main-horizontal .rel-level3 h4 > a {
@@ -500,7 +511,6 @@ $font-medium:16px;*/
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: inherit;
   content: "";
   position: absolute;
   -webkit-transform: translateY(-50%);
@@ -569,8 +579,7 @@ $font-medium:16px;*/
 
 .navigation.navigation-main.navigation-account .rel-level1 > .navigation-title > a, .navigation.navigation-main.navigation-login .rel-level1 > .navigation-title > a {
   margin: 0;
-  color: #fff;
-  background-color: #009639;
+  color: #009639;
   border: solid 2px #009639;
   text-align: center;
 }
@@ -600,28 +609,84 @@ $font-medium:16px;*/
   color: #009639;
 }
 
-.navigation.navigation-main.navigation-account .rel-level1 > ul {
-  width: 100%;
-}
-
 .navigation.navigation-main.navigation-account .rel-level1 > .navigation-title {
   background: #009639;
 }
 
 .navigation.navigation-main.navigation-account .rel-level1 > .navigation-title > a {
   color: #fff;
+  /*&:before {
+                        content: $fa-var-sign-out; 
+                    }*/
 }
 
-.navigation.navigation-main.navigation-account .rel-level1 > .navigation-title > a:before {
-  content: "";
+.navigation.navigation-main.navigation-account .rel-level1 > .navigation-title > a:after {
+  font-size: inherit;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  margin-left: 6px;
 }
 
-.navigation.navigation-main.navigation-account .rel-level1.active > .navigation-title > a {
+.navigation.navigation-main.navigation-account .rel-level1.active:not(.show) > .navigation-title > a {
   color: #fff;
+}
+
+.navigation.navigation-main.navigation-account .rel-level1.active:not(.show) > .navigation-title > a:hover, .navigation.navigation-main.navigation-account .rel-level1.active:not(.show) > .navigation-title > a:focus {
+  color: #009639;
+}
+
+.navigation.navigation-main.navigation-account .rel-level1.active.show > .navigation-title {
+  background: #FFFFFF;
+}
+
+.navigation.navigation-main.navigation-account .rel-level1.active.show > .navigation-title > a {
+  color: #009639;
+}
+
+.navigation.navigation-main.navigation-account .rel-level1.active.show > .navigation-title > a:hover, .navigation.navigation-main.navigation-account .rel-level1.active.show > .navigation-title > a:focus {
+  color: #009639;
+}
+
+.navigation.navigation-main.navigation-account .rel-level1 > ul {
+  width: 100%;
+  background-color: #FFFFFF;
+  border-top: solid 2px #009639;
 }
 
 .navigation.navigation-main.navigation-account .rel-level2 div > a {
   text-align: left;
+}
+
+.navigation.navigation-main.navigation-account .rel-level2 > .navigation-title > a:before {
+  font-size: inherit;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-right: 6px;
+}
+
+.navigation.navigation-main.navigation-account .rel-level2:first-of-type > .navigation-title > a:before {
+  content: "";
+}
+
+.navigation.navigation-main.navigation-account .rel-level2:last-of-type > .navigation-title > a:before {
+  content: "";
+}
+
+.navigation.navigation-main.navigation-login .rel-level1 > .navigation-title {
+  background-color: #009639;
+}
+
+.navigation.navigation-main.navigation-login .rel-level1 > .navigation-title > a {
+  color: #fff;
 }
 
 .navigation.navigation-main.navigation-login .rel-level1 > .navigation-title > a:before {

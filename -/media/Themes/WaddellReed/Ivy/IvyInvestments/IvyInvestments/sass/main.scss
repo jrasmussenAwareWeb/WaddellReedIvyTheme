@@ -28,6 +28,8 @@ body {
         line-height: 1.5;
         font-size: $font-medium;
     }
+
+    //removing this class within experience accelerator fixes the column alignment
     &.on-page-editor {
         background: $page-bg-editor !important;
 
@@ -125,6 +127,20 @@ h6 {
 //End navigation bar fix
 
 //Ivy Specific
+
+/*010219 something happened after changing layout from flex to other classes and back to flex within sitecore. 
+it is now adding additional 'rows' so we have to correct - added assembla ticket #10 as bug*/
+#header.container-fluid,
+#footer.container-fluid {
+    >.row {
+        display:block;
+        >.row {
+            display:block;
+        }
+    }
+}
+/**/
+
 #header .image {
     padding-top:10px;
     img {

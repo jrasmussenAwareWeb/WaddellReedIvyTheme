@@ -120,7 +120,7 @@
                 left:-30%;
             }
             //hide the 3rd column
-            @include respond-to(tablet) {
+            @include respond-to(tablet-only) {
                 >ul {
                     >.rel-level2:last-child {
                             display:none;
@@ -176,12 +176,17 @@
         .rel-level3 {
             @include proximabold();
             .navigation-required {
-                float:left; 
+                float:left;
                 margin-right:10px;
                 position:relative;
                 top:11px;
                 left:3px;
                 color:$text-white;
+                &:before {
+                    font-size:inherit;
+                    @include fa-icon();
+                    content: $fa-var-lock; 
+                }
             }
             h4, h4 > a {
                 color:$text-green;
@@ -252,8 +257,6 @@
                         &:after {
                             font-size:inherit;
                             @include fa-icon();
-                            font-size:inherit;
-                            //content: $fa-var-chevron-down; 
                             content: $fa-var-caret-down; 
                             position: absolute;
                             transform: translateY(-50%);
@@ -323,12 +326,10 @@
             height:auto;
             margin-top:30px;
             >.navigation-title {
-                //border:1px solid $text-green;
                 >a {
                     //margin-top:0;
                     margin: 0;
-                    color:$text-white;
-                    background-color: $text-green;
+                    color:$text-green;
                     border: solid 2px $text-green;
                     text-align:center;
                     &:before {
@@ -340,7 +341,7 @@
                         //top:9px;
                         margin-right: 6px;
                     }
-                    &:hover {
+                    &:hover { 
                         color:$text-green;
                         background-color: $text-white;
                     }
@@ -356,31 +357,53 @@
                     }
                 }
             }
-        }
+        } 
     }
 
 
     // Additional styles for the the account navigation
     &.navigation-account {
         .rel-level1 {
-            > ul {
-                width:100%;
-            }
             >.navigation-title {
                 background:$text-green;
                 >a {
                     color:$text-white;
-                    &:before {
+                    /*&:before {
                         content: $fa-var-sign-out; 
+                    }*/
+                    &:after {
+                        font-size:inherit;
+                        @include fa-icon();
+                        content: $fa-var-caret-down;
+                        margin-left:6px;
                     }
                 }
             }
-            &.active {
+            &.active:not(.show) {
                 >.navigation-title {
                     >a {
                         color:$text-white;
+                        &:hover, &:focus {
+                            color:$text-green;
+                        }
                     }
                 }
+            }
+            &.active.show {
+                >.navigation-title {
+                    background:$bg-submenu;
+                    >a {
+                        color:$text-green;
+                        &:hover, &:focus {
+                            color:$text-green;
+                        }
+                    }
+                }
+            }
+            > ul {
+                width:100%;
+                background-color:$bg-submenu;
+                border-top:solid 2px $text-green;
             }
         }
         .rel-level2 {
@@ -389,13 +412,43 @@
                     text-align:left;
                 }
             }
+             >.navigation-title {
+                    >a {
+                        &:before {
+                            font-size:inherit;
+                            @include fa-icon();
+                            margin-right:6px;
+                        }
+                    }
+            }
+            &:first-of-type {
+                 >.navigation-title {
+                    >a {
+                        &:before {
+                            //content: $fa-var-user-edit; 010219 this one doesnt work because FA5 is not working
+                            content: $fa-var-user;
+                        }
+                    }
+                 }
+            }
+            &:last-of-type {
+                 >.navigation-title {
+                    >a {
+                        &:before {
+                            content: $fa-var-sign-out; 
+                        }
+                    }
+                 }
+            }
         }
     }
     // Additional styles for the the login navigation
     &.navigation-login {
         .rel-level1 {
             >.navigation-title {
+                background-color:$text-green;
                 >a {
+                    color:$text-white;
                     &:before {
                         content: $fa-var-sign-in; 
                     }
