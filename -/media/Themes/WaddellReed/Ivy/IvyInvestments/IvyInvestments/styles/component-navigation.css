@@ -654,7 +654,35 @@ $font-medium:16px;*/
   left: 2px;
 }
 
+.navigation.navigation-main .symbol-registered:after {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 10px;
+  content: "";
+  position: relative;
+  top: -4px;
+  left: 2px;
+}
+
 .navigation.navigation-main .symbol-trademark > .navigation-title > a:after {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 10px;
+  content: "";
+  position: relative;
+  top: -6px;
+  left: 2px;
+}
+
+.navigation.navigation-main .symbol-trademark:after {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -794,6 +822,16 @@ $font-medium:16px;*/
   border-bottom: 0;
 }
 
+.navigation.navigation-main.navigation-account, .navigation.navigation-main.navigation-login {
+  padding-right: 35px;
+}
+
+@media only screen and (min-width: 992px) {
+  .navigation.navigation-main.navigation-account, .navigation.navigation-main.navigation-login {
+    padding-right: 45px;
+  }
+}
+
 .navigation.navigation-main.navigation-account .sxaToogleNavBtn, .navigation.navigation-main.navigation-login .sxaToogleNavBtn {
   display: none !important;
 }
@@ -906,10 +944,6 @@ $font-medium:16px;*/
   content: "";
 }
 
-.navigation.navigation-main.navigation-login {
-  padding-right: 35px;
-}
-
 .navigation.navigation-main.navigation-login .rel-level1 > .navigation-title {
   background-color: #009639;
 }
@@ -920,12 +954,6 @@ $font-medium:16px;*/
 
 .navigation.navigation-main.navigation-login .rel-level1 > .navigation-title > a:before {
   content: "";
-}
-
-@media only screen and (min-width: 992px) {
-  .navigation.navigation-main.navigation-login {
-    padding-right: 45px;
-  }
 }
 
 @media only screen and (min-width: 1200px) {

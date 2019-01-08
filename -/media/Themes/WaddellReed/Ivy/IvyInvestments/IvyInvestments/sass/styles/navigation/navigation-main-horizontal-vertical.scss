@@ -569,6 +569,10 @@
     }
     // Additional styles for the the account & login navigation
     &.navigation-account, &.navigation-login {
+        padding-right:35px;
+         @include respond-to(desktop) {
+            padding-right:45px;
+        }
         .sxaToogleNavBtn {
             display:none !important;
         }
@@ -693,7 +697,6 @@
     }
     // Additional styles for the the login navigation
     &.navigation-login {
-        padding-right:35px;
         .rel-level1 {
             >.navigation-title {
                 background-color:$text-green;
@@ -704,9 +707,6 @@
                     }
                 }
             }
-        }
-        @include respond-to(desktop) {
-            padding-right:45px;
         }
         @include respond-to(large) {
             .rel-level1 {
