@@ -7,17 +7,19 @@
         border-bottom:3px solid $text-white;
         margin-bottom:20px;
     }
-    h3, a {
+    h2, a {
         color:$text-white;
     }
-    h3 {
+    h2 {
         @include proximaboldcondensed();
-        font-size:34px;
+        //font-size:34px;
         float:left;
+        margin-top:0;
+        line-height:1;
     }
     a {
         float:right;
-        margin:20px auto 0;
+        margin:10px auto;
         @include proximabold();
         font-size:$font-normal;
         text-decoration:none;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*$font-small:11px;
 $font-normal:13px;
 $font-medium:16px;*/
@@ -5,6 +6,76 @@ $font-medium:16px;*/
 $font-normal:13px;
 $font-medium:16px;*/
 /* breakpoints */
+.plain-html .button-default, .plain-html .btn-default, .plain-html .default {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin: 5px 0;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #009639;
+  background: #FFFFFF;
+  color: #009639;
+  text-transform: uppercase;
+}
+
+.plain-html .button-default:hover, .plain-html .btn-default:hover, .plain-html .default:hover {
+  color: #fff;
+  background: #009639;
+  border: 2px solid #009639;
+}
+
+.plain-html .button-success, .plain-html .btn-success, .plain-html .success {
+  font-size: 12px;
+  font-size: 1.2rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c2c2c2;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin: 5px 0;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  background: #a0ce4e;
+  color: #fff;
+  font-weight: bold;
+}
+
+.plain-html .button-success:hover, .plain-html .btn-success:hover, .plain-html .success:hover {
+  color: #fff;
+  background: #92be43;
+}
+
+.plain-html .button-warning, .plain-html .btn-warning, .plain-html .warning {
+  font-size: 12px;
+  font-size: 1.2rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c2c2c2;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin: 5px 0;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  background: #bc4526;
+  color: #fff;
+  font-weight: bold;
+}
+
+.plain-html .button-warning:hover, .plain-html .btn-warning:hover, .plain-html .warning:hover {
+  color: #fff;
+  background: #c34e30;
+}
+
+.plain-html .btn-block {
+  width: 100%;
+}
+
 .plain-html table {
   height: auto !important;
 }
@@ -105,105 +176,83 @@ $font-medium:16px;*/
   word-wrap: break-word;
   background-color: #ffffff;
   background-clip: border-box;
-  border: 1px solid gray;
-  padding: 15px;
+  padding: 15px 0;
 }
 
-.plain-html .card > hr {
-  margin-right: 0;
-  margin-left: 0;
-}
-
-.plain-html .card table {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-
-.plain-html .card h3, .plain-html .card strong, .plain-html .card a {
+.plain-html .card .card-title, .plain-html .card strong, .plain-html .card .card-text, .plain-html .card .card-link {
   text-align: center;
 }
 
-.plain-html .card h3 {
-  font-size: 24px;
+.plain-html .card .card-title, .plain-html .card .card-text, .plain-html .card .card-link {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.plain-html .card-body {
+.plain-html .card .card-title {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.plain-html .card .card-body {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  padding: 1;
 }
 
-.plain-html .card-title {
-  margin-bottom: 1;
-}
-
-.plain-html .card-subtitle {
-  margin-top: -0.5;
-  margin-bottom: 0;
-}
-
-.plain-html .card-text:last-child {
-  margin-bottom: 0;
-}
-
-.plain-html .card-link {
-  /*@include hover {
-    text-decoration: none;
-  }*/
-}
-
-.plain-html .card-link + .card-link {
-  margin-left: 1;
-}
-
-.plain-html .card-header {
-  padding: 1 1;
-  margin-bottom: 0;
-  color: blue;
-  background-color: #ffffff;
-  border-bottom: 1px solid gray;
-}
-
-.plain-html .card-header + .list-group .list-group-item:first-child {
-  border-top: 0;
-}
-
-.plain-html .card-footer {
-  padding: 1 1;
-  background-color: #ffffff;
-  border-top: 1px solid gray;
-}
-
-.plain-html .card-header-tabs {
-  margin-right: -0.5;
-  margin-bottom: -1;
-  margin-left: -0.5;
-  border-bottom: 0;
-}
-
-.plain-html .card-header-pills {
-  margin-right: -0.5;
-  margin-left: -0.5;
-}
-
-.plain-html .card-img-overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 10px;
-}
-
-.plain-html .card-img {
+.plain-html .card .card-body table {
   width: 100%;
+  margin-top: 15px;
 }
 
-.plain-html .card-img-top {
-  width: 100%;
+.plain-html .card .card-body table th, .plain-html .card .card-body table td {
+  font-size: 14px;
 }
 
-.plain-html .card-img-bottom {
-  width: 100%;
+.plain-html .card .card-body table th {
+  font-weight: normal;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.plain-html .card .card-body .card-text {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 14px;
+  margin: 10px auto;
+}
+
+.plain-html .card .card-body .card-text span:first-of-type, .plain-html .card .card-body .card-text span:last-of-type {
+  font-size: 20px;
+}
+
+.plain-html .card .card-body .card-text span:first-of-type {
+  color: #009639;
+}
+
+.plain-html .card .card-body .card-link {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.plain-html .card .card-body .card-link .btn-default, .plain-html .card .card-body .card-link .button-default {
+  font-size: 16px;
+}
+
+.plain-html .card .card-body .card-link .btn-default:before, .plain-html .card .card-body .card-link .button-default:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  font-size: 10px;
+  position: relative;
+  top: -2px;
+}
+
+@media only screen and (max-width: 991px) {
+  .plain-html .card {
+    margin: 15px auto;
+  }
 }

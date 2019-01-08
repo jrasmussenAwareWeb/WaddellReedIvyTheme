@@ -1,6 +1,8 @@
 @import "abstracts/vars";
 @import "abstracts/mixins";
+@import "base/fontawesome/font-awesome-mix-var";
 .plain-html {
+    @import "base/links/*";
     @import "base/tables/*";
     @import "variants/plain-html/*";
 }

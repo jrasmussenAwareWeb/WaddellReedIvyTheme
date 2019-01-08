@@ -57,12 +57,7 @@ $font-medium:16px;*/
   border-bottom: 1px solid #000000;
 }
 
-.link-list .button-default, .link-list .default {
-  border-width: 1px;
-  border-style: solid;
-  border-color: #c2c2c2;
-  font-size: 12px;
-  font-size: 1.2rem;
+.link-list .button-default, .link-list .btn-default, .link-list .default {
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
@@ -70,17 +65,19 @@ $font-medium:16px;*/
   padding: 10px 15px;
   text-align: center;
   text-decoration: none;
-  background: #f6f6f6;
-  color: #000000;
-  font-weight: bold;
+  border: 2px solid #009639;
+  background: #FFFFFF;
+  color: #009639;
+  text-transform: uppercase;
 }
 
-.link-list .button-default:hover, .link-list .default:hover {
-  color: #000000;
-  background: #d9d9d6;
+.link-list .button-default:hover, .link-list .btn-default:hover, .link-list .default:hover {
+  color: #fff;
+  background: #009639;
+  border: 2px solid #009639;
 }
 
-.link-list .button-success, .link-list .success {
+.link-list .button-success, .link-list .btn-success, .link-list .success {
   font-size: 12px;
   font-size: 1.2rem;
   border-width: 1px;
@@ -98,12 +95,12 @@ $font-medium:16px;*/
   font-weight: bold;
 }
 
-.link-list .button-success:hover, .link-list .success:hover {
+.link-list .button-success:hover, .link-list .btn-success:hover, .link-list .success:hover {
   color: #fff;
   background: #92be43;
 }
 
-.link-list .button-warning, .link-list .warning {
+.link-list .button-warning, .link-list .btn-warning, .link-list .warning {
   font-size: 12px;
   font-size: 1.2rem;
   border-width: 1px;
@@ -121,9 +118,13 @@ $font-medium:16px;*/
   font-weight: bold;
 }
 
-.link-list .button-warning:hover, .link-list .warning:hover {
+.link-list .button-warning:hover, .link-list .btn-warning:hover, .link-list .warning:hover {
   color: #fff;
   background: #c34e30;
+}
+
+.link-list .btn-block {
+  width: 100%;
 }
 
 .link-list.footer h1, .link-list.footer h2, .link-list.footer h3, .link-list.footer h4, .link-list.footer h5, .link-list.footer h6 {

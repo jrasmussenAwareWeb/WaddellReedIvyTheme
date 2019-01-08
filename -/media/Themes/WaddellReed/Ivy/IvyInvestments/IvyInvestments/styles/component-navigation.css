@@ -537,6 +537,7 @@ $font-medium:16px;*/
   width: 100%;
   font-size: 14px;
   margin-top: 15px;
+  margin-left: 5px;
 }
 
 .navigation.navigation-main.navigation-main-horizontal .rel-level2.gray .item-fake table a {
@@ -668,6 +669,14 @@ $font-medium:16px;*/
 }
 
 .navigation.navigation-main .service-mark > .navigation-title > a:after {
+  font-size: 10px;
+  content: 'SM';
+  position: relative;
+  top: -5px;
+  left: 2px;
+}
+
+.navigation.navigation-main .service-mark:after {
   font-size: 10px;
   content: 'SM';
   position: relative;
@@ -897,6 +906,10 @@ $font-medium:16px;*/
   content: "";
 }
 
+.navigation.navigation-main.navigation-login {
+  padding-right: 35px;
+}
+
 .navigation.navigation-main.navigation-login .rel-level1 > .navigation-title {
   background-color: #009639;
 }
@@ -909,10 +922,13 @@ $font-medium:16px;*/
   content: "";
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 992px) {
   .navigation.navigation-main.navigation-login {
-    padding-right: 0;
+    padding-right: 45px;
   }
+}
+
+@media only screen and (min-width: 1200px) {
   .navigation.navigation-main.navigation-login .rel-level1 > .navigation-title > a:after {
     content: '/Register';
   }

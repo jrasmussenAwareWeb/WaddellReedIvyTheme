@@ -105,7 +105,7 @@ $font-medium:16px;*/
 $font-normal:13px;
 $font-medium:16px;*/
 .indent {
-  margin: 0 40px;
+  margin: 0 60px;
 }
 
 .indent-top {
@@ -123,12 +123,7 @@ $font-medium:16px;*/
 $font-normal:13px;
 $font-medium:16px;*/
 /* breakpoints */
-.link-button .button-default, .link-button .default {
-  border-width: 1px;
-  border-style: solid;
-  border-color: #c2c2c2;
-  font-size: 12px;
-  font-size: 1.2rem;
+.link-button .button-default, .link-button .btn-default, .link-button .default {
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
@@ -136,17 +131,19 @@ $font-medium:16px;*/
   padding: 10px 15px;
   text-align: center;
   text-decoration: none;
-  background: #f6f6f6;
-  color: #000000;
-  font-weight: bold;
+  border: 2px solid #009639;
+  background: #FFFFFF;
+  color: #009639;
+  text-transform: uppercase;
 }
 
-.link-button .button-default:hover, .link-button .default:hover {
-  color: #000000;
-  background: #d9d9d6;
+.link-button .button-default:hover, .link-button .btn-default:hover, .link-button .default:hover {
+  color: #fff;
+  background: #009639;
+  border: 2px solid #009639;
 }
 
-.link-button .button-success, .link-button .success {
+.link-button .button-success, .link-button .btn-success, .link-button .success {
   font-size: 12px;
   font-size: 1.2rem;
   border-width: 1px;
@@ -164,12 +161,12 @@ $font-medium:16px;*/
   font-weight: bold;
 }
 
-.link-button .button-success:hover, .link-button .success:hover {
+.link-button .button-success:hover, .link-button .btn-success:hover, .link-button .success:hover {
   color: #fff;
   background: #92be43;
 }
 
-.link-button .button-warning, .link-button .warning {
+.link-button .button-warning, .link-button .btn-warning, .link-button .warning {
   font-size: 12px;
   font-size: 1.2rem;
   border-width: 1px;
@@ -187,9 +184,13 @@ $font-medium:16px;*/
   font-weight: bold;
 }
 
-.link-button .button-warning:hover, .link-button .warning:hover {
+.link-button .button-warning:hover, .link-button .btn-warning:hover, .link-button .warning:hover {
   color: #fff;
   background: #c34e30;
+}
+
+.link-button .btn-block {
+  width: 100%;
 }
 
 .promoted-box {

@@ -269,6 +269,7 @@
                         width:100%;
                         font-size:$font-small;
                         margin-top:15px;
+                        margin-left:5px;
                         a {
                             font-size:$font-small;
                             text-decoration:none;
@@ -396,6 +397,17 @@
             }
         }
     }
+    //entered in sitecore RTE <span></span>
+    .symbol-registered {
+        &:after {
+            @include fa-icon(); 
+            font-size:10px;
+            content: $fa-var-registered;
+            position:relative;
+            top:-4px;
+            left:2px;
+        }
+    }
     .symbol-trademark {
         > .navigation-title {
             >a {
@@ -408,6 +420,17 @@
                     left:2px;
                 }
             }
+        }
+    }
+    //entered in sitecore RTE <span></span>
+    .symbol-trademark {
+        &:after {
+            @include fa-icon(); 
+            font-size:10px;
+            content: $fa-var-trademark; 
+            position:relative;
+            top:-6px;
+            left:2px;
         }
     }
 
@@ -423,6 +446,16 @@
                     
                 }
             }
+        }
+    }
+    //entered in sitecore RTE <span></span>
+    .service-mark {
+        &:after {
+            font-size:10px;
+            content: 'SM';
+            position:relative;
+            top:-5px;
+            left:2px;
         }
     }
 
@@ -660,6 +693,7 @@
     }
     // Additional styles for the the login navigation
     &.navigation-login {
+        padding-right:35px;
         .rel-level1 {
             >.navigation-title {
                 background-color:$text-green;
@@ -671,8 +705,10 @@
                 }
             }
         }
+        @include respond-to(desktop) {
+            padding-right:45px;
+        }
         @include respond-to(large) {
-            padding-right:0;
             .rel-level1 {
                 >.navigation-title {
                     >a {
