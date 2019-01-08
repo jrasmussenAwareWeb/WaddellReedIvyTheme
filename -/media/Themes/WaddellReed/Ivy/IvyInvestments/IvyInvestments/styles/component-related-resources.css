@@ -1,0 +1,172 @@
+@charset "UTF-8";
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/* breakpoints */
+.related-resources {
+  padding: 0;
+}
+
+.related-resources .title h1, .related-resources .title h2, .related-resources .title h3, .related-resources .title h4, .related-resources .title h5, .related-resources .title h6 {
+  font-weight: 400;
+}
+
+.related-resources .search-result-list {
+  width: 100%;
+  border: none;
+}
+
+.related-resources .search-result-list:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.related-resources .search-result-list > li {
+  display: block;
+  float: left;
+  width: 23%;
+  margin-right: 2%;
+  box-sizing: border-box;
+  border: none;
+  position: relative;
+  height: 100%;
+  /*padding: 0 15px;*/
+  padding: 0;
+  /*@include respond-to(tablet) {
+                padding: 0 15px;
+            }*/
+}
+
+.related-resources .search-result-list > li .blog-item {
+  min-height: 120px;
+  padding: 0 15px 15px;
+  margin-bottom: 30px;
+  border-top: solid 1px #eaeaea;
+}
+
+.related-resources .search-result-list > li .blog-item .blog-date {
+  font-size: 14px;
+  display: inline;
+  padding-right: 10px;
+}
+
+.related-resources .search-result-list > li .blog-item .blog-date:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: fa-content("");
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.related-resources .search-result-list > li .blog-item .blog-author {
+  font-size: 14px;
+  display: inline;
+  padding-left: 10px;
+}
+
+.related-resources .search-result-list > li .blog-item .field-excerpt {
+  font-size: 14px;
+}
+
+.related-resources .search-result-list > li .field-title {
+  display: block;
+  padding: 5px 0 15px 0;
+  text-align: left;
+}
+
+.related-resources .search-result-list > li .field-title a {
+  font-size: 18px;
+  color: #de232f;
+  line-height: 24px;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.related-resources .search-result-list > li .field-title a:hover {
+  color: #000000;
+}
+
+.related-resources .search-result-list > li:hover {
+  border: none;
+}
+
+.related-resources .search-result-list > li .blog-image {
+  margin: 0 -15px 15px -15px;
+}
+
+.related-resources .search-result-list > li .blog-image img {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .no-flexbox .related-resources .search-result-list > li {
+    width: 50%;
+  }
+  .no-flexbox .related-resources .search-result-list > li .blog-item {
+    height: 336px;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .no-flexbox .related-resources .search-result-list > li .blog-item {
+    height: 337px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .no-flexbox .related-resources .search-result-list > li {
+    width: 33.333333%;
+  }
+  .no-flexbox .related-resources .search-result-list > li .blog-item {
+    height: 316px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .flexbox .related-resources .search-result-list > li {
+    max-width: 345px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .flexbox .related-resources .search-result-list {
+    -webkit-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 0;
+    column-gap: 30px;
+  }
+  .flexbox .related-resources .search-result-list > li {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    word-wrap: break-word;
+    background-clip: border-box;
+    float: none;
+    -webkit-column-count: 1;
+    column-count: 1;
+    padding: 0;
+    min-height: 370px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .flexbox .related-resources .search-result-list {
+    -webkit-column-count: 4;
+    column-count: 4;
+  }
+}

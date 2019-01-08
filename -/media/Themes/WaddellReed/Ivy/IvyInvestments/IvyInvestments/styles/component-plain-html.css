@@ -1,0 +1,209 @@
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/* breakpoints */
+.plain-html table {
+  height: auto !important;
+}
+
+.plain-html table, .plain-html table tr, .plain-html table th, .plain-html table td {
+  background: #FFFFFF;
+  border-collapse: collapse;
+  vertical-align: middle;
+}
+
+.plain-html table th, .plain-html table td {
+  border-top: solid 1px #c2c2c2;
+}
+
+.plain-html table thead th {
+  border-bottom: solid 2px #c2c2c2;
+}
+
+.plain-html table tr, .plain-html table th, .plain-html table td {
+  padding: 5px;
+}
+
+.plain-html table caption {
+  background-color: #d9d9d6;
+  overflow: hidden;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 0;
+}
+
+.plain-html table tr {
+  border: none;
+}
+
+.plain-html table th {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 7px;
+}
+
+.plain-html table th:first-child {
+  border-left: 0;
+}
+
+.plain-html table td:first-child {
+  border-left: 0;
+}
+
+.plain-html .table-sm th,
+.plain-html .table-sm td {
+  padding: 0.3rem;
+}
+
+.plain-html .table-bordered {
+  border: 1px solid #c2c2c2;
+}
+
+.plain-html .table-bordered th,
+.plain-html .table-bordered td {
+  border: 1px solid #c2c2c2;
+}
+
+.plain-html .table-bordered thead th,
+.plain-html .table-bordered thead td {
+  border-bottom-width: 2px;
+}
+
+.plain-html .table-borderless th,
+.plain-html .table-borderless td,
+.plain-html .table-borderless thead th,
+.plain-html .table-borderless tbody + tbody {
+  border: 0;
+}
+
+.plain-html .table-striped tbody tr:nth-of-type(odd) {
+  background-color: #d9d9d6;
+}
+
+.plain-html .table-striped tbody tr:nth-of-type(odd) th, .plain-html .table-striped tbody tr:nth-of-type(odd) td {
+  background-color: #d9d9d6;
+}
+
+.plain-html .table-hover tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+.plain-html .card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #ffffff;
+  background-clip: border-box;
+  border: 1px solid gray;
+  padding: 15px;
+}
+
+.plain-html .card > hr {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.plain-html .card table {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.plain-html .card h3, .plain-html .card strong, .plain-html .card a {
+  text-align: center;
+}
+
+.plain-html .card h3 {
+  font-size: 24px;
+}
+
+.plain-html .card-body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1;
+}
+
+.plain-html .card-title {
+  margin-bottom: 1;
+}
+
+.plain-html .card-subtitle {
+  margin-top: -0.5;
+  margin-bottom: 0;
+}
+
+.plain-html .card-text:last-child {
+  margin-bottom: 0;
+}
+
+.plain-html .card-link {
+  /*@include hover {
+    text-decoration: none;
+  }*/
+}
+
+.plain-html .card-link + .card-link {
+  margin-left: 1;
+}
+
+.plain-html .card-header {
+  padding: 1 1;
+  margin-bottom: 0;
+  color: blue;
+  background-color: #ffffff;
+  border-bottom: 1px solid gray;
+}
+
+.plain-html .card-header + .list-group .list-group-item:first-child {
+  border-top: 0;
+}
+
+.plain-html .card-footer {
+  padding: 1 1;
+  background-color: #ffffff;
+  border-top: 1px solid gray;
+}
+
+.plain-html .card-header-tabs {
+  margin-right: -0.5;
+  margin-bottom: -1;
+  margin-left: -0.5;
+  border-bottom: 0;
+}
+
+.plain-html .card-header-pills {
+  margin-right: -0.5;
+  margin-left: -0.5;
+}
+
+.plain-html .card-img-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+}
+
+.plain-html .card-img {
+  width: 100%;
+}
+
+.plain-html .card-img-top {
+  width: 100%;
+}
+
+.plain-html .card-img-bottom {
+  width: 100%;
+}

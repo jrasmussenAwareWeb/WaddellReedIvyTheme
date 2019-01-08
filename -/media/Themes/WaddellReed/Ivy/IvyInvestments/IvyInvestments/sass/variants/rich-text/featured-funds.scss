@@ -1,0 +1,34 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+@import "../../base/fontawesome/font-awesome-mix-var";
+
+&.featured-funds {
+    .component-content {
+        border-bottom:3px solid $text-white;
+        margin-bottom:20px;
+    }
+    h3, a {
+        color:$text-white;
+    }
+    h3 {
+        @include proximaboldcondensed();
+        font-size:34px;
+        float:left;
+    }
+    a {
+        float:right;
+        margin:20px auto 0;
+        @include proximabold();
+        font-size:$font-normal;
+        text-decoration:none;
+        &:after {
+            font-size:inherit;
+            @include fa-icon();
+            content: $fa-var-arrow-right;
+            margin-left:5px;
+        }
+        &:hover, &:focus {
+            text-decoration:underline;
+        }
+    }
+}

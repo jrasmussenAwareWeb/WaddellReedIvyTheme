@@ -1,0 +1,7 @@
+@import "abstracts/vars";
+@import "abstracts/mixins";
+.plain-html {
+    @import "base/tables/*";
+    @import "variants/plain-html/*";
+}
+@import "styles/plain-html/*";

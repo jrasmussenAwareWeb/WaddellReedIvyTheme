@@ -13,6 +13,9 @@ $font-medium:16px;*/
   line-height: 1.5;
   font-size: 12px;
   overflow: hidden;
+  /*{
+        max-width: 100%;
+    }*/
   /*$font-small:11px;
 $font-normal:13px;
 $font-medium:16px;*/
@@ -25,10 +28,6 @@ p {
 strong {
     font-weight: 700;
 }*/
-}
-
-.content *, .rich-text * {
-  max-width: 100%;
 }
 
 .content .field-filetypeicon > a > span, .content .pdf, .content .xls, .content .xlsx, .content .pptx, .content .ppt, .content .docx, .content .doc, .content .bmp, .content .png, .content .jpg, .content .jpeg, .content .psd, .content .gif, .content .avi, .content .mp4, .content .wmv, .content .mov, .content .mp3, .content .wma, .content .txt, .content .zip, .rich-text .field-filetypeicon > a > span, .rich-text .pdf, .rich-text .xls, .rich-text .xlsx, .rich-text .pptx, .rich-text .ppt, .rich-text .docx, .rich-text .doc, .rich-text .bmp, .rich-text .png, .rich-text .jpg, .rich-text .jpeg, .rich-text .psd, .rich-text .gif, .rich-text .avi, .rich-text .mp4, .rich-text .wmv, .rich-text .mov, .rich-text .mp3, .rich-text .wma, .rich-text .txt, .rich-text .zip {
@@ -256,7 +255,56 @@ strong {
   background-color: rgba(0, 0, 0, 0.075);
 }
 
-.rich-text strong, .content strong {
+.rich-text {
+  /*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+  /*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+  /* breakpoints */
+}
+
+.rich-text.featured-funds .component-content {
+  border-bottom: 3px solid #fff;
+  margin-bottom: 20px;
+}
+
+.rich-text.featured-funds h3, .rich-text.featured-funds a {
+  color: #fff;
+}
+
+.rich-text.featured-funds h3 {
+  font-family: "ProximaBoldCondensed", arial, helvetica, sans-serif;
+  font-size: 34px;
+  float: left;
+}
+
+.rich-text.featured-funds a {
+  float: right;
+  margin: 20px auto 0;
+  font-family: "ProximaBold", arial, helvetica, sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.rich-text.featured-funds a:after {
+  font-size: inherit;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  margin-left: 5px;
+}
+
+.rich-text.featured-funds a:hover, .rich-text.featured-funds a:focus {
+  text-decoration: underline;
+}
+
+.rich-text b, .rich-text strong, .content b, .content strong {
   font-weight: normal;
   font-family: "ProximaBold", arial, helvetica, sans-serif;
 }
