@@ -17,6 +17,14 @@ $font-medium:16px;*/
 $font-normal:13px;
 $font-medium:16px;*/
   /* breakpoints */
+  /*Added NW
+p {
+    margin: 0 0 $middle-margin 0;
+}
+
+strong {
+    font-weight: 700;
+}*/
 }
 
 .content *, .rich-text * {
@@ -121,11 +129,7 @@ $font-medium:16px;*/
 }
 
 .content p, .rich-text p {
-  margin: 0 0 20px 0;
-}
-
-.content strong, .rich-text strong {
-  font-weight: 700;
+  margin: 20px 0;
 }
 
 .content ul, .content ol, .rich-text ul, .rich-text ol {
@@ -241,11 +245,11 @@ $font-medium:16px;*/
 }
 
 .content .table-striped tbody tr:nth-of-type(odd), .rich-text .table-striped tbody tr:nth-of-type(odd) {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: #d9d9d6;
 }
 
 .content .table-striped tbody tr:nth-of-type(odd) th, .content .table-striped tbody tr:nth-of-type(odd) td, .rich-text .table-striped tbody tr:nth-of-type(odd) th, .rich-text .table-striped tbody tr:nth-of-type(odd) td {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: #d9d9d6;
 }
 
 .content .table-hover tbody tr:hover, .rich-text .table-hover tbody tr:hover {

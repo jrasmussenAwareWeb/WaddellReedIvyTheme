@@ -9,7 +9,8 @@ $table-cell-padding:          .75rem !default;
 $table-cell-padding-sm:       .3rem !default;
 
 $table-bg:                    transparent !default;
-$table-accent-bg:             rgba($bg-black, .05) !default;
+//$table-accent-bg:             rgba($bg-black, .05) !default;
+$table-accent-bg:             #d9d9d6;
 $table-hover-bg:              rgba($bg-black, .075) !default;
 $table-active-bg:             $table-hover-bg !default;
 

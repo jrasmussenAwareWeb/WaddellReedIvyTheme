@@ -6,4 +6,17 @@
 	.component-content {
         @include clearfix();
     }
+
+    /*bootstrap 3 tweaks*/
+    @include respond-to(mobile-horizontal) {
+        max-width:100%;
+    }
+
+     @include respond-to(large) {
+         &:not(.col-12) {
+            max-width:1140px;
+         }
+    }
+
+
 }

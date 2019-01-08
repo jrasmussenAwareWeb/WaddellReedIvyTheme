@@ -10,7 +10,7 @@
             //Added NW
             line-height: 1.65;
         a {
-            font-weight: bold;
+            //font-weight: bold; //since we're using the proximabold font we dont want to add the font weight here right?
             padding-left:0;
             &:before {
             content: none;

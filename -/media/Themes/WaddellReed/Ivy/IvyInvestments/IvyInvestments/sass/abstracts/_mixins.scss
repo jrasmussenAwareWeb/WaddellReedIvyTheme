@@ -1,12 +1,5 @@
 @import "vars";
 
-/* breakpoints */
-$break-large: 1200px;
-$break-desktop: 992px;
-$break-mobile: 380px;
-$break-mobile-horizontal: 576px;
-$break-mobile-large: 768px;
-
 @mixin wrapper() {
     //max-width: 960px;
     max-width:1170px;
@@ -66,6 +59,14 @@ $break-mobile-large: 768px;
     background-position: center center;
     background-repeat: no-repeat;
 }
+
+/* breakpoints */
+$break-large: 1200px;
+$break-desktop: 992px;
+$break-mobile-large: 768px;
+$break-mobile-horizontal: 576px;
+$break-mobile: 380px;
+
 @mixin respond-to($media) {
     @if $media==mobile {
         @media only screen and (max-width: $break-mobile) {
@@ -74,6 +75,7 @@ $break-mobile-large: 768px;
     }
     @else if $media==mobile-horizontal {
         @media only screen and (min-width: $break-mobile-horizontal) {
+        //@media only screen and (max-width: $break-mobile-horizontal) {
             @content;
         }
     }

@@ -11,6 +11,25 @@
         cursor: pointer;
         margin: 0;
         background: $bg-basic-color;
+        >.navigation-title {
+            display:block;
+            padding: 10px;
+            margin: 0;
+            //border-bottom: 1px solid $border-basic-color;
+            border-bottom: 1px solid $border-dark-gray;
+            //border-top: 1px solid $border-dark-gray; //this needs to be only on show 
+            &:last-child {
+                border-bottom: none;
+            }
+            >a {
+                padding:3px 5px;
+                text-decoration: none;
+                color: $text-basic;
+                display: inline;
+                border-width:0;
+                font-size:$font-normal;
+            }
+        }
         >ul {
             padding-left: 25px;
             display: none;
@@ -24,7 +43,7 @@
                     display: block;
                     position: absolute;
                     left: -5px;
-                    top: 23px;
+                    top: 20px;
                     transform: translateY(-50%);
                     font-size:0.8em;
                     color:$text-green;
@@ -81,35 +100,37 @@
                 }
             }
         }
-        >.navigation-title {
-            padding: 10px;
-            margin: 0;
-            //border-bottom: 1px solid $border-basic-color;
-            border-bottom: 1px solid $border-dark-gray;
-            //border-top: 1px solid $border-dark-gray; //this needs to be only on show 
-            &:last-child {
-                border-bottom: none;
-            }
-            >a {
-                padding:3px 5px;
-                text-decoration: none;
-                color: $text-basic;
-                display: inline;
-                border-width:0;
-                font-size:$font-normal;
-            }
-        }
     }
     .rel-level2 {
         display: list-item;
         .navigation-title>a {
             font-weight: 500;
+            padding:8px 10px 8px 15px;
+            display:inline-block;
             &:hover, &:focus {
                 color:$text-green;
             }
         }
         ul {
             display: none;
+        }
+        .navigation-required {
+            color:$text-basic;
+            &:after {
+                font-size:inherit;
+                @include fa-icon();
+                content: $fa-var-lock; 
+            }
+        }
+        &:hover, &:focus {
+            >.navigation-title {
+                >a {
+                    color:$text-green;
+                }
+            }
+            >.navigation-required {
+                color:$text-green;
+            }
         }
     }
     &.navigation-login, &.navigation-account, &.navigation-umbrella {

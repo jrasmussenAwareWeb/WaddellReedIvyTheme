@@ -99,10 +99,23 @@ $font-normal:13px;
 $font-medium:16px;*/
 .container {
   padding: 0;
+  /*bootstrap 3 tweaks*/
 }
 
 .container .component-content:after {
   content: "";
   display: table;
   clear: both;
+}
+
+@media only screen and (min-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container:not(.col-12) {
+    max-width: 1140px;
+  }
 }

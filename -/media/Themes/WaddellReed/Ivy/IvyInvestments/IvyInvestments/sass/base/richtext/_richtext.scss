@@ -11,14 +11,19 @@ h3, h4 {
 h5, h6 {
     margin: $extrasmall-margin 0 0;
 }
-//Added NW
+
+p {
+    margin: $middle-margin 0;
+}
+/*Added NW
 p {
     margin: 0 0 $middle-margin 0;
 }
 
 strong {
     font-weight: 700;
-}
+}*/
+
 ul, ol {
     padding-bottom: $extrasmall-margin;
     padding-top: $extrasmall-margin;

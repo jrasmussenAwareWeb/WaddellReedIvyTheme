@@ -3,7 +3,7 @@
 @import "abstracts/functions";
 @import "base/fonts/fonts";
 @import "base/fontawesome/font-awesome";
-@import "base/fontawesome5/fontawesome";
+//@import "base/fontawesome5/fontawesome";
 html {
     font-size: 62.5%;
     -webkit-font-smoothing: antialiased;
@@ -26,7 +26,7 @@ body {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     @include respond-to(tablet) {
         line-height: 1.5;
-        font-size: $font-medium;
+        font-size: $font-medium; 
     }
 
     //removing this class within experience accelerator fixes the column alignment
@@ -55,6 +55,10 @@ a {
     &:hover {
         color: $text-basic-active;
     }
+}
+
+strong, b {
+    @include proximabold();
 }
 
 h1,
@@ -161,7 +165,157 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
     }
 }
 
-#return-to-top {
+//
+// Base styles
+//
+
+$card-bg:#ffffff;
+$card-border-width:1px;
+$card-border-color:gray;
+$card-border-radius:4px;
+$card-spacer-x:1;
+$card-spacer-y:1;
+$card-cap-color:blue;  
+$card-cap-bg:#ffffff;
+$card-inner-border-radius:1px; 
+$card-img-overlay-padding:10px;
+ 
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: $card-bg;
+  background-clip: border-box;
+  border: $card-border-width solid $card-border-color;
+  //@include border-radius($card-border-radius);
+
+  > hr {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  > .list-group:first-child {
+    .list-group-item:first-child {
+      //@include border-top-radius($card-border-radius);
+    }
+  }
+
+  > .list-group:last-child {
+    .list-group-item:last-child {
+      //@include border-bottom-radius($card-border-radius);
+    }
+  }
+}
+
+.card-body {
+  // Enable `flex-grow: 1` for decks and groups so that card blocks take up
+  // as much space as possible, ensuring footers are aligned to the bottom.
+  flex: 1 1 auto;
+  padding: $card-spacer-x;
+}
+
+.card-title {
+  margin-bottom: $card-spacer-y;
+}
+
+.card-subtitle {
+  margin-top: -$card-spacer-y / 2;
+  margin-bottom: 0;
+}
+
+.card-text:last-child {
+  margin-bottom: 0;
+}
+
+.card-link {
+  /*@include hover {
+    text-decoration: none;
+  }*/
+
+  + .card-link {
+    margin-left: $card-spacer-x;
+  }
+}
+
+//
+// Optional textual caps
+//
+
+.card-header {
+  padding: $card-spacer-y $card-spacer-x;
+  margin-bottom: 0; // Removes the default margin-bottom of <hN>
+  color: $card-cap-color;
+  background-color: $card-cap-bg;
+  border-bottom: $card-border-width solid $card-border-color;
+
+  &:first-child {
+    //@include border-radius($card-inner-border-radius $card-inner-border-radius 0 0);
+  }
+
+  + .list-group {
+    .list-group-item:first-child {
+      border-top: 0;
+    }
+  }
+}
+
+.card-footer {
+  padding: $card-spacer-y $card-spacer-x;
+  background-color: $card-cap-bg;
+  border-top: $card-border-width solid $card-border-color;
+
+  &:last-child {
+    //@include border-radius(0 0 $card-inner-border-radius $card-inner-border-radius);
+  }
+}
+
+
+//
+// Header navs
+//
+
+.card-header-tabs {
+  margin-right: -$card-spacer-x / 2;
+  margin-bottom: -$card-spacer-y;
+  margin-left: -$card-spacer-x / 2;
+  border-bottom: 0;
+}
+
+.card-header-pills {
+  margin-right: -$card-spacer-x / 2;
+  margin-left: -$card-spacer-x / 2;
+}
+
+// Card image
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: $card-img-overlay-padding;
+}
+
+.card-img {
+  width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
+  //@include border-radius($card-inner-border-radius);
+}
+
+// Card image caps
+.card-img-top {
+  width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
+  //@include border-top-radius($card-inner-border-radius);
+}
+
+.card-img-bottom {
+  width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
+  //@include border-bottom-radius($card-inner-border-radius);
+}
+
+
+.back-to-top {
     position: fixed;
     bottom: 39%;
     right: 22%;
@@ -175,30 +329,105 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    display: none;
+    //display: none; 
     -webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    span {
+        &:after {
+            font-size:inherit;
+            @include fa-icon();
+            color:$text-green;
+             //content: $fa-var-arrow-up; //why is this not working for fa4 even?
+            content:"\f062";
+            margin: 0;
+            position: relative;
+            left: 13px;
+            top: 13px;
+            font-size: 19px;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+    }
 }
-#return-to-top i {
-    color: #fff;
-    margin: 0;
-    position: relative;
-    left: 13px;
-    top: 13px;
-    font-size: 19px;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
-#return-to-top:hover {
+.back-to-top:hover {
     background: rgba(0, 0, 0, 0.9);
 }
-#return-to-top:hover i {
+.back-to-top:hover i {
     color: #fff;
     top: 5px;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+@mixin setScrolltopColors($bgColor: #333, $arrowColor: white, $bgColorHover: $bgColor, $arrowColorHover: $arrowColor) {
+  #scrolltop-bg {
+    fill: $bgColor;
+  }
+  #scrolltop-arrow {
+    fill: $arrowColor;
+  }
+  a:hover {
+    #scrolltop-bg {
+      fill: $bgColorHover;
+    }
+    #scrolltop-arrow {
+      fill: $arrowColorHover;
+    }
+  }
+}
+
+.scrolltop-wrap {
+  $size: 3rem;
+  $offsetBottom: 2rem;
+  $offsetHorizontal: 2rem;
+  $scrollToRevealDistance: 2rem; // 12rem scroll offset to reveal scroll-to-top link
+  $color: #007bff;
+  box-sizing: border-box;
+  position: absolute;
+  top: $scrollToRevealDistance;
+  right: $offsetHorizontal;
+  bottom: 0;
+  pointer-events: none;
+  backface-visibility: hidden;
+  //@include setScrolltopColors($color, white, lighten($color, 8%));
+  // prevent extra page height if content is smaller than viewport
+  // Firefox only
+  /*@supports (-moz-appearance: meterbar) {
+    clip: rect(0, $size, auto, 0);
+  }*/
+  a {
+    $offset: - ($size + $offsetBottom); // pull up + add a small bottom space
+    position: fixed; // fallback
+    position: sticky;
+    top: $offset;
+    width: $size;
+    height: $size;
+    margin-bottom: $offset;
+    transform: translateY(100vh); // push to bottom from top (when stuck)
+    backface-visibility: hidden;
+    display: inline-block;
+    text-decoration: none;
+    user-select: none;
+    pointer-events: all;
+    outline: none;
+    overflow: hidden;
+        span {
+            &:after {
+                font-size:inherit;
+                @include fa-icon();
+                color:$text-green;
+                    //content: $fa-var-arrow-up; //why is this not working for fa4 even?
+                content:"\f062";
+            }
+        }
+  }
 }

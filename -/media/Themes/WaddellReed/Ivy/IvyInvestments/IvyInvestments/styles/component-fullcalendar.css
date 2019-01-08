@@ -11,6 +11,14 @@ $font-medium:16px;*/
 $font-normal:13px;
 $font-medium:16px;*/
   /* breakpoints */
+  /*Added NW
+p {
+    margin: 0 0 $middle-margin 0;
+}
+
+strong {
+    font-weight: 700;
+}*/
   background: #FFFFFF;
   overflow: hidden;
   box-sizing: border-box;
@@ -116,11 +124,7 @@ $font-medium:16px;*/
 }
 
 .event-calendar p {
-  margin: 0 0 20px 0;
-}
-
-.event-calendar strong {
-  font-weight: 700;
+  margin: 20px 0;
 }
 
 .event-calendar ul, .event-calendar ol {
@@ -230,11 +234,11 @@ $font-medium:16px;*/
 }
 
 .event-calendar .table-striped tbody tr:nth-of-type(odd) {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: #d9d9d6;
 }
 
 .event-calendar .table-striped tbody tr:nth-of-type(odd) th, .event-calendar .table-striped tbody tr:nth-of-type(odd) td {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: #d9d9d6;
 }
 
 .event-calendar .table-hover tbody tr:hover {
@@ -279,6 +283,14 @@ $font-medium:16px;*/
 $font-normal:13px;
 $font-medium:16px;*/
   /* breakpoints */
+  /*Added NW
+p {
+    margin: 0 0 $middle-margin 0;
+}
+
+strong {
+    font-weight: 700;
+}*/
 }
 
 .calendar-tooltip .field-filetypeicon > a > span, .calendar-tooltip .pdf, .calendar-tooltip .xls, .calendar-tooltip .xlsx, .calendar-tooltip .pptx, .calendar-tooltip .ppt, .calendar-tooltip .docx, .calendar-tooltip .doc, .calendar-tooltip .bmp, .calendar-tooltip .png, .calendar-tooltip .jpg, .calendar-tooltip .jpeg, .calendar-tooltip .psd, .calendar-tooltip .gif, .calendar-tooltip .avi, .calendar-tooltip .mp4, .calendar-tooltip .wmv, .calendar-tooltip .mov, .calendar-tooltip .mp3, .calendar-tooltip .wma, .calendar-tooltip .txt, .calendar-tooltip .zip {
@@ -379,11 +391,7 @@ $font-medium:16px;*/
 }
 
 .calendar-tooltip p {
-  margin: 0 0 20px 0;
-}
-
-.calendar-tooltip strong {
-  font-weight: 700;
+  margin: 20px 0;
 }
 
 .calendar-tooltip ul, .calendar-tooltip ol {
@@ -493,11 +501,11 @@ $font-medium:16px;*/
 }
 
 .calendar-tooltip .table-striped tbody tr:nth-of-type(odd) {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: #d9d9d6;
 }
 
 .calendar-tooltip .table-striped tbody tr:nth-of-type(odd) th, .calendar-tooltip .table-striped tbody tr:nth-of-type(odd) td {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: #d9d9d6;
 }
 
 .calendar-tooltip .table-hover tbody tr:hover {

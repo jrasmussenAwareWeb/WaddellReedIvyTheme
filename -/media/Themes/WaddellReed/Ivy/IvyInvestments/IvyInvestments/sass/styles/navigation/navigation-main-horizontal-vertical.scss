@@ -95,10 +95,31 @@
 
     // Additional styles fot drop down horizontal navigation (main)
     &.navigation-main-horizontal {
+        padding:0;
         .submenu>ul {
             padding-left: 0;
         }
+        li {
+            >.navigation-title {
+                >a {
+                display: inline-block; //for the required lock
+                }
+            }
+        }
+        .navigation-required {
+            margin-left:10px;
+            color:$text-white;
+            &:after {
+                font-size:inherit;
+                @include fa-icon();
+                content: $fa-var-lock; 
+            }
+        }
         .rel-level1 {
+            padding:0 10px;
+            @include respond-to(large) {
+                padding:0 20px;
+            }
             &.show {
                 >a {
                     &+ul {
@@ -109,15 +130,25 @@
                 >ul {
                     display: inline-flex !important;
                     flex-wrap: wrap;
+                    -webkit-box-shadow: 6px 4px 12px 4px rgba(0,0,0,0.4);
+                    -moz-box-shadow: 6px 4px 12px 4px rgba(0,0,0,0.4);
+                    box-shadow: 6px 4px 12px 4px rgba(0,0,0,0.4);
                 }
             }
             >ul {
                 width: 100%;
                 clear: both;
                 left: 0;
+
                 //overwrite the sm-10 column sizing
-                width:165%;
-                left:-30%;
+                @include respond-to(tablet) {
+                    width:160%;
+                    left:-27%;
+                }
+                 @include respond-to(large) {
+                    width:165%;
+                    left:-30%;
+                 }
             }
             //hide the 3rd column
             @include respond-to(tablet-only) {
@@ -128,8 +159,15 @@
                 }
             }
         }
+        //fix so the item-cta's dont get cut off
         .rel-level2 {
-            padding:0 25px !important; //why important?
+            &.last {
+                ul {
+                    &:after {
+                        clear:none;
+                    }
+                }
+            }
             //overwrite default bg
             &.black, &.gray {
                 border-top:10px solid #000;
@@ -137,9 +175,12 @@
             }
             &.black {
                 background:#000;
+                padding:0 25px;
                 li {
                     border-bottom:1px solid #4d4d4d;
-                    >.navigation-title {
+
+
+                    >.navigation-title { //removing > here doesn't grab navigation-heading .navigation-title
                         >a {
                             color:$text-white;
                             &:hover, &:focus {
@@ -150,10 +191,139 @@
                     &:last-of-type {
                         border-bottom:0;
                     }
+                    &:hover, &:focus {
+                        color:$text-green;
+                    }
+                }
+                .rel-level3 {
+                    ul {
+                        margin-top:-10px;
+                        padding-bottom:15px;
+                        li {
+                            border-bottom:0;
+                        }
+                    }
+                    &:hover, &:focus {
+                        >.navigation-title {
+                            >a {
+                                color:$text-green;
+                            }
+                        }
+                        >.navigation-required {
+                            color:$text-green;
+                        }
+                    }
+                }
+                .rel-level4 {
+                    >.navigation-title {
+                        >a {
+                            padding:8px 0;
+                        }
+                    }
+                     &:hover, &:focus {
+                        >.navigation-title {
+                            >a {
+                                color:$text-green;
+                            }
+                        }
+                        >.navigation-required {
+                            color:$text-green;
+                        }
+                    }
                 }
             }
             &.gray {
                 background:#f2f2f2;
+                //padding:0; //padding on the items
+                .item-cta, .item-fake {
+                    @include proxima(); //reset from bold
+                }
+                .item-fake {
+                    h4 {
+                        @include proximaboldcondensed();
+                        text-transform:uppercase; 
+                        color:$text-basic;
+                        margin:15px 5px 0;
+                    }
+                    div {
+                        a {
+                        display: inline;
+                        color:$text-green;
+                            &:hover, &:focus {
+                                color:$text-basic;
+                            }
+                        }
+                        p {
+                            margin:$middle-margin 0;
+                            font-size:$font-small;
+                            strong {
+                                font-size:$font-normal;
+                                line-height:1;
+                            }
+                            a {
+                                font-size:$font-small;
+                            }
+                        }
+                    }
+                    table {
+                        width:100%;
+                        font-size:$font-small;
+                        margin-top:15px;
+                        a {
+                            font-size:$font-small;
+                            text-decoration:none;
+                             &.track-fund {
+                                color:$text-basic;
+                                &:before {
+                                    font-size:inherit;
+                                    @include fa-icon();
+                                    content: $fa-var-plus;
+                                    color:$text-green;
+                                    margin-right:5px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .item-cta {
+                    padding:10px 5px;
+                    img {
+                        width:100%;
+                        height:auto;
+                    }
+                    hr {
+                        border:0;
+                        color:transparent;
+                        border-bottom:1px solid $border-dark-gray;
+                        margin-top:20px;
+                    }
+                    .field-navigationlink {
+                        a {
+                            @include copernicus();
+                            font-size:24px;
+                            color:$text-green;
+                            text-decoration:none;
+                        }
+                    }
+                    .navigation-required {
+                        color:$text-green;
+                        &:after {
+                            font-size:inherit;
+                            @include fa-icon();
+                            content: $fa-var-lock; 
+                        }
+                    }
+                    &:hover, &:focus {
+                        .field-navigationlink {
+                        a {
+                            color:$text-basic;
+                            }
+                        }
+                        .navigation-required {
+                            color:$text-basic;
+                        }
+                    }
+                }
             }
             float: left;
             padding: 10px;
@@ -164,6 +334,7 @@
                 display:none;
             }
         }
+        //consolidate, move, work
         .rel-level2, .rel-level3 {
             li {
                 >.navigation-title {
@@ -173,41 +344,88 @@
                 }
             }
         }
+        //
         .rel-level3 {
             @include proximabold();
-            .navigation-required {
-                float:left;
-                margin-right:10px;
-                position:relative;
-                top:11px;
-                left:3px;
-                color:$text-white;
-                &:before {
-                    font-size:inherit;
-                    @include fa-icon();
-                    content: $fa-var-lock; 
+            li {
+                >.navigation-title {
+                    >a {
+                         &:before {
+                            font-size:inherit;
+                            @include fa-icon();
+                            content: $fa-var-caret-right;
+                            margin-right:10px;
+                        }
+                    }
                 }
-            }
-            h4, h4 > a {
-                color:$text-green;
-                font-size:24px;
-                text-decoration:none;
                 &:hover, &:focus {
-                    color:$text-basic;
+                    .navigation-required {
+                        color:$text-green;
+                    }
                 }
-            }
-            img {
-                width:100%;
-                height:auto;
-            }
-            .item-decoration, .item-fake {
-                @include proxima();
-            }
+            } 
         }
         .rel-level4 {
-            @include proxima();
+            @include proxima(); //reset from bold
+        }
+        
+    }
+
+    /*.navigation-heading {
+        .navigation-title {
+            color:$text-white;
+        }
+        &:hover, &:focus {
+            .navigation-title {
+                color:$text-green;
+            }
+        }
+    }*/
+
+    .symbol-registered {
+        > .navigation-title {
+            >a {
+                &:after {
+                    @include fa-icon(); 
+                    font-size:10px;
+                    content: $fa-var-registered;
+                    position:relative;
+                    top:-4px;
+                    left:2px;
+                }
+            }
         }
     }
+    .symbol-trademark {
+        > .navigation-title {
+            >a {
+                &:after {
+                    @include fa-icon(); 
+                    font-size:10px;
+                    content: $fa-var-trademark; 
+                    position:relative;
+                    top:-6px;
+                    left:2px;
+                }
+            }
+        }
+    }
+
+    .service-mark {
+        > .navigation-title {
+            >a {
+                &:after {
+                    font-size:10px;
+                    content: 'SM';
+                    position:relative;
+                    top:-5px;
+                    left:2px;
+                    
+                }
+            }
+        }
+    }
+
     // Additional styles for drop down vertical navigation (umbrella & account)
     &.navigation-main-vertical {
         .rel-level1>ul {
@@ -237,6 +455,7 @@
             padding:0;
             >.navigation-title {
                 border:1px solid $border-white;
+                line-height:1.7;
                 >a {
                     @include proximabold();
                     color:$text-green;
@@ -368,9 +587,6 @@
                 background:$text-green;
                 >a {
                     color:$text-white;
-                    /*&:before {
-                        content: $fa-var-sign-out; 
-                    }*/
                     &:after {
                         font-size:inherit;
                         @include fa-icon();
@@ -455,6 +671,17 @@
                 }
             }
         }
+        @include respond-to(large) {
+            padding-right:0;
+            .rel-level1 {
+                >.navigation-title {
+                    >a {
+                        &:after {
+                            content:'/Register';
+                        }
+                    }
+                }
+            }
+        }
     }
-
 }
