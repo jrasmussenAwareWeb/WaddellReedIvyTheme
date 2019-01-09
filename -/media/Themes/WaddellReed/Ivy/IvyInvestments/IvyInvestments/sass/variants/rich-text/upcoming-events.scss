@@ -2,13 +2,11 @@
 @import "../../abstracts/mixins";
 @import "../../base/fontawesome/font-awesome-mix-var";
 
-&.featured-funds {
+&.upcoming-events {
+    padding-top:15px;
     .component-content {
-        border-bottom:3px solid $text-white;
+        border-bottom:3px solid $border-basic-color;
         margin-bottom:20px;
-    }
-    h2, a {
-        color:$text-white;
     }
     h2 {
         @include proximaboldcondensed();
@@ -22,6 +20,7 @@
         @include proximabold();
         font-size:$font-normal;
         text-decoration:none;
+        color:$text-green;
         &:after {
             font-size:inherit;
             @include fa-icon();

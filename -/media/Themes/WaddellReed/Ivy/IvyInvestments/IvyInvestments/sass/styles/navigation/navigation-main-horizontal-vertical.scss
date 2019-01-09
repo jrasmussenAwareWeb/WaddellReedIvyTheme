@@ -4,6 +4,83 @@
 
 //Drop Down Navigation Common Part
 .navigation.navigation-main {
+
+    .symbol-registered {
+        > .navigation-title {
+            >a {
+                &:after {
+                    @include fa-icon(); 
+                    font-size:10px;
+                    content: $fa-var-registered;
+                    position:relative;
+                    top:-4px;
+                    left:2px;
+                }
+            }
+        }
+    }
+    /*entered in sitecore RTE <span></span>
+    .symbol-registered {
+        &:after {
+            @include fa-icon(); 
+            font-size:10px;
+            content: $fa-var-registered;
+            position:relative;
+            top:-4px;
+            left:2px;
+        }
+    }*/
+    .symbol-trademark {
+        > .navigation-title {
+            >a {
+                &:after {
+                    @include fa-icon(); 
+                    font-size:10px;
+                    content: $fa-var-trademark; 
+                    position:relative;
+                    top:-6px;
+                    left:2px;
+                }
+            }
+        }
+    }
+    /*entered in sitecore RTE <span></span>
+    .symbol-trademark {
+        &:after {
+            @include fa-icon(); 
+            font-size:10px;
+            content: $fa-var-trademark; 
+            position:relative;
+            top:-6px;
+            left:2px;
+        }
+    }*/
+
+    .service-mark {
+        > .navigation-title {
+            >a {
+                &:after {
+                    font-size:10px;
+                    content: 'SM';
+                    position:relative;
+                    top:-5px;
+                    left:2px;
+                    
+                }
+            }
+        }
+    }
+    /*entered in sitecore RTE <span></span>
+    .service-mark {
+        &:after {
+            font-size:10px;
+            content: 'SM';
+            position:relative;
+            top:-5px;
+            left:2px;
+        }
+    }*/
+
     .component-content>nav {
         position: relative;
         ul {
@@ -158,7 +235,7 @@
                 }
             }
         }
-        //fix so the item-cta's dont get cut off
+        //fix so the item-cta's dont get cut off (has to do with page length)
         .rel-level2 {
             &.last {
                 ul {
@@ -195,6 +272,13 @@
                     }
                 }
                 .rel-level3 {
+                    .navigation-heading {
+                        padding:15px 0;
+                        >.navigation-title {
+                            color:$text-white;
+                            font-size:$font-normal;
+                        }
+                    }
                     ul {
                         margin-top:-10px;
                         padding-bottom:15px;
@@ -203,6 +287,11 @@
                         }
                     }
                     &:hover, &:focus {
+                        .navigation-heading {
+                            >.navigation-title {
+                                color:$text-green;
+                            }
+                        }
                         >.navigation-title {
                             >a {
                                 color:$text-green;
@@ -287,6 +376,16 @@
                 }
                 .item-cta {
                     padding:10px 5px;
+                    //entered in sitecore RTE <span></span>
+                    .service-mark {
+                        &:after {
+                            font-size:10px;
+                            content: 'SM';
+                            position:relative;
+                            top:-5px;
+                            left:2px;
+                        }
+                    }
                     img {
                         width:100%;
                         height:auto;
@@ -382,81 +481,7 @@
         }
     }*/
 
-    .symbol-registered {
-        > .navigation-title {
-            >a {
-                &:after {
-                    @include fa-icon(); 
-                    font-size:10px;
-                    content: $fa-var-registered;
-                    position:relative;
-                    top:-4px;
-                    left:2px;
-                }
-            }
-        }
-    }
-    //entered in sitecore RTE <span></span>
-    .symbol-registered {
-        &:after {
-            @include fa-icon(); 
-            font-size:10px;
-            content: $fa-var-registered;
-            position:relative;
-            top:-4px;
-            left:2px;
-        }
-    }
-    .symbol-trademark {
-        > .navigation-title {
-            >a {
-                &:after {
-                    @include fa-icon(); 
-                    font-size:10px;
-                    content: $fa-var-trademark; 
-                    position:relative;
-                    top:-6px;
-                    left:2px;
-                }
-            }
-        }
-    }
-    //entered in sitecore RTE <span></span>
-    .symbol-trademark {
-        &:after {
-            @include fa-icon(); 
-            font-size:10px;
-            content: $fa-var-trademark; 
-            position:relative;
-            top:-6px;
-            left:2px;
-        }
-    }
-
-    .service-mark {
-        > .navigation-title {
-            >a {
-                &:after {
-                    font-size:10px;
-                    content: 'SM';
-                    position:relative;
-                    top:-5px;
-                    left:2px;
-                    
-                }
-            }
-        }
-    }
-    //entered in sitecore RTE <span></span>
-    .service-mark {
-        &:after {
-            font-size:10px;
-            content: 'SM';
-            position:relative;
-            top:-5px;
-            left:2px;
-        }
-    }
+    
 
     // Additional styles for drop down vertical navigation (umbrella & account)
     &.navigation-main-vertical {

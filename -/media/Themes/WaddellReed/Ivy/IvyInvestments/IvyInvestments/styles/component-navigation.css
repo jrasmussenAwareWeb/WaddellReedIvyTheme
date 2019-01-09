@@ -225,6 +225,38 @@ $font-normal:13px;
 $font-medium:16px;*/
 /* breakpoints */
 .navigation.navigation-main {
+  /*entered in sitecore RTE <span></span>
+    .symbol-registered {
+        &:after {
+            @include fa-icon(); 
+            font-size:10px;
+            content: $fa-var-registered;
+            position:relative;
+            top:-4px;
+            left:2px;
+        }
+    }*/
+  /*entered in sitecore RTE <span></span>
+    .symbol-trademark {
+        &:after {
+            @include fa-icon(); 
+            font-size:10px;
+            content: $fa-var-trademark; 
+            position:relative;
+            top:-6px;
+            left:2px;
+        }
+    }*/
+  /*entered in sitecore RTE <span></span>
+    .service-mark {
+        &:after {
+            font-size:10px;
+            content: 'SM';
+            position:relative;
+            top:-5px;
+            left:2px;
+        }
+    }*/
   /*.navigation-heading {
         .navigation-title {
             color:$text-white;
@@ -235,6 +267,42 @@ $font-medium:16px;*/
             }
         }
     }*/
+}
+
+.navigation.navigation-main .symbol-registered > .navigation-title > a:after {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 10px;
+  content: "";
+  position: relative;
+  top: -4px;
+  left: 2px;
+}
+
+.navigation.navigation-main .symbol-trademark > .navigation-title > a:after {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 10px;
+  content: "";
+  position: relative;
+  top: -6px;
+  left: 2px;
+}
+
+.navigation.navigation-main .service-mark > .navigation-title > a:after {
+  font-size: 10px;
+  content: 'SM';
+  position: relative;
+  top: -5px;
+  left: 2px;
 }
 
 .navigation.navigation-main .component-content > nav {
@@ -465,6 +533,15 @@ $font-medium:16px;*/
   color: #009639;
 }
 
+.navigation.navigation-main.navigation-main-horizontal .rel-level2.black .rel-level3 .navigation-heading {
+  padding: 15px 0;
+}
+
+.navigation.navigation-main.navigation-main-horizontal .rel-level2.black .rel-level3 .navigation-heading > .navigation-title {
+  color: #fff;
+  font-size: 16px;
+}
+
 .navigation.navigation-main.navigation-main-horizontal .rel-level2.black .rel-level3 ul {
   margin-top: -10px;
   padding-bottom: 15px;
@@ -472,6 +549,10 @@ $font-medium:16px;*/
 
 .navigation.navigation-main.navigation-main-horizontal .rel-level2.black .rel-level3 ul li {
   border-bottom: 0;
+}
+
+.navigation.navigation-main.navigation-main-horizontal .rel-level2.black .rel-level3:hover .navigation-heading > .navigation-title, .navigation.navigation-main.navigation-main-horizontal .rel-level2.black .rel-level3:focus .navigation-heading > .navigation-title {
+  color: #009639;
 }
 
 .navigation.navigation-main.navigation-main-horizontal .rel-level2.black .rel-level3:hover > .navigation-title > a, .navigation.navigation-main.navigation-main-horizontal .rel-level2.black .rel-level3:focus > .navigation-title > a {
@@ -565,6 +646,14 @@ $font-medium:16px;*/
   padding: 10px 5px;
 }
 
+.navigation.navigation-main.navigation-main-horizontal .rel-level2.gray .item-cta .service-mark:after {
+  font-size: 10px;
+  content: 'SM';
+  position: relative;
+  top: -5px;
+  left: 2px;
+}
+
 .navigation.navigation-main.navigation-main-horizontal .rel-level2.gray .item-cta img {
   width: 100%;
   height: auto;
@@ -637,78 +726,6 @@ $font-medium:16px;*/
 
 .navigation.navigation-main.navigation-main-horizontal .rel-level4 {
   font-family: "Proxima", arial, helvetica, sans-serif;
-}
-
-.navigation.navigation-main .symbol-registered > .navigation-title > a:after {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 10px;
-  content: "";
-  position: relative;
-  top: -4px;
-  left: 2px;
-}
-
-.navigation.navigation-main .symbol-registered:after {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 10px;
-  content: "";
-  position: relative;
-  top: -4px;
-  left: 2px;
-}
-
-.navigation.navigation-main .symbol-trademark > .navigation-title > a:after {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 10px;
-  content: "";
-  position: relative;
-  top: -6px;
-  left: 2px;
-}
-
-.navigation.navigation-main .symbol-trademark:after {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 10px;
-  content: "";
-  position: relative;
-  top: -6px;
-  left: 2px;
-}
-
-.navigation.navigation-main .service-mark > .navigation-title > a:after {
-  font-size: 10px;
-  content: 'SM';
-  position: relative;
-  top: -5px;
-  left: 2px;
-}
-
-.navigation.navigation-main .service-mark:after {
-  font-size: 10px;
-  content: 'SM';
-  position: relative;
-  top: -5px;
-  left: 2px;
 }
 
 .navigation.navigation-main.navigation-main-vertical .rel-level1 > ul {

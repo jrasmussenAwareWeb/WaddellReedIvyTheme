@@ -18,6 +18,7 @@ $font-medium:16px;*/
   background: #FFFFFF;
   color: #009639;
   text-transform: uppercase;
+  font-size: 16px;
 }
 
 .plain-html .button-default:hover, .plain-html .btn-default:hover, .plain-html .default:hover {
@@ -232,10 +233,6 @@ $font-medium:16px;*/
 .plain-html .card .card-body .card-link {
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.plain-html .card .card-body .card-link .btn-default, .plain-html .card .card-body .card-link .button-default {
-  font-size: 16px;
 }
 
 .plain-html .card .card-body .card-link .btn-default:before, .plain-html .card .card-body .card-link .button-default:before {
