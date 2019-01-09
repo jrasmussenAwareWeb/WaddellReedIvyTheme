@@ -408,8 +408,7 @@ $font-medium:16px;*/
 
 @media only screen and (min-width: 1200px) {
   .navigation.navigation-main.navigation-main-horizontal .rel-level1 > ul {
-    width: 165%;
-    left: -30%;
+    left: -28%;
   }
 }
 

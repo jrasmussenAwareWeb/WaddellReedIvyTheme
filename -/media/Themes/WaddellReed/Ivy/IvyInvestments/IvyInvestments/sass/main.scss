@@ -145,6 +145,18 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
 }
 /**/
 
+#header {
+    position:fixed;
+    z-index:99;
+    background:$bg-white;
+}
+
+//offset the fixed header
+#content {
+    position:relative;
+    top:100px;
+}
+
 #header .image {
     padding-top:10px;
     img {
