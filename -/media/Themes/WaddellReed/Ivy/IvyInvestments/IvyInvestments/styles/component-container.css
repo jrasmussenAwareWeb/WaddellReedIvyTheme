@@ -5,6 +5,13 @@ $font-medium:16px;*/
 $font-normal:13px;
 $font-medium:16px;*/
 /* breakpoints */
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/* breakpoints */
 .title-row-box {
   border-width: 1px;
   border-style: solid;
@@ -99,7 +106,8 @@ $font-normal:13px;
 $font-medium:16px;*/
 .container {
   padding: 0;
-  /*bootstrap 3 tweaks*/
+  /*bootstrap 4 max-width on min-width query fixes*/
+  /**/
 }
 
 .container .component-content:after {
@@ -118,4 +126,36 @@ $font-medium:16px;*/
   .container:not(.col-12) {
     max-width: 1140px;
   }
+}
+
+.container.indent-top {
+  margin-top: 60px;
+}
+
+.container.indent-bottom {
+  margin-bottom: 60px;
+}
+
+.container#content .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.container#content .row.column-splitter {
+  margin-left: 15px;
+  margin-right: 15px;
+  /*>div {
+                    padding-left:15px;
+                    padding-right:15px;
+                }*/
+}
+
+.container#content .row.column-splitter:not(.component) [class*="col-"] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container.container-green-background-top-to-bottom > .component-content > .row {
+  margin-left: 15px;
+  margin-right: 15px;
 }

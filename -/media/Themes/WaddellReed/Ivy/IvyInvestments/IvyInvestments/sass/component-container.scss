@@ -7,7 +7,9 @@
         @include clearfix();
     }
 
-    /*bootstrap 3 tweaks*/
+    //Ivy Specific
+
+    /*bootstrap 4 max-width on min-width query fixes*/
     @include respond-to(mobile-horizontal) {
         max-width:100%;
     }
@@ -17,6 +19,44 @@
             max-width:1140px;
          }
     }
+    /**/
 
+    &.indent-top {
+        margin-top:$extralarge-margin;
+    }
+    &.indent-bottom {
+        margin-bottom:$extralarge-margin;
+    }
+
+    &#content {
+        .row {
+            margin-left:0;
+            margin-right:0;
+            &.column-splitter {
+                margin-left:15px; 
+                margin-right:15px;
+                /*>div {
+                    padding-left:15px;
+                    padding-right:15px;
+                }*/
+                &:not(.component) {
+                    [class*="col-"] {
+                        padding-left:15px;
+                        padding-right:15px;
+                    }
+                }
+            }
+        }
+    }
+
+    //(TEMP) this may need to change later to be a more global change - current targeting Home: Featured Funds = see above
+    &.container-green-background-top-to-bottom {
+        >.component-content {
+            >.row {
+                margin-left:15px;
+                margin-right:15px;
+            }
+        }
+    }
 
 }

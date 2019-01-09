@@ -3226,6 +3226,7 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
 #content {
   position: relative;
   top: 100px;
+  margin-bottom: 130px;
 }
 
 #header .image {
@@ -3245,6 +3246,10 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
     background: #FFFFFF;
     border-bottom: 1px solid #b7b7b7;
   }
+}
+
+#footer .rich-text > .component-content p:first-child {
+  margin-top: 0;
 }
 
 .back-to-top {
