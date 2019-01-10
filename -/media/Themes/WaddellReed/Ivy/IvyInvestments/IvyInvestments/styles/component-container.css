@@ -112,18 +112,26 @@ $font-medium:16px;*/
 }
 
 .home-feature .col-xl-auto:last-of-type .login input[type="submit"] {
-  color: #009639;
-  text-decoration: none;
-  background-color: #FFFFFF;
-  border: solid 1px #009639;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin: 5px 0;
   padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
   cursor: pointer;
+  border: 2px solid #009639;
+  background: #FFFFFF;
+  color: #009639;
   width: 100%;
 }
 
 .home-feature .col-xl-auto:last-of-type .login input[type="submit"]:hover {
   color: #fff;
-  background-color: #009639;
+  background: #009639;
+  border: 2px solid #009639;
 }
 
 .home-feature .col-xl-auto:last-of-type .login input[type="submit"]:hover, .home-feature .col-xl-auto:last-of-type .login input[type="submit"]:focus {

@@ -96,7 +96,7 @@
                     }
                 }
                 input[type="submit"] {
-                    @include btn-default();
+                    @include btn-default;
                     width:100%;
                     &:hover, &:focus {
                         background: $bg-green !important;

@@ -60,7 +60,8 @@
     background-repeat: no-repeat;
 }
 
-@mixin btn-default() {
+//Buttons
+@mixin btn-default {
     display: inline-block;
     vertical-align: middle;
     box-sizing: border-box;
@@ -68,19 +69,38 @@
     padding: 10px 15px;
     text-align: center;
     text-decoration: none;
+    text-transform:uppercase;
+    font-size:$font-normal;
+    cursor: pointer;
     border:2px solid $text-green;
     background:$bg-white;
     color:$text-green;
+    &:hover{
+        color: $text-white;
+        background: $bg-green; 
+        border:2px solid $text-green;
+    }
+}
+
+@mixin btn-primary {
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    margin: 5px 0;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
     text-transform:uppercase;
     font-size:$font-normal;
-}
-
-@mixin btn-default-hover() { //not working?
-    color: $text-white;
-    background: $bg-green; 
+    cursor: pointer;
     border:2px solid $text-green;
+    background-color: $text-green;
+    color: $text-white;
+    &:hover{
+        color: $text-green;
+        background-color: $bg-basic-color;
+    }
 }
-
 
 
 /* breakpoints */
@@ -159,30 +179,4 @@ $break-mobile: 380px; //compact phones
     background: nth(nth($color-stops, 1), 1);
     background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
     background: linear-gradient($direction, $color-stops);
-}
-
-//Buttons
-@mixin btn-default {
-    color: $text-green;
-    text-decoration: none;
-    background-color: $bg-basic-color;
-    border: solid 1px $text-green;
-    padding: 10px 15px;
-    cursor: pointer;
-    &:hover{
-        color: $text-white;
-        background-color: $text-green;
-    }
-}
-@mixin btn-primary {
-    color: $text-white;
-    text-decoration: none;
-    background-color: $text-green;
-    border: solid 1px $text-green;
-    padding: 10px 15px;
-    cursor: pointer;
-    &:hover{
-        color: $text-green;
-        background-color: $bg-basic-color;
-    }
 }
