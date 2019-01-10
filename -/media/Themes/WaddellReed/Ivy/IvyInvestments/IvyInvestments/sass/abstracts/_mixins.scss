@@ -60,12 +60,35 @@
     background-repeat: no-repeat;
 }
 
+@mixin btn-default() {
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    margin: 5px 0;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    border:2px solid $text-green;
+    background:$bg-white;
+    color:$text-green;
+    text-transform:uppercase;
+    font-size:$font-normal;
+}
+
+@mixin btn-default-hover() { //not working?
+    color: $text-white;
+    background: $bg-green; 
+    border:2px solid $text-green;
+}
+
+
+
 /* breakpoints */
-$break-large: 1200px;
-$break-desktop: 992px;
-$break-mobile-large: 768px;
-$break-mobile-horizontal: 576px;
-$break-mobile: 380px;
+$break-large: 1200px; //desktops
+$break-desktop: 992px; //laptops
+$break-mobile-large: 768px; //tablets
+$break-mobile-horizontal: 576px; //phones
+$break-mobile: 380px; //compact phones
 
 @mixin respond-to($media) {
     @if $media==mobile {

@@ -21,7 +21,7 @@ $font-medium:16px;*/
   font-size: 16px;
 }
 
-.plain-html .button-default:hover, .plain-html .btn-default:hover, .plain-html .default:hover {
+.plain-html .button-default:hover, .plain-html .button-default:focus, .plain-html .btn-default:hover, .plain-html .btn-default:focus, .plain-html .default:hover, .plain-html .default:focus {
   color: #fff;
   background: #009639;
   border: 2px solid #009639;
@@ -45,7 +45,7 @@ $font-medium:16px;*/
   font-weight: bold;
 }
 
-.plain-html .button-success:hover, .plain-html .btn-success:hover, .plain-html .success:hover {
+.plain-html .button-success:hover, .plain-html .button-success:focus, .plain-html .btn-success:hover, .plain-html .btn-success:focus, .plain-html .success:hover, .plain-html .success:focus {
   color: #fff;
   background: #92be43;
 }
@@ -63,12 +63,12 @@ $font-medium:16px;*/
   padding: 10px 15px;
   text-align: center;
   text-decoration: none;
-  background: #bc4526;
+  background: #6d3332;
   color: #fff;
   font-weight: bold;
 }
 
-.plain-html .button-warning:hover, .plain-html .btn-warning:hover, .plain-html .warning:hover {
+.plain-html .button-warning:hover, .plain-html .button-warning:focus, .plain-html .btn-warning:hover, .plain-html .btn-warning:focus, .plain-html .warning:hover, .plain-html .warning:focus {
   color: #fff;
   background: #c34e30;
 }
