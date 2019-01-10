@@ -165,6 +165,12 @@ $break-mobile: 380px; //compact phones
             border-color: $border-color;
     }
 }
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
 @mixin fixed-bg($pos, $min-height:240px) {
     background-position: $pos;
     background-attachment: fixed;

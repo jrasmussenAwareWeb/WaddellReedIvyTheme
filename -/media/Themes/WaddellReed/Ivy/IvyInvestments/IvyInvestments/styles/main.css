@@ -3285,83 +3285,23 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
   margin-top: 0;
 }
 
-.back-to-top {
-  position: fixed;
-  bottom: 39%;
-  right: 22%;
-  background: black;
-  background: rgba(0, 0, 0, 0.8);
-  width: 50px;
-  height: 50px;
-  display: block;
-  text-decoration: none;
-  border: 3px solid #009639;
-  border-radius: 10px;
-  -webkit-transition: all 0.3s linear;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.back-to-top span:after {
-  font-size: inherit;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #009639;
-  content: "\f062";
-  margin: 0;
-  position: relative;
-  left: 13px;
-  top: 13px;
-  font-size: 19px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.back-to-top:hover {
-  background: rgba(0, 0, 0, 0.9);
-}
-
-.back-to-top:hover i {
-  color: #fff;
-  top: 5px;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 .scrolltop-wrap {
-  box-sizing: border-box;
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  bottom: 0;
-  pointer-events: none;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  /*@supports (-moz-appearance: meterbar) {
-    clip: rect(0, $size, auto, 0);
-  }*/
+  pointer-events: none;
+  position: absolute;
+  bottom: 3rem;
+  right: 0;
 }
 
 .scrolltop-wrap a {
-  position: fixed;
-  position: -webkit-sticky;
-  position: sticky;
-  top: -5rem;
-  width: 3rem;
-  height: 3rem;
-  margin-bottom: -5rem;
-  -webkit-transform: translateY(100vh);
-  -ms-transform: translateY(100vh);
-  transform: translateY(100vh);
+  text-align: center;
+  font-size: 2.4rem;
+  width: 50px;
+  height: 50px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  display: inline-block;
+  display: block;
   text-decoration: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -3370,9 +3310,16 @@ html {
   pointer-events: all;
   outline: none;
   overflow: hidden;
+  position: fixed;
+  bottom: 2rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 3px solid #009639;
+  border-radius: 10px;
+  -webkit-transition: width 0.5s ease-in-out, margin 0.5s ease-in-out, background-color 0.5s ease-in-out, border-radius 0.25s ease-in-out, color 0.25s ease-in-out;
+  transition: width 0.5s ease-in-out, margin 0.5s ease-in-out, background-color 0.5s ease-in-out, border-radius 0.25s ease-in-out, color 0.25s ease-in-out;
 }
 
-.scrolltop-wrap a span:after {
+.scrolltop-wrap a:after {
   font-size: inherit;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -3382,4 +3329,61 @@ html {
   -moz-osx-font-smoothing: grayscale;
   color: #009639;
   content: "\f062";
+  line-height: 42px;
+}
+
+.scrolltop-wrap a:hover, .scrolltop-wrap a.auto {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  -webkit-transition: width 0.5s ease-in-out, margin 0.5s ease-in-out, border-radius 0.25s ease-in-out, color 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out, margin 0.5s ease-in-out, border-radius 0.25s ease-in-out, color 0.5s ease-in-out;
+}
+
+.scrolltop-wrap a:hover:after, .scrolltop-wrap a.auto:after {
+  -webkit-animation: arrow-once cubic-bezier(0, 0.6, 1, 0.4) 0.5s, arrow-infinite 1s cubic-bezier(0, 0.6, 1, 0.4) infinite 0.5s;
+  animation: arrow-once cubic-bezier(0, 0.6, 1, 0.4) 0.5s, arrow-infinite 1s cubic-bezier(0, 0.6, 1, 0.4) infinite 0.5s;
+}
+
+@-webkit-keyframes arrow-once {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+  }
+}
+
+@keyframes arrow-once {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+  }
+}
+
+@-webkit-keyframes arrow-infinite {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+  }
+  100% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+  }
+}
+
+@keyframes arrow-infinite {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+  }
+  100% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+  }
 }
