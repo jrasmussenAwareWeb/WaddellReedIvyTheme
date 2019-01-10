@@ -150,6 +150,9 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
     position:relative;
     top:140px;
     margin-bottom:140px;
+    @include respond-to(mobile-large) {
+        top:99px;
+    }
 }
 
 #header .image {

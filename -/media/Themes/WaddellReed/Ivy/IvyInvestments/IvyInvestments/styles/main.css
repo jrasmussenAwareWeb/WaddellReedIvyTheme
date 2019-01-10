@@ -3256,6 +3256,12 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
   margin-bottom: 140px;
 }
 
+@media only screen and (max-width: 767px) {
+  #content {
+    top: 99px;
+  }
+}
+
 #header .image {
   padding-top: 10px;
 }
