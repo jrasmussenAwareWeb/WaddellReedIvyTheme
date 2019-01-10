@@ -745,6 +745,13 @@ $font-medium:16px;*/
   max-width: 210px;
 }
 
+@media only screen and (min-width: 1200px) {
+  .navigation.navigation-main.navigation-umbrella {
+    position: relative;
+    left: -10px;
+  }
+}
+
 .navigation.navigation-main.navigation-umbrella .level1 > .navigation-title > a, .navigation.navigation-main.navigation-umbrella .level0 > .navigation-title > a {
   font-size: 16px;
 }

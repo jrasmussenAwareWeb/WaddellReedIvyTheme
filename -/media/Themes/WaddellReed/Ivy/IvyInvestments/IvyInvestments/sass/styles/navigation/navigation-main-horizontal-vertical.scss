@@ -499,6 +499,10 @@
     // Additional styles for the the umbrella navigation
     &.navigation-umbrella {
         max-width:210px;
+        @include respond-to(large) {
+            position:relative;
+            left:-10px;
+        }
         .level1, .level0 {
             >.navigation-title>a {
                 font-size: $navigation-font-small;
