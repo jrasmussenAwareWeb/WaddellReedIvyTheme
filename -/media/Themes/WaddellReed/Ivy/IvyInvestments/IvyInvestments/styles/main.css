@@ -3289,9 +3289,9 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   pointer-events: none;
-  position: absolute;
-  bottom: 3rem;
-  right: 0;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
 }
 
 .scrolltop-wrap a {
@@ -3310,8 +3310,6 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
   pointer-events: all;
   outline: none;
   overflow: hidden;
-  position: fixed;
-  bottom: 2rem;
   background-color: rgba(0, 0, 0, 0.8);
   border: 3px solid #009639;
   border-radius: 10px;

@@ -194,9 +194,9 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
 .scrolltop-wrap {
     backface-visibility: hidden;
     pointer-events: none;
-    position: absolute;
-    bottom: 3rem;
-    right: 0;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
     a {
         text-align: center;
         font-size: 2.4rem;
@@ -209,8 +209,8 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
         pointer-events: all;
         outline: none;
         overflow: hidden;
-        position: fixed; // fallback
-        bottom: 2rem;
+        //position: fixed;
+        //bottom: 2rem;
         background-color: rgba(0, 0, 0, 0.8);
         border: 3px solid $text-green;
         @include border-radius(10px);
