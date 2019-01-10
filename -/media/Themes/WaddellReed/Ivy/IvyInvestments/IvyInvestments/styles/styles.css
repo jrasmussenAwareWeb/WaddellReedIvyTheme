@@ -138,7 +138,7 @@ $font-medium:16px;*/
   font-size: 16px;
 }
 
-.link-button .button-default:hover, .link-button .btn-default:hover, .link-button .default:hover {
+.link-button .button-default:hover, .link-button .button-default:focus, .link-button .btn-default:hover, .link-button .btn-default:focus, .link-button .default:hover, .link-button .default:focus {
   color: #fff;
   background: #009639;
   border: 2px solid #009639;
@@ -162,7 +162,7 @@ $font-medium:16px;*/
   font-weight: bold;
 }
 
-.link-button .button-success:hover, .link-button .btn-success:hover, .link-button .success:hover {
+.link-button .button-success:hover, .link-button .button-success:focus, .link-button .btn-success:hover, .link-button .btn-success:focus, .link-button .success:hover, .link-button .success:focus {
   color: #fff;
   background: #92be43;
 }
@@ -180,12 +180,12 @@ $font-medium:16px;*/
   padding: 10px 15px;
   text-align: center;
   text-decoration: none;
-  background: #bc4526;
+  background: #6d3332;
   color: #fff;
   font-weight: bold;
 }
 
-.link-button .button-warning:hover, .link-button .btn-warning:hover, .link-button .warning:hover {
+.link-button .button-warning:hover, .link-button .button-warning:focus, .link-button .btn-warning:hover, .link-button .btn-warning:focus, .link-button .warning:hover, .link-button .warning:focus {
   color: #fff;
   background: #c34e30;
 }

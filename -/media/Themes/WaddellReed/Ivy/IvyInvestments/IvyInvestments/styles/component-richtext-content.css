@@ -153,7 +153,7 @@ strong {
 }
 
 .content a, .rich-text a {
-  color: #de232f;
+  color: #6d3332;
   text-decoration: underline;
   font-size: 1em;
 }
@@ -270,7 +270,7 @@ strong {
   font-size: 16px;
 }
 
-.content .button-default:hover, .content .btn-default:hover, .content .default:hover, .rich-text .button-default:hover, .rich-text .btn-default:hover, .rich-text .default:hover {
+.content .button-default:hover, .content .button-default:focus, .content .btn-default:hover, .content .btn-default:focus, .content .default:hover, .content .default:focus, .rich-text .button-default:hover, .rich-text .button-default:focus, .rich-text .btn-default:hover, .rich-text .btn-default:focus, .rich-text .default:hover, .rich-text .default:focus {
   color: #fff;
   background: #009639;
   border: 2px solid #009639;
@@ -294,7 +294,7 @@ strong {
   font-weight: bold;
 }
 
-.content .button-success:hover, .content .btn-success:hover, .content .success:hover, .rich-text .button-success:hover, .rich-text .btn-success:hover, .rich-text .success:hover {
+.content .button-success:hover, .content .button-success:focus, .content .btn-success:hover, .content .btn-success:focus, .content .success:hover, .content .success:focus, .rich-text .button-success:hover, .rich-text .button-success:focus, .rich-text .btn-success:hover, .rich-text .btn-success:focus, .rich-text .success:hover, .rich-text .success:focus {
   color: #fff;
   background: #92be43;
 }
@@ -312,12 +312,12 @@ strong {
   padding: 10px 15px;
   text-align: center;
   text-decoration: none;
-  background: #bc4526;
+  background: #6d3332;
   color: #fff;
   font-weight: bold;
 }
 
-.content .button-warning:hover, .content .btn-warning:hover, .content .warning:hover, .rich-text .button-warning:hover, .rich-text .btn-warning:hover, .rich-text .warning:hover {
+.content .button-warning:hover, .content .button-warning:focus, .content .btn-warning:hover, .content .btn-warning:focus, .content .warning:hover, .content .warning:focus, .rich-text .button-warning:hover, .rich-text .button-warning:focus, .rich-text .btn-warning:hover, .rich-text .btn-warning:focus, .rich-text .warning:hover, .rich-text .warning:focus {
   color: #fff;
   background: #c34e30;
 }

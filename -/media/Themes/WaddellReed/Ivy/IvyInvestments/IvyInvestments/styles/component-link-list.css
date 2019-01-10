@@ -72,7 +72,7 @@ $font-medium:16px;*/
   font-size: 16px;
 }
 
-.link-list .button-default:hover, .link-list .btn-default:hover, .link-list .default:hover {
+.link-list .button-default:hover, .link-list .button-default:focus, .link-list .btn-default:hover, .link-list .btn-default:focus, .link-list .default:hover, .link-list .default:focus {
   color: #fff;
   background: #009639;
   border: 2px solid #009639;
@@ -96,7 +96,7 @@ $font-medium:16px;*/
   font-weight: bold;
 }
 
-.link-list .button-success:hover, .link-list .btn-success:hover, .link-list .success:hover {
+.link-list .button-success:hover, .link-list .button-success:focus, .link-list .btn-success:hover, .link-list .btn-success:focus, .link-list .success:hover, .link-list .success:focus {
   color: #fff;
   background: #92be43;
 }
@@ -114,12 +114,12 @@ $font-medium:16px;*/
   padding: 10px 15px;
   text-align: center;
   text-decoration: none;
-  background: #bc4526;
+  background: #6d3332;
   color: #fff;
   font-weight: bold;
 }
 
-.link-list .button-warning:hover, .link-list .btn-warning:hover, .link-list .warning:hover {
+.link-list .button-warning:hover, .link-list .button-warning:focus, .link-list .btn-warning:hover, .link-list .btn-warning:focus, .link-list .warning:hover, .link-list .warning:focus {
   color: #fff;
   background: #c34e30;
 }
