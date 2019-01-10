@@ -3,176 +3,61 @@
 @import "base/fontawesome/font-awesome-mix-var";
 
 .related-resources {
-    padding:0;
-    @include respond-to(all-phone) {
-        padding:0 15px !important;
+    @include respond-to(desktop) {
+        position:relative;
+        right:-30px;
     }
-    .title {
-
-        h1, h2, h3, h4, h5, h6 {
-            //@include raleway-font-stack();
-            font-weight:400;
-        }
+    @include respond-to(tablet) {
+        padding:0;
+        margin-top:-30px;
     }
-    .search-result-list {
-        width: 100%;
-        border: none;
-        @include clearfix();
-
-        > li {
-            display: block;
-            float: left;
-            width:23%;
-            margin-right:2%;
-            box-sizing: border-box;
-            border: none;
-            position: relative;
-            height: 100%;
-            /*padding: 0 15px;*/
+    @include respond-to(mobile-large) {
             padding:0;
-            /*@include respond-to(tablet) {
-                padding: 0 15px;
-            }*/
-            @include respond-to(all-phone) {
-                width:100%;
-            }
-            .blog-item {
-                min-height: 120px;
-                padding: 0 15px 15px;
-                margin-bottom: 30px;
-                border-top: solid 1px #eaeaea;
-                //@include box-shadow(0, 2px, 4px, rgba(0, 0, 0, 0.3), $inset: false);
-                .blog-date {
-                    font-size: $font-small;
-                    display: inline;
-                    padding-right: 10px;
-                    //border-right:solid 1px $text-gray-light;
-        
-                    &:before {
-                        @include fa-icon();
-                        content: fa-content($fa-var-calendar); //is this what we need for fa the fa-content prefix?
-                        //color: $text-gray-light;
-                        font-size: $font-medium;
-                        margin-right: 5px;
-                    }
+            margin-top:-30px;
+        }
+    .item {
+        @include respond-to(tablet) {
+            width:50%;
+            float:left;
+            padding:15px;
+        }
+         @include respond-to(desktop) {
+            padding:0 30px 30px 0;
+        }
+        @include respond-to(mobile-large) {
+            padding:0;
+            margin-bottom:30px;
+        }
+
+        img {
+            width:100%;
+            height:auto;
+        }
+        small {
+            @include proximabold();
+            //font-size:$font-small; //we need to use this for 508c i.e. minimum font size 14px not 12px
+            font-size:12px;
+            text-transform:uppercase;
+        }
+        .navigation-title {
+            a {
+                @include copernicus();
+                color:$text-green;
+                text-decoration:none;
+                font-size:24px; //h4 but needs specified as a span in case a required lock or something else is :after
+                @include respond-to(mobile-large) {
+                    font-size:22px;
                 }
-                .blog-author {
-                    font-size: $font-small;
-                    display: inline;
-                    padding-left: 10px;
-                }
-                .field-excerpt {
-                    font-size: $font-small;
-                }
-            }
-            .field-title {
-                display: block;
-                padding: 5px 0 15px 0;
-                text-align: left;
-                
-                a {
-                    //@include raleway-font-stack();
-                    font-size: $font-medium;
-                    color:$text-red;
-                    line-height: 24px;
-                    text-decoration: none;
-                    font-weight: normal;
-        
-                    &:hover {
-                        color: $text-basic-active;
-                    }
-                }
-            }
-            &:hover {
-                border: none;
-            }
-            .blog-image {
-                margin: 0 -15px 15px -15px;
-        
-                img {
-                    width: 100%;
-                    //max-width: 100%;
-                    height: auto;
+                &:hover, &:focus {
+                    text-decoration:underline;
                 }
             }
         }
-    }
-    
-}
-
-//If browser does NOT supports flexbox
-.no-flexbox {
-    .related-resources {
-        .search-result-list {
-            @include respond-to(tablet) {
-                >li {
-                    width: 50%;
-
-                    .blog-item {
-                        height: 336px;
-                        overflow: hidden;
-                    }
-                }
-            }
-            @include respond-to(desktop) {
-                >li {
-                    .blog-item {
-                        height: 337px;
-                    }
-                }
-            }
-            @include respond-to(large) {
-                >li {
-                    width: 33.333333%;
-
-                    .blog-item {
-                        height: 316px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-//If browser supports flexbox
-.flexbox {
-    .related-resources {
-        .search-result-list {
-            @media only screen and (max-width: 575px) {
-                >li {
-                    max-width: 345px;
-                    margin-left: auto;
-                    margin-right: auto;
-                    float: none;
-                }
-            }
-            //@include respond-to(tablet) {
-            @media only screen and (min-width: 576px) {
-                -webkit-column-count: 2;
-                -moz-column-count: 2;
-                column-count: 2;
-                -webkit-column-gap: 0;
-                -moz-column-gap: 0;
-                column-gap: 30px;
-
-                >li {
-                    width: 100%;
-                    -webkit-box-orient: vertical;
-                    -webkit-box-direction: normal;
-                    -ms-flex-direction: column;
-                    flex-direction: column;
-                    word-wrap: break-word;
-                    background-clip: border-box;
-                    float: none;
-                    column-count: 1;
-                    padding: 0; 
-                    min-height:370px;
-                }
-            }
-            @include respond-to(desktop) {
-                -webkit-column-count: 4;
-                -moz-column-count: 4;
-                column-count: 4;
+        @include respond-to(tablet) {
+            .field-excerpt {
+                min-height:110px;
+                max-height:110px;
+                overflow:hidden;
             }
         }
     }

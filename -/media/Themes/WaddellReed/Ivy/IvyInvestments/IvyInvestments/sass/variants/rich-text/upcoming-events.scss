@@ -3,6 +3,10 @@
 @import "../../base/fontawesome/font-awesome-mix-var";
 
 &.upcoming-events {
+    margin-top:$extralarge-margin;
+    @include respond-to(desktop) {
+        margin-top:-$large-margin; //when adding an order in sitecore to flip these for tablet its adds 30px to the order1 object
+    }
     padding-top:15px;
     .component-content {
         border-bottom:3px solid $border-basic-color;

@@ -64,7 +64,7 @@ $font-medium:16px;*/
     bottom: auto;
     top: -5px;
     padding: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -159,6 +159,13 @@ $font-medium:16px;*/
   clear: both;
 }
 
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/*$font-small:11px;
+$font-normal:13px;
+$font-medium:16px;*/
+/* breakpoints */
 /*$font-small:11px;
 $font-normal:13px;
 $font-medium:16px;*/
