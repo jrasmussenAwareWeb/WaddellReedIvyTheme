@@ -137,3 +137,29 @@ $break-mobile: 380px;
     background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
     background: linear-gradient($direction, $color-stops);
 }
+
+//Buttons
+@mixin btn-default {
+    color: $text-green;
+    text-decoration: none;
+    background-color: $bg-basic-color;
+    border: solid 1px $text-green;
+    padding: 10px 15px;
+    cursor: pointer;
+    &:hover{
+        color: $text-white;
+        background-color: $text-green;
+    }
+}
+@mixin btn-primary {
+    color: $text-white;
+    text-decoration: none;
+    background-color: $text-green;
+    border: solid 1px $text-green;
+    padding: 10px 15px;
+    cursor: pointer;
+    &:hover{
+        color: $text-green;
+        background-color: $bg-basic-color;
+    }
+}
