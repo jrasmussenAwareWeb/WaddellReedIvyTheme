@@ -1,0 +1,21 @@
+//Ivy Sepcific
+@import "styles/container/*";
+@import "abstracts/mixins";
+@import "abstracts/vars";
+
+.addthis {
+    &[class*="col-"] {
+        padding-right:0;
+        text-align:right;
+    }
+
+
+    &:before {
+        content: 'Share this page:';
+        position:absolute;
+        left:30px;
+        top:10px;
+        font-size:$font-small;
+    }
+
+}
