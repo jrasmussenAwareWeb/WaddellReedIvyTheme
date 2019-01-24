@@ -35,16 +35,12 @@
             &.column-splitter {
                 margin-left:15px; 
                 margin-right:15px;
-                /*>div {
-                    padding-left:15px;
-                    padding-right:15px;
-                }*/
-                &:not(.component) {
-                    [class*="col-"] {
+                /*&:not(.component) {
+                    &[class*="col-"] {
                         padding-left:15px;
                         padding-right:15px;
                     }
-                }
+                }*/
             }
         }
     }

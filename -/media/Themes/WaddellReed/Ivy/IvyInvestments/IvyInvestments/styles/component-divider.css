@@ -1,14 +1,15 @@
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 /* breakpoints */
 .divider hr {
   margin: 10px 0;
   border: 0;
   height: 0;
-  border-top-width: 1px;
+  border-top-width: 2px;
   border-top-style: solid;
-  border-top-color: #c2c2c2;
+  border-top-color: #006747;
+}
+
+.page-header-divider hr {
+  margin-top: 5px;
 }
 
 .white-space-divider hr {

@@ -1,0 +1,12 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+@import "../../base/fontawesome/font-awesome-mix-var";
+
+&.section-title {
+    h2 {
+        border-bottom:3px solid $border-basic-color;
+        margin-bottom:$large-margin;
+        @include proximaboldcondensed();
+        text-transform:uppercase;
+    }
+}

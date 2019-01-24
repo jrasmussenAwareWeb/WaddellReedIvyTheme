@@ -1,0 +1,35 @@
+//Ivy Specific
+&.content-highlight {
+    padding:0;
+    margin-bottom:$extralarge-margin;
+    @include respond-to(mobile-large) {
+        [class*="col-"]:first-of-type, [class*="col-"]:last-of-type {
+            padding:0;
+        }
+    }
+    @include respond-to(tablet) {
+        [class*="col-"]:first-of-type {
+            padding-left:0;
+        }
+        [class*="col-"]:last-of-type {
+            padding-right:0;
+        }
+    }
+    .field-intro-header {
+        margin-top:0;
+    }
+    .highlight {
+        padding:15px;
+        font-size:$font-normal;
+        h5 {
+            width:100%;
+            @include proximabold();
+            text-transform:uppercase;
+            border-bottom:1px solid $border-basic-color;
+            margin-bottom:$middle-margin;
+        }
+        p {
+            font-size:$font-normal;
+        }
+    }
+}

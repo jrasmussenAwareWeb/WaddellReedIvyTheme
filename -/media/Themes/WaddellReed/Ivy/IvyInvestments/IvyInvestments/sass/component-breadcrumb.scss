@@ -4,13 +4,15 @@
 .breadcrumb.component {
     background: $breadcrumb-bg;
     @include clearfix();
+    margin-bottom:$large-margin;
+    
     &.breadcrumb-navigation {
         overflow: visible;
     }
     a {
         text-decoration: none;
         font-size: $breadcrumb-font;
-        font-weight: 400;
+        //font-weight: 400;
         color: $breadcrumb-color;
     }
     ol {
@@ -22,12 +24,15 @@
     .separator {
         margin: 0 5px;
         display: inline-block;
-        vertical-align: middle
+        vertical-align: middle;
+        //Ivy Specific
+        color: $breadcrumb-color;
     }
     li {
         position: relative;
         display: block;
         float: left;
+        line-height:1;
         >.navigation-title {
             display: inline-block;
             vertical-align: middle;
@@ -97,9 +102,9 @@
                     display: block;
                     padding: 2px 0 2px 10px;
                 }
-                &:last-child {
+                /*&:last-child {
                     border-bottom-width: 0;
-                }
+                }*/
             }
         }
     }

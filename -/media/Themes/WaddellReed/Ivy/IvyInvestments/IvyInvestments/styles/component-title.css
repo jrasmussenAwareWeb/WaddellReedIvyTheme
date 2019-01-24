@@ -1,28 +1,29 @@
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 /* breakpoints */
 .title {
   background: transparent;
 }
 
-.title h1, .title .field-title a {
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #000000;
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #000000;
-  line-height: normal;
-  padding-bottom: 10px;
-  display: block;
-  text-decoration: none;
-  cursor: pointer;
+.column-splitter .title[class*="col-"] {
+  padding-left: 0;
 }
 
-.title h1:hover, .title .field-title a:hover {
+.title h1, .title .field-title a {
+  font-size: 24px;
   color: #000000;
+  line-height: normal;
+  display: block;
+  text-decoration: none;
+  /*cursor: pointer;
+        &:hover { 
+            color: $title-color-active;
+        }*/
+  font-family: "ProximaBoldCondensed", arial, helvetica, sans-serif;
+  font-size: 42px;
+  color: #006747;
+  text-transform: uppercase;
+}
+
+.title.page-header {
+  position: relative;
+  top: -5px;
 }
