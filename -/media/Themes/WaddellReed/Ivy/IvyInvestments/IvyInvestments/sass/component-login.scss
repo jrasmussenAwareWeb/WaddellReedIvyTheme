@@ -18,5 +18,16 @@
         input[type='text'], input[type='password'] {
             min-height: 33px;
         }
+
+        //Ivy Specific
+        input[type="submit"], input[type="reset"], input[type="button"], button {
+            @include btn-default();
+            width:100%;
+            &:hover{
+                color: $text-white;
+                background: $bg-green !important; 
+                border:2px solid $text-green;
+            }
+        }
     }
 }
