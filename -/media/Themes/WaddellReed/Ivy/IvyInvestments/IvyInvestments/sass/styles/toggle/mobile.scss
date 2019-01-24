@@ -3,7 +3,7 @@
     position: absolute;
     z-index:1;
     .toggle-content { 
-        margin-top:98px;
+        margin-top:79px;
         background-color:$bg-submenu;
         >.row {
             text-align:left;
@@ -20,7 +20,7 @@
         }
         &:before {
             @include fa-icon();
-            font-size:1.4em;
+            font-size:1.6em;
             color:$text-green;
             content: $fa-var-bars;
         }

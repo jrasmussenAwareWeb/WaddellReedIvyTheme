@@ -8,12 +8,32 @@
             margin: 0 0 2px 0;
             display: block;
             width: 100%;
-            @include border-basic(top, $tab-heading-bg);
-            @include border-basic(left, $tab-heading-bg, 2px);
-            @include border-basic(right, $tab-container-border);
-            @include border-basic(bottom, $tab-heading-bg);
+            //@include border-basic(top, $tab-heading-bg);
+           // @include border-basic(left, $tab-heading-bg, 2px);
+            //@include border-basic(right, $tab-container-border);
+            //@include border-basic(bottom, $tab-heading-bg);
+            border:0;
+            background:transparent;
+            >div {
+                .field-heading {
+                    color:$text-green;
+                }
+            }
             &.active {
-                @include border-basic(left, $tab-container-border, 2px);
+                color:$text-green;
+                @include border-basic(top, $tab-container-border, 1px);
+                @include border-basic(left, $tab-container-border, 1px);
+                @include border-basic(bottom, $tab-container-border, 1px);
+                @include border-basic(right, $bg-basic-color, 2px);
+                border-top-left-radius:4px;
+                border-bottom-left-radius:4px;
+                position:relative;
+                z-index:9;
+                >div {
+                    .field-heading {
+                        color:$text-dark-green;
+                    }
+                }
                 a {
                     border: none;
                 }
@@ -22,7 +42,7 @@
                 margin-top: 0;
             }
             &:hover {
-                @include border-basic(left, $tab-container-border, 2px);
+                //@include border-basic(left, $tab-container-border, 2px);
             }
         }
     }

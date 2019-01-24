@@ -1,10 +1,4 @@
 @charset "UTF-8";
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 /* breakpoints */
 .playlist {
   background-color: transparent;
@@ -17,7 +11,7 @@ $font-medium:16px;*/
 
 .playlist .component-content > h1, .playlist .component-content > h2, .playlist .component-content > h3, .playlist .component-content > h4, .playlist .component-content > h5, .playlist .component-content > h6 {
   margin: 0 0 10px 0;
-  border-bottom-width: 1px;
+  border-bottom-width: 2px;
   border-bottom-style: solid;
   border-bottom-color: #000000;
 }
@@ -151,12 +145,6 @@ $font-medium:16px;*/
   display: block;
 }
 
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 /* breakpoints */
 .playlist.playlist-horizontal .playlist-items {
   display: -webkit-inline-box;

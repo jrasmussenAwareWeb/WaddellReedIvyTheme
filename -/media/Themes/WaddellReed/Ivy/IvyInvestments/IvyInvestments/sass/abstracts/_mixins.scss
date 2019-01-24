@@ -12,6 +12,8 @@
         clear: both;
     }
 }
+
+//what does this actually do?
 @mixin headings($from: 1, $to: 6) {
     @for $i from $from through $to {
         h#{$i} {
@@ -31,6 +33,7 @@
     border: 0;
 }
 
+//is our base font size 16 and if so, do we update this?
 @mixin font-size($sizeValue: 1.6) {
     font-size: ($sizeValue * 10) + px;
     font-size: $sizeValue + rem;
@@ -104,11 +107,11 @@
 
 
 /* breakpoints */
-$break-large: 1200px; //desktops
-$break-desktop: 992px; //laptops
-$break-mobile-large: 768px; //tablets
-$break-mobile-horizontal: 576px; //phones
-$break-mobile: 380px; //compact phones
+$break-large: 1200px; //desktops (min-width)
+$break-desktop: 992px; //laptops (min-width)
+$break-mobile-large: 768px; //tablets (min/max-width)
+$break-mobile-horizontal: 576px; //phones (max-width)
+$break-mobile: 380px; //compact phones (max-width)
 
 @mixin respond-to($media) {
     @if $media==mobile {
@@ -153,7 +156,7 @@ $break-mobile: 380px; //compact phones
         }
     }
 }
-@mixin border-basic($position:all, $border-color:$border-gray, $border-width:1px) {
+@mixin border-basic($position:all, $border-color:$border-green, $border-width:2px) {
     @if($position!=all) {
         border-#{$position}-width: $border-width;
         border-#{$position}-style: solid;

@@ -17,6 +17,7 @@ $bg-submenu:#FFFFFF !default;
 $bg-submenu-active:#f6f6f6 !default;
 $bg-white:#FFFFFF !default;
 $bg-green:#009639 !default;
+$bg-dark-green:#004d33;
 
 //Text colors
 $text-white:#fff !default;
@@ -34,8 +35,8 @@ $text-black: #000 !default;
 $text-basic:#000000 !default;
 $text-basic-active:#000000 !default;
 $text-green:#009639;
+$text-dark-green:#006747;
 $text-red:#6d3332;
-
 
 //Border colors
 //$border-gray: #d2d2d2 !default;
@@ -63,8 +64,13 @@ $breadcrumb-dropdown-bg:$bg-basic-color;
 $breadcrumb-dropdown-bg-active:$bg-blue;
 $breadcrumb-dropdown-text-active:$text-white;
 $breadcrumb-bg:transparent;
-$breadcrumb-color:$text-basic;
-$breadcrumb-color-active:$text-blue-active;
+//$breadcrumb-color:$text-basic;
+//$breadcrumb-color-active:$text-blue-active;
+
+//Ivy Specific
+$breadcrumb-color:#666666;
+$breadcrumb-color-active:$text-basic;
+
 //Buttons colors
 $btn-green-light: #a0ce4e;
 $btn-green: #92be43;
@@ -213,13 +219,19 @@ $nav-submenu-border-active:$border-basic-color;
 
 //Social Media Share
 $social-media-share-bg:transparent;
+
 //Tabs
 $tab-heading-bg:$bg-light-gray;
 $tab-heading-active-bg:$bg-basic-color;
 $tab-heading-color:$text-heading-color;
-$tab-heading-active-color:$text-black;
+//$tab-heading-active-color:$text-black;
 $tab-container-bg:transparent;
-$tab-container-border:$border-basic-color;
+//$tab-container-border:$border-basic-color;
+
+//Ivy Specific
+$tab-heading-active-color:$text-dark-green;
+$tab-container-border:$border-dark-gray;
+
 //Title
 $title-bg:transparent;
 $title-color:$text-basic;

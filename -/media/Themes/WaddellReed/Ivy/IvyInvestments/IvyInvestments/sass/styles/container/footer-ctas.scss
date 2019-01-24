@@ -1,0 +1,19 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+
+.footer-ctas {
+    &[class*="col-"] {
+        padding-left:15px;
+        padding-right:15px;
+    }
+
+    .promo {
+        &.col-4 {
+            padding-left:0;
+            padding-right:30px; 
+            &:last-of-type {
+                padding-right:0;
+            }
+        }
+    }
+}

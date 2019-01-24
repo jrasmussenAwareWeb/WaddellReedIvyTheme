@@ -1,11 +1,5 @@
 @charset "UTF-8";
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 /* breakpoints */
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 .sxa-archive .level-1 {
   display: block !important;
   padding-left: 10px;
@@ -58,13 +52,7 @@ $font-medium:16px;*/
 }
 
 .sxa-archive .archive-items .archive-item {
-  /*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
   /* breakpoints */
-  /*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
   cursor: default;
 }
 

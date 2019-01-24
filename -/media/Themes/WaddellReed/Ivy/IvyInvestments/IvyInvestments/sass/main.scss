@@ -19,7 +19,7 @@ body {
 
     @include proxima();
     position: relative;
-    overflow: auto;
+    //overflow: auto;
     color: $text-basic;
     //font-size: 14px;
     line-height: 1.5;
@@ -63,18 +63,7 @@ strong, b {
     @include proximabold();
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    //font-weight: bold;
-    @include copernicus();
-    color:$text-green;
-    line-height:1.4;
-}
-
+small {font-size:$font-small}
 
 /*H1 – H6: line-height: 1.4
 H1: (tablet and larger) 36px, (phone) 30px
@@ -106,6 +95,27 @@ h6 {font-size:18px}
     h4 {font-size:22px}
     h5 {font-size:18px}
     h6 {font-size:18px} //dup / 508c?
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    //font-weight: bold;
+    @include copernicus();
+    color:$text-green;
+    line-height:1.4;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    @include proximaboldcondensed();
+    color:$text-basic;
+    line-height:1.4;
 }
 
 
@@ -145,28 +155,25 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
     position:fixed;
     z-index:99;
     background:$bg-white;
-}
-
-//offset the fixed header
-#content {
-    position:relative;
-    top:130px;
-    margin-bottom:130px;
-    @include respond-to(mobile-large) {
-        top:99px;
-    }
-}
-
-#header .image {
-    padding-top:10px;
-    img {
-        //max-width:300px;
-        @include respond-to(mobile-large) {
-            max-width:180px;
+    >.row {
+        >.container {
+            &:last-of-type {
+                border-bottom:1px solid $border-dark-gray;
+            }
         }
+    }
 
+    .image {
+        padding-top:10px;
+        img {
+            //max-width:300px;
+            @include respond-to(mobile-large) {
+                max-width:140px;
+            }
+        }
     }
 }
+
 
 @include respond-to(mobile-large) {
     #header {
@@ -174,6 +181,31 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
         z-index:10;
         background:$bg-submenu;
         border-bottom:1px solid $border-dark-gray;
+    }
+}
+
+//offset the fixed header / need to figure out what to do when the alert is showing (Ticket #19)
+#content {
+    position:relative;
+    top:160px; 
+    margin-bottom:160px;
+    @include respond-to(mobile-large) {
+        top:99px;
+    }
+}
+.home {
+    #content {
+        //top:220px; 
+        margin-bottom:180px;
+        @include respond-to(mobile-large) {
+            top:150px;
+        }
+        @include respond-to(tablet) {
+            top:200px; 
+        }
+        @include respond-to(large) {
+            top:220px; 
+        }
     }
 }
 
@@ -189,7 +221,50 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
     }
 }
 
+#myScrollspy {
+    margin-left:-15px;
+}
 
+/*scrollspy ?  
+  .affix {
+    position: fixed;
+  }*/
+
+.scrollspy-example {
+  position: relative;
+  height: 250px;
+  overflow: auto;
+}
+  
+.nav-pills > li {
+  float: left;
+}
+.nav-pills > li > a {
+  border-radius: 4px;
+}
+.nav-pills > li + li {
+  margin-left: 2px;
+}
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: #fff;
+  background-color: #337ab7;
+}
+.nav-stacked > li {
+  float: none;
+}
+.nav-stacked > li + li {
+  margin-top: 2px;
+  margin-left: 0;
+}
+
+  #section1 {color: #fff; background-color: #1E88E5;}
+  #section2 {color: #fff; background-color: #673ab7;}
+  #section3 {color: #fff; background-color: #ff9800;}
+  #section41 {color: #fff; background-color: #00bcd4;}
+  #section42 {color: #fff; background-color: #009688;}
+  
 
 .scrolltop-wrap {
     backface-visibility: hidden;

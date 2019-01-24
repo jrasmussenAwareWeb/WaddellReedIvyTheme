@@ -1,14 +1,8 @@
 @charset "UTF-8";
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 /* breakpoints */
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 .language-selector {
   position: relative;
-  border-top-width: 1px;
+  border-top-width: 2px;
   border-top-style: solid;
   border-top-color: #000000;
   padding: 10px;

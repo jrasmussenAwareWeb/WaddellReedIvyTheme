@@ -1,24 +1,18 @@
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 /* breakpoints */
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 .feed {
   background: transparent;
 }
 
 .feed h1, .feed h2, .feed h3, .feed h4, .feed h5, .feed h6 {
-  border-bottom-width: 1px;
+  border-bottom-width: 2px;
   border-bottom-style: solid;
-  border-bottom-color: #c2c2c2;
+  border-bottom-color: #006747;
 }
 
 .feed .feed-item {
-  border-bottom-width: 1px;
+  border-bottom-width: 2px;
   border-bottom-style: solid;
-  border-bottom-color: #c2c2c2;
+  border-bottom-color: #006747;
   padding: 10px 10px 10px 0px;
   margin-left: 10px;
   background: transparent;
@@ -57,20 +51,14 @@ $font-medium:16px;*/
   margin: 0 4px;
 }
 
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 /* breakpoints */
 .feed.feed-grid .feed-item {
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
-  border-color: #c2c2c2;
+  border-color: #006747;
   width: 32%;
   margin: 0 1% 10px 0;
   padding: 20px;

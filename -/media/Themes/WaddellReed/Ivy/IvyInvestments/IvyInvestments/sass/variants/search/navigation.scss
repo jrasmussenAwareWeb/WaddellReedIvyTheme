@@ -2,6 +2,10 @@
     padding:0;
     background:rgba(0, 0, 0, 0.2);
     border: 1px solid $border-dark-green;
+
+    position:absolute;
+    right:15px;
+
     @include respond-to(desktop) {
         //Added NW
         &:hover{
@@ -32,7 +36,7 @@
         color: $text-white;
         @include respond-to(desktop) {
             //Added NW
-            padding: 10px 40px 10px 8px;
+            padding: 8px 40px 10px 8px;
             &:focus{
                 background: $bg-black !important;
             }

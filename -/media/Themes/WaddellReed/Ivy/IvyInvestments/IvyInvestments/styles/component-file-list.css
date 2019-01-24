@@ -1,22 +1,13 @@
 @charset "UTF-8";
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 /* breakpoints */
 .file-list {
   background: transparent;
-  /*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
   /* breakpoints */
 }
 
 .file-list h1, .file-list h2, .file-list h3, .file-list h4, .file-list h5, .file-list h6 {
   color: #000000;
-  border-bottom-width: 1px;
+  border-bottom-width: 2px;
   border-bottom-style: solid;
   border-bottom-color: transparent;
 }
@@ -31,7 +22,7 @@ $font-medium:16px;*/
 
 .file-list .list-item {
   background: transparent;
-  border-bottom-width: 1px;
+  border-bottom-width: 2px;
   border-bottom-style: solid;
   border-bottom-color: #000000;
 }
@@ -168,12 +159,6 @@ $font-medium:16px;*/
   width: 30%;
 }
 
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 /* breakpoints */
 .file-list.file-list-horizontal .component-content > ul {
   display: -webkit-box;

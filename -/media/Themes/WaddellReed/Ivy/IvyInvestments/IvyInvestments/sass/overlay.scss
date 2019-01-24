@@ -1,6 +1,8 @@
 @import "abstracts/vars";
 @import "abstracts/mixins";
 @import "base/fontawesome/font-awesome-mix-var";
+@import "base/links/*";
+
 .overlay {
     position: fixed;
     top: 0;
@@ -8,12 +10,13 @@
     right: 0;
     bottom: 0;
     background: url(../Images/overlay-bg.png);
+    //background:transparent;
     z-index: 9999;
     display: none;
     width: 100%;
-    &.component {
+    /*&.component {
         margin: 0;
-    }
+    }*/
     >.component-content {
         border-radius: 5px;
         display: block;
@@ -25,8 +28,14 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+
+        @include respond-to(all-mobile) {
+            max-width: 100%;
+            left: 50%;
+            right:-48%;
+        }
         .component {
-            margin: 0;
+            //margin: 0;
             &.image {
                 img {
                     width: 100%;
@@ -38,7 +47,10 @@
         min-width: 25px;
         max-height: inherit;
         height: inherit;
-        overflow: auto;
+        //overflow: auto;
+        @include respond-to(mobile-large) {
+            overflow-y: auto;
+        }
         &.overlay-percent {
             max-height: 100%;
             height: auto;
@@ -59,32 +71,33 @@
     }
     .overlay-close {
         cursor: pointer;
-        font-size: 30px;
+        font-size: 1.4em;
         position: absolute;
-        top: -20px;
-        right: -10px;
+        top: 20px;
+        right: 25px;
+        @include respond-to(mobile) {
+            font-size:$font-normal;
+        }
         &:before {
-            content: $fa-var-times-circle-o;
-            background: #FFFFFF;
-            border-radius: 50%;
+            content: $fa-var-times;
             @include fa-icon();
         }
-        &:hover {
+        /*&:hover {
             &:before {
                 background: #cccccc;
             }
-        }
+        }*/
         a {
             display: block;
             text-indent: -9999px;
         }
     }
-    .overlay-close-link:focus {
+    /*.overlay-close-link:focus {
         color: #cccccc;
     }
     .overlay-close-link:hover {
         color: #cccccc;
-    }
+    }*/
     .overlay-close-link {
         text-decoration: none;
     }

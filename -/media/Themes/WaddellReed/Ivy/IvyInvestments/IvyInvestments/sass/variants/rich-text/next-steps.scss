@@ -1,0 +1,9 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+&.next-steps {
+    h1 {
+        margin-top:$extralarge-margin;
+        margin-bottom:$large-margin;
+        color:$text-white;
+    }
+}

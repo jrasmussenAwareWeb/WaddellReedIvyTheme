@@ -1,18 +1,6 @@
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 /* breakpoints */
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 .login {
-  /*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
   /* breakpoints */
-  /*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
   background-color: transparent;
 }
 
@@ -95,4 +83,33 @@ $font-medium:16px;*/
 
 .login table input[type='text'], .login table input[type='password'] {
   min-height: 33px;
+}
+
+.login table input[type="submit"], .login table input[type="reset"], .login table input[type="button"], .login table button {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin: 5px 0;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  cursor: pointer;
+  border: 2px solid #009639;
+  background: #FFFFFF;
+  color: #009639;
+  width: 100%;
+}
+
+.login table input[type="submit"]:hover, .login table input[type="reset"]:hover, .login table input[type="button"]:hover, .login table button:hover {
+  color: #fff;
+  background: #009639;
+  border: 2px solid #009639;
+}
+
+.login table input[type="submit"]:hover, .login table input[type="reset"]:hover, .login table input[type="button"]:hover, .login table button:hover {
+  color: #fff;
+  background: #009639 !important;
+  border: 2px solid #009639;
 }

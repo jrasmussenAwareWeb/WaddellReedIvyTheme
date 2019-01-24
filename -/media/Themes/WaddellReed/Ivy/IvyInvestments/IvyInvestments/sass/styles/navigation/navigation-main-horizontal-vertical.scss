@@ -184,7 +184,7 @@
             }
         }
         .navigation-required {
-            margin-left:10px;
+            margin-left:5px;
             color:$text-white;
             &:after {
                 font-size:inherit;
@@ -223,7 +223,7 @@
                     left:-27%;
                 }
                  @include respond-to(large) {
-                    left:-28%;
+                    left:-26.75%;
                  }
             }
             //hide the 3rd column
@@ -499,10 +499,10 @@
     // Additional styles for the the umbrella navigation
     &.navigation-umbrella {
         max-width:210px;
-        @include respond-to(large) {
+        /*@include respond-to(large) {
             position:relative;
             left:-10px;
-        }
+        }*/
         .level1, .level0 {
             >.navigation-title>a {
                 font-size: $navigation-font-small;
@@ -517,6 +517,7 @@
             >.navigation-title {
                 border:1px solid $border-white;
                 line-height:1.7;
+                margin-top:-1px;
                 >a {
                     @include proximabold();
                     color:$text-green;
@@ -597,10 +598,10 @@
     }
     // Additional styles for the the account & login navigation
     &.navigation-account, &.navigation-login {
-        padding-right:35px;
+        /*padding-right:35px;
          @include respond-to(desktop) {
             padding-right:45px;
-        }
+        }*/
         .sxaToogleNavBtn {
             display:none !important;
         }

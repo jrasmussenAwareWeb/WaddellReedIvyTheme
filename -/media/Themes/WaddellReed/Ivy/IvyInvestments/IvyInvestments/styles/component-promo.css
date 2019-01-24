@@ -1,15 +1,11 @@
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
+@charset "UTF-8";
 /* breakpoints */
 .promo {
   background: #FFFFFF;
   padding: 15px;
   overflow: hidden;
   box-sizing: border-box;
+  /* breakpoints */
   /*Added NW
 p {
     margin: 0 0 $middle-margin 0;
@@ -22,7 +18,7 @@ strong {
 
 .promo > .component-content {
   position: relative;
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
   border-color: #c2c2c2;
 }
@@ -58,6 +54,116 @@ strong {
 
 .promo.image-full-size img {
   margin-bottom: 10px;
+}
+
+.promo.cta {
+  background-color: transparent;
+  margin-bottom: 60px;
+}
+
+.promo.cta > .component-content {
+  border-width: 0;
+}
+
+.promo.cta .field-promotext3 {
+  position: absolute;
+  top: -15%;
+  left: 35%;
+  right: 35%;
+}
+
+.promo.cta .field-promotext3 .fa-stack.fa-2x > .fa-circle::before {
+  color: #FFFFFF;
+}
+
+.promo.cta .field-promotext3 .fa-stack.fa-2x > .fa-inverse::before {
+  color: #009639;
+}
+
+.promo.cta .promo-text {
+  background-color: #FFFFFF;
+  border: 1px solid #ffffff;
+  text-align: center;
+  padding: 20px 30px;
+}
+
+.promo.cta .promo-text .field-promotext {
+  font-family: "CopernicusBook", arial, helvetica, sans-serif;
+  color: #009639;
+}
+
+.promo.cta .promo-text .field-promotext2 {
+  margin: 30px auto;
+}
+
+.promo.cta .promo-text .field-promotext2 h6 {
+  font-family: "ProximaBold", arial, helvetica, sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.promo.cta .promo-text .field-promotext2 a.link-pdf {
+  color: #000000;
+  text-decoration: none;
+}
+
+.promo.cta .promo-text .field-promotext2 a.link-pdf:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 0.85em;
+  content: "";
+  color: #009639;
+  margin-right: 10px;
+  position: relative;
+  top: -1px;
+}
+
+.promo.cta .promo-text .field-promotext2 a.link-pdf:hover {
+  color: #009639;
+}
+
+.promo.cta .promo-text .field-promolink a {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin: 5px 0;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  cursor: pointer;
+  border: 2px solid #009639;
+  background-color: #009639;
+  color: #fff;
+  font-size: 18px;
+}
+
+.promo.cta .promo-text .field-promolink a:hover {
+  color: #009639;
+  background-color: #FFFFFF;
+}
+
+.promo.cta.col-4 {
+  padding-top: 45px;
+}
+
+.promo.cta.col-4 .promo-text {
+  min-height: 335px;
+  max-height: 335px;
+}
+
+.promo.cta.col-4 .field-promolink a {
+  width: 100%;
+}
+
+.promo.cta.col-8 {
+  padding-left: 0;
+  padding-right: 30px;
 }
 
 .promo h1, .promo h2, .promo h3, .promo h4, .promo h5, .promo h6 {
@@ -121,12 +227,6 @@ strong {
   right: 10px;
 }
 
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 /* breakpoints */
 .promo.promo-hero {
   position: relative;
@@ -179,12 +279,6 @@ $font-medium:16px;*/
   }
 }
 
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 /* breakpoints */
 .promo-shadow {
   max-width: 960px;

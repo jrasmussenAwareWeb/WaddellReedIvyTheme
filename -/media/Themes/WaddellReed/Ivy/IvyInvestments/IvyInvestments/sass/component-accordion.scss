@@ -5,41 +5,56 @@
     .accordion .toggle-content [scfieldtype="rich text"] {
         display: block;
     }
-}
+} 
 .accordion {
     padding: 0;
-    margin-bottom: 10px;
+    .component-content[class*="col-"] {
+        padding:0;
+    }
+    //margin-bottom: 10px;
+    margin-bottom:$extralarge-margin;
     .active {
         .toggle-header {
-            .field-heading:before {
-                content: $fa-var-minus-square !important;
+            border:1px solid $border-dark-gray;
+            //http://www.psd-to-css-shadows.com/
+            //https://www.cssmatic.com/box-shadow
+            -webkit-box-shadow: 0px 2px 4.9px 0.1px rgba(0, 0, 0, 0.4); 
+            -moz-box-shadow: 0px 2px 4.9px 0.1px rgba(0, 0, 0, 0.4); 
+            box-shadow: 0px 2px 4.9px 0.1px rgba(0, 0, 0, 0.4); 
+            .field-heading:after {
+                content: $fa-var-chevron-up !important;
+                color:$text-green;
             }
         }
     }
     .toggle-header {
         cursor: pointer;
         background-color: $accordion-header-bg;
-        @include border-basic(bottom);
+        //@include border-basic(bottom);
+        border-top:1px solid $border-dark-gray;
+        border-left:1px solid transparent;
+        border-right:1px solid transparent;
         &:hover {
             background-color: $accordion-header-bg-active;
         }
         .component {
             margin-top: 0;
+            padding:0;
             &.title {
                 margin-top: 0;
             }
             .field-heading {
                 font-size: $accordion-header;
-                padding-left: 34px;
                 font-weight: normal;
-                &:before {
+                &:after {
                     @include fa-icon();
                     font-size: 20px;
                     position: absolute;
                     display: block;
-                    content: $fa-var-plus-square;
+                    content: $fa-var-chevron-down;
+                    color:$text-green;
                     top: 50%;
-                    left: 10px;
+                    right: 10px;
                     transform: translateY(-50%);
                     width: 20px;
                     height: 20px;
@@ -48,7 +63,7 @@
         }
         .label {
             @include clearfix;
-            padding: 7px;
+            padding: 15px;
             text-align: left;
             display: block;
             background: transparent;
@@ -57,11 +72,12 @@
         }
     }
     .toggle-content {
-        padding: 10px;
+        padding: 30px 15px;
         background-color: $accordion-toggled-bg;
         @include clearfix();
         .component {
             margin-top: 0;
+            padding:0;
         }
     }
     .items {
@@ -69,7 +85,7 @@
     }
     .item {
         &:last-child {
-            border-bottom: none;
+            border-bottom:1px solid $border-dark-gray;
         }
     }
 }

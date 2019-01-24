@@ -1,10 +1,4 @@
 @charset "UTF-8";
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 /* breakpoints */
 .plain-html .button-default, .plain-html .btn-default, .plain-html .default {
   display: inline-block;
@@ -30,9 +24,9 @@ $font-medium:16px;*/
 .plain-html .button-success, .plain-html .btn-success, .plain-html .success {
   font-size: 12px;
   font-size: 1.2rem;
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
-  border-color: #c2c2c2;
+  border-color: #006747;
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
@@ -53,9 +47,9 @@ $font-medium:16px;*/
 .plain-html .button-warning, .plain-html .btn-warning, .plain-html .warning {
   font-size: 12px;
   font-size: 1.2rem;
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
-  border-color: #c2c2c2;
+  border-color: #006747;
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
@@ -75,6 +69,11 @@ $font-medium:16px;*/
 
 .plain-html .btn-block {
   width: 100%;
+}
+
+.plain-html .btn-sm {
+  margin: 3px 0;
+  padding: 5px 10px;
 }
 
 .plain-html table {

@@ -1,11 +1,5 @@
 @charset "UTF-8";
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 /* breakpoints */
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 .navigation {
   background: transparent;
 }
@@ -141,18 +135,12 @@ $font-medium:16px;*/
   background-color: rgba(0, 0, 0, 0.075);
 }
 
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 /* breakpoints */
 .navigation.navigation-fat {
   background: #FFFFFF;
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
-  border-color: #c2c2c2;
+  border-color: #006747;
 }
 
 .navigation.navigation-fat a {
@@ -217,12 +205,6 @@ $font-medium:16px;*/
   display: block;
 }
 
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 /* breakpoints */
 .navigation.navigation-main {
   /*entered in sitecore RTE <span></span>
@@ -419,7 +401,7 @@ $font-medium:16px;*/
 }
 
 .navigation.navigation-main.navigation-main-horizontal .navigation-required {
-  margin-left: 10px;
+  margin-left: 5px;
   color: #fff;
 }
 
@@ -476,7 +458,7 @@ $font-medium:16px;*/
 
 @media only screen and (min-width: 1200px) {
   .navigation.navigation-main.navigation-main-horizontal .rel-level1 > ul {
-    left: -28%;
+    left: -26.75%;
   }
 }
 
@@ -743,13 +725,10 @@ $font-medium:16px;*/
 
 .navigation.navigation-main.navigation-umbrella {
   max-width: 210px;
-}
-
-@media only screen and (min-width: 1200px) {
-  .navigation.navigation-main.navigation-umbrella {
-    position: relative;
-    left: -10px;
-  }
+  /*@include respond-to(large) {
+            position:relative;
+            left:-10px;
+        }*/
 }
 
 .navigation.navigation-main.navigation-umbrella .level1 > .navigation-title > a, .navigation.navigation-main.navigation-umbrella .level0 > .navigation-title > a {
@@ -767,6 +746,7 @@ $font-medium:16px;*/
 .navigation.navigation-main.navigation-umbrella .rel-level1 > .navigation-title {
   border: 1px solid #ffffff;
   line-height: 1.7;
+  margin-top: -1px;
 }
 
 .navigation.navigation-main.navigation-umbrella .rel-level1 > .navigation-title > a {
@@ -846,13 +826,10 @@ $font-medium:16px;*/
 }
 
 .navigation.navigation-main.navigation-account, .navigation.navigation-main.navigation-login {
-  padding-right: 35px;
-}
-
-@media only screen and (min-width: 992px) {
-  .navigation.navigation-main.navigation-account, .navigation.navigation-main.navigation-login {
-    padding-right: 45px;
-  }
+  /*padding-right:35px;
+         @include respond-to(desktop) {
+            padding-right:45px;
+        }*/
 }
 
 .navigation.navigation-main.navigation-account .sxaToogleNavBtn, .navigation.navigation-main.navigation-login .sxaToogleNavBtn {
@@ -985,12 +962,6 @@ $font-medium:16px;*/
   }
 }
 
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 /* breakpoints */
 .navigation.navigation-mobile {
   padding: 0;
@@ -1090,7 +1061,7 @@ $font-medium:16px;*/
   content: "";
   display: block;
   position: absolute;
-  right: 10px;
+  right: 15px;
   top: 15px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -1167,12 +1138,6 @@ $font-medium:16px;*/
   color: #fff;
 }
 
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 /* breakpoints */
 .navigation.navigation-sidebar a {
   text-decoration: none;
@@ -1199,12 +1164,6 @@ $font-medium:16px;*/
   display: block;
 }
 
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 /* breakpoints */
 .navigation.sitemap-navigation .level2 a {
   position: relative;

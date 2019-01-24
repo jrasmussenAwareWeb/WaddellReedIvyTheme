@@ -19,6 +19,10 @@
         }
     }
 
+    .rich-text {
+        padding:0 15px;
+    }
+
     //overlapping columns
     .col-xl-auto {
         &:first-of-type {
@@ -27,6 +31,7 @@
                 margin-left:-15px;
             }
  
+            //consider other components for static placement i.e. page content with image and fields 
             .search-results {
                 padding:0;
  

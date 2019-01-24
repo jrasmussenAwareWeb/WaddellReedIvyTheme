@@ -1,18 +1,6 @@
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 /* breakpoints */
 .search-results {
-  /*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
   /* breakpoints */
-  /*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 }
 
 .search-results label {
@@ -82,7 +70,7 @@ $font-medium:16px;*/
 .search-results.vertical .search-result-list > li, .search-results.component-details .search-result-list > li, .search-results.standard-fields .search-result-list > li {
   border-width: 1px 1px 2px 1px;
   border-style: solid;
-  border-color: #c2c2c2;
+  border-color: #006747;
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
@@ -135,7 +123,7 @@ $font-medium:16px;*/
   box-sizing: border-box;
   border-width: 1px 1px 2px 1px;
   border-style: solid;
-  border-color: #c2c2c2;
+  border-color: #006747;
   position: relative;
   min-height: 120px;
   margin: 0 2% 10px 0;

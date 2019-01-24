@@ -1,12 +1,6 @@
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 /* breakpoints */
 .map {
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
   border-color: none;
   max-width: 100%;

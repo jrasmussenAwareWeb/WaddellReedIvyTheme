@@ -1,0 +1,100 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+@import "../../base/fontawesome/font-awesome-mix-var";
+
+&.cta {
+    background-color:transparent;
+    margin-bottom:$extralarge-margin;
+
+    >.component-content {
+        border-width:0;
+    }
+
+    //Icon
+    .field-promotext3 {
+        position:absolute;
+        top:-15%;
+        left:35%;
+        right:35%;
+        .fa-stack.fa-2x {
+            >.fa-circle {
+                &::before {
+                    color:$bg-basic-color;
+                    //border:2px solid $border-green;
+                }
+            }
+            >.fa-inverse {
+                &::before {
+                    color:$text-green;
+                }
+            }
+        }
+    }
+
+    //Wrapper
+    .promo-text {
+        background-color:$bg-basic-color;
+        border:1px solid $border-white;
+        text-align:center;
+        padding:20px 30px;
+
+        //Title
+        .field-promotext {
+            @include copernicus();
+            color:$text-green;
+        }
+        //Excerpt
+        .field-promotext2 {
+            margin:30px auto;
+            h6 {
+                @include proximabold();
+                color:$text-basic;
+                text-transform:uppercase;
+            }
+            a {
+                &.link-pdf {
+                    color:$text-basic;
+                    text-decoration:none;
+                    &:before {
+                        @include fa-icon();
+                        font-size:0.85em;
+                        content: $fa-var-file-pdf-o;
+                        color:$text-green;
+                        margin-right:10px;
+                        position:relative;
+                        top:-1px;
+                    }
+                    &:hover {
+                        color:$text-green;
+                    }
+                }
+            }
+        }
+
+        //Button Link
+        .field-promolink {
+            a {
+                @include btn-primary();
+                font-size:18px;
+            }
+        }
+    }
+
+
+    &.col-4  {
+        padding-top:45px; //so the icon shows
+        .promo-text {
+            min-height:335px;
+            max-height:335px;
+        }
+        .field-promolink {
+            a {
+                width:100%;
+            }
+        }
+    }
+    &.col-8 {
+        padding-left:0;
+        padding-right:30px;
+    }
+}

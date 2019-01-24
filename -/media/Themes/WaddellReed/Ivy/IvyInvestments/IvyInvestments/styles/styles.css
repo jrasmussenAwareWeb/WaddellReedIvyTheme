@@ -1,9 +1,3 @@
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 /* breakpoints */
 .boxed {
   box-sizing: border-box;
@@ -27,12 +21,6 @@ $font-medium:16px;*/
   margin: 0 auto !important;
 }
 
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 /* breakpoints */
 .component-content-clearfix .component-content:after {
   content: "";
@@ -46,9 +34,6 @@ $font-medium:16px;*/
   clear: both;
 }
 
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 .highlighted-top {
   background: #ffffff;
   border-top-width: 3px;
@@ -101,9 +86,6 @@ $font-medium:16px;*/
   margin: 0 0 10px 0;
 }
 
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 .indent {
   margin: 0 60px;
 }
@@ -116,12 +98,6 @@ $font-medium:16px;*/
   margin-bottom: 20px;
 }
 
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 /* breakpoints */
 .link-button .button-default, .link-button .btn-default, .link-button .default {
   display: inline-block;
@@ -147,9 +123,9 @@ $font-medium:16px;*/
 .link-button .button-success, .link-button .btn-success, .link-button .success {
   font-size: 12px;
   font-size: 1.2rem;
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
-  border-color: #c2c2c2;
+  border-color: #006747;
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
@@ -170,9 +146,9 @@ $font-medium:16px;*/
 .link-button .button-warning, .link-button .btn-warning, .link-button .warning {
   font-size: 12px;
   font-size: 1.2rem;
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
-  border-color: #c2c2c2;
+  border-color: #006747;
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
@@ -194,6 +170,11 @@ $font-medium:16px;*/
   width: 100%;
 }
 
+.link-button .btn-sm {
+  margin: 3px 0;
+  padding: 5px 10px;
+}
+
 .promoted-box {
   border: none !important;
 }
@@ -210,12 +191,6 @@ $font-medium:16px;*/
   text-align: center !important;
 }
 
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 /* breakpoints */
 .cover-background > .component-content, .fix-background > .component-content, .parallax-background > .component-content {
   background-repeat: no-repeat;

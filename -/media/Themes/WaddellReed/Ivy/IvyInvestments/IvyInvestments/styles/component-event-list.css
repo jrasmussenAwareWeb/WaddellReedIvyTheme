@@ -1,11 +1,5 @@
 @charset "UTF-8";
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 /* breakpoints */
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 .event-list li, .event-list li > .scLooseFrameZone {
   background: #FFFFFF;
   display: -webkit-inline-box;
@@ -29,9 +23,6 @@ $font-medium:16px;*/
 }
 
 .event-list {
-  /*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
   /* breakpoints */
   /*Added NW
 p {
@@ -177,7 +168,7 @@ strong {
 }
 
 .event-list h1, .event-list h2, .event-list h3, .event-list h4, .event-list h5, .event-list h6 {
-  border-bottom-width: 1px;
+  border-bottom-width: 2px;
   border-bottom-style: solid;
   border-bottom-color: #000000;
 }
@@ -187,9 +178,9 @@ strong {
 }
 
 .event-list li {
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
-  border-color: #c2c2c2;
+  border-color: #006747;
   margin-left: 0;
   box-sizing: border-box;
   padding: 15px 15px 40px 15px;

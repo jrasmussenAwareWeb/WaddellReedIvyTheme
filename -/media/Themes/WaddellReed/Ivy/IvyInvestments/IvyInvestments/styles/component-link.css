@@ -1,19 +1,7 @@
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 /* breakpoints */
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 .link {
   background: transparent;
-  /*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
   /* breakpoints */
-  /*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 }
 
 .link a {
@@ -41,4 +29,7 @@ $font-medium:16px;*/
   color: #fff;
   text-decoration: none;
   border-bottom: 0;
+  position: relative;
+  left: -12px;
+  top: -1px;
 }

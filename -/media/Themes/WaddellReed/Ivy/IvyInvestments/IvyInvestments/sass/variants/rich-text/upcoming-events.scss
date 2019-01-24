@@ -6,14 +6,17 @@
     margin-top:$extralarge-margin;
     @include respond-to(desktop) {
         margin-top:-$large-margin; //when adding an order in sitecore to flip these for tablet its adds 30px to the order1 object
+        margin-bottom:-15px;
     }
-    padding-top:15px;
+    //padding-top:15px;
+    padding:15px 15px 0 15px;
     .component-content {
         border-bottom:3px solid $border-basic-color;
         margin-bottom:20px;
     }
     h2 {
         @include proximaboldcondensed();
+        text-transform:uppercase;
         float:left;
         margin-top:0;
         line-height:1;

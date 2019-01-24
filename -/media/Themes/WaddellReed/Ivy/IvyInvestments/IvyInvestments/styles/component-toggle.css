@@ -1,10 +1,4 @@
 @charset "UTF-8";
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
 /* breakpoints */
 .toggle details[open] summary:before {
   content: "";
@@ -576,7 +570,7 @@ $font-medium:16px;*/
 }
 
 .toggle.mobile .toggle-content {
-  margin-top: 98px;
+  margin-top: 79px;
   background-color: #FFFFFF;
 }
 
@@ -603,7 +597,7 @@ $font-medium:16px;*/
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 1.4em;
+  font-size: 1.6em;
   color: #009639;
   content: "";
 }

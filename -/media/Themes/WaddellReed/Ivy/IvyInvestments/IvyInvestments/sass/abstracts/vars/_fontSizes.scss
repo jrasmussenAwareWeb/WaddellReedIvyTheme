@@ -1,28 +1,26 @@
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
-$font-big:20px;
 $font-extrabig:24px;
-
-$font-small: 14px;
-$font-normal:16px;
+$font-big:20px;
 $font-medium:18px;
-
+$font-normal:16px;
+$font-small: 14px;
 
 
 //Navigation
-$navigation-font-basic:18px;
+$navigation-font-basic:$font-medium;
 //$navigation-font-basic-submenu:14px;
-$navigation-font-basic-submenu:16px;
+$navigation-font-basic-submenu:$font-normal;
 
 //Umbrella Navigation
-$navigation-font-small:16px;
+$navigation-font-small:$font-normal;
 
 //Tabs
-$tab-font-header:16px;
+$tab-font-header:$font-normal;
 //Accordion
-$accordion-header:16px;
+$accordion-header:$font-normal;
 //Breadcrumb
-$breadcrumb-font:15px;
+$breadcrumb-font:$font-small;
 // Link List
 $link-list-title-font:15px;
+
+//Content
+$font-lead:22px;

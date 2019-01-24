@@ -13,18 +13,50 @@
     @import "base/richtext/*";
     @import "base/tables/*";
     @import "base/links/*";
+
 }
 .rich-text  {
     @import "variants/rich-text/*";
+    //Ivy Specific
+    padding:0;
 }
 .content {
+    /*&.indent-top {
+        margin-top:$middle-margin;
+    }
+    &.indent-bottom {
+        margin-bottom:$large-margin;
+    }*/
     @import "variants/page-content/*";
 }
 
+//Ivy Specific
 .rich-text, .content {
-  b, strong {
+    font-size:$font-medium;
+    b, strong {
     font-weight:normal;
     @include proximabold();
+    }
+
+    p {
+        font-size:$font-medium;
+        margin-top:0;
+    }
+    .lead {
+        font-size:$font-lead;
+        //margin-top:$middle-margin; the margin goes on the page content item in sitecore instead
+        @include respond-to(mobile-large) {
+            font-size:$font-big;
+        }
+    }
+
+    #footer & {
+        font-size:$font-small;
+        p {
+            font-size:$font-small;
+        }
+    }
 }
-}
+
+
 @import "styles/rich-text/*";
