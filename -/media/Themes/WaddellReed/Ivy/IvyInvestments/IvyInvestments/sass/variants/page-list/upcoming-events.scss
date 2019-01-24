@@ -1,0 +1,17 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+@import "../../base/fontawesome/font-awesome-mix-var";
+
+&.upcoming-events {
+    padding:0;
+    .item {
+        .field-redirecturl {
+            &:after {
+                font-size:inherit;
+                @include fa-icon();
+                content: $fa-var-lock; 
+                margin-left:10px; 
+            }
+        }
+    }
+}

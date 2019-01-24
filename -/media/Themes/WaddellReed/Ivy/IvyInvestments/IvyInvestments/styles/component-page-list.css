@@ -1,23 +1,14 @@
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
-/*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
+@charset "UTF-8";
 /* breakpoints */
 .page-list {
   background-color: transparent;
-  /*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
   /* breakpoints */
-  /*$font-small:11px;
-$font-normal:13px;
-$font-medium:16px;*/
+  /* breakpoints */
+  /* breakpoints */
 }
 
 .page-list .item {
-  border-bottom-width: 1px;
+  border-bottom-width: 2px;
   border-bottom-style: solid;
   border-bottom-color: #000000;
   background: transparent;
@@ -35,6 +26,87 @@ $font-medium:16px;*/
 
 .page-list .field-title {
   font-weight: bold;
+}
+
+.page-list.general-landing {
+  padding: 0;
+  margin-top: 10px;
+}
+
+.page-list.general-landing .item {
+  border-bottom: 0;
+  width: 33%;
+  float: left;
+  padding: 0 0 15px 15px;
+  /*min-height:450px;
+        max-height:450px;
+        overflow:hidden;
+        we have to move this for pages that will not have an image*/
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 991px) {
+  .page-list.general-landing .item {
+    width: 100%;
+    float: none;
+  }
+}
+
+.page-list.general-landing .item .field-image img {
+  width: 100%;
+  height: auto;
+}
+
+.page-list.general-landing .item .field-title {
+  font-weight: normal;
+  font-family: "CopernicusBook", arial, helvetica, sans-serif;
+  color: #009639;
+  line-height: 1.4;
+  margin-top: 8px;
+}
+
+.page-list.general-landing .item .field-title:hover, .page-list.general-landing .item .field-title:focus {
+  color: #000000;
+}
+
+.page-list.general-landing .item .field-title a {
+  color: inherit;
+  border-bottom: 0;
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 767px) {
+  .page-list.general-landing .item .field-title a {
+    font-size: 20px;
+  }
+}
+
+.page-list.general-landing .item .field-redirecturl:after {
+  font-size: inherit;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  margin-left: 5px;
+}
+
+.page-list.upcoming-events {
+  padding: 0;
+}
+
+.page-list.upcoming-events .item .field-redirecturl:after {
+  font-size: inherit;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  margin-left: 10px;
 }
 
 .page-list a {

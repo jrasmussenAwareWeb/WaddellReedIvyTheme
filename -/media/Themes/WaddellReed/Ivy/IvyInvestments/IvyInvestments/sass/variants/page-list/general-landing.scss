@@ -1,0 +1,55 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+@import "../../base/fontawesome/font-awesome-mix-var";
+
+&.general-landing {
+    padding:0;
+    margin-top:10px;
+    .item {
+        border-bottom:0;
+        width:33%;
+        float:left;
+        padding:0 0 15px 15px;
+        /*min-height:450px;
+        max-height:450px;
+        overflow:hidden;
+        we have to move this for pages that will not have an image*/
+        margin-bottom:$large-margin;
+        @include respond-to(all-mobile) {
+            width:100%;
+            float:none;
+        }
+        .field-image {
+            img {
+                width:100%;
+                height:auto;
+            }
+        }
+        .field-title {
+            font-weight:normal;
+            @include copernicus();
+            color:$text-green;
+            line-height:1.4;
+            margin-top:8px;
+            &:hover, &:focus {
+                color:$text-basic;
+            }
+            a {
+                color:inherit;
+                border-bottom:0;
+                font-size:22px; //h4 24 but needs specified as a span in case a required lock or something else is :after (changed 012319 - current site is 22?)
+                 @include respond-to(mobile-large) {
+                    font-size:20px; //22?
+                }
+            }
+        }
+        .field-redirecturl {
+            &:after {
+                font-size:inherit;
+                @include fa-icon();
+                content: $fa-var-lock; 
+                margin-left:5px; 
+            }
+        }
+    }
+}
