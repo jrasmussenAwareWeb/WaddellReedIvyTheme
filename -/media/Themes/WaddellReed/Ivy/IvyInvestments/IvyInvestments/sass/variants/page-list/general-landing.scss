@@ -31,9 +31,6 @@
             color:$text-green;
             line-height:1.4;
             margin-top:8px;
-            &:hover, &:focus {
-                color:$text-basic;
-            }
             a {
                 color:inherit;
                 border-bottom:0;
@@ -43,12 +40,23 @@
                 }
             }
         }
-        .field-redirecturl {
-            &:after {
+        .login-required-lock {
+            &:after { 
                 font-size:inherit;
                 @include fa-icon();
                 content: $fa-var-lock; 
                 margin-left:5px; 
+                color:$text-green;
+            }
+        }
+        .field-excerpt {
+            min-height:140px;
+            max-height:140px;
+            overflow:hidden;
+        }
+        &:hover, &:focus {
+            .field-title, .login-required-lock:after  {
+                color:$text-basic;
             }
         }
     }

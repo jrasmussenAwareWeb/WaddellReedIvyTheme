@@ -65,10 +65,6 @@
   margin-top: 8px;
 }
 
-.page-list.general-landing .item .field-title:hover, .page-list.general-landing .item .field-title:focus {
-  color: #000000;
-}
-
 .page-list.general-landing .item .field-title a {
   color: inherit;
   border-bottom: 0;
@@ -81,7 +77,7 @@
   }
 }
 
-.page-list.general-landing .item .field-redirecturl:after {
+.page-list.general-landing .item .login-required-lock:after {
   font-size: inherit;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -91,6 +87,17 @@
   -moz-osx-font-smoothing: grayscale;
   content: "";
   margin-left: 5px;
+  color: #009639;
+}
+
+.page-list.general-landing .item .field-excerpt {
+  min-height: 140px;
+  max-height: 140px;
+  overflow: hidden;
+}
+
+.page-list.general-landing .item:hover .field-title, .page-list.general-landing .item:hover .login-required-lock:after, .page-list.general-landing .item:focus .field-title, .page-list.general-landing .item:focus .login-required-lock:after {
+  color: #000000;
 }
 
 .page-list.upcoming-events {
