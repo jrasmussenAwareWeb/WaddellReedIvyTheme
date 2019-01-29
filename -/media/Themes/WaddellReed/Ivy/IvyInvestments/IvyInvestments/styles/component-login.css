@@ -81,8 +81,10 @@
   padding: 5px;
 }
 
-.login table input[type='text'], .login table input[type='password'] {
+.login table input[type='text'], .login table input[type='password'],
+.login table input[type="text"], .login table input[type="password"] {
   min-height: 33px;
+  font-size: 16px;
 }
 
 .login table input[type="submit"], .login table input[type="reset"], .login table input[type="button"], .login table button {
@@ -99,7 +101,6 @@
   border: 2px solid #009639;
   background: #FFFFFF;
   color: #009639;
-  width: 100%;
 }
 
 .login table input[type="submit"]:hover, .login table input[type="reset"]:hover, .login table input[type="button"]:hover, .login table button:hover {
@@ -112,4 +113,21 @@
   color: #fff;
   background: #009639 !important;
   border: 2px solid #009639;
+}
+
+.login table .request-password {
+  text-align: right;
+}
+
+.login table .request-password a {
+  color: #009639;
+  text-decoration: none;
+}
+
+.login table .request-password a:hover, .login table .request-password a:focus {
+  color: #000000;
+}
+
+.login table .sxa-login-failed {
+  color: #6d3332;
 }

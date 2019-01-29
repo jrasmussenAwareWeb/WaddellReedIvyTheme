@@ -15,19 +15,33 @@
         td {
             padding: 5px;
         }
-        input[type='text'], input[type='password'] {
+        input[type='text'], input[type='password'], 
+        input[type="text"], input[type="password"] {
             min-height: 33px;
+            font-size: $font-normal;
         }
 
         //Ivy Specific
         input[type="submit"], input[type="reset"], input[type="button"], button {
             @include btn-default();
-            width:100%;
             &:hover{
                 color: $text-white;
                 background: $bg-green !important; 
                 border:2px solid $text-green;
             }
+        }
+        .request-password {
+            text-align:right;
+            a {
+                color:$text-green;
+                text-decoration:none;
+                &:hover, &:focus {
+                    color:$text-basic;
+                }
+            }
+        }
+        .sxa-login-failed {
+            color:$text-red;
         }
     }
 }

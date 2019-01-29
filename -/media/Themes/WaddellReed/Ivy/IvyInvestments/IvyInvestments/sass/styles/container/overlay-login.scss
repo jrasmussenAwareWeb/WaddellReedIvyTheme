@@ -33,16 +33,16 @@
         padding-right:15px;
     }
 
-.login {
-    // the login header
-    p {
-        &:first-child {
-            @include proximaboldcondensed();
-            font-size:18px;
-            text-transform:uppercase;
+    .login {
+        // the login header
+        p {
+            &:first-child {
+                @include proximaboldcondensed();
+                font-size:18px;
+                text-transform:uppercase;
+            }
         }
     }
-}
     ol, ul {
         padding-top:0;
         margin-left:0;
@@ -56,5 +56,8 @@
     }
     .content p, .rich-text p, .login p {
         margin: 10px 0;
+    }
+    input[type="submit"] {
+        width:100%;
     }
 }
