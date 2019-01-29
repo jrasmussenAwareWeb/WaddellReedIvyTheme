@@ -1150,6 +1150,7 @@
 
 .navigation-sidebar .subnav > ul {
   list-style: none;
+  border-radius: 4px;
   box-shadow: 0px 2px 9.5px 0.5px rgba(0, 0, 0, 0.4);
 }
 
@@ -1159,7 +1160,7 @@
 
 .navigation-sidebar .subnav > ul > li > a {
   display: block;
-  padding: 5px;
+  padding: 10px;
   text-decoration: none;
 }
 
