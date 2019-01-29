@@ -1,0 +1,85 @@
+//custom for tabs to accordion on mobile #21
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+@import "../../base/fontawesome/font-awesome-mix-var";
+
+.tabs {
+    //style the toggle like an accordion (we use toggle because trying to use accordion interferes with the accordion rendering
+    .toggle {
+        &:first-child {
+            details {
+                summary {
+                    &.toggle-header {
+                        border-top:1px solid $border-dark-gray;
+                    }
+                }
+            }
+        }
+        &:last-child {
+            details {
+                summary {
+                    &.toggle-header {
+                        border-bottom:1px solid $border-dark-gray;
+                    }
+                }
+            }
+        }
+        details[open] {
+            summary {
+                &:before {
+                    content:none;
+                }
+                &.toggle-header {
+                    border:1px solid $border-dark-gray;
+                     //http://www.psd-to-css-shadows.com/
+                    //https://www.cssmatic.com/box-shadow
+                    -webkit-box-shadow: 0px 2px 4.9px 0.1px rgba(0, 0, 0, 0.4); 
+                    -moz-box-shadow: 0px 2px 4.9px 0.1px rgba(0, 0, 0, 0.4); 
+                    box-shadow: 0px 2px 4.9px 0.1px rgba(0, 0, 0, 0.4);
+                    .toggle-label {
+                        .field-heading {
+                            &:after {
+                                content: $fa-var-chevron-up !important;
+                            }
+                        }
+                    }
+                 }
+            }
+        }
+        details {
+            summary {
+                &.toggle-header {
+                    width:100%;
+                    cursor: pointer;
+                    background-color: $accordion-header-bg;
+                    border-top:1px solid $border-dark-gray;
+                    border-left:1px solid transparent;
+                    border-right:1px solid transparent;
+                    &:before {
+                        content:none;
+                    }
+                    .toggle-label {
+                        [class*="col-"] {
+                            padding:0;
+                        }
+                        width:100%;
+                        padding:15px 0;
+                        .field-heading {
+                            font-size:$font-normal;
+                            &:after {
+                                @include fa-icon();
+                                content: $fa-var-chevron-down !important;
+                                color:$text-green;
+                                position:absolute;
+                                right:10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .field-content {
+                padding:30px 0;
+            }
+        }
+    }
+}

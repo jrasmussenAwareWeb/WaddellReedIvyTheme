@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* breakpoints */
 .tabs {
   overflow: hidden;
@@ -175,6 +176,71 @@
 }
 
 /* breakpoints */
+.tabs .toggle:first-child details summary.toggle-header {
+  border-top: 1px solid #b7b7b7;
+}
+
+.tabs .toggle:last-child details summary.toggle-header {
+  border-bottom: 1px solid #b7b7b7;
+}
+
+.tabs .toggle details[open] summary:before {
+  content: none;
+}
+
+.tabs .toggle details[open] summary.toggle-header {
+  border: 1px solid #b7b7b7;
+  box-shadow: 0px 2px 4.9px 0.1px rgba(0, 0, 0, 0.4);
+}
+
+.tabs .toggle details[open] summary.toggle-header .toggle-label .field-heading:after {
+  content: "" !important;
+}
+
+.tabs .toggle details summary.toggle-header {
+  width: 100%;
+  cursor: pointer;
+  background-color: transparent;
+  border-top: 1px solid #b7b7b7;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+
+.tabs .toggle details summary.toggle-header:before {
+  content: none;
+}
+
+.tabs .toggle details summary.toggle-header .toggle-label {
+  width: 100%;
+  padding: 15px 0;
+}
+
+.tabs .toggle details summary.toggle-header .toggle-label [class*="col-"] {
+  padding: 0;
+}
+
+.tabs .toggle details summary.toggle-header .toggle-label .field-heading {
+  font-size: 16px;
+}
+
+.tabs .toggle details summary.toggle-header .toggle-label .field-heading:after {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "" !important;
+  color: #009639;
+  position: absolute;
+  right: 10px;
+}
+
+.tabs .toggle details .field-content {
+  padding: 30px 0;
+}
+
+/* breakpoints */
 .tabs.tabs-scrollable .tabs-heading {
   list-style: none;
   padding: 0;
@@ -276,6 +342,9 @@
   width: 100%;
   border: 0;
   background: transparent;
+  /*&:hover {
+                @include border-basic(left, $tab-container-border, 2px);
+            }*/
 }
 
 .tabs.tabs-vertical .tabs-heading li > div .field-heading {

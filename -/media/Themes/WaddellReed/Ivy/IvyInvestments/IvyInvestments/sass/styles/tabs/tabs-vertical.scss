@@ -41,9 +41,9 @@
             &:first-child {
                 margin-top: 0;
             }
-            &:hover {
-                //@include border-basic(left, $tab-container-border, 2px);
-            }
+            /*&:hover {
+                @include border-basic(left, $tab-container-border, 2px);
+            }*/
         }
     }
     .tabs-container {
