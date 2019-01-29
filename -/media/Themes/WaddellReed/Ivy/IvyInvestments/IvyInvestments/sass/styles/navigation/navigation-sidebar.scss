@@ -1,28 +1,37 @@
 @import "../../abstracts/vars";
 @import "../../abstracts/mixins";
-.navigation.navigation-sidebar {
-    a {
+
+//currently used on plain html rendering
+.navigation-sidebar {
+    padding-left:0;
+
+    //Stickify
+    .subnav{width:160px} //190
+    .subnav > ul{
+        list-style:none;
+
+        //http://www.psd-to-css-shadows.com/ color:0,0,0 -  opacity 40% - angle 90 - distance 2 - spread 0.5 - size 10
+        //https://www.cssmatic.com/box-shadow
+        -webkit-box-shadow:  0px 2px 9.5px 0.5px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow:  0px 2px 9.5px 0.5px rgba(0, 0, 0, 0.4);
+        box-shadow:  0px 2px 9.5px 0.5px rgba(0, 0, 0, 0.4); 
+    }
+    .subnav > ul > li + li{border-top:1px solid #d9d9d6}
+    .subnav > ul > li > a{
+        display: block;
+        padding: 5px;
         text-decoration: none;
     }
-    nav>ul {
-        .rel-level1 {
-            >.navigation-title {
-                margin-bottom: 0;
-                >a {
-                    padding: 5px 10px;
-                    display: block;
-                    position: relative;
-                    z-index: 1;
-                    margin-right: 0;
-                }
-            }
-            >ul {
-                margin-left: $small-margin;
-                margin-top: $extrasmall-margin;
-            }
-        }
-        .rel-level2 {
-            display: block;
-        }
+    .subnav > ul > li > a:hover,
+    .subnav > ul > li > a.active{
+        background-color:$bg-green;
+        color:$text-white;
     }
+    /* States */
+    .subnav.isStuck{
+        top: 160px; //60
+        position: fixed;
+        -webkit-backface-visibility: hidden; /* fixes google chrome bug */
+    }
+    .subnav.threshold{position:absolute;bottom:0;}
 }

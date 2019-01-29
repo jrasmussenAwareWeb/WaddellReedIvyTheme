@@ -221,51 +221,8 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
     }
 }
 
-#myScrollspy {
-    margin-left:-15px;
-}
 
-/*scrollspy ?  
-  .affix {
-    position: fixed;
-  }*/
-
-.scrollspy-example {
-  position: relative;
-  height: 250px;
-  overflow: auto;
-}
-  
-.nav-pills > li {
-  float: left;
-}
-.nav-pills > li > a {
-  border-radius: 4px;
-}
-.nav-pills > li + li {
-  margin-left: 2px;
-}
-.nav-pills > li.active > a,
-.nav-pills > li.active > a:hover,
-.nav-pills > li.active > a:focus {
-  color: #fff;
-  background-color: #337ab7;
-}
-.nav-stacked > li {
-  float: none;
-}
-.nav-stacked > li + li {
-  margin-top: 2px;
-  margin-left: 0;
-}
-
-  #section1 {color: #fff; background-color: #1E88E5;}
-  #section2 {color: #fff; background-color: #673ab7;}
-  #section3 {color: #fff; background-color: #ff9800;}
-  #section41 {color: #fff; background-color: #00bcd4;}
-  #section42 {color: #fff; background-color: #009688;}
-  
-
+/*Back to Top*/
 .scrolltop-wrap {
     backface-visibility: hidden;
     pointer-events: none;

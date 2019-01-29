@@ -183,7 +183,7 @@
                 }
             }
         }
-        .navigation-required {
+        .login-required-lock {
             margin-left:5px;
             color:$text-white;
             &:after {
@@ -297,7 +297,7 @@
                                 color:$text-green;
                             }
                         }
-                        >.navigation-required {
+                        >.login-required-lock {
                             color:$text-green;
                         }
                     }
@@ -314,7 +314,7 @@
                                 color:$text-green;
                             }
                         }
-                        >.navigation-required {
+                        >.login-required-lock {
                             color:$text-green;
                         }
                     }
@@ -404,7 +404,7 @@
                             text-decoration:none;
                         }
                     }
-                    .navigation-required {
+                    .login-required-lock {
                         color:$text-green;
                         &:after {
                             font-size:inherit;
@@ -418,7 +418,7 @@
                             color:$text-basic;
                             }
                         }
-                        .navigation-required {
+                        .login-required-lock {
                             color:$text-basic;
                         }
                     }
@@ -458,7 +458,7 @@
                     }
                 }
                 &:hover, &:focus {
-                    .navigation-required {
+                    .login-required-lock {
                         color:$text-green;
                     }
                 }

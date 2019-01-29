@@ -400,12 +400,12 @@
   display: inline-block;
 }
 
-.navigation.navigation-main.navigation-main-horizontal .navigation-required {
+.navigation.navigation-main.navigation-main-horizontal .login-required-lock {
   margin-left: 5px;
   color: #fff;
 }
 
-.navigation.navigation-main.navigation-main-horizontal .navigation-required:after {
+.navigation.navigation-main.navigation-main-horizontal .login-required-lock:after {
   font-size: inherit;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -541,7 +541,7 @@
   color: #009639;
 }
 
-.navigation.navigation-main.navigation-main-horizontal .rel-level2.black .rel-level3:hover > .navigation-required, .navigation.navigation-main.navigation-main-horizontal .rel-level2.black .rel-level3:focus > .navigation-required {
+.navigation.navigation-main.navigation-main-horizontal .rel-level2.black .rel-level3:hover > .login-required-lock, .navigation.navigation-main.navigation-main-horizontal .rel-level2.black .rel-level3:focus > .login-required-lock {
   color: #009639;
 }
 
@@ -553,7 +553,7 @@
   color: #009639;
 }
 
-.navigation.navigation-main.navigation-main-horizontal .rel-level2.black .rel-level4:hover > .navigation-required, .navigation.navigation-main.navigation-main-horizontal .rel-level2.black .rel-level4:focus > .navigation-required {
+.navigation.navigation-main.navigation-main-horizontal .rel-level2.black .rel-level4:hover > .login-required-lock, .navigation.navigation-main.navigation-main-horizontal .rel-level2.black .rel-level4:focus > .login-required-lock {
   color: #009639;
 }
 
@@ -655,11 +655,11 @@
   text-decoration: none;
 }
 
-.navigation.navigation-main.navigation-main-horizontal .rel-level2.gray .item-cta .navigation-required {
+.navigation.navigation-main.navigation-main-horizontal .rel-level2.gray .item-cta .login-required-lock {
   color: #009639;
 }
 
-.navigation.navigation-main.navigation-main-horizontal .rel-level2.gray .item-cta .navigation-required:after {
+.navigation.navigation-main.navigation-main-horizontal .rel-level2.gray .item-cta .login-required-lock:after {
   font-size: inherit;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -674,7 +674,7 @@
   color: #000000;
 }
 
-.navigation.navigation-main.navigation-main-horizontal .rel-level2.gray .item-cta:hover .navigation-required, .navigation.navigation-main.navigation-main-horizontal .rel-level2.gray .item-cta:focus .navigation-required {
+.navigation.navigation-main.navigation-main-horizontal .rel-level2.gray .item-cta:hover .login-required-lock, .navigation.navigation-main.navigation-main-horizontal .rel-level2.gray .item-cta:focus .login-required-lock {
   color: #000000;
 }
 
@@ -702,7 +702,7 @@
   margin-right: 10px;
 }
 
-.navigation.navigation-main.navigation-main-horizontal .rel-level3 li:hover .navigation-required, .navigation.navigation-main.navigation-main-horizontal .rel-level3 li:focus .navigation-required {
+.navigation.navigation-main.navigation-main-horizontal .rel-level3 li:hover .login-required-lock, .navigation.navigation-main.navigation-main-horizontal .rel-level3 li:focus .login-required-lock {
   color: #009639;
 }
 
@@ -1099,11 +1099,11 @@
   display: none;
 }
 
-.navigation.navigation-mobile .rel-level2 .navigation-required {
+.navigation.navigation-mobile .rel-level2 .login-required-lock {
   color: #000000;
 }
 
-.navigation.navigation-mobile .rel-level2 .navigation-required:after {
+.navigation.navigation-mobile .rel-level2 .login-required-lock:after {
   font-size: inherit;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -1118,7 +1118,7 @@
   color: #009639;
 }
 
-.navigation.navigation-mobile .rel-level2:hover > .navigation-required, .navigation.navigation-mobile .rel-level2:focus > .navigation-required {
+.navigation.navigation-mobile .rel-level2:hover > .login-required-lock, .navigation.navigation-mobile .rel-level2:focus > .login-required-lock {
   color: #009639;
 }
 
@@ -1139,29 +1139,46 @@
 }
 
 /* breakpoints */
-.navigation.navigation-sidebar a {
+.navigation-sidebar {
+  padding-left: 0;
+  /* States */
+}
+
+.navigation-sidebar .subnav {
+  width: 160px;
+}
+
+.navigation-sidebar .subnav > ul {
+  list-style: none;
+  box-shadow: 0px 2px 9.5px 0.5px rgba(0, 0, 0, 0.4);
+}
+
+.navigation-sidebar .subnav > ul > li + li {
+  border-top: 1px solid #d9d9d6;
+}
+
+.navigation-sidebar .subnav > ul > li > a {
+  display: block;
+  padding: 5px;
   text-decoration: none;
 }
 
-.navigation.navigation-sidebar nav > ul .rel-level1 > .navigation-title {
-  margin-bottom: 0;
+.navigation-sidebar .subnav > ul > li > a:hover,
+.navigation-sidebar .subnav > ul > li > a.active {
+  background-color: #009639;
+  color: #fff;
 }
 
-.navigation.navigation-sidebar nav > ul .rel-level1 > .navigation-title > a {
-  padding: 5px 10px;
-  display: block;
-  position: relative;
-  z-index: 1;
-  margin-right: 0;
+.navigation-sidebar .subnav.isStuck {
+  top: 160px;
+  position: fixed;
+  -webkit-backface-visibility: hidden;
+  /* fixes google chrome bug */
 }
 
-.navigation.navigation-sidebar nav > ul .rel-level1 > ul {
-  margin-left: 10px;
-  margin-top: 5px;
-}
-
-.navigation.navigation-sidebar nav > ul .rel-level2 {
-  display: block;
+.navigation-sidebar .subnav.threshold {
+  position: absolute;
+  bottom: 0;
 }
 
 /* breakpoints */
