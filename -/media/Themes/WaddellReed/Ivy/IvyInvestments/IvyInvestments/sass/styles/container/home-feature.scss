@@ -1,132 +1,210 @@
 @import "../../abstracts/vars";
 @import "../../abstracts/mixins";
 
-.home-feature {
+*:not(.on-page-editor) { //this doesnt seem to work ;/
+    .home-feature {
 
-    //TODO: this will have to change - how to target the parent row of .home-feature?
-    @at-root #content >.row >.row {
-        display:block; 
-        width:100%;
-    } 
-    //
+        //TODO: this will have to change - how to target the parent row of .home-feature?
+        @at-root #content >.row >.row {
+            display:block; 
+            width:100%;
+        } 
+        //
 
-    .row.column-splitter {
-        margin-left:0 !important;
-        margin-right:0 !important;
-         @include respond-to(large) { 
-            margin-left:15px !important;
-            margin-right:15px !important; 
-        }
-    }
-
-    .rich-text {
-        padding:0 15px;
-    }
-
-    //overlapping columns
-    .col-xl-auto {
-        &:first-of-type {
-            float:left;
-            @include respond-to(large) {
-                margin-left:-15px;
+        .row.column-splitter {
+            margin-left:0 !important;
+            margin-right:0 !important;
+            @include respond-to(large) { 
+                margin-left:15px !important;
+                margin-right:15px !important; 
             }
- 
-            //consider other components for static placement i.e. page content with image and fields 
-            .search-results {
-                padding:0;
- 
-                .search-result-list {
-                    padding:0;
-                    a {
-                        text-decoration:none;
-                    }
-                    img {
-                        width:100%; 
-                        height:auto;
-                    }
+        }
 
-                    .headline {
-                        background:rgba(0,150,57,0.85); //#009639 make mixin?
-                        color:$text-white;
-                        position:absolute;
-                        bottom:6px;
-                        padding:30px;
-                        @include respond-to(mobile-large) {
-                            background:rgba(0,150,57,1);
-                            position:relative;
-                            bottom:auto;
-                            top:-5px;
-                            padding:15px;
-                            margin-bottom:0;
-                        }
-                        .field-date {
-                            font-size:$font-small;
-                        }
-                        .field-title, .field-excerpt {
-                            max-width:90%;
-                        }
-                        .field-title {
-                            @include proximaboldcondensed();
-                            font-size:40px;
-                            text-transform:uppercase; 
-                        }
-                        .field-excerpt {
-                            font-size:$font-medium;
-                        }
-                    }
+        .rich-text {
+            padding:0 15px;
+        }
+
+        //overlapping columns
+        .col-xl-auto {
+            &:first-of-type {
+                float:left;
+                @include respond-to(large) {
+                    margin-left:-15px;
                 }
-            }
-        }
-        &:last-of-type {
-            float:right;
-            position:absolute;
-            right:0;
-            max-width:25%;
-            top:27px; //this positioning has an issue with error validation
+    
+                //dynamic image
+                .search-results {
+                    padding:0;
+    
+                    .search-result-list {
+                        padding:0;
+                        a {
+                            text-decoration:none;
+                        }
+                        img {
+                            width:100%; 
+                            height:auto;
+                        }
 
-            .login {
-                table {
-                    td {
-                        padding:2px 0;
-                        &.sxa-validation {
-                            padding:0;
-                            .field-validation-error {
-                                color:$text-red;
-                                font-size:$font-small; 
+                        .headline {
+                            background:rgba(0,150,57,0.85); //#009639 make mixin?
+                            color:$text-white;
+                            position:absolute;
+                            bottom:6px;
+                            padding:30px;
+                            @include respond-to(mobile-large) {
+                                background:rgba(0,150,57,1);
+                                position:relative;
+                                bottom:auto;
+                                top:-5px;
+                                padding:15px;
+                                margin-bottom:0;
+                            }
+                            .field-date {
+                                font-size:$font-small;
+                            }
+                            .field-title, .field-excerpt {
+                                max-width:90%;
+                            }
+                            .field-title {
+                                @include proximaboldcondensed();
+                                font-size:40px;
+                                text-transform:uppercase; 
+                            }
+                            .field-excerpt {
+                                font-size:$font-medium;
                             }
                         }
-                         &.sxa-remember-me {
-                            margin-bottom:5px;
+                    }
+                }
+                //static image
+                .promo {
+                    padding:0;
+                    >.component-content {
+                        border:0;
+                        >div {
+                            padding:0;
+                        }
+                        .link-wrapper {
+                            text-decoration:none;
+                        }
+                        .headline {
+                            >a {
+                                text-decoration:none;
+                            }
+                           background:rgba(0,150,57,0.85); //#009639 make mixin?
+                            color:$text-white;
+                            position:absolute;
+                            bottom:6px;
+                            padding:30px;
+                            @include respond-to(mobile-large) {
+                                background:rgba(0,150,57,1);
+                                position:relative;
+                                bottom:auto;
+                                top:-5px;
+                                padding:15px;
+                                margin-bottom:0;
+                            }
+                            .field-date {
+                                font-size:$font-small;
+                                color:$text-white;
+                                >p {
+                                    margin:0;
+                                    padding:0;
+                                }
+                            }
+                            .field-title, .field-excerpt {
+                                max-width:90%;
+                            }
+                            .field-title {
+                                @include proximaboldcondensed();
+                                font-size:40px;
+                                text-transform:uppercase;
+                                margin:0;
+                                padding:0;
+                                > a {
+                                    color:$text-white;
+                                    text-decoration:none;
+                                }
+                            }
+                            .field-excerpt {
+                                font-size:$font-medium;
+                            }
                         }
                     }
                 }
-                input[type="submit"] {
-                    @include btn-default;
-                    width:100%;
-                    &:hover, &:focus {
-                        background: $bg-green !important;
-                        color:$text-white !important;
+
+                //video 
+                .plain-html {}
+            }
+            &:last-of-type {
+                float:right;
+                position:absolute;
+                right:0;
+                max-width:25%;
+                top:18px; //this positioning has an issue with error validation
+
+                .login {
+                    table {
+                        td {
+                            padding:2px 0;
+                            &.sxa-validation {
+                                padding:0;
+                                .field-validation-error {
+                                    color:$text-red;
+                                    font-size:$font-small; 
+                                }
+                            }
+                            &.sxa-remember-me {
+                                font-size:$font-normal;
+                                margin-bottom:5px;
+                            }
+                        }
+                    }
+                    input[type="text"], input[type="password"] {
+                        color:$text-gray;
+                    }
+                    input[type="submit"] {
+                        @include btn-default;
+                        width:100%;
+                        &:hover, &:focus {
+                            background: $bg-green !important;
+                            color:$text-white !important;
+                        }
+                        margin-top:10px;
                     }
                 }
-            }
-            .rich-text {
-                font-size:$font-normal;
-                p {
-                    margin:0 0 $middle-margin;
+                .rich-text {
+                    font-size:$font-normal;
+                    p {
+                        margin:0 0 $middle-margin;
+                    }
+                    &.welcome-user {
+                        padding:15px;
+                        hr {
+                            margin: 10px 0 20px;
+                            border: 0;
+                            height: 0;
+                            border-top:2px solid $border-green; 
+                        }
+                        .btn {
+                            margin-bottom:15px;
+                        }
+                    }
                 }
-            }
-        } 
-    }
-    h4 {
-        @include proximaboldcondensed();
-        text-transform:uppercase;
-        color:$text-basic;
-        margin-top:15px;
-    }
+            } 
+        }
+        h4 {
+            @include proximaboldcondensed();
+            text-transform:uppercase;
+            color:$text-basic;
+            margin-top:15px;
+        }
 
-    
-    &:after {
-        display:table;
-        clear:both;
+        
+        &:after {
+            display:table;
+            clear:both;
+        }
     }
 }

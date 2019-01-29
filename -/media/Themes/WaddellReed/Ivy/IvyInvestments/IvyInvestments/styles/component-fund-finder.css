@@ -95,6 +95,7 @@
   }
   .fund-finder h4 {
     padding-top: 3px;
+    text-transform: uppercase;
   }
   .fund-finder .btn-sm {
     margin: 2px 0 3px;

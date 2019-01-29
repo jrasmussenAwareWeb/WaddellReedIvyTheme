@@ -327,7 +327,6 @@ strong {
   /* breakpoints */
   /* breakpoints */
   /* breakpoints */
-  padding: 0;
 }
 
 .rich-text.alert p {
@@ -439,6 +438,12 @@ strong {
 
 .rich-text.upcoming-events a:hover, .rich-text.upcoming-events a:focus {
   text-decoration: underline;
+}
+
+@media only screen and (min-width: 768px) {
+  .rich-text {
+    padding: 0;
+  }
 }
 
 .content {

@@ -1,53 +1,68 @@
 /* breakpoints */
+.footer-ctas[class*="col-"] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.footer-ctas .promo.col-4 {
+  padding-left: 0;
+  padding-right: 30px;
+}
+
+.footer-ctas .promo.col-4:last-of-type {
+  padding-right: 0;
+}
+
+/* breakpoints */
 #content > .row > .row {
   display: block;
   width: 100%;
 }
 
-.home-feature .row.column-splitter {
+*:not(.on-page-editor) .home-feature .row.column-splitter {
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
 
 @media only screen and (min-width: 1200px) {
-  .home-feature .row.column-splitter {
+  *:not(.on-page-editor) .home-feature .row.column-splitter {
     margin-left: 15px !important;
     margin-right: 15px !important;
   }
 }
 
-.home-feature .rich-text {
+*:not(.on-page-editor) .home-feature .rich-text {
   padding: 0 15px;
 }
 
-.home-feature .col-xl-auto:first-of-type {
+*:not(.on-page-editor) .home-feature .col-xl-auto:first-of-type {
   float: left;
 }
 
 @media only screen and (min-width: 1200px) {
-  .home-feature .col-xl-auto:first-of-type {
+  *:not(.on-page-editor) .home-feature .col-xl-auto:first-of-type {
     margin-left: -15px;
   }
 }
 
-.home-feature .col-xl-auto:first-of-type .search-results {
+*:not(.on-page-editor) .home-feature .col-xl-auto:first-of-type .search-results {
   padding: 0;
 }
 
-.home-feature .col-xl-auto:first-of-type .search-results .search-result-list {
+*:not(.on-page-editor) .home-feature .col-xl-auto:first-of-type .search-results .search-result-list {
   padding: 0;
 }
 
-.home-feature .col-xl-auto:first-of-type .search-results .search-result-list a {
+*:not(.on-page-editor) .home-feature .col-xl-auto:first-of-type .search-results .search-result-list a {
   text-decoration: none;
 }
 
-.home-feature .col-xl-auto:first-of-type .search-results .search-result-list img {
+*:not(.on-page-editor) .home-feature .col-xl-auto:first-of-type .search-results .search-result-list img {
   width: 100%;
   height: auto;
 }
 
-.home-feature .col-xl-auto:first-of-type .search-results .search-result-list .headline {
+*:not(.on-page-editor) .home-feature .col-xl-auto:first-of-type .search-results .search-result-list .headline {
   background: rgba(0, 150, 57, 0.85);
   color: #fff;
   position: absolute;
@@ -56,7 +71,7 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .home-feature .col-xl-auto:first-of-type .search-results .search-result-list .headline {
+  *:not(.on-page-editor) .home-feature .col-xl-auto:first-of-type .search-results .search-result-list .headline {
     background: #009639;
     position: relative;
     bottom: auto;
@@ -66,25 +81,25 @@
   }
 }
 
-.home-feature .col-xl-auto:first-of-type .search-results .search-result-list .headline .field-date {
+*:not(.on-page-editor) .home-feature .col-xl-auto:first-of-type .search-results .search-result-list .headline .field-date {
   font-size: 14px;
 }
 
-.home-feature .col-xl-auto:first-of-type .search-results .search-result-list .headline .field-title, .home-feature .col-xl-auto:first-of-type .search-results .search-result-list .headline .field-excerpt {
+*:not(.on-page-editor) .home-feature .col-xl-auto:first-of-type .search-results .search-result-list .headline .field-title, *:not(.on-page-editor) .home-feature .col-xl-auto:first-of-type .search-results .search-result-list .headline .field-excerpt {
   max-width: 90%;
 }
 
-.home-feature .col-xl-auto:first-of-type .search-results .search-result-list .headline .field-title {
+*:not(.on-page-editor) .home-feature .col-xl-auto:first-of-type .search-results .search-result-list .headline .field-title {
   font-family: "ProximaBoldCondensed", arial, helvetica, sans-serif;
   font-size: 40px;
   text-transform: uppercase;
 }
 
-.home-feature .col-xl-auto:first-of-type .search-results .search-result-list .headline .field-excerpt {
+*:not(.on-page-editor) .home-feature .col-xl-auto:first-of-type .search-results .search-result-list .headline .field-excerpt {
   font-size: 18px;
 }
 
-.home-feature .col-xl-auto:last-of-type {
+*:not(.on-page-editor) .home-feature .col-xl-auto:last-of-type {
   float: right;
   position: absolute;
   right: 0;
@@ -92,24 +107,24 @@
   top: 27px;
 }
 
-.home-feature .col-xl-auto:last-of-type .login table td {
+*:not(.on-page-editor) .home-feature .col-xl-auto:last-of-type .login table td {
   padding: 2px 0;
 }
 
-.home-feature .col-xl-auto:last-of-type .login table td.sxa-validation {
+*:not(.on-page-editor) .home-feature .col-xl-auto:last-of-type .login table td.sxa-validation {
   padding: 0;
 }
 
-.home-feature .col-xl-auto:last-of-type .login table td.sxa-validation .field-validation-error {
+*:not(.on-page-editor) .home-feature .col-xl-auto:last-of-type .login table td.sxa-validation .field-validation-error {
   color: #6d3332;
   font-size: 14px;
 }
 
-.home-feature .col-xl-auto:last-of-type .login table td.sxa-remember-me {
+*:not(.on-page-editor) .home-feature .col-xl-auto:last-of-type .login table td.sxa-remember-me {
   margin-bottom: 5px;
 }
 
-.home-feature .col-xl-auto:last-of-type .login input[type="submit"] {
+*:not(.on-page-editor) .home-feature .col-xl-auto:last-of-type .login input[type="submit"] {
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
@@ -126,33 +141,33 @@
   width: 100%;
 }
 
-.home-feature .col-xl-auto:last-of-type .login input[type="submit"]:hover {
+*:not(.on-page-editor) .home-feature .col-xl-auto:last-of-type .login input[type="submit"]:hover {
   color: #fff;
   background: #009639;
   border: 2px solid #009639;
 }
 
-.home-feature .col-xl-auto:last-of-type .login input[type="submit"]:hover, .home-feature .col-xl-auto:last-of-type .login input[type="submit"]:focus {
+*:not(.on-page-editor) .home-feature .col-xl-auto:last-of-type .login input[type="submit"]:hover, *:not(.on-page-editor) .home-feature .col-xl-auto:last-of-type .login input[type="submit"]:focus {
   background: #009639 !important;
   color: #fff !important;
 }
 
-.home-feature .col-xl-auto:last-of-type .rich-text {
+*:not(.on-page-editor) .home-feature .col-xl-auto:last-of-type .rich-text {
   font-size: 16px;
 }
 
-.home-feature .col-xl-auto:last-of-type .rich-text p {
+*:not(.on-page-editor) .home-feature .col-xl-auto:last-of-type .rich-text p {
   margin: 0 0 20px;
 }
 
-.home-feature h4 {
+*:not(.on-page-editor) .home-feature h4 {
   font-family: "ProximaBoldCondensed", arial, helvetica, sans-serif;
   text-transform: uppercase;
   color: #000000;
   margin-top: 15px;
 }
 
-.home-feature:after {
+*:not(.on-page-editor) .home-feature:after {
   display: table;
   clear: both;
 }
@@ -188,6 +203,11 @@
   .overlay-login .overlay-title h2, .overlay-login .overlay-title h3, .overlay-login .overlay-title h4, .overlay-login .overlay-title h5, .overlay-login .overlay-title h6 {
     font-size: 16px;
   }
+}
+
+.overlay-login .rich-text[class*="col-"] {
+  padding-left: 30px;
+  padding-right: 15px;
 }
 
 .overlay-login .login p:first-child {
