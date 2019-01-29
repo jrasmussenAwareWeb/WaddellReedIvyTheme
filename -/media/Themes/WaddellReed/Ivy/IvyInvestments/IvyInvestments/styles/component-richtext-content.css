@@ -383,11 +383,20 @@ strong {
   color: #fff;
 }
 
+@media only screen and (max-width: 767px) {
+  .rich-text.section-title {
+    padding: 0;
+  }
+}
+
+.rich-text.section-title h1, .rich-text.section-title h2, .rich-text.section-title h3, .rich-text.section-title h4, .rich-text.section-title h5, .rich-text.section-title h6 {
+  font-family: "ProximaBoldCondensed", arial, helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
 .rich-text.section-title h2 {
   border-bottom: 3px solid #000000;
   margin-bottom: 30px;
-  font-family: "ProximaBoldCondensed", arial, helvetica, sans-serif;
-  text-transform: uppercase;
 }
 
 .rich-text.upcoming-events {

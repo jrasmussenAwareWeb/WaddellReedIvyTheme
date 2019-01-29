@@ -1,43 +1,14 @@
 /* breakpoints */
-@media only screen and (min-width: 992px) {
-  .related-resources {
-    position: relative;
-    right: -30px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .related-resources {
-    padding: 0;
-    margin-top: -30px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .related-resources {
-    padding: 0;
-    margin-top: -30px;
-  }
-}
-
 @media only screen and (min-width: 768px) {
   .related-resources .item {
-    width: 50%;
     float: left;
     padding: 15px;
   }
 }
 
-@media only screen and (min-width: 992px) {
-  .related-resources .item {
-    padding: 0 30px 30px 0;
-  }
-}
-
 @media only screen and (max-width: 767px) {
   .related-resources .item {
-    padding: 0;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
 }
 
@@ -69,10 +40,86 @@
   color: #000000;
 }
 
+@media only screen and (min-width: 992px) {
+  .related-resources.wrap-4 {
+    position: relative;
+    right: -30px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
-  .related-resources .item .field-excerpt {
+  .related-resources.wrap-4 {
+    padding: 0;
+    margin-top: -30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .related-resources.wrap-4 {
+    padding: 0;
+    margin-top: -30px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .related-resources.wrap-4 .item {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .related-resources.wrap-4 .item {
+    padding: 0 30px 30px 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .related-resources.wrap-4 .item {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .related-resources.wrap-4 .item .field-excerpt {
     min-height: 110px;
     max-height: 110px;
     overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .related-resources.wrap-3 {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .related-resources.wrap-3 {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .related-resources.wrap-3 {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .related-resources.wrap-3 .item {
+    width: 33.3%;
+    padding-top: 0;
+    margin-bottom: 30px;
+  }
+  .related-resources.wrap-3 .item:nth-of-type(1) {
+    padding-left: 0;
+  }
+  .related-resources.wrap-3 .item:nth-of-type(2) {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+  }
+  .related-resources.wrap-3 .item:nth-of-type(3) {
+    padding-right: 0;
   }
 }

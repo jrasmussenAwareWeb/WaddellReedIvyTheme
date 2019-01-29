@@ -28,6 +28,12 @@
         margin-bottom:$extralarge-margin;
     }
 
+    //error page related resources
+    &.add-gutters {
+        padding-left:15px;
+        padding-right:15px;
+    }
+
     &#content {
         .row {
             margin-left:0;

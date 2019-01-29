@@ -3,10 +3,15 @@
 @import "../../base/fontawesome/font-awesome-mix-var";
 
 &.section-title {
+    @include respond-to(mobile-large) {
+        padding:0;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        @include proximaboldcondensed();
+        text-transform:uppercase;
+    }
     h2 {
         border-bottom:3px solid $border-basic-color;
         margin-bottom:$large-margin;
-        @include proximaboldcondensed();
-        text-transform:uppercase;
     }
 }
