@@ -1179,7 +1179,7 @@
 
 .navigation-sidebar .subnav.threshold {
   position: absolute;
-  bottom: 0;
+  bottom: 50px;
 }
 
 /* breakpoints */

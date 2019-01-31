@@ -3291,6 +3291,10 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
   }
 }
 
+#content .col-xl-2.d-none.d-xl-block {
+  position: relative;
+}
+
 .home #content {
   margin-bottom: 180px;
 }

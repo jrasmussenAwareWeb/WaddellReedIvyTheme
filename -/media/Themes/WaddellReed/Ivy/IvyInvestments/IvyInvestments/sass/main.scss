@@ -192,6 +192,10 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
     @include respond-to(mobile-large) {
         top:99px;
     }
+    //for the sticky nav
+    .col-xl-2.d-none.d-xl-block {
+        position:relative;
+    }
 }
 .home {
     #content {
