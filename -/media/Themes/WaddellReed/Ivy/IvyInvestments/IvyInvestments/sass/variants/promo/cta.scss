@@ -5,6 +5,7 @@
 &.cta {
     background-color:transparent;
     margin-bottom:$extralarge-margin;
+    overflow:visible;
 
     >.component-content {
         border-width:0;
@@ -13,20 +14,38 @@
     //Icon
     .field-promotext3 {
         position:absolute;
-        top:-15%;
+        top:0;
         left:35%;
         right:35%;
-        .fa-stack.fa-2x {
-            >.fa-circle {
-                &::before {
-                    color:$bg-basic-color;
-                    //border:2px solid $border-green;
-                }
-            }
-            >.fa-inverse {
-                &::before {
-                    color:$text-green;
-                }
+
+        /* Custom FA Icons: https://codepen.io/Onomicon/pen/iDfld */
+        @mixin flex() {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .flex {
+        @include flex();
+        }
+        .icon-wrapper {
+            @include flex();
+        }
+        .custom-icon {
+        display: flex;
+        width: 100px;
+        height: 100px;
+        font-size: 3em; 
+        border-radius: 25vw;
+        overflow: hidden;
+        background-size: cover;
+        background:$bg-basic-color;
+        border: 3px solid $text-green;
+        color:$text-green;
+            &::before {
+                width: 100%;
+                @include flex();
             }
         }
     }
@@ -36,7 +55,7 @@
         background-color:$bg-basic-color;
         border:1px solid $border-white;
         text-align:center;
-        padding:20px 30px;
+        padding:60px 30px 30px;
 
         //Title
         .field-promotext {
@@ -45,7 +64,7 @@
         }
         //Excerpt
         .field-promotext2 {
-            margin:30px auto;
+            margin:20px auto; //30px auto
             h6 {
                 @include proximabold();
                 color:$text-basic;
@@ -80,9 +99,35 @@
         }
     }
 
+    //single
+    @include respond-to(tablet) {
+        &.col-12.col-lg-8.offset-lg-2 {
+            .field-promotext3 {
+                top:40%;
+                left:30px;
+                right:0;
+            }
+            .promo-text {
+                padding:30px 0;
+                >div:not(.field-promolink) {
+                    max-width:50%;
+                    position:relative;
+                    left:20%;
+                    text-align:left;
+                    .field-promotext2 {
+                        margin:20px auto 0;
+                    }
+                }
+                .field-promolink {
+                    position:absolute;
+                    right:30px;
+                    top:25%;
+                }
+            }
+        }
+    }
 
-    &.col-4  {
-        padding-top:45px; //so the icon shows
+    &.col-md-4, &.col-md-6  {
         .promo-text {
             min-height:335px;
             max-height:335px;
@@ -93,8 +138,26 @@
             }
         }
     }
-    &.col-8 {
-        padding-left:0;
-        padding-right:30px;
+    @include respond-to(tablet-only) {
+        &.col-md-4 {
+            .promo-text {
+                padding:60px 15px 30px;
+                .field-promotext {
+                    font-size:$font-big;
+                }
+                .field-promotext2 {
+                    font-size:$font-normal;
+                    margin:20px auto;
+                    h6 {
+                        font-size:$font-normal;
+                    }
+                }
+                .field-promolink {
+                    a {
+                        font-size:$font-normal;
+                    }
+                }
+            }
+        }
     }
 }

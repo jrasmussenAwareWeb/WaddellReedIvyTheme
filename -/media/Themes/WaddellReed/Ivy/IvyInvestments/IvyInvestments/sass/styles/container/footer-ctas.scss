@@ -2,6 +2,7 @@
 @import "../../abstracts/mixins";
 
 .footer-ctas {
+    /*TODO: remove if we arent using
     &[class*="col-"] {
         padding-left:15px;
         padding-right:15px;
@@ -15,5 +16,5 @@
                 padding-right:0;
             }
         }
-    }
+    }*/
 }

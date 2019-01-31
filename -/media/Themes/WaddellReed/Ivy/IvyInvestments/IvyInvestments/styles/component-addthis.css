@@ -1,19 +1,4 @@
 /* breakpoints */
-.footer-ctas[class*="col-"] {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.footer-ctas .promo.col-4 {
-  padding-left: 0;
-  padding-right: 30px;
-}
-
-.footer-ctas .promo.col-4:last-of-type {
-  padding-right: 0;
-}
-
-/* breakpoints */
 #content > .row > .row {
   display: block;
   width: 100%;
@@ -99,12 +84,82 @@
   font-size: 18px;
 }
 
+*:not(.on-page-editor) .home-feature .col-xl-auto:first-of-type .promo {
+  padding: 0;
+}
+
+*:not(.on-page-editor) .home-feature .col-xl-auto:first-of-type .promo > .component-content {
+  border: 0;
+}
+
+*:not(.on-page-editor) .home-feature .col-xl-auto:first-of-type .promo > .component-content > div {
+  padding: 0;
+}
+
+*:not(.on-page-editor) .home-feature .col-xl-auto:first-of-type .promo > .component-content .link-wrapper {
+  text-decoration: none;
+}
+
+*:not(.on-page-editor) .home-feature .col-xl-auto:first-of-type .promo > .component-content .headline {
+  background: rgba(0, 150, 57, 0.85);
+  color: #fff;
+  position: absolute;
+  bottom: 6px;
+  padding: 30px;
+}
+
+*:not(.on-page-editor) .home-feature .col-xl-auto:first-of-type .promo > .component-content .headline > a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 767px) {
+  *:not(.on-page-editor) .home-feature .col-xl-auto:first-of-type .promo > .component-content .headline {
+    background: #009639;
+    position: relative;
+    bottom: auto;
+    top: -5px;
+    padding: 15px;
+    margin-bottom: 0;
+  }
+}
+
+*:not(.on-page-editor) .home-feature .col-xl-auto:first-of-type .promo > .component-content .headline .field-date {
+  font-size: 14px;
+  color: #fff;
+}
+
+*:not(.on-page-editor) .home-feature .col-xl-auto:first-of-type .promo > .component-content .headline .field-date > p {
+  margin: 0;
+  padding: 0;
+}
+
+*:not(.on-page-editor) .home-feature .col-xl-auto:first-of-type .promo > .component-content .headline .field-title, *:not(.on-page-editor) .home-feature .col-xl-auto:first-of-type .promo > .component-content .headline .field-excerpt {
+  max-width: 90%;
+}
+
+*:not(.on-page-editor) .home-feature .col-xl-auto:first-of-type .promo > .component-content .headline .field-title {
+  font-family: "ProximaBoldCondensed", arial, helvetica, sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+*:not(.on-page-editor) .home-feature .col-xl-auto:first-of-type .promo > .component-content .headline .field-title > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+*:not(.on-page-editor) .home-feature .col-xl-auto:first-of-type .promo > .component-content .headline .field-excerpt {
+  font-size: 18px;
+}
+
 *:not(.on-page-editor) .home-feature .col-xl-auto:last-of-type {
   float: right;
   position: absolute;
   right: 0;
   max-width: 25%;
-  top: 27px;
+  top: 18px;
 }
 
 *:not(.on-page-editor) .home-feature .col-xl-auto:last-of-type .login table td {
@@ -121,7 +176,12 @@
 }
 
 *:not(.on-page-editor) .home-feature .col-xl-auto:last-of-type .login table td.sxa-remember-me {
+  font-size: 16px;
   margin-bottom: 5px;
+}
+
+*:not(.on-page-editor) .home-feature .col-xl-auto:last-of-type .login input[type="text"], *:not(.on-page-editor) .home-feature .col-xl-auto:last-of-type .login input[type="password"] {
+  color: #777777;
 }
 
 *:not(.on-page-editor) .home-feature .col-xl-auto:last-of-type .login input[type="submit"] {
@@ -139,6 +199,7 @@
   background: #FFFFFF;
   color: #009639;
   width: 100%;
+  margin-top: 10px;
 }
 
 *:not(.on-page-editor) .home-feature .col-xl-auto:last-of-type .login input[type="submit"]:hover {
@@ -158,6 +219,21 @@
 
 *:not(.on-page-editor) .home-feature .col-xl-auto:last-of-type .rich-text p {
   margin: 0 0 20px;
+}
+
+*:not(.on-page-editor) .home-feature .col-xl-auto:last-of-type .rich-text.welcome-user {
+  padding: 15px;
+}
+
+*:not(.on-page-editor) .home-feature .col-xl-auto:last-of-type .rich-text.welcome-user hr {
+  margin: 10px 0 20px;
+  border: 0;
+  height: 0;
+  border-top: 2px solid #006747;
+}
+
+*:not(.on-page-editor) .home-feature .col-xl-auto:last-of-type .rich-text.welcome-user .btn {
+  margin-bottom: 15px;
 }
 
 *:not(.on-page-editor) .home-feature h4 {
@@ -232,6 +308,10 @@
 
 .overlay-login .content p, .overlay-login .rich-text p, .overlay-login .login p {
   margin: 10px 0;
+}
+
+.overlay-login input[type="submit"] {
+  width: 100%;
 }
 
 /* breakpoints */

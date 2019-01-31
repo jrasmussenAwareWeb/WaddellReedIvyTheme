@@ -377,9 +377,9 @@ strong {
   text-decoration: underline;
 }
 
-.rich-text.next-steps h1 {
+.rich-text.next-steps h1, .rich-text.next-steps h2, .rich-text.next-steps h3, .rich-text.next-steps h4, .rich-text.next-steps h5, .rich-text.next-steps h6 {
   margin-top: 60px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   color: #fff;
 }
 
