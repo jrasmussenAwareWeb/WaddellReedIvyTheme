@@ -172,6 +172,7 @@
                             @include proximaboldcondensed();
                             font-size:40px;
                             text-transform:uppercase; 
+                            line-height:1;
                         }
                         .field-excerpt {
                             font-size:$font-medium;

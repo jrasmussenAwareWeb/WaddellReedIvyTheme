@@ -208,6 +208,7 @@
   font-family: "ProximaBoldCondensed", arial, helvetica, sans-serif;
   font-size: 40px;
   text-transform: uppercase;
+  line-height: 1;
 }
 
 .home-feature .col-xl-auto:first-of-type .search-results .search-result-list .headline .field-excerpt {
