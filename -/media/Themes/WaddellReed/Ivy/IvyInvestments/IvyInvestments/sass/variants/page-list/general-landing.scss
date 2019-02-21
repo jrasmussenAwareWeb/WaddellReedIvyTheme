@@ -9,12 +9,15 @@
         border-bottom:0;
         width:33%;
         float:left;
-        padding:0 0 15px 15px;
-        /*min-height:450px;
+        @include respond-to(desktop) {
+            padding:0 0 15px 15px;
+            margin-bottom:$large-margin;
+        }
+        /*
+        we can revert this now if we need to min-height:450px;
         max-height:450px;
         overflow:hidden;
         we have to move this for pages that will not have an image*/
-        margin-bottom:$large-margin;
         @include respond-to(all-mobile) {
             width:100%;
             float:none;
@@ -50,9 +53,11 @@
             }
         }
         .field-excerpt {
-            min-height:140px;
-            max-height:140px;
-            overflow:hidden;
+            @include respond-to(desktop) {
+                min-height:140px;
+                max-height:140px;
+                overflow:hidden;
+            }
         }
         &:hover, &:focus {
             .field-title, .navigation-required:after  {

@@ -37,12 +37,18 @@
   border-bottom: 0;
   width: 33%;
   float: left;
-  padding: 0 0 15px 15px;
-  /*min-height:450px;
+  /*
+        we can revert this now if we need to min-height:450px;
         max-height:450px;
         overflow:hidden;
         we have to move this for pages that will not have an image*/
-  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 992px) {
+  .page-list.general-landing .item {
+    padding: 0 0 15px 15px;
+    margin-bottom: 30px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -90,10 +96,12 @@
   color: #009639;
 }
 
-.page-list.general-landing .item .field-excerpt {
-  min-height: 140px;
-  max-height: 140px;
-  overflow: hidden;
+@media only screen and (min-width: 992px) {
+  .page-list.general-landing .item .field-excerpt {
+    min-height: 140px;
+    max-height: 140px;
+    overflow: hidden;
+  }
 }
 
 .page-list.general-landing .item:hover .field-title, .page-list.general-landing .item:hover .navigation-required:after, .page-list.general-landing .item:focus .field-title, .page-list.general-landing .item:focus .navigation-required:after {
