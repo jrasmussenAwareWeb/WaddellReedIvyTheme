@@ -49,6 +49,11 @@
   font-weight: normal;
 }
 
+.accordion .toggle-header .component .field-heading > p {
+  font-size: inherit;
+  margin: 0;
+}
+
 .accordion .toggle-header .component .field-heading:after {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;

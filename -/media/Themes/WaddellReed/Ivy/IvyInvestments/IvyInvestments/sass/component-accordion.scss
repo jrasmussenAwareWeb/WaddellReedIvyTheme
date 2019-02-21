@@ -46,6 +46,12 @@
             .field-heading {
                 font-size: $accordion-header;
                 font-weight: normal;
+                //Ivy Specific
+                > p {
+                    font-size:inherit;
+                    margin:0;
+                }
+                //
                 &:after {
                     @include fa-icon();
                     font-size: 20px;
