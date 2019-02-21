@@ -3,6 +3,15 @@
 @import "base/fontawesome/font-awesome-mix-var";
 
 .related-resources {
+    .title {
+        h3 {
+            width: 100%;
+            text-transform: uppercase;
+            border-bottom: 2px solid #000000;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+        }
+    }
     .item {
         @include respond-to(tablet) {
             float:left;
@@ -15,13 +24,7 @@
             width:100%;
             height:auto;
         }
-        small {
-            @include proximabold();
-            //font-size:$font-small; //we need to use this for 508c i.e. minimum font size 14px not 12px
-            font-size:12px;
-            text-transform:uppercase;
-        }
-        .navigation-title {
+        .field-title {
             a {
                 @include copernicus();
                 color:$text-green;
@@ -33,6 +36,16 @@
                 &:hover, &:focus {
                     color:$text-basic;
                 }
+            }
+        }
+        .wrap-labels {
+            line-height:1;
+            margin-bottom:15px;
+            small {
+                @include proximabold();
+                //font-size:$font-small; //we need to use this for 508c i.e. minimum font size 14px not 12px
+                font-size:12px;
+                text-transform:uppercase;
             }
         }
     }
@@ -97,6 +110,45 @@
                 &:nth-of-type(3) {
                     padding-right:0;
                 }
+            }
+            .wrap-item {
+                //http://www.psd-to-css-shadows.com/ color:0,0,0 -  opacity 40% - angle 90 - distance 2 - spread 4 - size 6
+                //https://www.cssmatic.com/box-shadow
+                -webkit-box-shadow:  0px 2px 5.76px 0.24px rgba(0, 0, 0, 0.4); 
+                -moz-box-shadow:  0px 2px 5.76px 0.24px rgba(0, 0, 0, 0.4); 
+                box-shadow:  0px 2px 5.76px 0.24px rgba(0, 0, 0, 0.4); 
+                @include respond-to(tablet) {
+                    min-height:360px;
+                    max-height:360px; 
+                }
+            }
+            .wrap-text {padding:5px 15px 20px}
+            .field-excerpt {display:none}
+        }
+        &.genlink {
+            .wrap-item {
+                @include respond-to(tablet) {
+                    min-height:100%;
+                    max-height:100%; 
+                }
+            }
+            .field-excerpt {
+                display:block;
+            }
+        }
+    }
+    //sidebar
+    &.sidebar {
+        padding:0;
+        .title {
+            @include respond-to(tablet) {
+            padding:0 15px;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                border-bottom:1px solid $text-basic;
+                text-transform:uppercase;
+                padding-bottom:5px;
+                margin-bottom:10px;
             }
         }
     }

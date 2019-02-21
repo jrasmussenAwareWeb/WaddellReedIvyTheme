@@ -1,7 +1,6 @@
-//Ivy Specific
 &.content-highlight {
     padding:0;
-    margin-bottom:$extralarge-margin;
+    //margin-bottom:$extralarge-margin;
     @include respond-to(mobile-large) {
         [class*="col-"]:first-of-type, [class*="col-"]:last-of-type {
             padding:0;
@@ -19,17 +18,107 @@
         margin-top:0;
     }
     .highlight {
+        width:100%;
         padding:15px;
         font-size:$font-normal;
         h5 {
             width:100%;
             @include proximabold();
             text-transform:uppercase;
-            border-bottom:1px solid $border-basic-color;
-            margin-bottom:$middle-margin;
+            border-bottom:2px solid $border-basic-color;
+            margin-bottom:15px;
+            padding-bottom:5px;
         }
         p {
             font-size:$font-normal;
         }
+        ul, ol {
+            margin-left:0;
+            padding-top:0;
+            li {
+                list-style-position:outside;
+            }
+        }
+        &.genlink {
+            padding:0 15px 15px;
+        }
+        @include respond-to(mobile-large) {
+            margin-bottom:$large-margin;
+        }
+    }
+    &.image {
+        padding-left:15px;
+        padding-right:15px;
+        margin-bottom:$large-margin;
+
+        .highlight {
+            background-color:$bg-white;
+            //http://www.psd-to-css-shadows.com/ color:0,0,0 -  opacity 40% - angle 90 - distance 2 - spread 4 - size 6
+            //https://www.cssmatic.com/box-shadow
+            -webkit-box-shadow: 0px 2px 5.76px 0.24px rgba(0, 0, 0, 0.4); 
+            -moz-box-shadow: 0px 2px 5.76px 0.24px rgba(0, 0, 0, 0.4); 
+            box-shadow: 0px 2px 5.76px 0.24px rgba(0, 0, 0, 0.4); 
+            border-right:1px solid rgba(0, 0, 0, 0.1); 
+        }
+
+        [class*="col-"] {
+            position:relative;
+        }
+
+        //overlapping columns
+        .col-xl-auto {
+            @include respond-to(large) {
+                 &:first-of-type {
+                float:left;
+                padding-right:0;
+                .field-image {
+                    max-width:975px;
+                }
+            }
+                &:last-of-type {
+                    float:right;
+                    position:absolute;
+                    right:0;
+                    max-width:25%;
+                    top:18px;
+                }
+            }
+        }
+
+        .headline {
+            background:rgba(0,150,57,0.85); //#009639 make mixin?
+            color:$text-white;
+            position:absolute;
+            bottom:6px;
+            padding:30px;
+            width:100%;
+            @include respond-to(mobile-large) {
+                background:rgba(0,150,57,1);
+                position:relative;
+                bottom:auto;
+                top:-5px;
+                padding:15px;
+                margin-bottom:0;
+            }
+            .field-date {
+                font-size:$font-small;
+            }
+            .field-title, .field-excerpt {
+                max-width:90%;
+            }
+            .field-title {
+                @include proximaboldcondensed();
+                font-size:40px;
+                text-transform:uppercase; 
+                a {
+                    color:$text-white;
+                    text-decoration:none;
+                }
+            }
+            .field-excerpt {
+                font-size:$font-medium;
+            }
+        }
+
     }
 }

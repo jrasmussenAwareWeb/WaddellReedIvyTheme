@@ -31,9 +31,9 @@
 }
 
 .flip .Side1, .flip .Side0 {
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
-  border-color: #006747;
+  border-color: #000000;
   box-sizing: border-box;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;

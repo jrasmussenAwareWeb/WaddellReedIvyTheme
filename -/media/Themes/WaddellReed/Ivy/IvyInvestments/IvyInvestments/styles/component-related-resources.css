@@ -1,4 +1,12 @@
 /* breakpoints */
+.related-resources .title h3 {
+  width: 100%;
+  text-transform: uppercase;
+  border-bottom: 2px solid #000000;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+}
+
 @media only screen and (min-width: 768px) {
   .related-resources .item {
     float: left;
@@ -17,13 +25,7 @@
   height: auto;
 }
 
-.related-resources .item small {
-  font-family: "ProximaBold", arial, helvetica, sans-serif;
-  font-size: 12px;
-  text-transform: uppercase;
-}
-
-.related-resources .item .navigation-title a {
+.related-resources .item .field-title a {
   font-family: "CopernicusBook", arial, helvetica, sans-serif;
   color: #009639;
   text-decoration: none;
@@ -31,13 +33,24 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .related-resources .item .navigation-title a {
+  .related-resources .item .field-title a {
     font-size: 22px;
   }
 }
 
-.related-resources .item .navigation-title a:hover, .related-resources .item .navigation-title a:focus {
+.related-resources .item .field-title a:hover, .related-resources .item .field-title a:focus {
   color: #000000;
+}
+
+.related-resources .item .wrap-labels {
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+.related-resources .item .wrap-labels small {
+  font-family: "ProximaBold", arial, helvetica, sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 @media only screen and (min-width: 992px) {
@@ -122,4 +135,51 @@
   .related-resources.wrap-3 .item:nth-of-type(3) {
     padding-right: 0;
   }
+}
+
+.related-resources.wrap-3 .item .wrap-item {
+  box-shadow: 0px 2px 5.76px 0.24px rgba(0, 0, 0, 0.4);
+}
+
+@media only screen and (min-width: 768px) {
+  .related-resources.wrap-3 .item .wrap-item {
+    min-height: 360px;
+    max-height: 360px;
+  }
+}
+
+.related-resources.wrap-3 .item .wrap-text {
+  padding: 5px 15px 20px;
+}
+
+.related-resources.wrap-3 .item .field-excerpt {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .related-resources.wrap-3.genlink .wrap-item {
+    min-height: 100%;
+    max-height: 100%;
+  }
+}
+
+.related-resources.wrap-3.genlink .field-excerpt {
+  display: block;
+}
+
+.related-resources.sidebar {
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .related-resources.sidebar .title {
+    padding: 0 15px;
+  }
+}
+
+.related-resources.sidebar .title h1, .related-resources.sidebar .title h2, .related-resources.sidebar .title h3, .related-resources.sidebar .title h4, .related-resources.sidebar .title h5, .related-resources.sidebar .title h6 {
+  border-bottom: 1px solid #000000;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
 }

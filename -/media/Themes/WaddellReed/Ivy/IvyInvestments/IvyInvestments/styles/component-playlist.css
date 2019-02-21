@@ -11,7 +11,7 @@
 
 .playlist .component-content > h1, .playlist .component-content > h2, .playlist .component-content > h3, .playlist .component-content > h4, .playlist .component-content > h5, .playlist .component-content > h6 {
   margin: 0 0 10px 0;
-  border-bottom-width: 2px;
+  border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #000000;
 }

@@ -1,0 +1,65 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+@import "../../base/fontawesome/font-awesome-mix-var";
+
+&.content-live {
+    .field-eventname, .field-title {
+        color:$text-green;
+        margin-top:0;
+    }
+    .event-date, .field-eventtime {
+        @include proximabold();
+    }
+    .field-eventlink, .field-eventreplaylink {
+        margin-top:$large-margin;
+        @include respond-to(mobile-large) {
+        }
+        a {
+            @include btn-primary();
+            @include respond-to(all-mobile) {
+                @include btn-block();
+            }
+        }
+    }
+    .field-eventtranscriptlink {
+        margin-top:$middle-margin;
+        a {
+            &:before {
+                font-size:inherit;
+                @include fa-icon();
+                content: $fa-var-file-pdf-o;
+                margin-right:5px; 
+            }
+        }
+    }
+    &:not(.landing) {
+        @include respond-to(desktop) {
+            padding-right:0;
+        }
+        .event-date {
+            font-size:$font-small;
+            margin-bottom:15px;
+        }
+    }
+    &.landing {
+        padding-left:0;
+        .event-date, .field-eventtime {
+            font-size:$font-big;
+        }
+        .event-date {
+            margin-top:$large-margin;
+        }
+        @include respond-to(tablet-only) {
+            .field-content, .wrap-details {
+                width:50%;
+                float:left;
+            }
+            .wrap-details {
+                padding-left:30px;
+                .event-date {
+                    margin-top:0;
+                }
+            }
+        }
+    }
+}

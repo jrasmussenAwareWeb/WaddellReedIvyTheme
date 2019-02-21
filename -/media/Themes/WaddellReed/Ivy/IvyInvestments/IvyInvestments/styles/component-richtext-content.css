@@ -144,13 +144,14 @@ strong {
 }
 
 .content a, .rich-text a {
-  color: #6d3332;
-  text-decoration: underline;
+  color: #009639;
+  text-decoration: none;
   font-size: 1em;
 }
 
 .content a:hover, .rich-text a:hover {
   color: #000000;
+  text-decoration: underline;
 }
 
 .content table, .rich-text table {
@@ -270,9 +271,9 @@ strong {
 .content .button-success, .content .btn-success, .content .success, .rich-text .button-success, .rich-text .btn-success, .rich-text .success {
   font-size: 12px;
   font-size: 1.2rem;
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
-  border-color: #006747;
+  border-color: #000000;
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
@@ -293,9 +294,9 @@ strong {
 .content .button-warning, .content .btn-warning, .content .warning, .rich-text .button-warning, .rich-text .btn-warning, .rich-text .warning {
   font-size: 12px;
   font-size: 1.2rem;
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
-  border-color: #006747;
+  border-color: #000000;
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
@@ -323,6 +324,8 @@ strong {
 }
 
 .rich-text {
+  /* breakpoints */
+  /* breakpoints */
   /* breakpoints */
   /* breakpoints */
   /* breakpoints */
@@ -381,6 +384,28 @@ strong {
   margin-top: 60px;
   margin-bottom: 60px;
   color: #fff;
+}
+
+.rich-text.replays.add-gutters {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  .rich-text.replays.add-gutters {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.rich-text.replays h1, .rich-text.replays h2, .rich-text.replays h3, .rich-text.replays h4, .rich-text.replays h5, .rich-text.replays h6 {
+  font-family: "ProximaBoldCondensed", arial, helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+.rich-text.replays h1, .rich-text.replays h2, .rich-text.replays h3, .rich-text.replays h4, .rich-text.replays h5, .rich-text.replays h6 {
+  border-bottom: 3px solid #000000;
+  margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -449,6 +474,28 @@ strong {
   text-decoration: underline;
 }
 
+.rich-text.upcoming-live.add-gutters {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  .rich-text.upcoming-live.add-gutters {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.rich-text.upcoming-live h1, .rich-text.upcoming-live h2, .rich-text.upcoming-live h3, .rich-text.upcoming-live h4, .rich-text.upcoming-live h5, .rich-text.upcoming-live h6 {
+  font-family: "ProximaBoldCondensed", arial, helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+.rich-text.upcoming-live h1, .rich-text.upcoming-live h2, .rich-text.upcoming-live h3, .rich-text.upcoming-live h4, .rich-text.upcoming-live h5, .rich-text.upcoming-live h6 {
+  border-bottom: 3px solid #000000;
+  margin-bottom: 30px;
+}
+
 @media only screen and (min-width: 768px) {
   .rich-text {
     padding: 0;
@@ -462,11 +509,12 @@ strong {
     &.indent-bottom {
         margin-bottom:$large-margin;
     }*/
+  /* breakpoints */
+  /* breakpoints */
 }
 
 .content.content-highlight {
   padding: 0;
-  margin-bottom: 60px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -489,6 +537,7 @@ strong {
 }
 
 .content.content-highlight .highlight {
+  width: 100%;
   padding: 15px;
   font-size: 16px;
 }
@@ -497,12 +546,288 @@ strong {
   width: 100%;
   font-family: "ProximaBold", arial, helvetica, sans-serif;
   text-transform: uppercase;
-  border-bottom: 1px solid #000000;
-  margin-bottom: 20px;
+  border-bottom: 2px solid #000000;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
 }
 
 .content.content-highlight .highlight p {
   font-size: 16px;
+}
+
+.content.content-highlight .highlight ul, .content.content-highlight .highlight ol {
+  margin-left: 0;
+  padding-top: 0;
+}
+
+.content.content-highlight .highlight ul li, .content.content-highlight .highlight ol li {
+  list-style-position: outside;
+}
+
+.content.content-highlight .highlight.genlink {
+  padding: 0 15px 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  .content.content-highlight .highlight {
+    margin-bottom: 30px;
+  }
+}
+
+.content.content-highlight.image {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 30px;
+}
+
+.content.content-highlight.image .highlight {
+  background-color: #FFFFFF;
+  box-shadow: 0px 2px 5.76px 0.24px rgba(0, 0, 0, 0.4);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.content.content-highlight.image [class*="col-"] {
+  position: relative;
+}
+
+@media only screen and (min-width: 1200px) {
+  .content.content-highlight.image .col-xl-auto:first-of-type {
+    float: left;
+    padding-right: 0;
+  }
+  .content.content-highlight.image .col-xl-auto:first-of-type .field-image {
+    max-width: 975px;
+  }
+  .content.content-highlight.image .col-xl-auto:last-of-type {
+    float: right;
+    position: absolute;
+    right: 0;
+    max-width: 25%;
+    top: 18px;
+  }
+}
+
+.content.content-highlight.image .headline {
+  background: rgba(0, 150, 57, 0.85);
+  color: #fff;
+  position: absolute;
+  bottom: 6px;
+  padding: 30px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .content.content-highlight.image .headline {
+    background: #009639;
+    position: relative;
+    bottom: auto;
+    top: -5px;
+    padding: 15px;
+    margin-bottom: 0;
+  }
+}
+
+.content.content-highlight.image .headline .field-date {
+  font-size: 14px;
+}
+
+.content.content-highlight.image .headline .field-title, .content.content-highlight.image .headline .field-excerpt {
+  max-width: 90%;
+}
+
+.content.content-highlight.image .headline .field-title {
+  font-family: "ProximaBoldCondensed", arial, helvetica, sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.content.content-highlight.image .headline .field-title a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.content.content-highlight.image .headline .field-excerpt {
+  font-size: 18px;
+}
+
+.content.content-live .field-eventname, .content.content-live .field-title {
+  color: #009639;
+  margin-top: 0;
+}
+
+.content.content-live .event-date, .content.content-live .field-eventtime {
+  font-family: "ProximaBold", arial, helvetica, sans-serif;
+}
+
+.content.content-live .field-eventlink, .content.content-live .field-eventreplaylink {
+  margin-top: 30px;
+}
+
+.content.content-live .field-eventlink a, .content.content-live .field-eventreplaylink a {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin: 5px 0;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  cursor: pointer;
+  border: 2px solid #009639;
+  background-color: #009639;
+  color: #fff;
+}
+
+.content.content-live .field-eventlink a:hover, .content.content-live .field-eventreplaylink a:hover {
+  color: #009639;
+  background-color: #FFFFFF;
+}
+
+@media only screen and (max-width: 991px) {
+  .content.content-live .field-eventlink a, .content.content-live .field-eventreplaylink a {
+    width: 100%;
+  }
+}
+
+.content.content-live .field-eventtranscriptlink {
+  margin-top: 20px;
+}
+
+.content.content-live .field-eventtranscriptlink a:before {
+  font-size: inherit;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  margin-right: 5px;
+}
+
+@media only screen and (min-width: 992px) {
+  .content.content-live:not(.landing) {
+    padding-right: 0;
+  }
+}
+
+.content.content-live:not(.landing) .event-date {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.content.content-live.landing {
+  padding-left: 0;
+}
+
+.content.content-live.landing .event-date, .content.content-live.landing .field-eventtime {
+  font-size: 20px;
+}
+
+.content.content-live.landing .event-date {
+  margin-top: 30px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .content.content-live.landing .field-content, .content.content-live.landing .wrap-details {
+    width: 50%;
+    float: left;
+  }
+  .content.content-live.landing .wrap-details {
+    padding-left: 30px;
+  }
+  .content.content-live.landing .wrap-details .event-date {
+    margin-top: 0;
+  }
+}
+
+.content.content-perspective .col-xs-12.col-lg-10 {
+  padding-left: 0;
+}
+
+.content.content-video.live-landing {
+  padding-right: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .content.content-video.live-landing {
+    padding: 0;
+  }
+}
+
+.content.content-video.live {
+  padding-left: 0;
+}
+
+.content .speakers h1, .content .speakers h2, .content .speakers h3, .content .speakers h4, .content .speakers h5, .content .speakers h6, .content.speakers h1, .content.speakers h2, .content.speakers h3, .content.speakers h4, .content.speakers h5, .content.speakers h6 {
+  text-transform: uppercase;
+  border-bottom: 3px solid #000000;
+  width: 100%;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.content .speakers .wrap-author, .content.speakers .wrap-author {
+  font-size: 16px;
+}
+
+.content .speakers .wrap-author .field-image img, .content.speakers .wrap-author .field-image img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.content .speakers .wrap-author .field-name, .content.speakers .wrap-author .field-name {
+  font-family: "ProximaBold", arial, helvetica, sans-serif;
+}
+
+.content .speakers .wrap-author .field-title, .content.speakers .wrap-author .field-title {
+  font-style: italic;
+}
+
+.content .speakers:not(.perspectives) .wrap-author, .content.speakers:not(.perspectives) .wrap-author {
+  margin-top: 15px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (min-width: 768px) {
+  .content .speakers:not(.perspectives) .wrap-author, .content.speakers:not(.perspectives) .wrap-author {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .content .speakers:not(.perspectives) .wrap-author, .content.speakers:not(.perspectives) .wrap-author {
+    float: left;
+    width: 33.3%;
+  }
+}
+
+.content .speakers:not(.perspectives) .wrap-author .field-image, .content .speakers:not(.perspectives) .wrap-author .wrap-text, .content.speakers:not(.perspectives) .wrap-author .field-image, .content.speakers:not(.perspectives) .wrap-author .wrap-text {
+  float: left;
+}
+
+.content .speakers:not(.perspectives) .wrap-author .field-image, .content.speakers:not(.perspectives) .wrap-author .field-image {
+  margin-right: 10px;
+}
+
+.content .speakers:not(.perspectives) .wrap-author .wrap-text, .content.speakers:not(.perspectives) .wrap-author .wrap-text {
+  padding: 5px 15px 0;
+  max-width: 60%;
+}
+
+.content .speakers.perspectives, .content.speakers.perspectives {
+  padding: 0;
+  text-align: center;
+}
+
+.content .speakers.perspectives .wrap-author, .content.speakers.perspectives .wrap-author {
+  margin-bottom: 30px;
 }
 
 .rich-text, .content {
@@ -527,6 +852,11 @@ strong {
   .rich-text .lead, .content .lead {
     font-size: 20px;
   }
+}
+
+.rich-text .no-gutters[class*="col-"], .rich-text.no-gutters[class*="col-"], .content .no-gutters[class*="col-"], .content.no-gutters[class*="col-"] {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 #footer .rich-text, #footer .content {

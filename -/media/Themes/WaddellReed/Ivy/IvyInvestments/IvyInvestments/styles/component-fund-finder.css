@@ -24,9 +24,9 @@
 .button-success, .btn-success, .success {
   font-size: 12px;
   font-size: 1.2rem;
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
-  border-color: #006747;
+  border-color: #000000;
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
@@ -47,9 +47,9 @@
 .button-warning, .btn-warning, .warning {
   font-size: 12px;
   font-size: 1.2rem;
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
-  border-color: #006747;
+  border-color: #000000;
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;

@@ -105,6 +105,10 @@
     }
 }
 
+@mixin btn-block {
+    width:100%;
+}
+
 
 /* breakpoints */
 $break-large: 1200px; //desktops (min-width)
@@ -156,7 +160,7 @@ $break-mobile: 380px; //compact phones (max-width)
         }
     }
 }
-@mixin border-basic($position:all, $border-color:$border-green, $border-width:2px) {
+@mixin border-basic($position:all, $border-color:$border-basic-color, $border-width:1px) {
     @if($position!=all) {
         border-#{$position}-width: $border-width;
         border-#{$position}-style: solid;

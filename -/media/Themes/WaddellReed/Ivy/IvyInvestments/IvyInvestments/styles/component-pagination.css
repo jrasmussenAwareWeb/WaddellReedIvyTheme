@@ -11,9 +11,9 @@
   display: inline-block;
   margin: 2px 1px 2px 0;
   padding: 4px 8px;
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
-  border-color: #006747;
+  border-color: #000000;
   font-size: 1em;
   font-weight: bold;
 }
@@ -22,7 +22,7 @@
   color: #89C6CC;
   background: #f6f6f6;
   text-decoration: none;
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
   border-color: #15909c;
 }
@@ -35,9 +35,9 @@
 .list-pagination nav > span.active {
   background: #f6f6f6;
   color: #89C6CC;
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
-  border-color: #006747;
+  border-color: #000000;
 }
 
 .list-pagination nav > span.inactive {
@@ -46,7 +46,7 @@
 
 .list-pagination nav > span.inactive:hover {
   background: none;
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
-  border-color: #006747;
+  border-color: #000000;
 }

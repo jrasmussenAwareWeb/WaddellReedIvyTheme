@@ -1,0 +1,226 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+@import "../../base/fontawesome/font-awesome-mix-var";
+
+&.genlink {
+    //tablet and up
+    @include respond-to (tablet) {
+        a {
+            text-decoration:none;
+        }
+        margin:15px 0 30px;
+        .field-navigationtabtitle {
+            @include proximabold();
+            font-size:16px;
+            line-height:24px;                                
+            a {
+                text-decoration:none;
+            }
+        }
+        .component-content {
+            nav { 
+                .active {
+                    &:not(.current-parent) {
+                        a {
+                            .navigation-title {
+                                background-color:$bg-genlink-active;
+                            }
+                        }
+                        .flat-level1 {
+                            a {
+                                .navigation-title {
+                                    background-color:$bg-submenu;
+                                }
+                            }
+                        }
+                    }
+                }
+                 .rel-level1 {
+                    > a {
+                        .navigation-title {
+                            .field-navigationtabtitle {
+                                &:after {
+                                    content: " Overview";
+                                }
+                            }
+                        }
+                    }
+                }
+                >ul {
+                    //display:flex;
+                    >li {
+                        display:flex;
+                        width:100%;
+                        text-align:center;
+                        .navigation-title {
+                            border-top:3px solid $border-dark-gray;
+                            border-bottom:3px solid $border-dark-gray;
+                            padding:10px 0;
+                        }
+                        &.submenu {
+                            >ul {
+                                width:100%;
+                                padding-left:0;
+                                .flat-level1 {
+                                    float:left;
+                                    width:20%;
+                                    //display:flex;
+                                    .navigation-title {
+                                        //border-top:0;
+                                        border-bottom:3px solid $border-dark-gray;
+                                        padding:10px 0;
+                                    }
+                                    &.item0 {
+                                        .navigation-title {
+                                            border-top:3px solid $border-blue;
+                                        }
+                                        &.current  {
+                                            .navigation-title {
+                                                border-bottom:3px solid $border-blue;
+                                            }
+                                        }
+                                    }
+                                    &.item1 {
+                                        .navigation-title {
+                                            border-top:3px solid $border-turquoise;
+                                        }
+                                        &.current  {
+                                            .navigation-title {
+                                                border-bottom:3px solid $border-turquoise;
+                                            }
+                                        }
+                                    }
+                                    &.item2 {
+                                        .navigation-title {
+                                            border-top:3px solid $border-orange;
+                                        }
+                                        &.current  {
+                                            .navigation-title {
+                                                border-bottom:3px solid $border-orange;
+                                            }
+                                        }
+                                    }
+                                    &.item3 {
+                                        .navigation-title {
+                                            border-top:3px solid $border-yellow;
+                                        }
+                                        &.current  {
+                                            .navigation-title {
+                                                border-bottom:3px solid $border-yellow;
+                                            }
+                                        }
+                                    }
+                                     &.item4 {
+                                        .navigation-title {
+                                            border-top:3px solid $border-purple;
+                                        }
+                                        &.current  {
+                                            .navigation-title {
+                                                border-bottom:3px solid $border-purple;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //large
+    @include respond-to(large) {
+        .field-navigationtabtitle {
+            font-size:20px;
+        }
+    }
+    //mobile
+    @include respond-to (mobile-large) {
+        &.navigation-mobile {
+            padding-left:15px;
+            padding-right:15px;
+            margin-bottom:$large-margin;
+            .field-navigationtabtitle {
+                a {
+                    @include proxima();
+                    font-size:20px;
+                    line-height:24px;                               
+                    text-decoration:none;
+                }
+            }
+            .rel-level1 {
+                .navigation-title {
+                    padding:10px;
+                    border:1px solid #d9d9d6;
+                    border-top-left-radius:4px;
+                    border-top-right-radius:4px;
+                }
+                &.submenu {
+                    .navigation-title {
+                        &:before {
+                            right:10px;
+                        }
+                    }
+                    > ul {
+                        padding-left:0;
+                        li {
+                            a:before {
+                                content:'';
+                            }
+                        }
+                    }
+                }
+            }
+            .rel-level2 {
+                &.current {
+                    .navigation-title {
+                        background-color:#f0f0f0;
+                    }
+                }
+                .navigation-title {
+                    padding:10px;
+                    border-radius:0;
+                    &:hover, &:focus {
+                        background-color:#f0f0f0;
+                    }
+                }
+                .field-navigationtabtitle {
+                    a {
+                        @include proximabold();
+                        font-size:18px;
+                    }
+                }
+                .field-navigationtabera {
+                    margin-left:10px;
+                    small {font-size:18px;}
+                    a {text-decoration:none}
+                }
+                &.item0 {
+                    .navigation-title {
+                        border-left:3px solid $border-blue;
+                    }
+                }
+                &.item1 {
+                    .navigation-title {
+                        border-left:3px solid $border-turquoise;
+                    }
+                }
+                &.item2 {
+                    .navigation-title {
+                        border-left:3px solid $border-orange;
+                    }
+                }
+                &.item3 {
+                    .navigation-title {
+                        border-left:3px solid $border-yellow;
+                    }
+                }
+                &.item4 {
+                    .navigation-title {
+                        border-left:3px solid $border-purple;
+                    }
+                }
+            }
+        }
+    }
+}

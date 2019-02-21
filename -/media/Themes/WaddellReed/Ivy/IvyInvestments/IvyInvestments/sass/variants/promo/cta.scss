@@ -15,9 +15,28 @@
     .field-promotext3 {
         position:absolute;
         top:0;
-        left:35%;
-        right:35%;
 
+        //need to update these to include the preceding column size i.e. col-md-4, col-md-6, col-lg-8
+        @include respond-to(mobile-large) {
+            left:38%;
+            right:38%;
+        }
+        @include respond-to(mobile-horizontal) {
+            left:41%;
+            right:41%;
+        }
+        @include respond-to(mobile) {
+            left:33%;
+            right:33%;
+        }
+        @include respond-to(tablet) {
+            left:29%;
+            right:29%;
+        }
+        @include respond-to(desktop) {
+            left:35%;
+            right:35%;
+        }
         /* Custom FA Icons: https://codepen.io/Onomicon/pen/iDfld */
         @mixin flex() {
         display: flex;
@@ -61,7 +80,23 @@
         .field-promotext {
             @include copernicus();
             color:$text-green;
+            text-decoration:none;
+            font-size:24px; //h4 but needs specified as a span in case a required lock or something else is :after
+            @include respond-to(mobile-large) {
+                font-size:22px;
+            }
         }
+        //Lock
+        .login-required-lock {
+            margin-left:5px;
+            color:$text-green;
+            &:after {
+                font-size:inherit;
+                @include fa-icon();
+                content: $fa-var-lock; 
+            }
+        }
+
         //Excerpt
         .field-promotext2 {
             margin:20px auto; //30px auto
@@ -129,8 +164,10 @@
 
     &.col-md-4, &.col-md-6  {
         .promo-text {
-            min-height:335px;
-            max-height:335px;
+            @include respond-to(tablet) {
+                min-height:335px;
+                max-height:335px;
+            }
         }
         .field-promolink {
             a {

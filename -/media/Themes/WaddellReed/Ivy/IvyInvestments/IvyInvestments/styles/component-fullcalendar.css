@@ -140,13 +140,14 @@ strong {
 }
 
 .event-calendar a {
-  color: #6d3332;
-  text-decoration: underline;
+  color: #009639;
+  text-decoration: none;
   font-size: 1em;
 }
 
 .event-calendar a:hover {
   color: #000000;
+  text-decoration: underline;
 }
 
 .event-calendar .fc-day-grid-event:hover {
@@ -317,11 +318,12 @@ strong {
 }
 
 .calendar-tooltip a {
-  color: #6d3332;
-  text-decoration: underline;
+  color: #009639;
+  text-decoration: none;
   font-size: 1em;
 }
 
 .calendar-tooltip a:hover {
   color: #000000;
+  text-decoration: underline;
 }

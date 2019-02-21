@@ -1,0 +1,21 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+@import "../../base/fontawesome/font-awesome-mix-var";
+
+&.overlay-link {
+    margin-bottom:$large-margin;
+    .image-caption {
+        font-style:normal;
+        text-align:center;
+        a {
+            font-size:$font-medium;
+            color:$text-green;
+            &:before {
+                @include fa-icon(); 
+                content: $fa-var-search-plus;
+                margin-right:10px;
+                font-size:$font-big;
+            }
+        }
+    }
+}

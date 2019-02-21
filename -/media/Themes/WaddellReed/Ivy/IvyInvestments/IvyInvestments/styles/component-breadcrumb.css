@@ -73,15 +73,15 @@
   display: none;
   margin: 0;
   background: #FFFFFF;
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
-  border-color: #006747;
+  border-color: #000000;
 }
 
 .breadcrumb.component li > ol li {
-  border-bottom-width: 2px;
+  border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #006747;
+  border-bottom-color: #000000;
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;

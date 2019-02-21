@@ -6,6 +6,7 @@
   overflow: hidden;
   box-sizing: border-box;
   /* breakpoints */
+  /* breakpoints */
   /*Added NW
 p {
     margin: 0 0 $middle-margin 0;
@@ -18,7 +19,7 @@ strong {
 
 .promo > .component-content {
   position: relative;
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
   border-color: #c2c2c2;
 }
@@ -69,9 +70,42 @@ strong {
 .promo.cta .field-promotext3 {
   position: absolute;
   top: 0;
-  left: 35%;
-  right: 35%;
   /* Custom FA Icons: https://codepen.io/Onomicon/pen/iDfld */
+}
+
+@media only screen and (max-width: 767px) {
+  .promo.cta .field-promotext3 {
+    left: 38%;
+    right: 38%;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .promo.cta .field-promotext3 {
+    left: 41%;
+    right: 41%;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .promo.cta .field-promotext3 {
+    left: 33%;
+    right: 33%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .promo.cta .field-promotext3 {
+    left: 29%;
+    right: 29%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .promo.cta .field-promotext3 {
+    left: 35%;
+    right: 35%;
+  }
 }
 
 .promo.cta .field-promotext3 .flex {
@@ -148,6 +182,30 @@ strong {
 .promo.cta .promo-text .field-promotext {
   font-family: "CopernicusBook", arial, helvetica, sans-serif;
   color: #009639;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 767px) {
+  .promo.cta .promo-text .field-promotext {
+    font-size: 22px;
+  }
+}
+
+.promo.cta .promo-text .login-required-lock {
+  margin-left: 5px;
+  color: #009639;
+}
+
+.promo.cta .promo-text .login-required-lock:after {
+  font-size: inherit;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
 }
 
 .promo.cta .promo-text .field-promotext2 {
@@ -231,9 +289,11 @@ strong {
   }
 }
 
-.promo.cta.col-md-4 .promo-text, .promo.cta.col-md-6 .promo-text {
-  min-height: 335px;
-  max-height: 335px;
+@media only screen and (min-width: 768px) {
+  .promo.cta.col-md-4 .promo-text, .promo.cta.col-md-6 .promo-text {
+    min-height: 335px;
+    max-height: 335px;
+  }
 }
 
 .promo.cta.col-md-4 .field-promolink a, .promo.cta.col-md-6 .field-promolink a {
@@ -257,6 +317,47 @@ strong {
   .promo.cta.col-md-4 .promo-text .field-promolink a {
     font-size: 16px;
   }
+}
+
+.promo.resource {
+  padding: 0;
+}
+
+.promo.resource .component-content {
+  border: 0;
+}
+
+.promo.resource .component-content .promo-text .field-promotext a {
+  font-family: "CopernicusBook", arial, helvetica, sans-serif;
+  color: #009639;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 767px) {
+  .promo.resource .component-content .promo-text .field-promotext a {
+    font-size: 22px;
+  }
+}
+
+.promo.resource .component-content .promo-text .login-required-lock {
+  margin-left: 5px;
+  color: #009639;
+}
+
+.promo.resource .component-content .promo-text .login-required-lock:after {
+  font-size: inherit;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+}
+
+.promo.resource .component-content:hover .field-promotext a, .promo.resource .component-content:hover .login-required-lock, .promo.resource .component-content:focus .field-promotext a, .promo.resource .component-content:focus .login-required-lock {
+  color: #000000;
 }
 
 .promo h1, .promo h2, .promo h3, .promo h4, .promo h5, .promo h6 {
@@ -301,13 +402,14 @@ strong {
 }
 
 .promo a {
-  color: #6d3332;
-  text-decoration: underline;
+  color: #009639;
+  text-decoration: none;
   font-size: 1em;
 }
 
 .promo a:hover {
   color: #000000;
+  text-decoration: underline;
 }
 
 .promo.absolute-bottom-link {

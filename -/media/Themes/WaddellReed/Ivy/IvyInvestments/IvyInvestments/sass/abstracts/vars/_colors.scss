@@ -54,6 +54,14 @@ $border-nav-submenu:#000000;
 $border-green:#006747;
 $border-dark-green:#004d33;
 
+//GenLink Navigation "Tabs"
+$border-blue: #004c97;
+$border-turquoise: #00a7b5;
+$border-orange: #e35205;
+$border-yellow: #f1c400;
+$border-purple: #68478d;
+$bg-genlink-active: #f0f0f0;
+
 //Styles for each component separately
 //Accordion
 $accordion-header-bg: transparent;
@@ -80,7 +88,6 @@ $btn-red-active: #c34e30;
 
 //Ivy Specific
 $btn-red:#6d3332;
-
 
 //Carousel
 $carousel-bg:$bg-basic-color;
@@ -195,8 +202,13 @@ $promo-shadow-border:$border-basic-color;
 $rich-content-bg:transparent;
 $rich-content-color:$text-basic;
 $rich-content-border:transparent;
-$rich-content-link-color:$text-red;
-$rich-content-link-color-active:$text-basic-active;
+//$rich-content-link-color:$text-red;
+//$rich-content-link-color-active:$text-basic-active;
+
+//Ivy Specific
+$rich-content-link-color:$text-green;
+$rich-content-link-color-active:$text-basic;
+
 //Search
 $search-filter:$text-basic;
 $search-filter-border:$border-basic-color;

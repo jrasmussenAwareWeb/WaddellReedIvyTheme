@@ -1,18 +1,39 @@
 @import "../../abstracts/vars";
 @import "../../abstracts/mixins";
 @import "base/fontawesome/font-awesome-mix-var";
-.navigation.sitemap-navigation {
-    .level2 a {
-        position: relative;
-        padding-left: 10px;
-        &:before {
-            @include font-size(1.4);
-            @include fa-icon();
-            transform: translateY(-50%) scale(1, -1);
-            position: absolute;
-            content: $fa-var-share;
-            top: 50%;
-            left: -8px;
+.navigation.navigation-sitemap {
+    .navigation-title>a {
+        &:hover, &:focus {
+            color:$text-green;
+        }
+    }
+    .rel-level2 {
+        display: list-item;
+        .navigation-title>a {
+            font-weight: 500;
+            padding:8px 10px 8px 0;
+            display:inline-block;
+        }
+        ul {
+            display: none;
+        }
+        .navigation-required {
+            color:$text-basic;
+            &:after {
+                font-size:inherit;
+                @include fa-icon();
+                content: $fa-var-lock; 
+            }
+        }
+        &:hover, &:focus {
+            >.navigation-title {
+                >a {
+                    color:$text-green;
+                }
+            }
+            >.navigation-required {
+                color:$text-green;
+            }
         }
     }
 }

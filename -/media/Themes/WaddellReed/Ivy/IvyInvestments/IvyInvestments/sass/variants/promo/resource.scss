@@ -1,0 +1,39 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+@import "../../base/fontawesome/font-awesome-mix-var";
+
+&.resource {
+    padding:0;
+    .component-content {
+        border:0;
+        //Wrapper
+        .promo-text {
+            //Title
+            .field-promotext {
+                a {
+                    @include copernicus();
+                    color:$text-green;
+                    text-decoration:none;
+                    font-size:24px; //h4 but needs specified as a span in case a required lock or something else is :after
+                    @include respond-to(mobile-large) {
+                        font-size:22px;
+                    }
+                }
+            }
+            .login-required-lock {
+                margin-left:5px;
+                color:$text-green;
+                &:after {
+                    font-size:inherit;
+                    @include fa-icon();
+                    content: $fa-var-lock; 
+                }
+            }
+        }
+        &:hover, &:focus {
+            .field-promotext a, .login-required-lock {
+                color:$text-basic;
+            }
+        }
+    }
+}

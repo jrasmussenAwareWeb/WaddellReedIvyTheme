@@ -35,9 +35,9 @@
 }
 
 .form fieldset {
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
-  border-color: #006747;
+  border-color: #000000;
   padding: 15px;
   margin: 10px 0;
   position: relative;
@@ -83,9 +83,9 @@
   font-size: 12px;
   margin-left: 5px;
   position: absolute;
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
-  border-color: #006747;
+  border-color: #000000;
   left: 0px;
   top: -15px;
   padding: 4px 8px;
@@ -96,9 +96,9 @@
 }
 
 .form input, .form select, .form textarea {
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
-  border-color: #006747;
+  border-color: #000000;
   padding: 2px 4px;
   max-width: 98%;
 }
@@ -125,9 +125,9 @@
 }
 
 .form input[type="submit"], .form button {
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
-  border-color: #006747;
+  border-color: #000000;
   background: #FFFFFF;
   cursor: pointer;
   margin-left: 0;
@@ -137,9 +137,9 @@
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
-  border-bottom-width: 2px;
+  border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #006747;
+  border-bottom-color: #000000;
   width: 95%;
   padding: 2px;
 }
@@ -194,9 +194,9 @@
 }
 
 .form select {
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
-  border-color: #006747;
+  border-color: #000000;
   max-height: 30px;
   position: relative;
   text-indent: 2px;

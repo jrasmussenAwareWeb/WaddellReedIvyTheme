@@ -114,7 +114,7 @@
         ul {
             display: none;
         }
-        .login-required-lock {
+        .navigation-required {
             color:$text-basic;
             &:after {
                 font-size:inherit;
@@ -128,7 +128,7 @@
                     color:$text-green;
                 }
             }
-            >.login-required-lock {
+            >.navigation-required {
                 color:$text-green;
             }
         }

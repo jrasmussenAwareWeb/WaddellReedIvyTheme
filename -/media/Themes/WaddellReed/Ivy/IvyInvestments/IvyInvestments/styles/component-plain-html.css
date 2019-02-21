@@ -24,9 +24,9 @@
 .plain-html .button-success, .plain-html .btn-success, .plain-html .success {
   font-size: 12px;
   font-size: 1.2rem;
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
-  border-color: #006747;
+  border-color: #000000;
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
@@ -47,9 +47,9 @@
 .plain-html .button-warning, .plain-html .btn-warning, .plain-html .warning {
   font-size: 12px;
   font-size: 1.2rem;
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
-  border-color: #006747;
+  border-color: #000000;
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;

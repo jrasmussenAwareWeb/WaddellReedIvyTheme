@@ -3,13 +3,15 @@
   margin: 10px 0;
   border: 0;
   height: 0;
-  border-top-width: 2px;
+  border-top-width: 1px;
   border-top-style: solid;
-  border-top-color: #006747;
+  border-top-color: #000000;
 }
 
 .page-header-divider hr {
   margin-top: 5px;
+  border-top-color: #009639;
+  border-top-width: 2px;
 }
 
 .white-space-divider hr {

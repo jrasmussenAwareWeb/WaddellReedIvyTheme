@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /* breakpoints */
 .carousel {
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
-  border-color: #006747;
+  border-color: #000000;
   position: relative;
   box-sizing: border-box;
   padding: 10px;

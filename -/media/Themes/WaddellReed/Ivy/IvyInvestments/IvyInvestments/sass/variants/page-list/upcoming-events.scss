@@ -5,12 +5,80 @@
 &.upcoming-events {
     padding:0;
     .item {
-        .field-redirecturl {
-            &:after {
-                font-size:inherit;
-                @include fa-icon();
-                content: $fa-var-lock; 
-                margin-left:10px; 
+        line-height:1;
+        border-bottom:0;
+        padding:0 15px;
+        .wrap-item {
+            padding:15px 0;
+            border-bottom:1px solid $border-dark-gray;
+            .wrap-labels {
+                @include proximabold();
+                font-size:$font-small;
+                margin-bottom:$middle-margin;
+                .event-register {
+                    margin-left:25px;
+                    text-transform:uppercase;
+                    background-color:$bg-black;
+                    padding:5px 10px;
+                    border-radius:4px;
+                    display:inline-block;
+                    position:relative;
+                    a {
+                        color:$text-white; 
+                    }
+                    /*arrow left:
+                    https://stackoverflow.com/questions/20589780/css-triangle-before-element
+                    https://codepen.io/zaurtigiev/pen/pbKaZE */
+                    &:before {
+                        content:"";
+                        border-style: solid;
+                        border-width: 12px 12px 12px 0;
+                        border-color: transparent $bg-black transparent transparent;
+                        display:inline-block;
+                        position: absolute;
+                        left: -10px;
+                        top:0;
+                    }
+                }
+            }
+
+            .wrap-title {
+                color:$text-green;
+                a {
+                    color:$text-green;
+                    border-bottom:0;
+                }
+                &:hover, &:focus {
+                    color:$text-basic;
+                    a {
+                        color:$text-basic;
+                    }
+                }
+                .field-title, .field-redirecturl {
+                    line-height:1.5;
+                    @include copernicus();
+                    font-weight:normal;
+                    font-size:24px; //h4 24 but needs specified as a span in case a required lock or something else is :after (changed 012319 - current site is 22?)
+                        @include respond-to(mobile-large) {
+                        font-size:22px; //22?
+                    }
+                }
+                .navigation-required {
+                    &:after {
+                        font-size:inherit;
+                        @include fa-icon();
+                        content: $fa-var-lock; 
+                        margin-left:10px; 
+                    }
+                }
+            }
+            .field-eventtime {
+                margin-top:$small-margin;
+            }
+        }
+        &:last-of-type {
+            .wrap-item {
+                border-bottom:0;
             }
         }
     }

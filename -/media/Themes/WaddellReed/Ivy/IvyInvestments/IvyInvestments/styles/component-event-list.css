@@ -158,17 +158,18 @@ strong {
 }
 
 .event-list a {
-  color: #6d3332;
-  text-decoration: underline;
+  color: #009639;
+  text-decoration: none;
   font-size: 1em;
 }
 
 .event-list a:hover {
   color: #000000;
+  text-decoration: underline;
 }
 
 .event-list h1, .event-list h2, .event-list h3, .event-list h4, .event-list h5, .event-list h6 {
-  border-bottom-width: 2px;
+  border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #000000;
 }
@@ -178,9 +179,9 @@ strong {
 }
 
 .event-list li {
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
-  border-color: #006747;
+  border-color: #000000;
   margin-left: 0;
   box-sizing: border-box;
   padding: 15px 15px 40px 15px;

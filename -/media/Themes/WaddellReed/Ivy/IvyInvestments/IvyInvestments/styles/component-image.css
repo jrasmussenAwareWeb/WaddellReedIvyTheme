@@ -1,3 +1,8 @@
+@charset "UTF-8";
+.image {
+  /* breakpoints */
+}
+
 .image img {
   max-width: 100%;
   height: auto;
@@ -24,6 +29,32 @@
   font-size: 12px;
   text-transform: uppercase;
   max-width: 200px;
+}
+
+.image.overlay-link {
+  margin-bottom: 30px;
+}
+
+.image.overlay-link .image-caption {
+  font-style: normal;
+  text-align: center;
+}
+
+.image.overlay-link .image-caption a {
+  font-size: 18px;
+  color: #009639;
+}
+
+.image.overlay-link .image-caption a:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  margin-right: 10px;
+  font-size: 20px;
 }
 
 .image-default-size img {

@@ -122,9 +122,9 @@
   padding: 0 0 0 50px;
   margin: 0;
   min-height: 300px;
-  border-right-width: 2px;
+  border-right-width: 1px;
   border-right-style: solid;
-  border-right-color: #006747;
+  border-right-color: #000000;
 }
 
 .accordion-horizontal.accordion-image .items .item.active .toggle-header {

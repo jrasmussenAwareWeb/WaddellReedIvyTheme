@@ -7,7 +7,7 @@
 
 .file-list h1, .file-list h2, .file-list h3, .file-list h4, .file-list h5, .file-list h6 {
   color: #000000;
-  border-bottom-width: 2px;
+  border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: transparent;
 }
@@ -22,7 +22,7 @@
 
 .file-list .list-item {
   background: transparent;
-  border-bottom-width: 2px;
+  border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #000000;
 }

@@ -5,7 +5,7 @@
 }
 
 .link-list h1, .link-list h2, .link-list h3, .link-list h4, .link-list h5, .link-list h6 {
-  border-bottom-width: 2px;
+  border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #000000;
 }
@@ -75,9 +75,9 @@
 .link-list .button-success, .link-list .btn-success, .link-list .success {
   font-size: 12px;
   font-size: 1.2rem;
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
-  border-color: #006747;
+  border-color: #000000;
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
@@ -98,9 +98,9 @@
 .link-list .button-warning, .link-list .btn-warning, .link-list .warning {
   font-size: 12px;
   font-size: 1.2rem;
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
-  border-color: #006747;
+  border-color: #000000;
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
@@ -231,9 +231,9 @@
   width: 100%;
   display: inline-block;
   padding: 3px 5px;
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
-  border-color: #006747;
+  border-color: #000000;
 }
 
 .link-list.list-vertical a {
