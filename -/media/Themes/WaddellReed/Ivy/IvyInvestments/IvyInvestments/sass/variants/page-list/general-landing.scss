@@ -127,9 +127,30 @@
     }
     &.audio-insights {
         .item {
-        min-height:400px;
-        max-height:400px;
-        overflow:hidden;
+            @include respond-to(mobile-large) {
+                width:100%;
+                float:none;
+            }
+            @include respond-to(tablet-only) {
+                width:50%;
+                float:left;
+            }
+            @include respond-to(desktop) {
+                min-height:360px;
+                max-height:360px;
+                overflow:hidden;
+            }
+            .wrap-labels {
+                font-size:$font-small;
+                .publish-date {
+                    margin-right:5px;
+                }
+            }
+            &:hover, &:focus {
+                .field-title {
+                    color:$text-green;
+                }
+            }
         }
     }
     &.replays {

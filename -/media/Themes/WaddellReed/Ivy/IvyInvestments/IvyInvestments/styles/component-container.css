@@ -482,11 +482,6 @@
   margin-bottom: 60px;
 }
 
-.container.add-gutters {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .container#content .row {
   margin-left: 0;
   margin-right: 0;

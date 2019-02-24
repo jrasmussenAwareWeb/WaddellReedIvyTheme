@@ -1,11 +1,18 @@
 @import "abstracts/vars";
 @import "abstracts/mixins";
-.form {
+.sitecore-form {
+    &.col-12 {
+        padding:0;
+    }
     margin: 10px 0;
-    font-size: 14px;
+    //font-size: 14px;
     overflow: hidden;
     table {
         width: 100%;
+    }
+
+    .form-group {
+        margin-bottom:15px;
     }
     .scfSectionContent>div {
         // Remove spacings between form elements
@@ -23,11 +30,11 @@
     .has-feedback {
         @include clearfix();
     }
-    .scfRequired {
+    /*.scfRequired {
         display: none !important;
-    }
+    }*/
     fieldset {
-        @include border-basic();
+        //@include border-basic();
         padding: 15px;
         margin: 10px 0;
         position: relative;
@@ -67,7 +74,8 @@
             font-size: 12px;
             margin-left: 5px;
             position: absolute;
-            @include border-basic();
+            //@include border-basic();
+            border:1px solid $border-gray;
             left: 0px;
             top: -15px;
             padding: 4px 8px;
@@ -78,9 +86,12 @@
         }
     }
     input, select, textarea {
-        @include border-basic();
-        padding: 2px 4px;
+        //@include border-basic();
+        border:1px solid $border-gray;
+        //padding: 2px 4px;
+        padding: 5px 10px;
         max-width: 98%;
+        font-size:$font-normal;
     }
     .scfCaptcha {
         input[type="text"] {
@@ -101,18 +112,21 @@
         border: none;
     }
     input[type="submit"], button {
-        @include border-basic();
+        /*@include border-basic();
+        border:1px solid $border-gray;
         background: $bg-basic-color;
         cursor: pointer;
-        margin-left: 0;
+        margin-left: 0;*/
+        @include btn-default();
     }
-    input[type="text"], input[type="password"], textarea, input[type="file"] {
+    input[type="text"], input[type="password"], textarea, input[type="file"], input[type="tel"], input[type="email"]  {
         display: inline-block;
         vertical-align: middle;
         box-sizing: border-box;
-        @include border-basic(bottom);
+        //@include border-basic(bottom);
         width: 95%;
-        padding: 2px;
+        //padding: 2px;
+        padding: 5px 10px;
         &+span {
             display: inline-block;
             vertical-align: middle;
@@ -152,7 +166,8 @@
         }
     }
     select {
-        @include border-basic();
+        //@include border-basic();
+        border:1px solid $border-gray;
         max-height: 30px;
         position: relative;
         text-indent: 2px;

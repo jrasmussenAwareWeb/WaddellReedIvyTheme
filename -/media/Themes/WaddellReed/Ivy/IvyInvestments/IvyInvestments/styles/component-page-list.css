@@ -173,10 +173,38 @@
   display: none;
 }
 
-.page-list.general-landing.audio-insights .item {
-  min-height: 400px;
-  max-height: 400px;
-  overflow: hidden;
+@media only screen and (max-width: 767px) {
+  .page-list.general-landing.audio-insights .item {
+    width: 100%;
+    float: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .page-list.general-landing.audio-insights .item {
+    width: 50%;
+    float: left;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .page-list.general-landing.audio-insights .item {
+    min-height: 360px;
+    max-height: 360px;
+    overflow: hidden;
+  }
+}
+
+.page-list.general-landing.audio-insights .item .wrap-labels {
+  font-size: 14px;
+}
+
+.page-list.general-landing.audio-insights .item .wrap-labels .publish-date {
+  margin-right: 5px;
+}
+
+.page-list.general-landing.audio-insights .item:hover .field-title, .page-list.general-landing.audio-insights .item:focus .field-title {
+  color: #009639;
 }
 
 @media only screen and (max-width: 767px) {

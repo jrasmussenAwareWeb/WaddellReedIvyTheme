@@ -1,0 +1,8 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+
+.gray {
+    hr {
+        border-top-color:$border-dark-gray;
+    }
+}

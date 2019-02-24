@@ -213,6 +213,19 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
     }
 }
 
+//error page related resources
+.add-gutters {
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.no-gutters {
+    &[class*="col-"] {
+        padding-left:0; 
+        padding-right:0;
+    }
+}
+
 #footer {
     .rich-text {
         >.component-content {
