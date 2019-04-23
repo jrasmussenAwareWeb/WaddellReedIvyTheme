@@ -1,6 +1,5 @@
 /* breakpoints */
 .sitecore-form {
-  margin: 10px 0;
   overflow: hidden;
   /*.scfRequired {
         display: none !important;
@@ -99,7 +98,6 @@
 .sitecore-form input, .sitecore-form select, .sitecore-form textarea {
   border: 1px solid #c2c2c2;
   padding: 5px 10px;
-  max-width: 98%;
   font-size: 16px;
 }
 
@@ -155,13 +153,12 @@
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
-  width: 95%;
+  width: 100%;
   padding: 5px 10px;
 }
 
 .sitecore-form input[type="text"] + span, .sitecore-form input[type="password"] + span, .sitecore-form textarea + span, .sitecore-form input[type="file"] + span, .sitecore-form input[type="tel"] + span, .sitecore-form input[type="email"] + span {
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
 }
 
 .sitecore-form input[type="file"] {
@@ -271,4 +268,72 @@
   width: 100%;
   font-size: 14px;
   font-family: "ProximaBold", arial, helvetica, sans-serif;
+}
+
+.use-grid form {
+  width: 100%;
+}
+
+.use-grid form input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.use-grid form input[type="checkbox"]:hover, .use-grid form input[type="checkbox"]:focus {
+  border: 1px solid #009639;
+}
+
+.use-grid form > .row .password input {
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  .use-grid form > .row [class*="col-"] {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .use-grid form > .row [class*="col-"] {
+    float: left;
+  }
+  .use-grid form > .row [class*="col-"]:first-child {
+    padding-left: 0;
+  }
+  .use-grid form > .row [class*="col-"]:last-child {
+    padding-right: 0;
+  }
+  .use-grid form > .row [class*="col-"]:last-child.email, .use-grid form > .row [class*="col-"]:last-child.password {
+    padding-right: 15px;
+  }
+  .use-grid form > .row [class*="col-"] .form-group [class*="col-"]:first-child {
+    padding: 0;
+  }
+  .use-grid form > .row [class*="col-"] .form-group [class*="col-"]:first-child:last-child {
+    padding-right: 0;
+  }
+  .use-grid form > .row [class*="col-"] .form-group [class*="col-"]:last-child {
+    padding: 0;
+  }
+  .use-grid form > .row [class*="col-"] .form-group .col-12 {
+    padding: 0;
+  }
+}
+
+.use-grid form > .row.form-group {
+  margin-bottom: 0;
+}
+
+.use-grid form > .row.form-group.col-12 {
+  padding: 0;
+}
+
+.use-grid form h1, .use-grid form h2, .use-grid form h3, .use-grid form h4, .use-grid form h5, .use-grid form h6 {
+  width: 100%;
+  text-transform: uppercase;
+  border-bottom: 3px solid #000000;
+  margin-bottom: 10px;
+}
+
+.use-grid form select {
+  width: 100%;
 }

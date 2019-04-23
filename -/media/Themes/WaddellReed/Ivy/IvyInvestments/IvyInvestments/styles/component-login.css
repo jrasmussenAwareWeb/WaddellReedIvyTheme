@@ -12,9 +12,9 @@
 .login input, .login button {
   display: inline-block;
   box-sizing: border-box;
-  background: #FFFFFF !important;
+  background: #FFFFFF;
   border: 1px solid #c2c2c2;
-  border-radius: 0 !important;
+  border-radius: 0;
   color: #000000;
   font-weight: normal;
   padding: 8px 2%;
@@ -33,7 +33,7 @@
 }
 
 .login input[type="submit"]:hover, .login input[type="reset"]:hover, .login input[type="button"]:hover, .login button:hover {
-  background: #d9d9d6 !important;
+  background: #d9d9d6;
 }
 
 .login input::-moz-focus-inner, .login button::-moz-focus-inner {
@@ -64,6 +64,12 @@
   padding: 5px;
 }
 
+.login:not(.container-gray-background) h1, .login:not(.container-gray-background) h2, .login:not(.container-gray-background) h3, .login:not(.container-gray-background) h4, .login:not(.container-gray-background) h5, .login:not(.container-gray-background) h6 {
+  text-transform: uppercase;
+  border-bottom: 3px solid #000000;
+  margin-bottom: 10px;
+}
+
 .login table {
   width: 100%;
 }
@@ -79,6 +85,21 @@
 
 .login table td {
   padding: 5px;
+  border: 0;
+}
+
+.login table td.sxa-validation {
+  padding: 0;
+}
+
+.login table td.sxa-validation .field-validation-error {
+  color: #6d3332;
+  font-size: 14px;
+}
+
+.login table td.sxa-remember-me {
+  font-size: 16px;
+  margin-bottom: 5px;
 }
 
 .login table input[type='text'], .login table input[type='password'],
@@ -130,4 +151,9 @@
 
 .login table .sxa-login-failed {
   color: #6d3332;
+}
+
+.login table .field-validation-error .field-validation-error {
+  color: #6d3332;
+  font-size: 14px;
 }

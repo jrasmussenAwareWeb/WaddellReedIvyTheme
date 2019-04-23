@@ -44,12 +44,9 @@
   background: #92be43;
 }
 
-.button-warning, .btn-warning, .warning {
+.button-danger, .btn-danger, .danger {
   font-size: 12px;
   font-size: 1.2rem;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #000000;
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
@@ -57,14 +54,15 @@
   padding: 10px 15px;
   text-align: center;
   text-decoration: none;
-  background: #6d3332;
-  color: #fff;
-  font-weight: bold;
+  background: #FFFFFF;
+  color: #6d3332;
+  border: 2px solid #6d3332;
+  text-transform: uppercase;
 }
 
-.button-warning:hover, .button-warning:focus, .btn-warning:hover, .btn-warning:focus, .warning:hover, .warning:focus {
+.button-danger:hover, .button-danger:focus, .btn-danger:hover, .btn-danger:focus, .danger:hover, .danger:focus {
   color: #fff;
-  background: #c34e30;
+  background: #6d3332;
 }
 
 .btn-block {
@@ -74,6 +72,7 @@
 .btn-sm {
   margin: 3px 0;
   padding: 5px 10px;
+  font-size: 14px;
 }
 
 .overlay {
@@ -101,7 +100,7 @@
   border-radius: 5px;
   display: block;
   position: absolute;
-  background-color: #E6E6E6;
+  background-color: #FFFFFF;
   padding: 10px;
   max-width: 90%;
   background: #d9d9d6;
@@ -110,6 +109,8 @@
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 @media only screen and (max-width: 991px) {
@@ -194,6 +195,19 @@
 
 .overlay .overlay-close-link {
   text-decoration: none;
+}
+
+.overlay .sitecore-form {
+  padding: 0 30px;
+}
+
+.overlay .sitecore-form .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.overlay .sitecore-form .row .rich-text.overlay-title {
+  padding: 15px !important;
 }
 
 /* this css class is used on overlay page */

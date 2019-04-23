@@ -4,7 +4,7 @@
     &.col-12 {
         padding:0;
     }
-    margin: 10px 0;
+    //margin: 10px 0;
     //font-size: 14px;
     overflow: hidden;
     table {
@@ -90,7 +90,7 @@
         border:1px solid $border-gray;
         //padding: 2px 4px;
         padding: 5px 10px;
-        max-width: 98%;
+        //max-width: 98%;
         font-size:$font-normal;
     }
     .scfCaptcha {
@@ -124,12 +124,14 @@
         vertical-align: middle;
         box-sizing: border-box;
         //@include border-basic(bottom);
-        width: 95%;
+        //width: 95%;
         //padding: 2px;
+        width:100%;
         padding: 5px 10px;
         &+span {
-            display: inline-block;
-            vertical-align: middle;
+            //display: inline-block;
+            display: block;
+            //vertical-align: middle;
         }
     }
     input[type="file"] {

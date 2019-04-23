@@ -21,7 +21,8 @@
         border-radius: 5px;
         display: block;
         position: absolute;
-        background-color: #E6E6E6;
+        //background-color: #E6E6E6;
+        background-color:$bg-white;
         padding: 10px;
         max-width: 90%;
         background: $overlay-bg;
@@ -29,6 +30,10 @@
         top: 50%;
         transform: translate(-50%, -50%);
 
+        //how to target
+        overflow-y:scroll;
+        overflow-x:hidden;
+        
         @include respond-to(all-mobile) {
             max-width: 100%;
             left: 50%;
@@ -100,6 +105,19 @@
     }*/
     .overlay-close-link {
         text-decoration: none;
+    }
+
+    .sitecore-form {
+        padding:0 30px;
+        .row {
+            margin-left:0;
+            margin-right:0;
+            .rich-text {
+                &.overlay-title {
+                    padding:15px !important;
+                }
+            }
+        }
     }
 }
 
@@ -199,3 +217,4 @@ body.preview {
         z-index: 9000;
     }
 }
+

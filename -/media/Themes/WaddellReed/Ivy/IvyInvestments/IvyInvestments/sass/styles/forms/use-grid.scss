@@ -1,0 +1,70 @@
+.use-grid {
+    form {
+        width:100%;
+        input[type="checkbox"] {
+            margin-right:10px;
+            //how to target the blue border, i think 
+            &:hover, &:focus {
+                border:1px solid $text-green;
+            }
+        }
+        >.row {
+            .password {
+                input {
+                    margin-bottom:15px;
+                }
+            }
+            @include respond-to(mobile-large) {
+                 [class*="col-"] {
+                 padding:0;
+                }
+            }
+            @include respond-to(tablet) {
+                [class*="col-"] {
+                    float:left;
+                }
+                [class*="col-"] {
+                    &:first-child {
+                        padding-left:0;
+                    }
+                    &:last-child {
+                        padding-right:0;
+                        &.email, &.password {padding-right:15px}
+                    }
+
+                    .form-group {
+                        [class*="col-"] {
+                            &:first-child {
+                                padding:0;
+                                &:last-child {
+                                    padding-right:0;
+                                }
+                            }
+                            &:last-child {
+                                padding:0;
+                            }
+                        }
+                        .col-12 {
+                            padding:0;
+                        }
+                    }
+                }
+            }
+            &.form-group {
+                margin-bottom:0;
+                &.col-12 {
+                    padding:0;
+                }
+            }
+        }
+        h1, h2, h3, h4, h5, h6 {
+            width:100%;
+            text-transform:uppercase;
+            border-bottom:3px solid $border-basic-color;
+            margin-bottom:$small-margin;
+        }
+        select {
+            width:100%;
+        }
+    }
+}
