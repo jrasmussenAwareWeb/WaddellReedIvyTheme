@@ -2,16 +2,32 @@
 @import "../../abstracts/mixins";
 @import "base/fontawesome/font-awesome-mix-var";
 .navigation.navigation-sitemap {
+
+    .submenu {
+        >ul {
+            padding-left:0;
+            padding-bottom:$middle-margin;
+        }
+    }
     .navigation-title>a {
         &:hover, &:focus {
             color:$text-green;
         }
     }
+    .rel-level1 {
+        .navigation-title>a {
+            @include proximabold();
+            text-transform:uppercase;
+        }
+    }
     .rel-level2 {
         display: list-item;
         .navigation-title>a {
-            font-weight: 500;
-            padding:8px 10px 8px 0;
+            @include proxima();
+            text-transform:capitalize;
+            /*font-weight: 500;
+            padding:8px 10px 8px 0;*/
+            padding:5px 10px 5px 0;
             display:inline-block;
         }
         ul {

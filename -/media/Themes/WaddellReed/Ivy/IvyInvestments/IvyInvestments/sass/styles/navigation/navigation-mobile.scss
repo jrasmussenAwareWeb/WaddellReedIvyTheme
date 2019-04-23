@@ -3,6 +3,21 @@
 @import "../../base/fontawesome/font-awesome-mix-var";
 .navigation.navigation-mobile {
     padding:0;
+    &:not(.genlink) {
+        position:relative;
+        top:65px;
+        .rel-level1 {
+            &:first-child {
+                border-top: 1px solid $border-dark-gray;
+            }
+             &.active {
+                ul {
+                    padding-bottom:$small-margin;
+                    border-bottom:1px solid $border-dark-gray;
+                }
+             }
+        }
+    }
     nav>ul {
         border: none;
         //@include border-basic();
@@ -15,9 +30,7 @@
             display:block;
             padding: 10px;
             margin: 0;
-            //border-bottom: 1px solid $border-basic-color;
             border-bottom: 1px solid $border-dark-gray;
-            //border-top: 1px solid $border-dark-gray; //this needs to be only on show 
             &:last-child {
                 border-bottom: none;
             }
@@ -34,7 +47,6 @@
             padding-left: 25px;
             display: none;
             background: $bg-submenu;
-            //background:#d9d9d6; //test this out for visual seperation rather than a line on open
             li {
                 position: relative;
                 a:before {
@@ -51,9 +63,6 @@
                 
             }
         }
-        /*&:last-of-type {
-            border-bottom:1px solid $border-dark-gray;
-        }*/
         &.active {
             >.navigation-title {
                 >a {

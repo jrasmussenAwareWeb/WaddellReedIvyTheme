@@ -65,7 +65,6 @@
                     position:relative;
                     top:-5px;
                     left:2px;
-                    
                 }
             }
         }
@@ -468,20 +467,7 @@
             @include proxima(); //reset from bold
         }
         
-    }
-
-    /*.navigation-heading {
-        .navigation-title {
-            color:$text-white;
-        }
-        &:hover, &:focus {
-            .navigation-title {
-                color:$text-green;
-            }
-        }
-    }*/
-
-    
+    }  
 
     // Additional styles for drop down vertical navigation (umbrella & account)
     &.navigation-main-vertical {
@@ -499,10 +485,6 @@
     // Additional styles for the the umbrella navigation
     &.navigation-umbrella {
         max-width:210px;
-        /*@include respond-to(large) {
-            position:relative;
-            left:-10px;
-        }*/
         .level1, .level0 {
             >.navigation-title>a {
                 font-size: $navigation-font-small;
@@ -598,10 +580,6 @@
     }
     // Additional styles for the the account & login navigation
     &.navigation-account, &.navigation-login {
-        /*padding-right:35px;
-         @include respond-to(desktop) {
-            padding-right:45px;
-        }*/
         .sxaToogleNavBtn {
             display:none !important;
         }
@@ -612,7 +590,6 @@
             margin-top:30px;
             >.navigation-title {
                 >a {
-                    //margin-top:0;
                     margin: 0;
                     color:$text-green;
                     border: solid 2px $text-green;
@@ -620,10 +597,7 @@
                     &:before {
                         font-size:inherit;
                         @include fa-icon();
-                        //transform: translateY(-50%);
                         position:relative;
-                        //left:-8px;
-                        //top:9px;
                         margin-right: 6px;
                     }
                     &:hover { 
@@ -699,16 +673,27 @@
                         &:before {
                             font-size:inherit;
                             @include fa-icon();
-                            margin-right:6px;
+                            margin-right:10px;
                         }
                     }
             }
-            &:first-of-type {
+            //hide icons per client status call 030619
+            /*&:first-of-type {
                  >.navigation-title {
                     >a {
                         &:before {
                             //content: $fa-var-user-edit; 010219 this one doesnt work because FA5 is not working
                             content: $fa-var-user;
+                        }
+                    }
+                 }
+            }
+            &:nth-of-type(2) {
+                 >.navigation-title {
+                    >a {
+                        &:before {
+                            content: $fa-var-leaf;
+                            margin-right:6px;
                         }
                     }
                  }
@@ -721,7 +706,7 @@
                         }
                     }
                  }
-            }
+            }*/
         }
     }
     // Additional styles for the the login navigation

@@ -393,16 +393,6 @@
             left:2px;
         }
     }*/
-  /*.navigation-heading {
-        .navigation-title {
-            color:$text-white;
-        }
-        &:hover, &:focus {
-            .navigation-title {
-                color:$text-green;
-            }
-        }
-    }*/
 }
 
 .navigation.navigation-main .symbol-registered > .navigation-title > a:after {
@@ -879,10 +869,6 @@
 
 .navigation.navigation-main.navigation-umbrella {
   max-width: 210px;
-  /*@include respond-to(large) {
-            position:relative;
-            left:-10px;
-        }*/
 }
 
 .navigation.navigation-main.navigation-umbrella .level1 > .navigation-title > a, .navigation.navigation-main.navigation-umbrella .level0 > .navigation-title > a {
@@ -979,13 +965,6 @@
   border-bottom: 0;
 }
 
-.navigation.navigation-main.navigation-account, .navigation.navigation-main.navigation-login {
-  /*padding-right:35px;
-         @include respond-to(desktop) {
-            padding-right:45px;
-        }*/
-}
-
 .navigation.navigation-main.navigation-account .sxaToogleNavBtn, .navigation.navigation-main.navigation-login .sxaToogleNavBtn {
   display: none !important;
 }
@@ -1075,6 +1054,38 @@
   border-top: solid 2px #009639;
 }
 
+.navigation.navigation-main.navigation-account .rel-level2 {
+  /*&:first-of-type {
+                 >.navigation-title {
+                    >a {
+                        &:before {
+                            //content: $fa-var-user-edit; 010219 this one doesnt work because FA5 is not working
+                            content: $fa-var-user;
+                        }
+                    }
+                 }
+            }
+            &:nth-of-type(2) {
+                 >.navigation-title {
+                    >a {
+                        &:before {
+                            content: $fa-var-leaf;
+                            margin-right:6px;
+                        }
+                    }
+                 }
+            }
+            &:last-of-type {
+                 >.navigation-title {
+                    >a {
+                        &:before {
+                            content: $fa-var-sign-out; 
+                        }
+                    }
+                 }
+            }*/
+}
+
 .navigation.navigation-main.navigation-account .rel-level2 div > a {
   text-align: left;
 }
@@ -1087,15 +1098,7 @@
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin-right: 6px;
-}
-
-.navigation.navigation-main.navigation-account .rel-level2:first-of-type > .navigation-title > a:before {
-  content: "";
-}
-
-.navigation.navigation-main.navigation-account .rel-level2:last-of-type > .navigation-title > a:before {
-  content: "";
+  margin-right: 10px;
 }
 
 .navigation.navigation-main.navigation-login .rel-level1 > .navigation-title {
@@ -1121,6 +1124,20 @@
   padding: 0;
 }
 
+.navigation.navigation-mobile:not(.genlink) {
+  position: relative;
+  top: 65px;
+}
+
+.navigation.navigation-mobile:not(.genlink) .rel-level1:first-child {
+  border-top: 1px solid #b7b7b7;
+}
+
+.navigation.navigation-mobile:not(.genlink) .rel-level1.active ul {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #b7b7b7;
+}
+
 .navigation.navigation-mobile nav > ul {
   border: none;
 }
@@ -1129,9 +1146,6 @@
   cursor: pointer;
   margin: 0;
   background: #FFFFFF;
-  /*&:last-of-type {
-            border-bottom:1px solid $border-dark-gray;
-        }*/
 }
 
 .navigation.navigation-mobile .rel-level1 > .navigation-title {
@@ -1337,8 +1351,18 @@
 }
 
 /* breakpoints */
+.navigation.navigation-sitemap .submenu > ul {
+  padding-left: 0;
+  padding-bottom: 20px;
+}
+
 .navigation.navigation-sitemap .navigation-title > a:hover, .navigation.navigation-sitemap .navigation-title > a:focus {
   color: #009639;
+}
+
+.navigation.navigation-sitemap .rel-level1 .navigation-title > a {
+  font-family: "ProximaBold", arial, helvetica, sans-serif;
+  text-transform: uppercase;
 }
 
 .navigation.navigation-sitemap .rel-level2 {
@@ -1346,8 +1370,11 @@
 }
 
 .navigation.navigation-sitemap .rel-level2 .navigation-title > a {
-  font-weight: 500;
-  padding: 8px 10px 8px 0;
+  font-family: "Proxima", arial, helvetica, sans-serif;
+  text-transform: capitalize;
+  /*font-weight: 500;
+            padding:8px 10px 8px 0;*/
+  padding: 5px 10px 5px 0;
   display: inline-block;
 }
 
