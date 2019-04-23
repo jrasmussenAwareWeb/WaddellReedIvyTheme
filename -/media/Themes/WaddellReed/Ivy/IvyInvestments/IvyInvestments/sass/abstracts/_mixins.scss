@@ -114,7 +114,7 @@
 $break-large: 1200px; //desktops (min-width)
 $break-desktop: 992px; //laptops (min-width)
 $break-mobile-large: 768px; //tablets (min/max-width)
-$break-mobile-horizontal: 576px; //phones (max-width)
+$break-mobile-horizontal: 576px; //phones (min/max-width)
 $break-mobile: 380px; //compact phones (max-width)
 
 @mixin respond-to($media) {
@@ -126,6 +126,11 @@ $break-mobile: 380px; //compact phones (max-width)
     @else if $media==mobile-horizontal {
         @media only screen and (min-width: $break-mobile-horizontal) {
         //@media only screen and (max-width: $break-mobile-horizontal) {
+            @content;
+        }
+    }
+    @else if $media==mobile-horizontal-max {
+        @media only screen and (max-width: $break-mobile-horizontal) {
             @content;
         }
     }

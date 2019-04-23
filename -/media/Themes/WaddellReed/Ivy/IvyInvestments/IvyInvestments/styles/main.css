@@ -3126,7 +3126,6 @@ body.on-page-editor .scEnabledChrome .d-md-none {
 a {
   color: #000000;
   cursor: pointer;
-  font-size: 0.85em;
 }
 
 a:hover {
@@ -3317,14 +3316,98 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
   }
 }
 
+/*misc - spacing*/
 .add-gutters {
   padding-left: 15px;
   padding-right: 15px;
 }
 
+@media only screen and (min-width: 768px) {
+  .add-gutters:not(.container) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 .no-gutters[class*="col-"] {
   padding-left: 0;
   padding-right: 0;
+}
+
+.margin-bottom-30 {
+  margin-bottom: 30px;
+}
+
+.margin-bottom-60 {
+  margin-bottom: 60px;
+}
+
+/*misc - spacing*/
+.btn-rss:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1em;
+  color: inherit;
+  content: "";
+  margin-right: 5px;
+}
+
+/*stacktable*/
+.plain-html {
+  /*stacktable*/
+}
+
+.plain-html .stacktable.large-only {
+  display: table;
+}
+
+.plain-html .stacktable.small-only {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .plain-html .stacktable.large-only {
+    display: none;
+  }
+  .plain-html .stacktable.small-only {
+    display: table;
+    width: 100%;
+  }
+}
+
+.plain-html .table th, .plain-html .table td {
+  padding: 5px 15px;
+}
+
+.plain-html .table-queue {
+  margin: 0;
+}
+
+.plain-html .table-queue th, .plain-html .table-queue td {
+  font-size: 14px;
+}
+
+.plain-html .table-funds {
+  font-size: 14px;
+}
+
+.plain-html .table-funds a {
+  color: #009639;
+  text-decoration: none;
+}
+
+.plain-html .table-funds a:hover, .plain-html .table-funds a:focus {
+  text-decoration: underline;
+}
+
+.plain-html .table-funds a i, .plain-html .table-funds a em {
+  color: #000000;
+  margin-right: 5px;
+  font-size: 0.75em;
 }
 
 #footer .rich-text > .component-content p:first-child {
@@ -3364,7 +3447,13 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
   transition: width 0.5s ease-in-out, margin 0.5s ease-in-out, background-color 0.5s ease-in-out, border-radius 0.25s ease-in-out, color 0.25s ease-in-out;
 }
 
-.scrolltop-wrap a:after {
+.scrolltop-wrap a span {
+  width: 0;
+  color: transparent;
+}
+
+.scrolltop-wrap a span span:after {
+  width: auto;
   font-size: inherit;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -3375,6 +3464,8 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
   color: #009639;
   content: "\f062";
   line-height: 42px;
+  position: relative;
+  top: -36px;
 }
 
 .scrolltop-wrap a:hover, .scrolltop-wrap a.auto {
@@ -3384,7 +3475,7 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
   transition: width 0.5s ease-in-out, margin 0.5s ease-in-out, border-radius 0.25s ease-in-out, color 0.5s ease-in-out;
 }
 
-.scrolltop-wrap a:hover:after, .scrolltop-wrap a.auto:after {
+.scrolltop-wrap a:hover span span:after, .scrolltop-wrap a.auto span span:after {
   -webkit-animation: arrow-once cubic-bezier(0, 0.6, 1, 0.4) 0.5s, arrow-infinite 1s cubic-bezier(0, 0.6, 1, 0.4) infinite 0.5s;
   animation: arrow-once cubic-bezier(0, 0.6, 1, 0.4) 0.5s, arrow-infinite 1s cubic-bezier(0, 0.6, 1, 0.4) infinite 0.5s;
 }

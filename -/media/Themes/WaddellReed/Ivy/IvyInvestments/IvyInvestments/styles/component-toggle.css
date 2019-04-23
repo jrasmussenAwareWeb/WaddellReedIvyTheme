@@ -569,6 +569,18 @@
   z-index: 1;
 }
 
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+  .toggle.mobile {
+    /* IE10+ specific styles go here */
+    position: relative;
+    top: -80px;
+  }
+  .toggle.mobile .toggle-content > .row {
+    position: relative;
+    top: 80px;
+  }
+}
+
 .toggle.mobile .toggle-content {
   margin-top: 79px;
   background-color: #FFFFFF;

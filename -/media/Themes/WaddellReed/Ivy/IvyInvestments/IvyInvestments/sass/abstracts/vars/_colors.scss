@@ -27,13 +27,14 @@ $text-heading-color: #222 !default;
 $text-blue:#89C6CC !default;
 $text-blue-active:#15909c !default;
 $text-submenu-active: #222 !default;
-$text-disabled: #aaa !default;
+//$text-disabled: #aaa !default;
 $text-black: #000 !default;
 //$text-red:#de232f;
 
 //Ivy Specific
 $text-basic:#000000 !default;
 $text-basic-active:#000000 !default;
+$text-disabled: #b7b7b7 !default;
 $text-gray:#777777;
 $text-green:#009639;
 $text-dark-green:#006747;
@@ -175,13 +176,19 @@ $page-list-bg:$bg-transparent;
 $page-list-item-bg:$bg-transparent;
 $page-list-item-title-text:$text-black;
 $page-list-item-border:$border-basic-color;
+
 //Pagination
 $list-pagination-bg:transparent;
 $list-pagination-active-bg:$bg-blue;
 $list-pagination-active-color:$text-white;
-$list-pagination-active-color:$text-blue;
-$list-pagination-active-bg:$bg-submenu-active;
-$list-pagination-active-border:$border-basic-active;
+//$list-pagination-active-color:$text-blue;
+//$list-pagination-active-bg:$bg-submenu-active;
+//$list-pagination-active-border:$border-basic-active;
+
+//Ivy Specific
+$list-pagination-active-bg:$bg-green;
+$list-pagination-active-border:$border-dark-gray;
+
 //Play list 
 $play-list-bg:transparent;
 $play-list-item-bg:transparent;
@@ -295,13 +302,21 @@ $search-filter-slider-bg-active:$bg-blue;
 $search-filter-slider-btn-border:$border-gray;
 $search-filter-slider-btn-bg:$bg-light-gray;
 $search-filter-slider-btn-bg-active:$bg-light-gray-active;
+
 //Serach Pagination
 $search-pagination-bg:transparent;
-$search-pagination-active-bg:$bg-blue;
+//$search-pagination-active-bg:$bg-blue;
 $search-pagination-active-color:$text-white;
-$search-pagination-hover-color:$text-blue;
-$search-pagination-hover-bg:$bg-submenu-active;
-$search-pagination-hover-border:$border-basic-active;
+//$search-pagination-hover-color:$text-blue;
+//$search-pagination-hover-bg:$bg-submenu-active;
+//$search-pagination-hover-border:$border-basic-active;
+
+//Ivy Specific
+$search-pagination-active-bg:$bg-green;
+$search-pagination-hover-color:$text-white;
+$search-pagination-hover-bg:$bg-green;
+$search-pagination-hover-border:$border-dark-gray;
+
 //Search selector
 $serach-selector-variant-color-active: $text-blue-active;
 //Typehead

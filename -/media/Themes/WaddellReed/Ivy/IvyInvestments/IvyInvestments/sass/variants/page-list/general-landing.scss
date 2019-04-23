@@ -13,14 +13,17 @@
             padding:0 0 15px 15px;
             margin-bottom:$large-margin;
         }
-        /*
-        we can revert this now if we need to min-height:450px;
-        max-height:450px;
-        overflow:hidden;
-        we have to move this for pages that will not have an image*/
-        @include respond-to(all-mobile) {
+        //constrain the item height
+        @include respond-to(large) {
+            min-height:415px;
+            max-height:415px;
+        }
+        @include respond-to(mobile-large) {
             width:100%;
             float:none;
+        }
+         @include respond-to(tablet-only) {
+            width:50%;
         }
         .field-image, .field-listimage {
             img {
@@ -32,14 +35,14 @@
             font-weight:normal;
             @include copernicus();
             color:$text-green;
-            line-height:1.4;
-            margin-top:8px;
+            //line-height:1.4;
+            //margin-top:8px;
             a {
                 color:inherit;
                 border-bottom:0;
-                font-size:22px; //h4 24 but needs specified as a span in case a required lock or something else is :after (changed 012319 - current site is 22?)
+                font-size:24px; //h4 24 but needs specified as a span in case a required lock or something else is :after (changed 012319 - current site is 22?)
                  @include respond-to(mobile-large) {
-                    font-size:20px; //22?
+                    font-size:22px; //22?
                 }
             }
         }
@@ -52,27 +55,35 @@
                 color:$text-green;
             }
         }
-        .field-excerpt {
+        /*.field-excerpt {
             @include respond-to(desktop) {
-                min-height:140px;
-                max-height:140px;
+                min-height:160px;
+                max-height:160px;
                 overflow:hidden;
             }
-        }
+        }*/
         &:hover, &:focus {
             .field-title, .navigation-required:after  {
                 color:$text-basic;
             }
         }
     }
+    &.bridge-gap {
+        .item {
+            min-height:430px;
+            max-height:430px;
+        }
+    }
     &.perspectives {
         .item {
-            min-height:450px;
-            max-height:450px;
-            overflow:hidden;
+            @include respond-to(tablet) {
+                min-height:450px;
+                max-height:450px;
+                overflow:hidden;
+            }
             .wrap-labels {
                 line-height:1;
-                margin-bottom:15px;
+                margin-bottom:5px;
                 small {
                     @include proximabold();
                     //font-size:$font-small; //we need to use this for 508c i.e. minimum font size 14px not 12px
@@ -85,26 +96,36 @@
                 width:auto;
                 margin-left:15px;
                 margin-right:15px;
+                @include respond-to(mobile-large) {
+                    border-bottom:1px solid $border-dark-gray;
+                    padding-bottom:15px;
+                    margin-bottom:15px;
+                }
+                @include respond-to(tablet-only) {
+                    line-height:0.85;
+                }
                 @include respond-to(tablet) {
-                    line-height:1;
-                    min-height:330px;
-                    max-height:330px;
+                    min-height:100%;
+                    max-height:100%; 
                     overflow:hidden;
                     background-color:$bg-light-gray;
                     .field-image, .field-listimage, .wrap-content {
                         float:left;
-                        line-height:1;
+                        //line-height:1;
                     }
                     .field-image, .field-listimage {
                         width:66.3%;
-                        //
-                        //max-width:740px;
+                        line-height:0.85;
+                        img {
+                            line-height:0.85;
+                        }
                     }
                     .wrap-content {
                         width:32.7%;
                         padding:15px;               
                     }
                 }
+                
                 .wrap-labels {
                     .field-labelsuffix {
                         color:$text-green;
@@ -120,7 +141,7 @@
                     }
                 }
                 .field-excerpt {
-                    display:none; //?
+                    display:none;
                 }
             }
         }
@@ -154,38 +175,72 @@
         }
     }
     &.replays {
-        @include respond-to(mobile-large) {
-            padding-left:15px;
-            padding-right:30px;
+        @include respond-to(large) {
+            .items {
+                margin-left:-15px; 
+                margin-right:-15px;
+            }
         }
-        .item {
-            width:33.3%;
-            float:left;
+        .item { 
             padding:0;
-            margin-bottom:0;
-            display:flex;
+            @include respond-to(tablet) {
+                min-height:300px; //290 per design
+                max-height:300px;
+                overflow:hidden;
+
+                width:50%;
+                float:left;
+                padding:0;
+                margin-bottom:0;
+                display:flex;
+            }
+             @include respond-to(large) {
+                width:33.3%;
+            }
             .wrap-content {
                 background-color:$bg-white;
                 padding:15px;
                 margin:0 15px 30px 15px;
                 float:left;
-                @include respond-to(tablet) {
-                    min-height:285px;
-                    max-height:285px;
-                }
+                //http://www.psd-to-css-shadows.com/ color:0,0,0 -  opacity 40% - angle 90 - distance 2 - spread 4 - size 6
+                //https://www.cssmatic.com/box-shadow
+                -webkit-box-shadow:  0px 2px 5.76px 0.24px rgba(0, 0, 0, 0.4); 
+                -moz-box-shadow:  0px 2px 5.76px 0.24px rgba(0, 0, 0, 0.4); 
+                box-shadow:  0px 2px 5.76px 0.24px rgba(0, 0, 0, 0.4); 
+
                 .event-date {
                     @include proximabold();
                     text-transform:uppercase;
                     font-size:$font-small;
-                    margin-bottom:$middle-margin;
+                    margin-bottom:$small-margin;
+
+                }
+
+                .field-title {
+                    a {
+                        @include respond-to(tablet) {
+                            font-size:20px;
+                        }
+                         @include respond-to(large) {
+                            font-size:22px; //supposed to be 24 but this is best to keep longer titles limited to 3 lines
+                        }
+                    }
                 }
 
                 .field-excerpt {
                     @include respond-to(tablet) {
+                        min-height:115px;
+                        max-height:115px;
+                        overflow:hidden;
+                    }
+                    @include respond-to(desktop) {
+                        min-height:140px;
+                        max-height:140px;
+                    }
+                     @include respond-to(large) {
                         min-height:110px;
                         max-height:110px;
                     }
-                    margin-top:$small-margin;
                 }       
             }
         }

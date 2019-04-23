@@ -23,13 +23,13 @@
   text-transform: uppercase;
 }
 
-.title.page-header {
+.title.page-header.social {
   position: relative;
   top: -5px;
 }
 
 @media only screen and (max-width: 767px) {
-  .title.page-header {
+  .title.page-header.social {
     top: 20px;
   }
 }

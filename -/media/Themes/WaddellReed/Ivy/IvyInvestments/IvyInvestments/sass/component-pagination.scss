@@ -1,37 +1,108 @@
 @import "abstracts/vars";
 @import "abstracts/mixins";
+@import "base/fontawesome/font-awesome-mix-var";
 .list-pagination {
     background: $list-pagination-bg;
     nav {
         font-size: $font-normal;
         >span, >a {
             display: inline-block;
-            margin: 2px 1px 2px 0;
+            //margin: 2px 1px 2px 0;
             padding: 4px 8px;
-            @include border-basic();
-            font-size: 1em;
-            font-weight: bold;
-            &:hover {
+            //@include border-basic();
+            //font-size: 1em;
+            //font-weight: bold;
+            margin: 0 2px;
+            border:1px solid $list-pagination-active-border;
+            font-size:$font-medium;
+            @include proximabold();
+            text-decoration: none;
+            color:$text-green;
+            width:36px;
+            height:36px;
+            &:hover, &:focus {
                 color: $list-pagination-active-color;
                 background: $list-pagination-active-bg;
                 text-decoration: none;
-                @include border-basic(all, $list-pagination-active-border)
+                @include border-basic(all, $list-pagination-active-border);
             }
-            &:focus {
+            /*&:focus {
                 text-decoration: none;
                 color: $list-pagination-active-color;
+            }*/
+
+            //next (this has to be before the others / only way to target)
+            &:not(.sxa-paginationnumber) {
+                position:relative;
+                top:4px;
+                color:transparent;
+                line-height:0;
+                &:before {
+                    display:block !important;
+                    line-height:1;
+                    position:relative;
+                    top:5px;
+                    @include fa-icon();
+                    font-weight:bold;
+                    content: $fa-var-angle-right;
+                }
             }
+
+            //first
+            &:first-child {
+                &:before {
+                    font-size:inherit;
+                    @include fa-icon();
+                    font-weight:bold;
+                    content: $fa-var-angle-double-left; 
+                }
+            }
+            //previous 
+            &:nth-child(2) {
+                &:before {
+                    font-size:inherit;
+                    @include fa-icon();
+                    font-weight:bold;
+                    content: $fa-var-angle-left; 
+                }
+            }
+            //last
+            &:last-child {
+                &:before {
+                    font-size:inherit;
+                    @include fa-icon();
+                    font-weight:bold;
+                    content: $fa-var-angle-double-right; 
+                }
+            }
+
+            &:not(.inactive) {
+                &:before {
+                    color:$text-green;
+                }
+                &:hover, &:focus {
+                    &:before {
+                        color:$list-pagination-active-color;
+                    }
+                }
+            }
+
         }
         >span.active {
             background: $list-pagination-active-bg;
             color: $list-pagination-active-color;
-            @include border-basic();
+            //@include border-basic();
+            border:1px solid $list-pagination-active-border;
         }
         >span.inactive {
-            color: $text-disabled;
+            color: transparent;
+            &:before {
+                color:$text-disabled;
+            }
             &:hover {
                 background: none;
-                @include border-basic();
+                //@include border-basic();
+                border:1px solid $list-pagination-active-border;
             }
         }
     }

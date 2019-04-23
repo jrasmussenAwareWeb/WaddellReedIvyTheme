@@ -9,6 +9,12 @@
     } 
     //
 
+    @include respond-to(mobile-large) {
+        .field-title {
+            line-height:1;
+        }
+    }
+
     &:after {
         display:table;
         clear:both;
@@ -39,17 +45,11 @@
         table {
             td {
                 padding:2px 0;
-                &.sxa-validation {
-                    padding:0;
-                    .field-validation-error {
-                        color:$text-red;
-                        font-size:$font-small; 
-                    }
-                }
-                &.sxa-remember-me {
-                    font-size:$font-normal;
-                    margin-bottom:5px;
-                }
+            }
+        }
+        .request-password {
+            a {
+                font-size:0.85em;
             }
         }
         input[type="text"], input[type="password"] {
@@ -71,6 +71,13 @@
         p {
             margin:0 0 $middle-margin;
         }
+        a {
+            @include btn-default;
+            @include btn-block;
+            &:hover, &:focus {
+                text-decoration:none !important;
+            }
+        }
         &.welcome-user {
             padding:15px;
             hr {
@@ -87,6 +94,11 @@
 
     //video 
     .col-xl-9 {
+        @include respond-to(large) {
+            >.row {
+                margin-left:-15px !important;
+            }
+        }
         .content-video {
             margin-top:30px;
             @include respond-to(mobile-large) {
@@ -111,7 +123,7 @@
             position:relative;
             right:-15px;
              &.d-xl-block {
-                display:flex !important;
+                display:block;
             }
         }
         //http://www.psd-to-css-shadows.com/ color:0,0,0 -  opacity 40% - angle 90 - distance 2 - spread 4 - size 6
@@ -128,6 +140,15 @@
 
     //overlapping columns
     .col-xl-auto {
+        @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+        /* IE10+ specific styles go here */  
+                &:first-of-type {
+                width:84%;
+            }
+            &:last-of-type {
+                width:25%;
+            }
+        }
         &:first-of-type {
             float:left;
             @include respond-to(large) {
@@ -145,6 +166,9 @@
                     }
                     img {
                         width:100%; 
+                        @include respond-to(large) {
+                            max-width:975px;
+                        }
                         height:auto;
                     }
 
@@ -172,7 +196,6 @@
                             @include proximaboldcondensed();
                             font-size:40px;
                             text-transform:uppercase; 
-                            line-height:1;
                         }
                         .field-excerpt {
                             font-size:$font-medium;
@@ -188,14 +211,24 @@
                     >div {
                         padding:0;
                     }
+                    .field-date, .field-title, .field-excerpt {
+                        p {
+                            margin:0;
+                        }
+                    }
                     .link-wrapper {
                         text-decoration:none;
+                    }
+                    img {
+                        @include respond-to(large) {
+                            max-width:975px;
+                        }
                     }
                     .headline {
                         >a {
                             text-decoration:none;
                         }
-                        background:rgba(0,150,57,0.85); //#009639 make mixin?
+                        background:rgba(0,150,57,0.85); //#009639
                         color:$text-white;
                         position:absolute;
                         bottom:6px;

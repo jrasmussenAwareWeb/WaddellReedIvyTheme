@@ -62,4 +62,26 @@
             margin-bottom:$large-margin;
         }
     }
+    //this isnt working when pulled into page-content
+    &.webcast {
+        margin-bottom:$small-margin;
+        @include respond-to (all-mobile) {
+            margin-top:$large-margin;
+        }
+        .wrap-author {
+            width:100%;
+            margin-top:0;
+            .field-title {
+                font-style:normal;
+                color:$text-basic;
+            }
+            .wrap-text {
+                width:100%;
+            }
+        }
+        .event-date {
+            padding-top:$small-margin;
+            margin-bottom:$small-margin;
+        }
+    }
 }

@@ -3,9 +3,10 @@
 @import "../../base/fontawesome/font-awesome-mix-var";
 
 &.section-title {
-    @include respond-to(mobile-large) {
+    /*@include respond-to(mobile-large) {
         padding:0;
-    }
+    }*/
+    padding:0;
     h1, h2, h3, h4, h5, h6 {
         @include proximaboldcondensed();
         text-transform:uppercase;

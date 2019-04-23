@@ -3,6 +3,13 @@
 .login {
     @import "base/reset/inputs";
     background-color: $login-bg;
+    &:not(.container-gray-background) { //home feature
+        h1, h2, h3, h4, h5, h6 {
+            text-transform:uppercase;
+            border-bottom:3px solid $border-basic-color;
+            margin-bottom:$small-margin;
+        }
+    }
     table {
         input, label{
             display: inline-block;
@@ -14,6 +21,20 @@
         }
         td {
             padding: 5px;
+            border:0;
+            //
+            &.sxa-validation {
+                padding:0;
+                .field-validation-error {
+                    color:$text-red;
+                    font-size:$font-small; 
+                }
+            }
+            &.sxa-remember-me {
+                font-size:$font-normal; 
+                margin-bottom:5px;
+            }
+            //
         }
         input[type='text'], input[type='password'], 
         input[type="text"], input[type="password"] {
@@ -42,6 +63,13 @@
         }
         .sxa-login-failed {
             color:$text-red;
+        }
+        //
+        .field-validation-error {
+            .field-validation-error {
+                        color:$text-red;
+                        font-size:$font-small; 
+                    }
         }
     }
 }

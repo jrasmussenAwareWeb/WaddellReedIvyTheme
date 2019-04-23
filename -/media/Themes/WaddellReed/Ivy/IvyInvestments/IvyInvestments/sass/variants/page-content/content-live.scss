@@ -3,6 +3,12 @@
 @import "../../base/fontawesome/font-awesome-mix-var";
 
 &.content-live {
+    /*@include respond-to (tablet) {
+        padding-right:0;
+    }*/
+    @include respond-to(mobile-large) {
+        padding:0;
+    }
     .field-eventname, .field-title {
         color:$text-green;
         margin-top:0;
@@ -42,7 +48,12 @@
         }
     }
     &.landing {
-        padding-left:0;
+        //padding-left:0;
+        @include respond-to(tablet) {
+            &.col-12 {
+                padding-left:0;
+            }
+        }
         .event-date, .field-eventtime {
             font-size:$font-big;
         }

@@ -14,12 +14,12 @@
         max-width:100%;
     }
 
+    //this was causing a weird refresh issue in FF?
      @include respond-to(large) {
-         &:not(.col-12) {
+         &:not(.col-12) { 
             max-width:1140px;
          }
     }
-    /**/
 
     &.indent-top {
         margin-top:$extralarge-margin;

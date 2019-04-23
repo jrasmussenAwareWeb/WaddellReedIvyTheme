@@ -3,6 +3,19 @@
 .link {
     background: $link-bg;
     @import "base/reset/links";
+    &.btn-default {
+        background-color:$bg-white;
+        a {
+            color:$text-green;
+            border-bottom:0;
+        }
+        &:hover, &:focus {
+            background-color:$bg-green;
+            a {
+                color:$text-white;
+            }
+        } 
+    }
 }
 
 #header .link {

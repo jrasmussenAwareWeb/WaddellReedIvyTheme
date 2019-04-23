@@ -17,6 +17,23 @@
   text-decoration: none;
 }
 
+.link.btn-default {
+  background-color: #FFFFFF;
+}
+
+.link.btn-default a {
+  color: #009639;
+  border-bottom: 0;
+}
+
+.link.btn-default:hover, .link.btn-default:focus {
+  background-color: #009639;
+}
+
+.link.btn-default:hover a, .link.btn-default:focus a {
+  color: #fff;
+}
+
 #header .link {
   padding: 5px 0;
   text-align: center;

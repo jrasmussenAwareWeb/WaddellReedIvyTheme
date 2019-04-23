@@ -19,6 +19,17 @@
   border-top-width: 2px;
 }
 
+.divider.search {
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .divider.search {
+    padding-left: 15px;
+    padding-right: 0;
+  }
+}
+
 .white-space-divider hr {
   border: none;
 }

@@ -7,9 +7,11 @@ label {
 input, button {
     display: inline-block;
     box-sizing: border-box;
-    background: $bg-basic-color !important;
+    //background: $bg-basic-color !important;
+    background: $bg-basic-color;
     border: 1px solid $border-gray;
-    border-radius: 0 !important;
+    //border-radius: 0 !important;
+    border-radius: 0;
     color: $text-basic;
     font-weight: normal;
     padding: 8px 2%;
@@ -24,7 +26,8 @@ input[type="submit"], input[type="reset"], input[type="button"], button {
     border: 1px solid $border-basic-color;
     padding: 5px 20px;
     &:hover {
-        background: $bg-light-gray !important;
+        //background: $bg-light-gray !important;
+        background: $bg-light-gray;
     }
 }
 input::-moz-focus-inner, button::-moz-focus-inner {

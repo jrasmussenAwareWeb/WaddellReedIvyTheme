@@ -38,6 +38,20 @@
                 }
             }
         }
+        .navigation-required {
+            &:after { 
+                font-size:inherit;
+                @include fa-icon();
+                content: $fa-var-lock; 
+                margin-left:5px; 
+                color:$text-green; 
+            }
+        }
+        &:hover, &:focus {
+            .field-title a, .navigation-required:after {
+                color:$text-basic;
+            }
+        }
         .wrap-labels {
             line-height:1;
             margin-bottom:15px;
@@ -118,11 +132,16 @@
                 -moz-box-shadow:  0px 2px 5.76px 0.24px rgba(0, 0, 0, 0.4); 
                 box-shadow:  0px 2px 5.76px 0.24px rgba(0, 0, 0, 0.4); 
                 @include respond-to(tablet) {
-                    min-height:360px;
-                    max-height:360px; 
+                    min-height:320px; //was 360px
+                    max-height:320px; 
                 }
             }
             .wrap-text {padding:5px 15px 20px}
+            .field-title {
+                a {
+                    font-size:22px; //this is supposed to be 24 but 22 fits better
+                }
+            }
             .field-excerpt {display:none}
         }
         &.genlink {

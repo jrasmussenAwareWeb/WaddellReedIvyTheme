@@ -1,6 +1,14 @@
 &.content-highlight {
     padding:0;
     //margin-bottom:$extralarge-margin;
+
+    
+    @include respond-to(mobile-large) {
+        .field-title {
+            line-height:1;
+        }
+    }
+    
     @include respond-to(mobile-large) {
         [class*="col-"]:first-of-type, [class*="col-"]:last-of-type {
             padding:0;
@@ -59,6 +67,9 @@
             -moz-box-shadow: 0px 2px 5.76px 0.24px rgba(0, 0, 0, 0.4); 
             box-shadow: 0px 2px 5.76px 0.24px rgba(0, 0, 0, 0.4); 
             border-right:1px solid rgba(0, 0, 0, 0.1); 
+            @include respond-to(mobile-large) {
+                margin:$large-margin 0;
+            }
         }
 
         [class*="col-"] {

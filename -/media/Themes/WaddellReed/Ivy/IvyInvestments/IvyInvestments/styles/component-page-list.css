@@ -37,11 +37,13 @@
   border-bottom: 0;
   width: 33%;
   float: left;
-  /*
-        we can revert this now if we need to min-height:450px;
-        max-height:450px;
-        overflow:hidden;
-        we have to move this for pages that will not have an image*/
+  /*.field-excerpt {
+            @include respond-to(desktop) {
+                min-height:160px;
+                max-height:160px;
+                overflow:hidden;
+            }
+        }*/
 }
 
 @media only screen and (min-width: 992px) {
@@ -51,10 +53,23 @@
   }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (min-width: 1200px) {
+  .page-list.general-landing .item {
+    min-height: 415px;
+    max-height: 415px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
   .page-list.general-landing .item {
     width: 100%;
     float: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .page-list.general-landing .item {
+    width: 50%;
   }
 }
 
@@ -67,19 +82,17 @@
   font-weight: normal;
   font-family: "CopernicusBook", arial, helvetica, sans-serif;
   color: #009639;
-  line-height: 1.4;
-  margin-top: 8px;
 }
 
 .page-list.general-landing .item .field-title a {
   color: inherit;
   border-bottom: 0;
-  font-size: 22px;
+  font-size: 24px;
 }
 
 @media only screen and (max-width: 767px) {
   .page-list.general-landing .item .field-title a {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
@@ -96,27 +109,26 @@
   color: #009639;
 }
 
-@media only screen and (min-width: 992px) {
-  .page-list.general-landing .item .field-excerpt {
-    min-height: 140px;
-    max-height: 140px;
-    overflow: hidden;
-  }
-}
-
 .page-list.general-landing .item:hover .field-title, .page-list.general-landing .item:hover .navigation-required:after, .page-list.general-landing .item:focus .field-title, .page-list.general-landing .item:focus .navigation-required:after {
   color: #000000;
 }
 
-.page-list.general-landing.perspectives .item {
-  min-height: 450px;
-  max-height: 450px;
-  overflow: hidden;
+.page-list.general-landing.bridge-gap .item {
+  min-height: 430px;
+  max-height: 430px;
+}
+
+@media only screen and (min-width: 768px) {
+  .page-list.general-landing.perspectives .item {
+    min-height: 450px;
+    max-height: 450px;
+    overflow: hidden;
+  }
 }
 
 .page-list.general-landing.perspectives .item .wrap-labels {
   line-height: 1;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .page-list.general-landing.perspectives .item .wrap-labels small {
@@ -132,20 +144,36 @@
   margin-right: 15px;
 }
 
+@media only screen and (max-width: 767px) {
+  .page-list.general-landing.perspectives .item:first-of-type {
+    border-bottom: 1px solid #b7b7b7;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .page-list.general-landing.perspectives .item:first-of-type {
+    line-height: 0.85;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .page-list.general-landing.perspectives .item:first-of-type {
-    line-height: 1;
-    min-height: 330px;
-    max-height: 330px;
+    min-height: 100%;
+    max-height: 100%;
     overflow: hidden;
     background-color: #d9d9d6;
   }
   .page-list.general-landing.perspectives .item:first-of-type .field-image, .page-list.general-landing.perspectives .item:first-of-type .field-listimage, .page-list.general-landing.perspectives .item:first-of-type .wrap-content {
     float: left;
-    line-height: 1;
   }
   .page-list.general-landing.perspectives .item:first-of-type .field-image, .page-list.general-landing.perspectives .item:first-of-type .field-listimage {
     width: 66.3%;
+    line-height: 0.85;
+  }
+  .page-list.general-landing.perspectives .item:first-of-type .field-image img, .page-list.general-landing.perspectives .item:first-of-type .field-listimage img {
+    line-height: 0.85;
   }
   .page-list.general-landing.perspectives .item:first-of-type .wrap-content {
     width: 32.7%;
@@ -207,21 +235,36 @@
   color: #009639;
 }
 
-@media only screen and (max-width: 767px) {
-  .page-list.general-landing.replays {
-    padding-left: 15px;
-    padding-right: 30px;
+@media only screen and (min-width: 1200px) {
+  .page-list.general-landing.replays .items {
+    margin-left: -15px;
+    margin-right: -15px;
   }
 }
 
 .page-list.general-landing.replays .item {
-  width: 33.3%;
-  float: left;
   padding: 0;
-  margin-bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+}
+
+@media only screen and (min-width: 768px) {
+  .page-list.general-landing.replays .item {
+    min-height: 300px;
+    max-height: 300px;
+    overflow: hidden;
+    width: 50%;
+    float: left;
+    padding: 0;
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .page-list.general-landing.replays .item {
+    width: 33.3%;
+  }
 }
 
 .page-list.general-landing.replays .item .wrap-content {
@@ -229,27 +272,44 @@
   padding: 15px;
   margin: 0 15px 30px 15px;
   float: left;
-}
-
-@media only screen and (min-width: 768px) {
-  .page-list.general-landing.replays .item .wrap-content {
-    min-height: 285px;
-    max-height: 285px;
-  }
+  box-shadow: 0px 2px 5.76px 0.24px rgba(0, 0, 0, 0.4);
 }
 
 .page-list.general-landing.replays .item .wrap-content .event-date {
   font-family: "ProximaBold", arial, helvetica, sans-serif;
   text-transform: uppercase;
   font-size: 14px;
-  margin-bottom: 20px;
-}
-
-.page-list.general-landing.replays .item .wrap-content .field-excerpt {
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 @media only screen and (min-width: 768px) {
+  .page-list.general-landing.replays .item .wrap-content .field-title a {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .page-list.general-landing.replays .item .wrap-content .field-title a {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .page-list.general-landing.replays .item .wrap-content .field-excerpt {
+    min-height: 115px;
+    max-height: 115px;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .page-list.general-landing.replays .item .wrap-content .field-excerpt {
+    min-height: 140px;
+    max-height: 140px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
   .page-list.general-landing.replays .item .wrap-content .field-excerpt {
     min-height: 110px;
     max-height: 110px;

@@ -44,12 +44,9 @@
   background: #92be43;
 }
 
-.plain-html .button-warning, .plain-html .btn-warning, .plain-html .warning {
+.plain-html .button-danger, .plain-html .btn-danger, .plain-html .danger {
   font-size: 12px;
   font-size: 1.2rem;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #000000;
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
@@ -57,14 +54,15 @@
   padding: 10px 15px;
   text-align: center;
   text-decoration: none;
-  background: #6d3332;
-  color: #fff;
-  font-weight: bold;
+  background: #FFFFFF;
+  color: #6d3332;
+  border: 2px solid #6d3332;
+  text-transform: uppercase;
 }
 
-.plain-html .button-warning:hover, .plain-html .button-warning:focus, .plain-html .btn-warning:hover, .plain-html .btn-warning:focus, .plain-html .warning:hover, .plain-html .warning:focus {
+.plain-html .button-danger:hover, .plain-html .button-danger:focus, .plain-html .btn-danger:hover, .plain-html .btn-danger:focus, .plain-html .danger:hover, .plain-html .danger:focus {
   color: #fff;
-  background: #c34e30;
+  background: #6d3332;
 }
 
 .plain-html .btn-block {
@@ -74,6 +72,7 @@
 .plain-html .btn-sm {
   margin: 3px 0;
   padding: 5px 10px;
+  font-size: 14px;
 }
 
 .plain-html table {

@@ -3,12 +3,11 @@
 @import "../../base/fontawesome/font-awesome-mix-var";
 
 &.replays {
-    &.add-gutters {
+    &.col-12 {
         padding-left:15px;
         padding-right:15px;
-        @include respond-to(mobile-large) {
-            padding-left:30px;
-            padding-right:30px;
+        @include respond-to(large) {
+            padding:0;
         }
     }
     h1, h2, h3, h4, h5, h6 {

@@ -143,12 +143,9 @@
   background: #92be43;
 }
 
-.link-button .button-warning, .link-button .btn-warning, .link-button .warning {
+.link-button .button-danger, .link-button .btn-danger, .link-button .danger {
   font-size: 12px;
   font-size: 1.2rem;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #000000;
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
@@ -156,14 +153,15 @@
   padding: 10px 15px;
   text-align: center;
   text-decoration: none;
-  background: #6d3332;
-  color: #fff;
-  font-weight: bold;
+  background: #FFFFFF;
+  color: #6d3332;
+  border: 2px solid #6d3332;
+  text-transform: uppercase;
 }
 
-.link-button .button-warning:hover, .link-button .button-warning:focus, .link-button .btn-warning:hover, .link-button .btn-warning:focus, .link-button .warning:hover, .link-button .warning:focus {
+.link-button .button-danger:hover, .link-button .button-danger:focus, .link-button .btn-danger:hover, .link-button .btn-danger:focus, .link-button .danger:hover, .link-button .danger:focus {
   color: #fff;
-  background: #c34e30;
+  background: #6d3332;
 }
 
 .link-button .btn-block {
@@ -173,6 +171,7 @@
 .link-button .btn-sm {
   margin: 3px 0;
   padding: 5px 10px;
+  font-size: 14px;
 }
 
 .promoted-box {

@@ -95,12 +95,9 @@
   background: #92be43;
 }
 
-.link-list .button-warning, .link-list .btn-warning, .link-list .warning {
+.link-list .button-danger, .link-list .btn-danger, .link-list .danger {
   font-size: 12px;
   font-size: 1.2rem;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #000000;
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
@@ -108,14 +105,15 @@
   padding: 10px 15px;
   text-align: center;
   text-decoration: none;
-  background: #6d3332;
-  color: #fff;
-  font-weight: bold;
+  background: #FFFFFF;
+  color: #6d3332;
+  border: 2px solid #6d3332;
+  text-transform: uppercase;
 }
 
-.link-list .button-warning:hover, .link-list .button-warning:focus, .link-list .btn-warning:hover, .link-list .btn-warning:focus, .link-list .warning:hover, .link-list .warning:focus {
+.link-list .button-danger:hover, .link-list .button-danger:focus, .link-list .btn-danger:hover, .link-list .btn-danger:focus, .link-list .danger:hover, .link-list .danger:focus {
   color: #fff;
-  background: #c34e30;
+  background: #6d3332;
 }
 
 .link-list .btn-block {
@@ -125,6 +123,7 @@
 .link-list .btn-sm {
   margin: 3px 0;
   padding: 5px 10px;
+  font-size: 14px;
 }
 
 .link-list.footer h1, .link-list.footer h2, .link-list.footer h3, .link-list.footer h4, .link-list.footer h5, .link-list.footer h6 {

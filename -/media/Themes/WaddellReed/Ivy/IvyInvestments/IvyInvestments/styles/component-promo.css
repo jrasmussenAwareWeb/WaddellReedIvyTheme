@@ -68,44 +68,7 @@ strong {
 }
 
 .promo.cta .field-promotext3 {
-  position: absolute;
-  top: 0;
   /* Custom FA Icons: https://codepen.io/Onomicon/pen/iDfld */
-}
-
-@media only screen and (max-width: 767px) {
-  .promo.cta .field-promotext3 {
-    left: 38%;
-    right: 38%;
-  }
-}
-
-@media only screen and (min-width: 576px) {
-  .promo.cta .field-promotext3 {
-    left: 41%;
-    right: 41%;
-  }
-}
-
-@media only screen and (max-width: 380px) {
-  .promo.cta .field-promotext3 {
-    left: 33%;
-    right: 33%;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .promo.cta .field-promotext3 {
-    left: 29%;
-    right: 29%;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .promo.cta .field-promotext3 {
-    left: 35%;
-    right: 35%;
-  }
 }
 
 .promo.cta .field-promotext3 .flex {
@@ -138,6 +101,9 @@ strong {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .promo.cta .field-promotext3 .custom-icon {
@@ -152,6 +118,11 @@ strong {
   background-size: cover;
   background: #FFFFFF;
   border: 3px solid #009639;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   color: #009639;
 }
 
@@ -266,9 +237,23 @@ strong {
 
 @media only screen and (min-width: 768px) {
   .promo.cta.col-12.col-lg-8.offset-lg-2 .field-promotext3 {
+    position: absolute;
     top: 40%;
     left: 30px;
     right: 0;
+  }
+  .promo.cta.col-12.col-lg-8.offset-lg-2 .field-promotext3 .icon-wrapper {
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+    -webkit-box-align: left;
+    -ms-flex-align: left;
+    align-items: left;
+    position: relative;
+  }
+  .promo.cta.col-12.col-lg-8.offset-lg-2 .field-promotext3 .custom-icon {
+    left: 40px;
+    top: 0;
   }
   .promo.cta.col-12.col-lg-8.offset-lg-2 .promo-text {
     padding: 30px 0;
@@ -319,8 +304,14 @@ strong {
   }
 }
 
-.promo.resource {
+.promo.resource[class*="col-"] {
   padding: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .promo.resource {
+    margin-bottom: 30px;
+  }
 }
 
 .promo.resource .component-content {

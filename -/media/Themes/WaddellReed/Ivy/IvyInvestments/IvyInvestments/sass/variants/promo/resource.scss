@@ -3,7 +3,12 @@
 @import "../../base/fontawesome/font-awesome-mix-var";
 
 &.resource {
-    padding:0;
+    &[class*="col-"] {
+        padding:0;
+    }
+    @include respond-to(mobile-large) {
+        margin-bottom:$large-margin;
+    }
     .component-content {
         border:0;
         //Wrapper

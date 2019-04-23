@@ -3,14 +3,6 @@
 @import "../../base/fontawesome/font-awesome-mix-var";
 
 &.upcoming-live {
-    &.add-gutters {
-        padding-left:15px;
-        padding-right:15px;
-        @include respond-to(mobile-large) {
-            padding-left:30px;
-            padding-right:30px;
-        }
-    }
     h1, h2, h3, h4, h5, h6 {
         @include proximaboldcondensed();
         text-transform:uppercase;

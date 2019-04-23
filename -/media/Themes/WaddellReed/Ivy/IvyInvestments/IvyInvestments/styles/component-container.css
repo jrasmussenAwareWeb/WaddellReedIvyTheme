@@ -4,6 +4,12 @@
   width: 100%;
 }
 
+@media only screen and (max-width: 767px) {
+  .home-feature .field-title {
+    line-height: 1;
+  }
+}
+
 .home-feature:after {
   display: table;
   clear: both;
@@ -36,18 +42,8 @@
   padding: 2px 0;
 }
 
-.home-feature .login table td.sxa-validation {
-  padding: 0;
-}
-
-.home-feature .login table td.sxa-validation .field-validation-error {
-  color: #6d3332;
-  font-size: 14px;
-}
-
-.home-feature .login table td.sxa-remember-me {
-  font-size: 16px;
-  margin-bottom: 5px;
+.home-feature .login .request-password a {
+  font-size: 0.85em;
 }
 
 .home-feature .login input[type="text"], .home-feature .login input[type="password"] {
@@ -92,6 +88,33 @@
   margin: 0 0 20px;
 }
 
+.home-feature .rich-text a {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin: 5px 0;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  cursor: pointer;
+  border: 2px solid #009639;
+  background: #FFFFFF;
+  color: #009639;
+  width: 100%;
+}
+
+.home-feature .rich-text a:hover {
+  color: #fff;
+  background: #009639;
+  border: 2px solid #009639;
+}
+
+.home-feature .rich-text a:hover, .home-feature .rich-text a:focus {
+  text-decoration: none !important;
+}
+
 .home-feature .rich-text.welcome-user {
   padding: 15px;
 }
@@ -105,6 +128,12 @@
 
 .home-feature .rich-text.welcome-user .btn {
   margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .home-feature .col-xl-9 > .row {
+    margin-left: -15px !important;
+  }
 }
 
 .home-feature .col-xl-9 .content-video {
@@ -140,14 +169,24 @@
     right: -15px;
   }
   .home-feature .col-xl-3.d-xl-block {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
+    display: block;
   }
 }
 
 .home-feature .col-xl-3.d-xl-block {
   max-height: 0;
+}
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+  .home-feature .col-xl-auto {
+    /* IE10+ specific styles go here */
+  }
+  .home-feature .col-xl-auto:first-of-type {
+    width: 84%;
+  }
+  .home-feature .col-xl-auto:last-of-type {
+    width: 25%;
+  }
 }
 
 .home-feature .col-xl-auto:first-of-type {
@@ -175,6 +214,12 @@
 .home-feature .col-xl-auto:first-of-type .search-results .search-result-list img {
   width: 100%;
   height: auto;
+}
+
+@media only screen and (min-width: 1200px) {
+  .home-feature .col-xl-auto:first-of-type .search-results .search-result-list img {
+    max-width: 975px;
+  }
 }
 
 .home-feature .col-xl-auto:first-of-type .search-results .search-result-list .headline {
@@ -208,7 +253,6 @@
   font-family: "ProximaBoldCondensed", arial, helvetica, sans-serif;
   font-size: 40px;
   text-transform: uppercase;
-  line-height: 1;
 }
 
 .home-feature .col-xl-auto:first-of-type .search-results .search-result-list .headline .field-excerpt {
@@ -227,8 +271,18 @@
   padding: 0;
 }
 
+.home-feature .col-xl-auto:first-of-type .promo > .component-content .field-date p, .home-feature .col-xl-auto:first-of-type .promo > .component-content .field-title p, .home-feature .col-xl-auto:first-of-type .promo > .component-content .field-excerpt p {
+  margin: 0;
+}
+
 .home-feature .col-xl-auto:first-of-type .promo > .component-content .link-wrapper {
   text-decoration: none;
+}
+
+@media only screen and (min-width: 1200px) {
+  .home-feature .col-xl-auto:first-of-type .promo > .component-content img {
+    max-width: 975px;
+  }
 }
 
 .home-feature .col-xl-auto:first-of-type .promo > .component-content .headline {
@@ -303,33 +357,6 @@
   margin-right: 15px;
 }
 
-.overlay-login .overlay-title {
-  text-align: left;
-  padding: 15px 30px;
-  margin: 0;
-  position: relative;
-  background: transparent;
-}
-
-.overlay-login .overlay-title > .component-content {
-  border-bottom: 1px solid #b7b7b7;
-}
-
-.overlay-login .overlay-title h2, .overlay-login .overlay-title h3, .overlay-login .overlay-title h4, .overlay-login .overlay-title h5, .overlay-login .overlay-title h6 {
-  color: #000000;
-  text-transform: uppercase;
-  text-align: left;
-  font-weight: normal;
-  margin: 0;
-  padding-bottom: 10px;
-}
-
-@media only screen and (max-width: 991px) {
-  .overlay-login .overlay-title h2, .overlay-login .overlay-title h3, .overlay-login .overlay-title h4, .overlay-login .overlay-title h5, .overlay-login .overlay-title h6 {
-    font-size: 16px;
-  }
-}
-
 .overlay-login .rich-text[class*="col-"] {
   padding-left: 30px;
   padding-right: 15px;
@@ -341,25 +368,25 @@
   text-transform: uppercase;
 }
 
-.overlay-login ol, .overlay-login ul {
+.overlay-login .login ol, .overlay-login .login ul {
   padding-top: 0;
   margin-left: 0;
 }
 
-.overlay-login ol li, .overlay-login ul li {
+.overlay-login .login ol li, .overlay-login .login ul li {
   margin-left: 0;
 }
 
-.overlay-login h6 {
+.overlay-login .login h1, .overlay-login .login h2, .overlay-login .login h3, .overlay-login .login h4, .overlay-login .login h5, .overlay-login .login h6 {
   line-height: 1;
-  text-transform: uppercase;
+  border-bottom: 0 !important;
 }
 
-.overlay-login .content p, .overlay-login .rich-text p, .overlay-login .login p {
+.overlay-login .login .content p, .overlay-login .login .rich-text p, .overlay-login .login .login p {
   margin: 10px 0;
 }
 
-.overlay-login input[type="submit"] {
+.overlay-login .login input[type="submit"] {
   width: 100%;
 }
 
@@ -453,7 +480,6 @@
 .container {
   padding: 0;
   /*bootstrap 4 max-width on min-width query fixes*/
-  /**/
 }
 
 .container .component-content:after {

@@ -8,35 +8,11 @@
     overflow:visible;
 
     >.component-content {
-        border-width:0;
+        border-width:0; 
     }
 
     //Icon
     .field-promotext3 {
-        position:absolute;
-        top:0;
-
-        //need to update these to include the preceding column size i.e. col-md-4, col-md-6, col-lg-8
-        @include respond-to(mobile-large) {
-            left:38%;
-            right:38%;
-        }
-        @include respond-to(mobile-horizontal) {
-            left:41%;
-            right:41%;
-        }
-        @include respond-to(mobile) {
-            left:33%;
-            right:33%;
-        }
-        @include respond-to(tablet) {
-            left:29%;
-            right:29%;
-        }
-        @include respond-to(desktop) {
-            left:35%;
-            right:35%;
-        }
         /* Custom FA Icons: https://codepen.io/Onomicon/pen/iDfld */
         @mixin flex() {
         display: flex;
@@ -49,7 +25,10 @@
         @include flex();
         }
         .icon-wrapper {
-            @include flex();
+    @include flex();
+    justify-content: center;
+    align-items: center;
+    position: relative;
         }
         .custom-icon {
         display: flex;
@@ -61,6 +40,9 @@
         background-size: cover;
         background:$bg-basic-color;
         border: 3px solid $text-green;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
         color:$text-green;
             &::before {
                 width: 100%;
@@ -138,9 +120,19 @@
     @include respond-to(tablet) {
         &.col-12.col-lg-8.offset-lg-2 {
             .field-promotext3 {
+                position:absolute;
                 top:40%;
                 left:30px;
                 right:0;
+                .icon-wrapper {
+                    justify-content: left;
+                    align-items: left;
+                    position: relative;
+                }
+                .custom-icon {
+                    left:40px;
+                    top: 0;
+                }
             }
             .promo-text {
                 padding:30px 0;

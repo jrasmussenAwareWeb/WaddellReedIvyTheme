@@ -1,7 +1,10 @@
 &.page-header {
-    position:relative;
-    top:-5px;
-    @include respond-to (mobile-large) {
-        top:20px;
+    
+    &.social {
+        position:relative;
+        top:-5px;
+        @include respond-to (mobile-large) {
+            top:20px;
+        }
     }
 }

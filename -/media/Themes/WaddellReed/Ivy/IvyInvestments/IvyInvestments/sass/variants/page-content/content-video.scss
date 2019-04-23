@@ -1,11 +1,15 @@
 &.content-video {
     &.live-landing {
-        padding-right:0;
-        @include respond-to(mobile-large) {
-            padding:0;
+        //padding-right:0;
+        padding:0;
+        @include respond-to(tablet) {
+            padding-right:0;
         }
     }
     &.live {
         padding-left:0;
+        @include respond-to(mobile-large) {
+            padding:0;
+        }
     }
 }

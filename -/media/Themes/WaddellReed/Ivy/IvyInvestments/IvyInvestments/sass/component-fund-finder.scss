@@ -4,7 +4,6 @@
 @import "base/links/*";
 
 .fund-finder {
-    
     @include respond-to(large) {
         padding:8px 15px 5px;
 
@@ -14,7 +13,6 @@
                 padding-left:15px;
             }
         }
-
         h4 {
             padding-top:3px;
             text-transform:uppercase; 
@@ -26,7 +24,6 @@
     }
 
     &.toggle {
-        //padding:0;
         details[open] summary:before {
             content: none;
         }
