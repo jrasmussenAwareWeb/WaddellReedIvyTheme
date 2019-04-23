@@ -1,5 +1,7 @@
+@charset "UTF-8";
 /* breakpoints */
 .search-results {
+  /* breakpoints */
   /* breakpoints */
 }
 
@@ -11,9 +13,9 @@
 .search-results input, .search-results button {
   display: inline-block;
   box-sizing: border-box;
-  background: #FFFFFF !important;
+  background: #FFFFFF;
   border: 1px solid #c2c2c2;
-  border-radius: 0 !important;
+  border-radius: 0;
   color: #000000;
   font-weight: normal;
   padding: 8px 2%;
@@ -32,7 +34,7 @@
 }
 
 .search-results input[type="submit"]:hover, .search-results input[type="reset"]:hover, .search-results input[type="button"]:hover, .search-results button:hover {
-  background: #d9d9d6 !important;
+  background: #d9d9d6;
 }
 
 .search-results input::-moz-focus-inner, .search-results button::-moz-focus-inner {
@@ -267,4 +269,43 @@
 
 .search-results.perspectives .item:first-of-type .field-excerpt {
   display: none;
+}
+
+.search-results.search {
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .search-results.search {
+    padding-left: 15px;
+    padding-right: 0;
+  }
+}
+
+.search-results.search li {
+  margin-bottom: 20px;
+}
+
+.search-results.search li .field-title a {
+  font-size: 24px;
+  line-height: 1;
+  color: #009639;
+  text-decoration: none;
+}
+
+.search-results.search li .navigation-required:after {
+  font-size: inherit;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  margin-left: 5px;
+  color: #009639;
+}
+
+.search-results.search li:hover .field-title a, .search-results.search li:hover .navigation-required:after, .search-results.search li:focus .field-title a, .search-results.search li:focus .navigation-required:after {
+  color: #000000;
 }

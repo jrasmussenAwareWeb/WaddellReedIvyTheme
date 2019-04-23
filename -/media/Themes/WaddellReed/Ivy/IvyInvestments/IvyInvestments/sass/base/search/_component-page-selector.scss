@@ -1,4 +1,6 @@
 @import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+@import "../../base/fontawesome/font-awesome-mix-var";
 .page-selector {
     text-align: center;
     padding: 10px 0 0 0;
@@ -6,16 +8,100 @@
         li {
             display: inline-block;
             vertical-align: middle;
-            margin: 0px 8px;
+            //margin: 0px 8px;
+            height:36px;
+            a {
+                text-decoration: none;
+                //font-weight: bold;
+                //font-size: 1em;
+                display: inline-block;
+                margin: 0 4px;
+                padding: 4px 8px;
+                border:1px solid $list-pagination-active-border;
+                font-size:$font-medium;
+                @include proximabold();
+                color:$text-green;
+                width:36px;
+                height:36px;
+                &:not(.inactive) {
+                    &:before {
+                        color:$text-green;
+                    }
+                    &:hover, &:focus {
+                        color: $search-pagination-hover-color;
+                        background: $search-pagination-hover-bg;
+                        &:before {
+                            color: $search-pagination-hover-color;
+                        }
+                    }
+                }
+                &.active {
+                    background: $search-pagination-hover-bg;
+                    color: $search-pagination-hover-color;
+                }
+            }
+
             &.inactive {
                 a {
                     color: $text-disabled;
                     cursor: default;
+                    &:before {
+                        color:$text-disabled;
+                    }
+                    &:hover, &:focus {
+                        background: $search-pagination-bg;
+                        &:before {
+                            color:$text-disabled;
+                        }
+                    }
+                }
+            }
+            &.page-selector-item-first, &.page-selector-item-previous, &.page-selector-item-next, &.page-selector-item-last {
+                a {
+                    color:transparent !important;
+                    line-height:0;
+                    &:before {
+                        display:block !important;
+                        line-height:1;
+                        position:relative;
+                        top:5px;
+                        font-size:inherit;
+                        @include fa-icon();
+                        font-weight:bold;
+                    }
+                }
+            }
+            &.page-selector-item-first {
+                a {
+                    &:before {
+                        content: $fa-var-angle-double-left;
+                    }
+                }
+            }
+             &.page-selector-item-previous {
+                a {
+                    &:before {
+                        content: $fa-var-angle-left;
+                    }
+                }
+            }
+             &.page-selector-item-next {
+                a {
+                    &:before {
+                        content: $fa-var-angle-right;
+                    }
+                }
+            }
+             &.page-selector-item-last {
+                a {
+                    &:before {
+                        content: $fa-var-angle-double-right;
+                    }
                 }
             }
         }
     }
-    a {
+    /*a {
         text-decoration: none;
         font-weight: bold;
         font-size: 1em;
@@ -43,5 +129,5 @@
         &.inactive {
             color: $text-disabled;
         }
-    }
+    }*/
 }

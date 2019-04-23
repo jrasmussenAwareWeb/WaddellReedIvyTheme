@@ -1,7 +1,23 @@
 .page-size {
     @import "../reset/inputs";
+    padding-right:0;
+    @media(max-width:630px) {
+        position:absolute;
+        top:25px;
+        right:0;
+    }
+    @include respond-to(mobile) {
+        position:absolute;
+        top:0;
+        right:0;
+    }
     label {
         margin-right: 5px;
+        @include respond-to(mobile-large) {
+            color:transparent;
+            width:0;
+            height:0;
+        }
     }
     select {
         max-width: 100px;

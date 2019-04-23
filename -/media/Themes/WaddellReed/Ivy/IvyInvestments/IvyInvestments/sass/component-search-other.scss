@@ -1,5 +1,6 @@
 @import "abstracts/vars";
 @import "abstracts/mixins";
+@import "base/fontawesome/font-awesome-mix-var";
 .facet-component {
     box-sizing: border-box;
     background: transparent;
@@ -10,6 +11,7 @@
     }
     .facet-heading {
         @include border-basic(bottom, $search-title-border);
+        border-bottom-width:2px; //Ivy
         padding: 0 0 5px 0;
         margin: 0 0 5px 0;
         position: relative;
@@ -18,6 +20,7 @@
             vertical-align: middle;
             color: $search-title-color;
             padding-right: 25px;
+                text-transform:uppercase; //Ivy
         }
         .clear-filter {
             display: inline-block;
@@ -29,24 +32,58 @@
             cursor: pointer;
             position: absolute;
             color: $search-filter;
-            right: 3px;
-            top: 50%;
+            //right: 3px;
+            //top: 50%;
+            top:20%;
+            right:0;
             transform: translateY(-50%);
-            background: $search-btn-bg;
-            &:hover {
-                background: $search-btn-active-bg;
-                border-color: $search-btn-active-border;
-                text-decoration: none;
-                color: $search-filter;
+            //background: $search-btn-bg;
+            color:transparent;
+            width:0;
+            height:0;
+            &:after {
+                color:$search-filter;
+                @include fa-icon();
+                font-weight:bold;
+                font-size:1.6em;
+                content: $fa-var-times;
+                position:absolute;
+                right:0;
             }
-            &.has-active-facet {
-                background: $search-btn-active-bg;
-                color: $search-filter;
-                &:hover {
-                    background: $search-btn-active-bg;
-                    color: $search-filter;
+
+            &:hover {
+                //background: $search-btn-active-bg;
+                //border-color: $search-btn-active-border;
+                //color: $search-filter;
+                text-decoration: none;
+                color:transparent;
+                &:after {
+                    color:$text-green;
                 }
             }
+            &.has-active-facet {
+                //background: $search-btn-active-bg;
+                //color: $search-filter;
+                color:transparent;
+                &:after {
+                    color:$text-green;
+                }
+                &:hover {
+                    //background: $search-btn-active-bg;
+                    //color: $search-filter;
+                    color:transparent;
+                    &:after {
+                        color:$text-green;
+                    }
+                }
+            }
+        }
+    }
+    .bottom-remove-filter {
+        button {
+            @include btn-default();
+            margin-top:$small-margin;
+            font-size:$font-small;
         }
     }
 }

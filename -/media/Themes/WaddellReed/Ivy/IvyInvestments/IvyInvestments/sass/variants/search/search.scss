@@ -1,0 +1,45 @@
+@import "../../abstracts/vars";
+@import "../../abstracts/mixins";
+@import "../../base/fontawesome/font-awesome-mix-var";
+.search-box.search {
+    padding:0;
+    @include respond-to(tablet) {
+        padding-left:15px;
+        padding-right:0;
+    }
+    .component-content {
+        input[type="text"] {
+            box-shadow:none;
+            border:1px solid $border-dark-gray;
+        }
+        button, input[type="button"], input[type="submit"] {
+            text-indent:-9999px;
+            line-height:0;
+            background:transparent;
+            color:transparent;
+            width:0;
+            height:0;
+            padding:0;
+            border:0;
+            &:after {
+                text-indent:0;
+                line-height:initial;
+                display:block;
+                background-color:$bg-green;
+                border:1px solid $bg-green;
+                color: $text-white;
+                width:34px;
+                height:34px;
+                padding:8px 0;
+                @include fa-icon();
+                content: $fa-var-search;
+                position:absolute;
+                top:0;
+                right:0;
+            }
+        }
+        >.twitter-typeahead {
+            margin:0;
+        }
+    }
+}

@@ -1,4 +1,5 @@
 .facet-single-selection-list {
+    padding-left:0;
     .facet-dropdown {
         margin: 10px 0;
         select {
@@ -15,7 +16,8 @@
         &.active-facet {
             .facet-count {}
             label, .facet-count.highlighted, span {
-                color: $text-blue;
+                //color: $text-blue;
+                color:$text-green;
             }
         }
     }

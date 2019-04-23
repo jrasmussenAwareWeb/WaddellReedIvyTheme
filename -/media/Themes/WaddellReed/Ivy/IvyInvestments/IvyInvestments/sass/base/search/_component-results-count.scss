@@ -1,4 +1,7 @@
 .search-results-count {
+    @include respond-to(mobile-large) {
+        padding-left:0;
+    }
     .progress {
         display: none;
     }

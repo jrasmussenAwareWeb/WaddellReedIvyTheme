@@ -1,0 +1,7 @@
+.divider.search {
+    padding:0;
+    @include respond-to(tablet) {
+        padding-left:15px;
+        padding-right:0;
+    }
+}

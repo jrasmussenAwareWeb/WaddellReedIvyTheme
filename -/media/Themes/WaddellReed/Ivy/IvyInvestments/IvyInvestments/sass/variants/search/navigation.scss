@@ -7,16 +7,13 @@
     right:15px;
 
     @include respond-to(desktop) {
-        //Added NW
         &:hover{
             color: $text-white;
             background: rgba(0, 0, 0, .6);
         }
-        //Added NW
         &:focus{
             background: rgba(0, 0, 0, 1);
         }
-        //Added NW
         .component-content > .twitter-typeahead {
             margin: 0;
         }
@@ -35,10 +32,24 @@
         font-size:13px;
         color: $text-white;
         @include respond-to(desktop) {
-            //Added NW
             padding: 8px 40px 10px 8px;
             &:focus{
                 background: $bg-black !important;
+            }
+        }
+        @include respond-to(tablet) {
+            &:focus {color:$text-white}
+            &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color: $text-white;
+            }
+            &::-moz-placeholder { /* Firefox 19+ */
+            color: $text-white;
+            }
+            &:-ms-input-placeholder { /* IE 10+ */
+            color: $text-white;
+            }
+            &:-moz-placeholder { /* Firefox 18- */
+            color: $text-white;
             }
         }
     }
@@ -50,8 +61,7 @@
         color:$text-white;
         cursor:pointer;
         @include respond-to(desktop) {
-            //Added NW
-            padding: 8px 8px;
+             padding: 8px 8px;
             position: absolute;
             right: 0;
         }
@@ -70,6 +80,8 @@
         padding:0 10px 0 0;
         margin:15px; //this creates random space
         width:95%;
+        z-index:99;
+        right:0;
         .search-box-input, input[type="text"] {
             color:$text-basic;
             font-size:12px;
@@ -78,5 +90,9 @@
             padding:5px 0;
             color:$text-green;
         }
+    }
+    @include respond-to(mobile) {
+        right:auto;
+        left:-7px;
     }
 }
