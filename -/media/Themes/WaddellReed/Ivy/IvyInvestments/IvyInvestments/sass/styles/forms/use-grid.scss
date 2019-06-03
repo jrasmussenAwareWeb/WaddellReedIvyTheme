@@ -1,6 +1,7 @@
 .use-grid {
     form {
         width:100%;
+        p {margin:0 0 $middle-margin;}
         input[type="checkbox"] {
             margin-right:10px;
             //how to target the blue border, i think 
@@ -8,7 +9,7 @@
                 border:1px solid $text-green;
             }
         }
-        >.row {
+        >.row { 
             .password {
                 input {
                     margin-bottom:15px;
@@ -65,6 +66,10 @@
         }
         select {
             width:100%;
+        }
+        .field-validation-error {
+            color:$text-red;
+            font-size:$font-small;
         }
     }
 }

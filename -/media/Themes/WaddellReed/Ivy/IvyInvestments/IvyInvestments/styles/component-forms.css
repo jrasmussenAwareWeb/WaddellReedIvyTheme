@@ -274,6 +274,10 @@
   width: 100%;
 }
 
+.use-grid form p {
+  margin: 0 0 20px;
+}
+
 .use-grid form input[type="checkbox"] {
   margin-right: 10px;
 }
@@ -336,4 +340,9 @@
 
 .use-grid form select {
   width: 100%;
+}
+
+.use-grid form .field-validation-error {
+  color: #6d3332;
+  font-size: 14px;
 }
