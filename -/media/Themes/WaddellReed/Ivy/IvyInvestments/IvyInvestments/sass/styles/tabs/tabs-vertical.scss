@@ -9,7 +9,7 @@
             display: block;
             width: 100%;
             //@include border-basic(top, $tab-heading-bg);
-           // @include border-basic(left, $tab-heading-bg, 2px);
+            //@include border-basic(left, $tab-heading-bg, 2px);
             //@include border-basic(right, $tab-container-border);
             //@include border-basic(bottom, $tab-heading-bg);
             border:0;
@@ -17,6 +17,8 @@
             >div {
                 .field-heading {
                     color:$text-green;
+                    text-transform:capitalize;
+                    font-size:$font-normal;
                 }
             }
             &.active {
@@ -46,6 +48,7 @@
             }*/
         }
     }
+
     .tabs-container {
         margin: 0;
         float: left;
@@ -53,5 +56,22 @@
         margin-left: -1px;
         border-top: none;
         @include border-basic(left, $tab-container-border, 1px);
+    }
+    .tabs-inner {
+        .tabs-container {
+            .content {
+                &.col-12 {
+                    padding:0 10px;
+                }
+                h1, h2, h3, h4, h5, h6 {
+                    &:first-of-type {
+                        margin-top:0;
+                    }
+                }
+            }
+        }
+    }
+    .tab {
+        padding:0 10px;
     }
 }

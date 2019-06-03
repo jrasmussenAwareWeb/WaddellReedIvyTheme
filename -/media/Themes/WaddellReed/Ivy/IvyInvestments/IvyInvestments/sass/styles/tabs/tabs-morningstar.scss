@@ -1,0 +1,36 @@
+.tabs.tabs-morningstar {
+    .tabs-heading {
+        li {
+            width:19.85%;
+            text-align:center;
+            .component.content {
+                margin:5px;
+                min-height:50px;
+                max-height:50px;
+                @include respond-to(tablet) {
+                    padding:5px;
+                }
+                @include respond-to(desktop) {
+                    padding:5px 25px;
+                }
+            }
+        }
+    }
+    #morningstar-top-divider {
+        width:100%;
+        display:block;
+        color:$border-dark-gray;
+        margin:$large-margin 0;
+        display:none;
+    }
+    iframe {
+        width:100%;
+        min-height:900px;
+
+        /*recommend adding to iframe stylesheet
+        .sbt-RootContainer {
+            margin-left:0;
+            width: 99%;
+        }*/
+    }
+}
