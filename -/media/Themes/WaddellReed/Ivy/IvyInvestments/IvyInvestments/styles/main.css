@@ -3132,12 +3132,24 @@ a:hover {
   color: #000000;
 }
 
+.copernicus {
+  font-family: "CopernicusBook", arial, helvetica, sans-serif;
+}
+
 strong, b {
   font-family: "ProximaBold", arial, helvetica, sans-serif;
 }
 
 small {
   font-size: 14px;
+}
+
+.green {
+  color: #009639;
+}
+
+.red {
+  color: #6d3332;
 }
 
 /*H1 – H6: line-height: 1.4
@@ -3264,6 +3276,11 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
 }
 
 @media only screen and (max-width: 767px) {
+  #header .image {
+    position: relative;
+    z-index: 1090;
+    max-width: 20%;
+  }
   #header .image img {
     max-width: 140px;
   }
@@ -3356,6 +3373,14 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
   margin-right: 5px;
 }
 
+table.filtered-columns td, table.filtered-columns th {
+  display: none;
+}
+
+table.filtered-columns td.static, table.filtered-columns td.show, table.filtered-columns th.static, table.filtered-columns th.show {
+  display: table-cell;
+}
+
 /*stacktable*/
 .plain-html {
   /*stacktable*/
@@ -3408,6 +3433,41 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
   color: #000000;
   margin-right: 5px;
   font-size: 0.75em;
+}
+
+iframe {
+  width: 100%;
+}
+
+@-webkit-keyframes spinner-border {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner-border {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.spinner-border {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: text-bottom;
+  border: 0.25em solid #009639;
+  border-right-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: spinner-border .75s linear infinite;
+  animation: spinner-border .75s linear infinite;
+}
+
+.spinner-border-sm {
+  height: 1rem;
+  border-width: .2em;
 }
 
 #footer .rich-text > .component-content p:first-child {

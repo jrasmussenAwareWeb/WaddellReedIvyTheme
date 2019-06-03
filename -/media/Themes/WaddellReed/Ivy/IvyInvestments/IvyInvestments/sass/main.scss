@@ -59,11 +59,18 @@ a {
     }
 }
 
+.copernicus {
+    @include copernicus();
+}
+
 strong, b {
     @include proximabold();
 }
 
 small {font-size:$font-small}
+
+.green {color:$text-green}
+.red {color:$text-red}
 
 /*H1 – H6: line-height: 1.4
 H1: (tablet and larger) 36px, (phone) 30px
@@ -153,7 +160,7 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
 
 #header {
     position:fixed;
-    z-index:99;
+    z-index:99; 
     background:$bg-white;
     >.row {
         >.container {
@@ -161,13 +168,16 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
                 border-bottom:1px solid $border-dark-gray;
             }
         }
-    }
+    } 
 
     .image {
         padding-top:10px;
-        img {
-            //max-width:300px;
-            @include respond-to(mobile-large) {
+        @include respond-to(mobile-large) {
+            position:relative;
+            z-index:1090;
+            max-width:20%;
+
+            img {
                 max-width:140px;
             }
         }
@@ -252,6 +262,15 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
 }
 
 
+table.filtered-columns td, table.filtered-columns th {
+    display: none;
+}
+
+table.filtered-columns td.static, table.filtered-columns td.show, table.filtered-columns th.static, table.filtered-columns th.show {
+    display: table-cell;
+}
+
+
 /*stacktable*/
 .plain-html {
     .stacktable.large-only {display:table}
@@ -293,6 +312,29 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
     }
 }
 
+iframe {
+    width:100%;
+}
+
+@keyframes spinner-border {
+    to { transform: rotate(360deg); }
+} 
+.spinner-border{
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: text-bottom;
+    border: .25em solid $text-green;
+    border-right-color: transparent;
+    border-radius: 50%;
+    -webkit-animation: spinner-border .75s linear infinite;
+    animation: spinner-border .75s linear infinite;
+}
+.spinner-border-sm{
+    height: 1rem;
+    border-width: .2em;
+}
+
 #footer {
     .rich-text {
         >.component-content {
@@ -304,7 +346,6 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
         }
     }
 }
-
 
 /*Back to Top*/
 .scrolltop-wrap {
