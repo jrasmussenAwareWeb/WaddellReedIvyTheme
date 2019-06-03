@@ -34,7 +34,7 @@ table {
   height: auto !important;
   //border: 1px solid $border-gray;
   &, tr, th, td {
-      background: $bg-basic-color;
+      //background: $bg-basic-color;
       border-collapse: collapse;
       vertical-align: middle;
   }
@@ -51,8 +51,8 @@ table {
       background-color: $bg-light-gray;
       overflow: hidden;
       padding: 10px;
-      font-size: $font-big;
-      font-weight: bold;
+      //font-size: $font-big;
+      //font-weight: bold; 
       margin-left: 0;
   }
   tr {

@@ -79,6 +79,10 @@
   margin: 0;
 }
 
+.login table table, .login table tr, .login table th, .login table table td {
+  background: transparent;
+}
+
 .login table tr, .login table tbody {
   background-color: transparent !important;
 }

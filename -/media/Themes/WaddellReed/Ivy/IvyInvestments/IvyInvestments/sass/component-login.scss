@@ -16,6 +16,9 @@
             margin: 0;
         }
         width: 100%;
+        table, tr, th, table td {
+            background: transparent;
+        }
         tr, tbody {
             background-color: $login-bg !important;
         }
