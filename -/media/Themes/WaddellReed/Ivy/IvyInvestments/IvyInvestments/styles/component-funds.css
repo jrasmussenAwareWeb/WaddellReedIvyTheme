@@ -1,0 +1,1219 @@
+@charset "UTF-8";
+/* breakpoints */
+.button-default, .btn-default, .default {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin: 5px 0;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #009639;
+  background: #FFFFFF;
+  color: #009639;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.button-default:hover, .button-default:focus, .btn-default:hover, .btn-default:focus, .default:hover, .default:focus {
+  color: #fff;
+  background: #009639;
+  border: 2px solid #009639;
+}
+
+.button-success, .btn-success, .success {
+  font-size: 12px;
+  font-size: 1.2rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000000;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin: 5px 0;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  background: #a0ce4e;
+  color: #fff;
+  font-weight: bold;
+}
+
+.button-success:hover, .button-success:focus, .btn-success:hover, .btn-success:focus, .success:hover, .success:focus {
+  color: #fff;
+  background: #92be43;
+}
+
+.button-danger, .btn-danger, .danger {
+  font-size: 12px;
+  font-size: 1.2rem;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin: 5px 0;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  background: #FFFFFF;
+  color: #6d3332;
+  border: 2px solid #6d3332;
+  text-transform: uppercase;
+}
+
+.button-danger:hover, .button-danger:focus, .btn-danger:hover, .btn-danger:focus, .danger:hover, .danger:focus {
+  color: #fff;
+  background: #6d3332;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn-sm {
+  margin: 3px 0;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+table {
+  height: auto !important;
+}
+
+table, table tr, table th, table td {
+  border-collapse: collapse;
+  vertical-align: middle;
+}
+
+table th, table td {
+  border-top: solid 1px #c2c2c2;
+}
+
+table thead th {
+  border-bottom: solid 2px #c2c2c2;
+}
+
+table tr, table th, table td {
+  padding: 5px;
+}
+
+table caption {
+  background-color: #d9d9d6;
+  overflow: hidden;
+  padding: 10px;
+  margin-left: 0;
+}
+
+table tr {
+  border: none;
+}
+
+table th {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 7px;
+}
+
+table th:first-child {
+  border-left: 0;
+}
+
+table td:first-child {
+  border-left: 0;
+}
+
+.table-sm th,
+.table-sm td {
+  padding: 0.3rem;
+}
+
+.table-bordered {
+  border: 1px solid #c2c2c2;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #c2c2c2;
+}
+
+.table-bordered thead th,
+.table-bordered thead td {
+  border-bottom-width: 2px;
+}
+
+.table-borderless th,
+.table-borderless td,
+.table-borderless thead th,
+.table-borderless tbody + tbody {
+  border: 0;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #d9d9d6;
+}
+
+.table-striped tbody tr:nth-of-type(odd) th, .table-striped tbody tr:nth-of-type(odd) td {
+  background-color: #d9d9d6;
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+/* breakpoints */
+.tabs.tabs-bottom .tabs-container {
+  margin: 0;
+}
+
+.tabs.tabs-bottom .tabs-heading {
+  position: relative;
+  margin-top: -1px;
+}
+
+.tabs.tabs-bottom .tabs-heading li {
+  margin-bottom: 0;
+  border-top: 0px solid #ffffff;
+}
+
+.tabs.tabs-bottom .tabs-heading li a {
+  border: none;
+}
+
+.tabs.tabs-bottom .tabs-heading li.active {
+  border-top: none;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #b7b7b7;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #000000;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #000000;
+}
+
+.tabs.tabs-bottom .tabs-heading li.active a {
+  border: none;
+  position: relative;
+}
+
+.tabs.tabs-bottom .tabs-heading li:hover {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #b7b7b7;
+  background: #FFFFFF;
+}
+
+.tabs.tabs-bottom .tabs-container {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #b7b7b7;
+  border-top: none;
+  background: transparent;
+  margin-bottom: 1px;
+}
+
+/* breakpoints */
+.tabs .toggle:first-child {
+  margin-top: 1px;
+}
+
+.tabs .toggle:first-child details summary.toggle-header {
+  border-top: 1px solid #b7b7b7;
+}
+
+.tabs .toggle:last-child details summary.toggle-header {
+  border-bottom: 1px solid #b7b7b7;
+}
+
+.tabs .toggle details[open] summary:before {
+  content: none;
+}
+
+.tabs .toggle details[open] summary.toggle-header {
+  border: 1px solid #b7b7b7;
+  box-shadow: 0px 2px 4.9px 0.1px rgba(0, 0, 0, 0.4);
+}
+
+.tabs .toggle details[open] summary.toggle-header .toggle-label .field-heading:after {
+  content: "" !important;
+}
+
+.tabs .toggle details summary.toggle-header {
+  width: 100%;
+  cursor: pointer;
+  background-color: transparent;
+  border-top: 1px solid #b7b7b7;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+
+.tabs .toggle details summary.toggle-header:before {
+  content: none;
+}
+
+.tabs .toggle details summary.toggle-header .toggle-label {
+  width: 100%;
+  padding: 15px 0;
+}
+
+.tabs .toggle details summary.toggle-header .toggle-label [class*="col-"] {
+  padding: 0;
+}
+
+.tabs .toggle details summary.toggle-header .toggle-label .field-heading {
+  font-size: 16px;
+}
+
+.tabs .toggle details summary.toggle-header .toggle-label .field-heading:after {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
+  content: "" !important;
+  color: #009639;
+  position: absolute;
+  right: 10px;
+}
+
+.tabs .toggle details .field-content {
+  padding: 30px 0;
+}
+
+.tabs.tabs-morningstar .tabs-heading li {
+  width: 19.85%;
+  text-align: center;
+}
+
+.tabs.tabs-morningstar .tabs-heading li .component.content {
+  margin: 5px;
+  min-height: 50px;
+  max-height: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+  .tabs.tabs-morningstar .tabs-heading li .component.content {
+    padding: 5px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .tabs.tabs-morningstar .tabs-heading li .component.content {
+    padding: 5px 25px;
+  }
+}
+
+.tabs.tabs-morningstar #morningstar-top-divider {
+  width: 100%;
+  display: block;
+  color: #b7b7b7;
+  margin: 30px 0;
+  display: none;
+}
+
+.tabs.tabs-morningstar iframe {
+  width: 100%;
+  min-height: 900px;
+  /*recommend adding to iframe stylesheet
+        .sbt-RootContainer {
+            margin-left:0;
+            width: 99%;
+        }*/
+}
+
+/* breakpoints */
+.tabs.tabs-scrollable .tabs-heading {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 0;
+}
+
+.tabs.tabs-scrollable .tabs-container {
+  margin: 0;
+}
+
+.tabs.tabs-scrollable .prev {
+  left: 0;
+  background: #e4e4e4 url("../Images/arrow-left.png") center center no-repeat;
+}
+
+.tabs.tabs-scrollable .next {
+  right: 0;
+  background: #e4e4e4 url("../Images/arrow-right.png") center center no-repeat;
+}
+
+.tabs.tabs-scrollable.tabs-bottom .wrapper {
+  margin-top: 2px;
+  padding-bottom: 6px;
+}
+
+.tabs.tabs-scrollable.tabs-bottom .next {
+  top: 1px;
+}
+
+.tabs.tabs-scrollable.tabs-bottom .prev {
+  top: 1px;
+}
+
+.tabs.tabs-scrollable.tabs-bottom .tabs-heading {
+  margin-top: -4px;
+}
+
+/* breakpoints */
+.tabs.tabs-vertical.tabs-vertical-right .tabs-heading {
+  float: right;
+  margin-left: -1px;
+}
+
+.tabs.tabs-vertical.tabs-vertical-right .tabs-heading li {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #d9d9d6;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #d9d9d6;
+  border-right-width: 2px;
+  border-right-style: solid;
+  border-right-color: #b7b7b7;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #d9d9d6;
+}
+
+.tabs.tabs-vertical.tabs-vertical-right .tabs-heading li.active {
+  border-right-width: 2px;
+  border-right-style: solid;
+  border-right-color: #b7b7b7;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #b7b7b7;
+}
+
+.tabs.tabs-vertical.tabs-vertical-right .tabs-heading li.active a {
+  border: none;
+}
+
+.tabs.tabs-vertical.tabs-vertical-right .tabs-heading li:hover {
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #b7b7b7;
+}
+
+.tabs.tabs-vertical.tabs-vertical-right .tabs-container {
+  float: right;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #b7b7b7;
+  border-top: none;
+  margin-left: -1px;
+  border-left: none;
+}
+
+/* breakpoints */
+.tabs.tabs-vertical .tabs-heading {
+  width: 30%;
+  float: left;
+}
+
+.tabs.tabs-vertical .tabs-heading li {
+  margin: 0 0 2px 0;
+  display: block;
+  width: 100%;
+  border: 0;
+  background: transparent;
+  /*&:hover {
+                @include border-basic(left, $tab-container-border, 2px);
+            }*/
+}
+
+.tabs.tabs-vertical .tabs-heading li > div .field-heading {
+  color: #009639;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+.tabs.tabs-vertical .tabs-heading li.active {
+  color: #009639;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #b7b7b7;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #b7b7b7;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #b7b7b7;
+  border-right-width: 2px;
+  border-right-style: solid;
+  border-right-color: #FFFFFF;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  position: relative;
+  z-index: 9;
+}
+
+.tabs.tabs-vertical .tabs-heading li.active > div .field-heading {
+  color: #006747;
+}
+
+.tabs.tabs-vertical .tabs-heading li.active a {
+  border: none;
+}
+
+.tabs.tabs-vertical .tabs-heading li:first-child {
+  margin-top: 0;
+}
+
+.tabs.tabs-vertical .tabs-container {
+  margin: 0;
+  float: left;
+  width: 70%;
+  margin-left: -1px;
+  border-top: none;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #b7b7b7;
+}
+
+.tabs.tabs-vertical .tabs-inner .tabs-container .content.col-12 {
+  padding: 0 10px;
+}
+
+.tabs.tabs-vertical .tabs-inner .tabs-container .content h1:first-of-type, .tabs.tabs-vertical .tabs-inner .tabs-container .content h2:first-of-type, .tabs.tabs-vertical .tabs-inner .tabs-container .content h3:first-of-type, .tabs.tabs-vertical .tabs-inner .tabs-container .content h4:first-of-type, .tabs.tabs-vertical .tabs-inner .tabs-container .content h5:first-of-type, .tabs.tabs-vertical .tabs-inner .tabs-container .content h6:first-of-type {
+  margin-top: 0;
+}
+
+.tabs.tabs-vertical .tab {
+  padding: 0 10px;
+}
+
+/* breakpoints */
+.accordion-horizontal {
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.accordion-horizontal.accordion-image .items .item {
+  box-sizing: border-box;
+  padding: 0 0 0 50px;
+  margin: 0;
+  min-height: 300px;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #000000;
+}
+
+.accordion-horizontal.accordion-image .items .item.active .toggle-header {
+  background: transparent !important;
+}
+
+.accordion-horizontal.accordion-image .items .item.active .toggle-content {
+  left: 0 !important;
+}
+
+.accordion-horizontal.accordion-image .items .item .toggle-header {
+  width: 50px;
+  border-right: none;
+}
+
+.accordion-horizontal.accordion-image .items .item .toggle-header:before {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.accordion-horizontal.accordion-image .items .item .toggle-content {
+  padding: 0;
+}
+
+.accordion-horizontal .items {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.accordion-horizontal .items .item {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0 0 0 40px;
+  min-height: 250px;
+  position: relative;
+}
+
+.accordion-horizontal .items .item.active .toggle-header {
+  background: transparent;
+}
+
+.accordion-horizontal .items .item .toggle-header {
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 11;
+  top: 0;
+  left: 0;
+  padding: 0;
+  width: 40px;
+  min-height: 100%;
+  border-right: 1px solid #c2c2c2;
+  border-bottom: none;
+  background: transparent;
+}
+
+.accordion-horizontal .items .item .toggle-header .component {
+  margin-top: 0px;
+}
+
+.accordion-horizontal .items .item .toggle-header .label {
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.accordion-horizontal .items .item .toggle-header .label p {
+  width: 200px;
+}
+
+.accordion-horizontal .items .item .toggle-header .label div.field-heading {
+  width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 16px;
+}
+
+.accordion-horizontal .items .item .toggle-header .label div.field-heading span.scWebEditInput {
+  width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.accordion-horizontal .items .item .toggle-content {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: auto;
+  z-index: 10;
+  height: 100%;
+  overflow: hidden;
+  text-align: left;
+  padding: 10px;
+}
+
+.fund-details, .fund-family {
+  width: 100%;
+}
+
+.fund-details .fund-title h1, .fund-details .fund-title h2, .fund-details .fund-title h3, .fund-details .fund-title h4, .fund-details .fund-title h5, .fund-details .fund-title h6, .fund-family .fund-title h1, .fund-family .fund-title h2, .fund-family .fund-title h3, .fund-family .fund-title h4, .fund-family .fund-title h5, .fund-family .fund-title h6 {
+  color: #000000;
+  display: inline;
+  font-family: "ProximaBoldCondensed", arial, helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+.fund-details .fund-title h1.copernicus, .fund-details .fund-title h2.copernicus, .fund-details .fund-title h3.copernicus, .fund-details .fund-title h4.copernicus, .fund-details .fund-title h5.copernicus, .fund-details .fund-title h6.copernicus, .fund-family .fund-title h1.copernicus, .fund-family .fund-title h2.copernicus, .fund-family .fund-title h3.copernicus, .fund-family .fund-title h4.copernicus, .fund-family .fund-title h5.copernicus, .fund-family .fund-title h6.copernicus {
+  font-family: "CopernicusBook", arial, helvetica, sans-serif;
+}
+
+.fund-details .fund-title h2, .fund-family .fund-title h2 {
+  font-size: 30px;
+  margin: 10px 0 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .fund-details .fund-title h2, .fund-family .fund-title h2 {
+    /*margin:30px 0 20px;*/
+    margin: 30px 0 0;
+  }
+}
+
+.fund-details .fund-detail-summary, .fund-family .fund-detail-summary {
+  margin: 30px 0 60px;
+}
+
+.fund-details .fund-detail-summary select, .fund-family .fund-detail-summary select {
+  height: 34px;
+  min-width: 180px;
+}
+
+@media only screen and (max-width: 767px) {
+  .fund-details .fund-detail-summary select, .fund-family .fund-detail-summary select {
+    width: 100%;
+  }
+}
+
+.fund-details .fund-detail-summary a.track-fund, .fund-family .fund-detail-summary a.track-fund {
+  font-family: "ProximaBold", arial, helvetica, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.fund-details .fund-detail-summary a.track-fund i, .fund-family .fund-detail-summary a.track-fund i {
+  color: #009639;
+}
+
+@media only screen and (max-width: 767px) {
+  .fund-details .fund-detail-summary a.track-fund, .fund-family .fund-detail-summary a.track-fund {
+    display: block;
+    margin: 20px 0 0;
+  }
+}
+
+.fund-details .fund-detail-summary .fund-market-data, .fund-family .fund-detail-summary .fund-market-data {
+  margin-top: 30px;
+}
+
+.fund-details .fund-detail-summary .fund-market-data ul, .fund-family .fund-detail-summary .fund-market-data ul {
+  width: 100%;
+}
+
+.fund-details .fund-detail-summary .fund-market-data ul li, .fund-family .fund-detail-summary .fund-market-data ul li {
+  float: left;
+  margin-right: 30px;
+}
+
+.fund-details .fund-detail-summary .fund-market-data ul li:last-child, .fund-family .fund-detail-summary .fund-market-data ul li:last-child {
+  margin-right: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .fund-details .fund-detail-summary .fund-market-data ul li, .fund-family .fund-detail-summary .fund-market-data ul li {
+    margin-bottom: 10px;
+  }
+}
+
+.fund-details .tablesorter-sticky-visible > .SumTable.d-none, .fund-family .tablesorter-sticky-visible > .SumTable.d-none {
+  display: block !important;
+}
+
+@media only screen and (max-width: 991px) {
+  .fund-details .tablesorter-sticky-visible, .fund-family .tablesorter-sticky-visible {
+    top: 80px !important;
+  }
+}
+
+.fund-details .tabs, .fund-family .tabs {
+  margin-top: 30px;
+  background: #FFFFFF;
+}
+
+@media only screen and (max-width: 767px) {
+  .fund-details .tabs, .fund-family .tabs {
+    margin: 0;
+  }
+}
+
+.fund-details .tabs-heading li, .fund-family .tabs-heading li {
+  border-right-width: 0;
+  border-top-width: 1px;
+  border-color: #c7c7c7;
+  background: #f2f2f2;
+  width: 19.85%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.fund-details .tabs-heading li:last-child, .fund-family .tabs-heading li:last-child {
+  border-right-width: 1px;
+}
+
+.fund-details .tabs-heading li.active, .fund-family .tabs-heading li.active {
+  background: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+.fund-details .tabs-heading li.active .field-heading, .fund-family .tabs-heading li.active .field-heading {
+  color: #009639;
+}
+
+@media only screen and (max-width: 767px) {
+  .fund-details .tabs-heading, .fund-family .tabs-heading {
+    overflow: visible;
+    margin-top: 1px;
+  }
+  .fund-details .tabs-heading li, .fund-family .tabs-heading li {
+    width: 100%;
+    border-right-width: 1px;
+  }
+  .fund-details .tabs-heading li:first-child, .fund-family .tabs-heading li:first-child {
+    margin-left: 1px;
+  }
+  .fund-details .tabs-heading li.active:last-child, .fund-family .tabs-heading li.active:last-child {
+    border-bottom-width: 1px;
+  }
+}
+
+.fund-details .tabs-container, .fund-family .tabs-container {
+  border-top: 0;
+}
+
+.fund-details .tabs-container .tab.active > .row > [class*="col-"]:first-child, .fund-family .tabs-container .tab.active > .row > [class*="col-"]:first-child {
+  padding-left: 0;
+}
+
+.fund-details .tabs-container .tab.active > .row > [class*="col-"]:last-child, .fund-family .tabs-container .tab.active > .row > [class*="col-"]:last-child {
+  padding-right: 0;
+}
+
+.fund-details .tabs-container .tab.active > .row > [class*="col-"] > .row [class*="col-"]:first-child, .fund-family .tabs-container .tab.active > .row > [class*="col-"] > .row [class*="col-"]:first-child {
+  padding-left: 0;
+}
+
+.fund-details .tabs-container .tab.active > .row > [class*="col-"] > .row [class*="col-"]:last-child, .fund-family .tabs-container .tab.active > .row > [class*="col-"] > .row [class*="col-"]:last-child {
+  padding-right: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .fund-details .tabs-container .tab.active > .row.fund-documents > [class*="col-"]:first-child, .fund-details .tabs-container .tab.active > .row.fund-documents > [class*="col-"]:last-child, .fund-family .tabs-container .tab.active > .row.fund-documents > [class*="col-"]:first-child, .fund-family .tabs-container .tab.active > .row.fund-documents > [class*="col-"]:last-child {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.fund-details .tabs-container .tab, .fund-family .tabs-container .tab {
+  padding: 30px 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .fund-details .tabs-container .tab, .fund-family .tabs-container .tab {
+    clear: both;
+  }
+}
+
+.fund-details section, .fund-family section {
+  margin-bottom: 30px;
+}
+
+.fund-details section h4, .fund-family section h4 {
+  font-family: "ProximaBoldCondensed", arial, helvetica, sans-serif;
+  text-transform: uppercase;
+  border-bottom: 1px solid #c2c2c2;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.fund-details section h4 span, .fund-family section h4 span {
+  font-family: "Proxima", arial, helvetica, sans-serif;
+  font-weight: normal;
+  text-transform: lowercase;
+  font-size: 14px;
+}
+
+.fund-details section h4 span.subtitle, .fund-family section h4 span.subtitle {
+  display: block;
+}
+
+.fund-details section h5, .fund-family section h5 {
+  font-family: "ProximaBold", arial, helvetica, sans-serif;
+}
+
+.fund-details section h6, .fund-family section h6 {
+  font-family: "Proxima", arial, helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+.fund-details section h6 span, .fund-family section h6 span {
+  font-weight: normal;
+  text-transform: lowercase;
+  font-size: 14px;
+}
+
+.fund-details section .content-block, .fund-family section .content-block {
+  margin-bottom: 20px;
+}
+
+.fund-details section .growth-chart-wrapper .disclaimer, .fund-family section .growth-chart-wrapper .disclaimer {
+  margin-top: 20px;
+}
+
+.fund-details section .portfolio-management section, .fund-family section .portfolio-management section {
+  margin-bottom: 20px;
+}
+
+.fund-details section .portfolio-management section h6, .fund-family section .portfolio-management section h6 {
+  font-family: "ProximaBoldCondensed", arial, helvetica, sans-serif;
+}
+
+.fund-details section .portfolio-management section ul li, .fund-family section .portfolio-management section ul li {
+  list-style-type: disc;
+}
+
+.fund-details section dl dd, .fund-details section dl dt, .fund-family section dl dd, .fund-family section dl dt {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.fund-details section dl dt, .fund-family section dl dt {
+  width: 25%;
+  font-family: "ProximaBoldCondensed", arial, helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+.fund-details section dl dd, .fund-family section dl dd {
+  width: 72%;
+  padding-left: 3%;
+  padding-bottom: 15px;
+}
+
+.fund-details section dl dd:last-of-type, .fund-family section dl dd:last-of-type {
+  padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 991px) {
+  .fund-details section dl dt, .fund-details section dl dd, .fund-family section dl dt, .fund-family section dl dd {
+    width: 100%;
+    display: block;
+    padding-left: 0;
+  }
+  .fund-details section dl dd:last-of-type, .fund-family section dl dd:last-of-type {
+    padding-bottom: 0;
+  }
+}
+
+.fund-details .container-gray-background, .fund-family .container-gray-background {
+  padding: 30px;
+}
+
+.fund-details .container-gray-background .content-block:last-child, .fund-family .container-gray-background .content-block:last-child {
+  margin-bottom: 0;
+}
+
+.fund-details .selections, .fund-family .selections {
+  padding: 10px 0;
+}
+
+.fund-details .selections label, .fund-family .selections label {
+  font-size: 20px;
+  font-family: "CopernicusBook", arial, helvetica, sans-serif;
+}
+
+.fund-details .selections select, .fund-family .selections select {
+  width: 100%;
+  height: 34px;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 767px) {
+  .fund-details .selections [class*="col-"]:first-child, .fund-family .selections [class*="col-"]:first-child {
+    margin-bottom: 10px;
+  }
+}
+
+.fund-details .filters, .fund-family .filters {
+  margin-top: 30px;
+}
+
+.fund-details .filters .row [class*="col-"], .fund-family .filters .row [class*="col-"] {
+  padding: 0;
+}
+
+.fund-details .filters form > .row div label, .fund-family .filters form > .row div label {
+  margin-right: 10px;
+}
+
+.fund-details .filters form > .row div:last-child label, .fund-family .filters form > .row div:last-child label {
+  margin-right: 0;
+}
+
+.fund-details .filters form label, .fund-family .filters form label {
+  font-size: 14px;
+  font-family: "CopernicusBook", arial, helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 576px) {
+  .fund-details .filters form label, .fund-family .filters form label {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .fund-details .filters form label, .fund-family .filters form label {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .fund-details .filters form > .row, .fund-family .filters form > .row {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #b7b7b7;
+  }
+  .fund-details .filters form > .row:last-child, .fund-family .filters form > .row:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
+  }
+}
+
+.fund-details form.form-right, .fund-family form.form-right {
+  float: right;
+  margin-bottom: 10px;
+}
+
+.fund-details table, .fund-family table {
+  font-size: 14px;
+}
+
+.fund-details table caption, .fund-family table caption {
+  background-color: #f2f2f2;
+}
+
+@media only screen and (max-width: 767px) {
+  .fund-details table caption, .fund-family table caption {
+    margin-bottom: 20px;
+  }
+}
+
+.fund-details table caption.white, .fund-family table caption.white {
+  background-color: #FFFFFF;
+  padding: 0 0 10px 0;
+}
+
+.fund-details table caption.white p, .fund-family table caption.white p {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.fund-details table tr td, .fund-family table tr td {
+  vertical-align: top;
+  text-align: left;
+}
+
+.fund-details table tr td a, .fund-family table tr td a {
+  text-transform: uppercase;
+  color: #009639;
+  text-decoration: none;
+}
+
+.fund-details table tr td a:hover, .fund-details table tr td a:focus, .fund-family table tr td a:hover, .fund-family table tr td a:focus {
+  color: #000;
+}
+
+.fund-details table.stacktable.large-only, .fund-family table.stacktable.large-only {
+  display: table;
+}
+
+.fund-details table.stacktable.small-only, .fund-family table.stacktable.small-only {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .fund-details table.stacktable.large-only, .fund-family table.stacktable.large-only {
+    display: none;
+  }
+  .fund-details table.stacktable.small-only, .fund-family table.stacktable.small-only {
+    display: table;
+    width: 100%;
+  }
+  .fund-details table.stacktable.small-only .st-head-row, .fund-family table.stacktable.small-only .st-head-row {
+    padding-top: 20px;
+  }
+}
+
+.fund-details table.tablesorter, .fund-family table.tablesorter {
+  /* TABLE BACKGROUND color (match the original theme) */
+  /* ODD ZEBRA STRIPE color (needs zebra widget) */
+  /* EVEN ZEBRA STRIPE color (needs zebra widget) */
+  /* HOVER ROW highlight colors */
+  /* HOVER COLUMN highlight colors */
+  /* ************************************************* */
+  /* **** No need to modify the definitions below **** */
+  /* ************************************************* */
+  /* required styles */
+  /* override the tablesorter theme styling */
+  /* table background positioned under the highlight */
+}
+
+.fund-details table.tablesorter th, .fund-family table.tablesorter th {
+  background-color: #FFFFFF !important;
+  vertical-align: bottom;
+  border: 0;
+}
+
+.fund-details table.tablesorter th.tablesorter-headerUnSorted .fa-caret-down, .fund-details table.tablesorter th.tablesorter-headerUnSorted .fa-caret-up, .fund-family table.tablesorter th.tablesorter-headerUnSorted .fa-caret-down, .fund-family table.tablesorter th.tablesorter-headerUnSorted .fa-caret-up {
+  display: none;
+}
+
+.fund-details table.tablesorter th.tablesorter-headerAsc, .fund-details table.tablesorter th.tablesorter-headerDesc, .fund-family table.tablesorter th.tablesorter-headerAsc, .fund-family table.tablesorter th.tablesorter-headerDesc {
+  color: #009639;
+}
+
+.fund-details table.tablesorter th.tablesorter-headerAsc .fa-caret-down, .fund-family table.tablesorter th.tablesorter-headerAsc .fa-caret-down {
+  display: none;
+}
+
+.fund-details table.tablesorter th.tablesorter-headerDesc .fa-caret-up, .fund-family table.tablesorter th.tablesorter-headerDesc .fa-caret-up {
+  display: none;
+}
+
+.fund-details table.tablesorter.hover-highlight td:before, .fund-family table.tablesorter.hover-highlight td:before {
+  background: #fff;
+}
+
+.fund-details table.tablesorter.hover-highlight .odd td:before, .fund-details table.tablesorter.hover-highlight .odd th:before, .fund-family table.tablesorter.hover-highlight .odd td:before, .fund-family table.tablesorter.hover-highlight .odd th:before {
+  background: #f0f0f0;
+}
+
+.fund-details table.tablesorter.hover-highlight .even td:before, .fund-details table.tablesorter.hover-highlight .even th:before, .fund-family table.tablesorter.hover-highlight .even td:before, .fund-family table.tablesorter.hover-highlight .even th:before {
+  background-color: #fff;
+}
+
+.fund-details table.tablesorter.hover-highlight tbody > tr:hover > td,
+.fund-details table.tablesorter.hover-highlight tbody > tr.odd:hover > td,
+.fund-details table.tablesorter.hover-highlight tbody > tr.even:hover > td, .fund-family table.tablesorter.hover-highlight tbody > tr:hover > td,
+.fund-family table.tablesorter.hover-highlight tbody > tr.odd:hover > td,
+.fund-family table.tablesorter.hover-highlight tbody > tr.even:hover > td {
+  background-color: #ffa;
+}
+
+.fund-details table.tablesorter.hover-highlight tbody tr td:hover::after,
+.fund-details table.tablesorter.hover-highlight tbody tr th:hover::after, .fund-family table.tablesorter.hover-highlight tbody tr td:hover::after,
+.fund-family table.tablesorter.hover-highlight tbody tr th:hover::after {
+  background-color: #ffa;
+}
+
+.fund-details table.tablesorter.hover-highlight td:hover::after, .fund-details table.tablesorter.hover-highlight th:hover::after, .fund-family table.tablesorter.hover-highlight td:hover::after, .fund-family table.tablesorter.hover-highlight th:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 999em;
+  left: 0;
+  top: -555em;
+  z-index: -1;
+}
+
+.fund-details table.tablesorter.hover-highlight, .fund-family table.tablesorter.hover-highlight {
+  overflow: hidden;
+}
+
+.fund-details table.tablesorter.hover-highlight td, .fund-details table.tablesorter.hover-highlight th, .fund-family table.tablesorter.hover-highlight td, .fund-family table.tablesorter.hover-highlight th {
+  outline: 0;
+}
+
+.fund-details table.tablesorter.hover-highlight, .fund-details table.tablesorter.hover-highlight tbody > tr > td,
+.fund-details table.tablesorter.hover-highlight tbody tr.even > th,
+.fund-details table.tablesorter.hover-highlight tbody tr.even > td,
+.fund-details table.tablesorter.hover-highlight tbody tr.odd > th,
+.fund-details table.tablesorter.hover-highlight tbody tr.odd > td, .fund-family table.tablesorter.hover-highlight, .fund-family table.tablesorter.hover-highlight tbody > tr > td,
+.fund-family table.tablesorter.hover-highlight tbody tr.even > th,
+.fund-family table.tablesorter.hover-highlight tbody tr.even > td,
+.fund-family table.tablesorter.hover-highlight tbody tr.odd > th,
+.fund-family table.tablesorter.hover-highlight tbody tr.odd > td {
+  background: transparent;
+}
+
+.fund-details table.tablesorter.hover-highlight td:before, .fund-family table.tablesorter.hover-highlight td:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -3;
+}
+
+.fund-details table tr, .fund-details table th, .fund-details table td, .fund-family table tr, .fund-family table th, .fund-family table td {
+  font-size: 14px !important;
+}
+
+.fund-details table tr.text-center, .fund-details table th.text-center, .fund-details table td.text-center, .fund-family table tr.text-center, .fund-family table th.text-center, .fund-family table td.text-center {
+  text-align: center !important;
+}
+
+.fund-details table tr.border-top, .fund-details table th.border-top, .fund-details table td.border-top, .fund-family table tr.border-top, .fund-family table th.border-top, .fund-family table td.border-top {
+  border-top: 1px solid #b7b7b7;
+}
+
+.fund-details table tr.border-bottom, .fund-details table th.border-bottom, .fund-details table td.border-bottom, .fund-family table tr.border-bottom, .fund-family table th.border-bottom, .fund-family table td.border-bottom {
+  border-bottom: 1px solid #b7b7b7;
+}
+
+.fund-details table tr.border-left, .fund-details table th.border-left, .fund-details table td.border-left, .fund-family table tr.border-left, .fund-family table th.border-left, .fund-family table td.border-left {
+  border-left: 1px solid #b7b7b7;
+}
+
+.fund-details table tr.border-right, .fund-details table th.border-right, .fund-details table td.border-right, .fund-family table tr.border-right, .fund-family table th.border-right, .fund-family table td.border-right {
+  border-right: 1px solid #b7b7b7;
+}
+
+.fund-details table.table-center th, .fund-details table.table-center tr, .fund-details table.table-center td, .fund-family table.table-center th, .fund-family table.table-center tr, .fund-family table.table-center td {
+  text-align: center;
+}
+
+.fund-details table.table-center th:first-child, .fund-details table.table-center tr:first-child, .fund-details table.table-center td:first-child, .fund-family table.table-center th:first-child, .fund-family table.table-center tr:first-child, .fund-family table.table-center td:first-child {
+  text-align: left;
+}
+
+.fund-details table.table-center.SumTable th:nth-of-type(1):not(.sorter-false), .fund-details table.table-center.SumTable th:nth-of-type(2):not(.sorter-false), .fund-details table.table-center.SumTable td:nth-of-type(1):not(.sorter-false), .fund-details table.table-center.SumTable td:nth-of-type(2):not(.sorter-false), .fund-details table.table-center.YieldsTable th:nth-of-type(1):not(.sorter-false), .fund-details table.table-center.YieldsTable th:nth-of-type(2):not(.sorter-false), .fund-details table.table-center.YieldsTable td:nth-of-type(1):not(.sorter-false), .fund-details table.table-center.YieldsTable td:nth-of-type(2):not(.sorter-false), .fund-family table.table-center.SumTable th:nth-of-type(1):not(.sorter-false), .fund-family table.table-center.SumTable th:nth-of-type(2):not(.sorter-false), .fund-family table.table-center.SumTable td:nth-of-type(1):not(.sorter-false), .fund-family table.table-center.SumTable td:nth-of-type(2):not(.sorter-false), .fund-family table.table-center.YieldsTable th:nth-of-type(1):not(.sorter-false), .fund-family table.table-center.YieldsTable th:nth-of-type(2):not(.sorter-false), .fund-family table.table-center.YieldsTable td:nth-of-type(1):not(.sorter-false), .fund-family table.table-center.YieldsTable td:nth-of-type(2):not(.sorter-false) {
+  text-align: left;
+}
+
+@media only screen and (max-width: 767px) {
+  .fund-details table.table-center.YieldsTable th:nth-of-type(3), .fund-details table.table-center.YieldsTable th:nth-of-type(4), .fund-details table.table-center.YieldsTable th:nth-of-type(5), .fund-details table.table-center.YieldsTable th:nth-of-type(6), .fund-family table.table-center.YieldsTable th:nth-of-type(3), .fund-family table.table-center.YieldsTable th:nth-of-type(4), .fund-family table.table-center.YieldsTable th:nth-of-type(5), .fund-family table.table-center.YieldsTable th:nth-of-type(6) {
+    width: 25%;
+  }
+}
+
+.fund-details table.table-center.RatingsTable th:nth-of-type(1):not(.sorter-false), .fund-details table.table-center.RatingsTable th:nth-of-type(2):not(.sorter-false), .fund-details table.table-center.RatingsTable th:nth-of-type(3):not(.sorter-false), .fund-details table.table-center.RatingsTable td:nth-of-type(1):not(.sorter-false), .fund-details table.table-center.RatingsTable td:nth-of-type(2):not(.sorter-false), .fund-details table.table-center.RatingsTable td:nth-of-type(3):not(.sorter-false), .fund-family table.table-center.RatingsTable th:nth-of-type(1):not(.sorter-false), .fund-family table.table-center.RatingsTable th:nth-of-type(2):not(.sorter-false), .fund-family table.table-center.RatingsTable th:nth-of-type(3):not(.sorter-false), .fund-family table.table-center.RatingsTable td:nth-of-type(1):not(.sorter-false), .fund-family table.table-center.RatingsTable td:nth-of-type(2):not(.sorter-false), .fund-family table.table-center.RatingsTable td:nth-of-type(3):not(.sorter-false) {
+  text-align: left;
+}
+
+@media only screen and (max-width: 767px) {
+  .fund-details table.table-center.RatingsTable th.fund-name, .fund-family table.table-center.RatingsTable th.fund-name {
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .fund-details table.table-center.TickersTable th:last-child, .fund-family table.table-center.TickersTable th:last-child {
+    width: 18%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .fund-details table.table-center.TickersTable th:last-child, .fund-family table.table-center.TickersTable th:last-child {
+    width: 12%;
+  }
+}
+
+.fund-details table#calendar-year form, .fund-family table#calendar-year form {
+  float: right;
+}
+
+.fund-details .toggle .container > .indent-top.indent-bottom > .row > [class*="col-"], .fund-family .toggle .container > .indent-top.indent-bottom > .row > [class*="col-"] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.fund-details .toggle .container > .indent-top.indent-bottom > .row > [class*="col-"] > .row > [class*="col-"], .fund-family .toggle .container > .indent-top.indent-bottom > .row > [class*="col-"] > .row > [class*="col-"] {
+  padding: 0;
+}
+
+.fund-details .toggle .container > .indent-top section, .fund-family .toggle .container > .indent-top section {
+  margin-bottom: 30px;
+}
