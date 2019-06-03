@@ -203,14 +203,14 @@
 
 @media only screen and (max-width: 767px) {
   .page-list.general-landing.audio-insights .item {
-    width: 100%;
-    float: none;
+    width: 50%;
+    float: left;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .page-list.general-landing.audio-insights .item {
-    width: 50%;
+    width: 33.3%;
     float: left;
   }
 }
@@ -220,6 +220,7 @@
     min-height: 360px;
     max-height: 360px;
     overflow: hidden;
+    width: 24.75%;
   }
 }
 

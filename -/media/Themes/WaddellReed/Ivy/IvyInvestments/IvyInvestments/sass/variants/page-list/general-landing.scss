@@ -149,17 +149,21 @@
     &.audio-insights {
         .item {
             @include respond-to(mobile-large) {
-                width:100%;
-                float:none;
+                //width:100%;
+                //float:none;
+                width:50%;
+                float:left;
             }
             @include respond-to(tablet-only) {
-                width:50%;
+                //width:50%;
+                width:33.3%;
                 float:left;
             }
             @include respond-to(desktop) {
                 min-height:360px;
                 max-height:360px;
                 overflow:hidden;
+                 width:24.75%;
             }
             .wrap-labels {
                 font-size:$font-small;

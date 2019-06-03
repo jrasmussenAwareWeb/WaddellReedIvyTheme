@@ -159,7 +159,6 @@ strong {
 }
 
 .content table, .content table tr, .content table th, .content table td, .rich-text table, .rich-text table tr, .rich-text table th, .rich-text table td {
-  background: #FFFFFF;
   border-collapse: collapse;
   vertical-align: middle;
 }
@@ -180,8 +179,6 @@ strong {
   background-color: #d9d9d6;
   overflow: hidden;
   padding: 10px;
-  font-size: 20px;
-  font-weight: bold;
   margin-left: 0;
 }
 
@@ -756,6 +753,21 @@ strong {
   .content.content-live.landing.col-12 {
     padding-left: 0;
   }
+}
+
+.content.content-live.landing .upcoming-preview {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.content.content-live.landing .upcoming-preview h3 {
+  margin-top: 0;
+}
+
+.content.content-live.landing .upcoming-preview h3 .badge {
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
 }
 
 .content.content-live.landing .event-date, .content.content-live.landing .field-eventtime {

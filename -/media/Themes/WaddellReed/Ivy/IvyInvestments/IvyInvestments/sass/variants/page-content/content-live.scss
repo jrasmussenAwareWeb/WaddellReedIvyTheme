@@ -48,12 +48,26 @@
         }
     }
     &.landing {
-        //padding-left:0;
+        //padding-left:0; 
         @include respond-to(tablet) {
             &.col-12 {
                 padding-left:0;
             }
         }
+
+        .upcoming-preview {
+            text-transform:uppercase;
+            margin-bottom:$large-margin;
+            h3 {
+                margin-top:0;
+                .badge {
+                    background-color:$bg-black;
+                    color:$text-white;
+                    padding:5px 10px;
+                }
+            }
+        }
+
         .event-date, .field-eventtime {
             font-size:$font-big;
         }
