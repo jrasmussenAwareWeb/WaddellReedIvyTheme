@@ -851,6 +851,11 @@ table td:first-child {
   margin-top: 20px;
 }
 
+.fund-details section#portfolio-management, .fund-family section#portfolio-management {
+  clear: both;
+  padding-top: 20px;
+}
+
 .fund-details section .portfolio-management section, .fund-family section .portfolio-management section {
   margin-bottom: 20px;
 }
@@ -860,7 +865,17 @@ table td:first-child {
 }
 
 .fund-details section .portfolio-management section ul li, .fund-family section .portfolio-management section ul li {
-  list-style-type: disc;
+  font-size: 14px;
+  /*https://stackoverflow.com/questions/3200249/html-list-style-type-dash*/
+}
+
+.fund-details section .portfolio-management section ul li:before, .fund-family section .portfolio-management section ul li:before {
+  content: "\2014";
+  margin-right: 5px;
+}
+
+.fund-details section dl, .fund-family section dl {
+  font-size: 14px;
 }
 
 .fund-details section dl dd, .fund-details section dl dt, .fund-family section dl dd, .fund-family section dl dt {
@@ -870,14 +885,16 @@ table td:first-child {
 
 .fund-details section dl dt, .fund-family section dl dt {
   width: 25%;
-  font-family: "ProximaBoldCondensed", arial, helvetica, sans-serif;
+  font-family: "Proxima", arial, helvetica, sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
+  text-align: right;
+  margin-bottom: 20px;
 }
 
 .fund-details section dl dd, .fund-family section dl dd {
   width: 72%;
   padding-left: 3%;
-  padding-bottom: 15px;
 }
 
 .fund-details section dl dd:last-of-type, .fund-family section dl dd:last-of-type {
@@ -1203,6 +1220,215 @@ table td:first-child {
 
 .fund-details table#calendar-year form, .fund-family table#calendar-year form {
   float: right;
+}
+
+.fund-details .morningstar-grid, .fund-family .morningstar-grid {
+  background-color: #f3f3f3;
+  float: left;
+  font-size: .625rem;
+  height: 8rem;
+  margin: 2.5125rem 3.75rem 1rem 1rem;
+  position: relative;
+  width: 8rem;
+  /**/
+  text-transform: uppercase;
+  -webkit-transform: scale(2);
+  -ms-transform: scale(2);
+  transform: scale(2);
+  margin: 60px 0 60px 40px;
+}
+
+.fund-details .morningstar-grid.morningstar-grid--equity, .fund-family .morningstar-grid.morningstar-grid--equity {
+  margin-right: 3rem;
+}
+
+.fund-details .morningstar-grid.morningstar-grid--equity .morningstar-grid__divider:first-child:before, .fund-family .morningstar-grid.morningstar-grid--equity .morningstar-grid__divider:first-child:before {
+  content: "Value";
+}
+
+.fund-details .morningstar-grid.morningstar-grid--equity .morningstar-grid__divider:first-child span:before, .fund-family .morningstar-grid.morningstar-grid--equity .morningstar-grid__divider:first-child span:before {
+  content: "Blend";
+}
+
+.fund-details .morningstar-grid.morningstar-grid--equity .morningstar-grid__divider:first-child:after, .fund-family .morningstar-grid.morningstar-grid--equity .morningstar-grid__divider:first-child:after {
+  content: "Growth";
+}
+
+.fund-details .morningstar-grid.morningstar-grid--equity .morningstar-grid__divider:last-child:before, .fund-family .morningstar-grid.morningstar-grid--equity .morningstar-grid__divider:last-child:before {
+  content: "Large";
+}
+
+.fund-details .morningstar-grid.morningstar-grid--equity .morningstar-grid__divider:last-child span:before, .fund-family .morningstar-grid.morningstar-grid--equity .morningstar-grid__divider:last-child span:before {
+  content: "Medium";
+}
+
+.fund-details .morningstar-grid.morningstar-grid--equity .morningstar-grid__divider:last-child:after, .fund-family .morningstar-grid.morningstar-grid--equity .morningstar-grid__divider:last-child:after {
+  content: "Small";
+}
+
+.fund-details .morningstar-grid.morningstar-grid--bond .morningstar-grid__divider:first-child:before, .fund-family .morningstar-grid.morningstar-grid--bond .morningstar-grid__divider:first-child:before {
+  content: "LTD";
+}
+
+.fund-details .morningstar-grid.morningstar-grid--bond .morningstar-grid__divider:first-child span:before, .fund-family .morningstar-grid.morningstar-grid--bond .morningstar-grid__divider:first-child span:before {
+  content: "MOD";
+}
+
+.fund-details .morningstar-grid.morningstar-grid--bond .morningstar-grid__divider:first-child:after, .fund-family .morningstar-grid.morningstar-grid--bond .morningstar-grid__divider:first-child:after {
+  content: "EXT";
+}
+
+.fund-details .morningstar-grid.morningstar-grid--bond .morningstar-grid__divider:last-child:before, .fund-family .morningstar-grid.morningstar-grid--bond .morningstar-grid__divider:last-child:before {
+  content: "High";
+}
+
+.fund-details .morningstar-grid.morningstar-grid--bond .morningstar-grid__divider:last-child span:before, .fund-family .morningstar-grid.morningstar-grid--bond .morningstar-grid__divider:last-child span:before {
+  content: "Medium";
+}
+
+.fund-details .morningstar-grid.morningstar-grid--bond .morningstar-grid__divider:last-child:after, .fund-family .morningstar-grid.morningstar-grid--bond .morningstar-grid__divider:last-child:after {
+  content: "Low";
+}
+
+.fund-details .morningstar-grid__caption, .fund-family .morningstar-grid__caption {
+  clear: both;
+  display: block;
+  float: left;
+  font-size: .875rem;
+  margin: 0 1rem;
+}
+
+.fund-details .morningstar-grid__text-value, .fund-family .morningstar-grid__text-value {
+  visibility: hidden;
+}
+
+.fund-details .morningstar-grid:before,
+.fund-details .morningstar-grid__divider,
+.fund-details .morningstar-grid__divider:before,
+.fund-details .morningstar-grid__divider span,
+.fund-details .morningstar-grid__divider:after, .fund-family .morningstar-grid:before,
+.fund-family .morningstar-grid__divider,
+.fund-family .morningstar-grid__divider:before,
+.fund-family .morningstar-grid__divider span,
+.fund-family .morningstar-grid__divider:after {
+  display: block;
+  position: absolute;
+}
+
+.fund-details .morningstar-grid:before, .fund-family .morningstar-grid:before {
+  background-color: #016648;
+  content: "";
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.fund-details .morningstar-grid[aria-valuenow="2"]:before,
+.fund-details .morningstar-grid[aria-valuenow="5"]:before,
+.fund-details .morningstar-grid[aria-valuenow="8"]:before, .fund-family .morningstar-grid[aria-valuenow="2"]:before,
+.fund-family .morningstar-grid[aria-valuenow="5"]:before,
+.fund-family .morningstar-grid[aria-valuenow="8"]:before {
+  left: 2.75rem;
+}
+
+.fund-details .morningstar-grid[aria-valuenow="3"]:before,
+.fund-details .morningstar-grid[aria-valuenow="6"]:before,
+.fund-details .morningstar-grid[aria-valuenow="9"]:before, .fund-family .morningstar-grid[aria-valuenow="3"]:before,
+.fund-family .morningstar-grid[aria-valuenow="6"]:before,
+.fund-family .morningstar-grid[aria-valuenow="9"]:before {
+  right: 0;
+}
+
+.fund-details .morningstar-grid[aria-valuenow="4"]:before,
+.fund-details .morningstar-grid[aria-valuenow="5"]:before,
+.fund-details .morningstar-grid[aria-valuenow="6"]:before, .fund-family .morningstar-grid[aria-valuenow="4"]:before,
+.fund-family .morningstar-grid[aria-valuenow="5"]:before,
+.fund-family .morningstar-grid[aria-valuenow="6"]:before {
+  top: 2.75rem;
+}
+
+.fund-details .morningstar-grid[aria-valuenow="7"]:before,
+.fund-details .morningstar-grid[aria-valuenow="8"]:before,
+.fund-details .morningstar-grid[aria-valuenow="9"]:before, .fund-family .morningstar-grid[aria-valuenow="7"]:before,
+.fund-family .morningstar-grid[aria-valuenow="8"]:before,
+.fund-family .morningstar-grid[aria-valuenow="9"]:before {
+  bottom: 0;
+}
+
+.fund-details .morningstar-grid__divider span, .fund-family .morningstar-grid__divider span {
+  text-indent: -9999px;
+}
+
+.fund-details .morningstar-grid__divider span:before, .fund-family .morningstar-grid__divider span:before {
+  left: 0;
+  position: absolute;
+  text-indent: 0;
+  width: 100%;
+}
+
+.fund-details .morningstar-grid__divider:first-child, .fund-family .morningstar-grid__divider:first-child {
+  border-left: .25rem solid #fff;
+  border-right: .25rem solid #fff;
+  height: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  width: 3rem;
+}
+
+.fund-details .morningstar-grid__divider:first-child:before,
+.fund-details .morningstar-grid__divider:first-child span,
+.fund-details .morningstar-grid__divider:first-child:after, .fund-family .morningstar-grid__divider:first-child:before,
+.fund-family .morningstar-grid__divider:first-child span,
+.fund-family .morningstar-grid__divider:first-child:after {
+  text-align: center;
+  top: -1rem;
+  width: 2.5rem;
+}
+
+.fund-details .morningstar-grid__divider:first-child:before, .fund-family .morningstar-grid__divider:first-child:before {
+  left: -100%;
+  margin-left: -.25rem;
+}
+
+.fund-details .morningstar-grid__divider:first-child:after, .fund-family .morningstar-grid__divider:first-child:after {
+  margin-right: -.25rem;
+  right: -100%;
+}
+
+.fund-details .morningstar-grid__divider:last-child, .fund-family .morningstar-grid__divider:last-child {
+  border-bottom: .25rem solid #fff;
+  border-top: .25rem solid #fff;
+  height: 3rem;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  width: 100%;
+}
+
+.fund-details .morningstar-grid__divider:last-child:before,
+.fund-details .morningstar-grid__divider:last-child span,
+.fund-details .morningstar-grid__divider:last-child:after, .fund-family .morningstar-grid__divider:last-child:before,
+.fund-family .morningstar-grid__divider:last-child span,
+.fund-family .morningstar-grid__divider:last-child:after {
+  line-height: 2.5rem;
+  min-width: 3.25rem;
+  right: -3.5rem;
+}
+
+.fund-details .morningstar-grid__divider:last-child:before, .fund-family .morningstar-grid__divider:last-child:before {
+  margin-top: -.25rem;
+  top: -100%;
+}
+
+.fund-details .morningstar-grid__divider:last-child:after, .fund-family .morningstar-grid__divider:last-child:after {
+  bottom: -100%;
+  margin-bottom: -.25rem;
+}
+
+.fund-details .morningstar-grid__print-image, .fund-family .morningstar-grid__print-image {
+  display: none;
 }
 
 .fund-details .toggle .container > .indent-top.indent-bottom > .row > [class*="col-"], .fund-family .toggle .container > .indent-top.indent-bottom > .row > [class*="col-"] {
