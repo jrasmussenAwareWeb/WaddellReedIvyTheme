@@ -249,21 +249,29 @@
                 vertical-align:top;
             }
             dt {
-            width:25%;
-            //@include proximaboldcondensed();
-            @include proxima();
-            font-weight:700;
-            text-transform:uppercase;
-            text-align:right;
-            margin-bottom:$middle-margin;
+                width:25%;
+                //@include proximaboldcondensed();
+                @include proxima();
+                font-weight:700;
+                text-transform:uppercase;
+                
             }
             dd {
                 width:72%;
                 padding-left:3%;
+                margin-bottom:$middle-margin;
+
                 &:last-of-type {
-                        padding-bottom:$large-margin;
+                    padding-bottom:$large-margin;
                 }
             }
+             @include respond-to(desktop) {
+                text-align:right;
+                dt {
+                    margin-bottom:$middle-margin;
+                }
+            }
+
             @include respond-to(all-mobile) {
                 dt, dd {
                     width:100%;
