@@ -277,6 +277,20 @@
                 }
             }
         }
+        &.morningstar-logo {
+            position:relative;
+            img {
+                width:100%;
+                height:auto;
+                max-width:100px;
+                @include respond-to(mobile-horizontal) {
+                    float:right;
+                    position:absolute;
+                    right:0;
+                    top:10px;
+                }
+            }
+        }
     }
     .container-gray-background {
         padding:30px;

@@ -912,6 +912,25 @@ table td:first-child {
   }
 }
 
+.fund-details section.morningstar-logo, .fund-family section.morningstar-logo {
+  position: relative;
+}
+
+.fund-details section.morningstar-logo img, .fund-family section.morningstar-logo img {
+  width: 100%;
+  height: auto;
+  max-width: 100px;
+}
+
+@media only screen and (min-width: 576px) {
+  .fund-details section.morningstar-logo img, .fund-family section.morningstar-logo img {
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
+}
+
 .fund-details .container-gray-background, .fund-family .container-gray-background {
   padding: 30px;
 }
