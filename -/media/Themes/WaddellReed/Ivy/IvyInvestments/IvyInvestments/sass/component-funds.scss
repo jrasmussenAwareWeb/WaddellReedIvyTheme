@@ -264,11 +264,15 @@
                 &:last-of-type {
                     padding-bottom:$large-margin;
                 }
+                /*@include respond-to(desktop) {
+                    text-align:right;
+                }*/
             }
              @include respond-to(desktop) {
-                text-align:right;
+                //text-align:right;
                 dt {
                     margin-bottom:$middle-margin;
+                    text-align:right;
                 }
             }
 
