@@ -26,6 +26,9 @@ $table-dark-hover-bg:         rgba($bg-basic-color, .075) !default;
 $table-dark-border-color:     lighten($border-gray, 7.5%) !default;
 $table-dark-color:            $bg-light-gray !default;
 
+$table-header-green:        #00A952;
+$table-header-grey:         #DBDCDE;
+
 $table-striped-order:         odd !default;
 
 $table-caption-color:         $text-disabled !default;
@@ -43,6 +46,12 @@ table {
   }
   thead th {
     border-bottom: solid 2px $border-gray;
+      &.table-header-green {
+        color:$table-header-green;
+      }
+      &.table-header-grey {
+        color:$table-header-grey;
+      }
   }
   tr, th, td {
       padding: 5px;

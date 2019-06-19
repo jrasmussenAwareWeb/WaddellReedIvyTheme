@@ -227,12 +227,20 @@
   border-bottom: solid 2px #c2c2c2;
 }
 
+.navigation table thead th.table-header-green {
+  color: #00A952;
+}
+
+.navigation table thead th.table-header-grey {
+  color: #DBDCDE;
+}
+
 .navigation table tr, .navigation table th, .navigation table td {
   padding: 5px;
 }
 
 .navigation table caption {
-  background-color: #d9d9d6;
+  background-color: #f0f0f0;
   overflow: hidden;
   padding: 10px;
   margin-left: 0;

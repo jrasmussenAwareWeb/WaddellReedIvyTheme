@@ -171,12 +171,20 @@ strong {
   border-bottom: solid 2px #c2c2c2;
 }
 
+.content table thead th.table-header-green, .rich-text table thead th.table-header-green {
+  color: #00A952;
+}
+
+.content table thead th.table-header-grey, .rich-text table thead th.table-header-grey {
+  color: #DBDCDE;
+}
+
 .content table tr, .content table th, .content table td, .rich-text table tr, .rich-text table th, .rich-text table td {
   padding: 5px;
 }
 
 .content table caption, .rich-text table caption {
-  background-color: #d9d9d6;
+  background-color: #f0f0f0;
   overflow: hidden;
   padding: 10px;
   margin-left: 0;
@@ -436,9 +444,6 @@ strong {
 }
 
 .rich-text.section-title {
-  /*@include respond-to(mobile-large) {
-        padding:0;
-    }*/
   padding: 0;
 }
 
@@ -926,6 +931,10 @@ strong {
 .rich-text p, .content p {
   font-size: 18px;
   margin-top: 0;
+}
+
+.rich-text p.fine-print, .content p.fine-print {
+  font-size: 14px;
 }
 
 .rich-text .lead, .content .lead {

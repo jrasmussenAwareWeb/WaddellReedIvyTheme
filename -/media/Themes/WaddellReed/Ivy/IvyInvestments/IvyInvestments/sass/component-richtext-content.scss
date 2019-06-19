@@ -41,6 +41,10 @@
     p {
         font-size:$font-medium;
         margin-top:0;
+        //Ticket #142 
+            &.fine-print {
+                font-size:$font-small;
+            }
     }
     .lead {
         font-size:$font-lead;

@@ -80,7 +80,6 @@
 }
 
 .plain-html table, .plain-html table tr, .plain-html table th, .plain-html table td {
-  background: #FFFFFF;
   border-collapse: collapse;
   vertical-align: middle;
 }
@@ -93,16 +92,22 @@
   border-bottom: solid 2px #c2c2c2;
 }
 
+.plain-html table thead th.table-header-green {
+  color: #00A952;
+}
+
+.plain-html table thead th.table-header-grey {
+  color: #DBDCDE;
+}
+
 .plain-html table tr, .plain-html table th, .plain-html table td {
   padding: 5px;
 }
 
 .plain-html table caption {
-  background-color: #d9d9d6;
+  background-color: #f0f0f0;
   overflow: hidden;
   padding: 10px;
-  font-size: 20px;
-  font-weight: bold;
   margin-left: 0;
 }
 
