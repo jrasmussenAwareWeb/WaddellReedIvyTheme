@@ -32,7 +32,7 @@
 }
 
 .market-selector input[type="submit"]:hover, .market-selector input[type="reset"]:hover, .market-selector input[type="button"]:hover, .market-selector button:hover {
-  background: #d9d9d6;
+  background: #f0f0f0;
 }
 
 .market-selector input::-moz-focus-inner, .market-selector button::-moz-focus-inner {

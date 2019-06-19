@@ -33,7 +33,7 @@
 }
 
 .login input[type="submit"]:hover, .login input[type="reset"]:hover, .login input[type="button"]:hover, .login button:hover {
-  background: #d9d9d6;
+  background: #f0f0f0;
 }
 
 .login input::-moz-focus-inner, .login button::-moz-focus-inner {
