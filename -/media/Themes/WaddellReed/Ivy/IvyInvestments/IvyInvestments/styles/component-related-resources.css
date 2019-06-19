@@ -92,6 +92,17 @@
   }
 }
 
+.related-resources.wrap-4 .item {
+  /*
+            @include respond-to(tablet) {
+                .field-excerpt {
+                    min-height:110px;
+                    max-height:110px;
+                    overflow:hidden;
+                }
+            }*/
+}
+
 @media only screen and (min-width: 768px) {
   .related-resources.wrap-4 .item {
     width: 50%;
@@ -108,14 +119,6 @@
   .related-resources.wrap-4 .item {
     padding: 0;
     margin-bottom: 30px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .related-resources.wrap-4 .item .field-excerpt {
-    min-height: 110px;
-    max-height: 110px;
-    overflow: hidden;
   }
 }
 

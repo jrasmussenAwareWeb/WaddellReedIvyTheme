@@ -9,22 +9,25 @@
         border-bottom:0;
         width:33%;
         float:left;
-        @include respond-to(desktop) {
+        @include respond-to(desktop) { 
             padding:0 0 15px 15px;
             margin-bottom:$large-margin;
         }
         //constrain the item height
-        @include respond-to(large) {
-            min-height:415px;
-            max-height:415px;
+        >div {
+            @include respond-to(large) {
+                min-height:415px;
+                max-height:415px;
+            }
         }
         @include respond-to(mobile-large) {
             width:100%;
             float:none;
         }
-         @include respond-to(tablet-only) {
+        @include respond-to(tablet-only) {
             width:50%;
         }
+
         .field-image, .field-listimage {
             img {
                 width:100%;
@@ -72,6 +75,10 @@
         .item {
             min-height:430px;
             max-height:430px;
+            >div {
+                min-height:auto;
+                max-height:auto;
+            }
         }
     }
     &.perspectives {
@@ -80,6 +87,10 @@
                 min-height:450px;
                 max-height:450px;
                 overflow:hidden;
+                >div {
+                    min-height:auto;
+                    max-height:auto;
+                }
             }
             .wrap-labels {
                 line-height:1;
@@ -159,6 +170,10 @@
                 width:33.3%;
                 float:left;
             }
+            >div {
+                min-height:auto;
+                max-height:auto;
+            }
             @include respond-to(desktop) {
                 min-height:360px;
                 max-height:360px;
@@ -191,7 +206,10 @@
                 min-height:300px; //290 per design
                 max-height:300px;
                 overflow:hidden;
-
+                >div {
+                    min-height:auto;
+                    max-height:auto;
+                }
                 width:50%;
                 float:left;
                 padding:0;

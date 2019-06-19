@@ -54,7 +54,7 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .page-list.general-landing .item {
+  .page-list.general-landing .item > div {
     min-height: 415px;
     max-height: 415px;
   }
@@ -118,11 +118,20 @@
   max-height: 430px;
 }
 
+.page-list.general-landing.bridge-gap .item > div {
+  min-height: auto;
+  max-height: auto;
+}
+
 @media only screen and (min-width: 768px) {
   .page-list.general-landing.perspectives .item {
     min-height: 450px;
     max-height: 450px;
     overflow: hidden;
+  }
+  .page-list.general-landing.perspectives .item > div {
+    min-height: auto;
+    max-height: auto;
   }
 }
 
@@ -163,7 +172,7 @@
     min-height: 100%;
     max-height: 100%;
     overflow: hidden;
-    background-color: #d9d9d6;
+    background-color: #f0f0f0;
   }
   .page-list.general-landing.perspectives .item:first-of-type .field-image, .page-list.general-landing.perspectives .item:first-of-type .field-listimage, .page-list.general-landing.perspectives .item:first-of-type .wrap-content {
     float: left;
@@ -215,6 +224,11 @@
   }
 }
 
+.page-list.general-landing.audio-insights .item > div {
+  min-height: auto;
+  max-height: auto;
+}
+
 @media only screen and (min-width: 992px) {
   .page-list.general-landing.audio-insights .item {
     min-height: 360px;
@@ -259,6 +273,10 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .page-list.general-landing.replays .item > div {
+    min-height: auto;
+    max-height: auto;
   }
 }
 
