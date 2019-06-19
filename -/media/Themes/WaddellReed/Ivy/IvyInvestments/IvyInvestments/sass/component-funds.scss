@@ -6,8 +6,9 @@
 @import "styles/tabs/*";
 @import "styles/accordion/*";
 
-.fund-details, .fund-family { 
+.fund-details, .fund-family {
     width:100%;
+
     .fund-title {
         h1, h2, h3, h4, h5, h6 {
             color:$text-basic;
@@ -68,23 +69,6 @@
                     }
                 }
             }
-        }
-    }
-
- 
-    //we have to overwrite the d-none on the dynamically generated sticky table when switching the summary table options
-    .tablesorter-sticky-visible {
-        >.SumTable { 
-            &.d-none {
-                display:block !important;
-            } 
-        } 
-    }
-
-
-    @include respond-to(all-mobile) {
-        .tablesorter-sticky-visible {
-            top:80px !important;
         }
     }
 
@@ -264,12 +248,8 @@
                 &:last-of-type {
                     padding-bottom:$large-margin;
                 }
-                /*@include respond-to(desktop) {
-                    text-align:right;
-                }*/
             }
              @include respond-to(desktop) {
-                //text-align:right;
                 dt {
                     margin-bottom:$middle-margin;
                     text-align:right;
@@ -384,6 +364,12 @@
         }
     }
 
+    @media print {
+        /*table {
+            page-break-inside: avoid;
+        }*/
+    }
+
     table {
         font-size:$font-small;
         caption {
@@ -427,6 +413,22 @@
                 .st-head-row {
                     padding-top:$middle-margin;
                 }
+            }
+        }
+
+        //we have to overwrite the d-none on the dynamically generated sticky table when switching the summary table options
+        .tablesorter-sticky-visible {
+            >.SumTable { 
+                &.d-none {
+                    display:block !important;
+                } 
+            } 
+        }
+
+
+        @include respond-to(all-mobile) {
+            .tablesorter-sticky-visible {
+                top:80px !important;
             }
         }
 
@@ -528,6 +530,9 @@
         }
         tr, th, td {
             font-size:$font-small !important;
+            @media print {
+                font-size:12px;
+            }
             &.text-center {
                 text-align:center !important;
             }
@@ -558,6 +563,16 @@
                         &:not(.sorter-false) {
                             text-align:left;
                         }
+                    }
+                }
+            }
+            &.SumTable, #documents {
+                @media print {
+                    th, td {
+                        padding:0;
+                    }
+                    td {
+                        padding:5px 0;
                     }
                 }
             }
@@ -598,6 +613,11 @@
                     }
                 }
             }
+            &#documents {
+            .print-tablesorter-only {
+                display:none;
+            }
+        }
         }
 
         &#calendar-year {

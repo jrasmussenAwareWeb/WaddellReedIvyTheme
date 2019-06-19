@@ -92,12 +92,20 @@ table thead th {
   border-bottom: solid 2px #c2c2c2;
 }
 
+table thead th.table-header-green {
+  color: #00A952;
+}
+
+table thead th.table-header-grey {
+  color: #DBDCDE;
+}
+
 table tr, table th, table td {
   padding: 5px;
 }
 
 table caption {
-  background-color: #d9d9d6;
+  background-color: #f0f0f0;
   overflow: hidden;
   padding: 10px;
   margin-left: 0;
@@ -372,16 +380,16 @@ table td:first-child {
 .tabs.tabs-vertical.tabs-vertical-right .tabs-heading li {
   border-top-width: 1px;
   border-top-style: solid;
-  border-top-color: #d9d9d6;
+  border-top-color: #f0f0f0;
   border-left-width: 1px;
   border-left-style: solid;
-  border-left-color: #d9d9d6;
+  border-left-color: #f0f0f0;
   border-right-width: 2px;
   border-right-style: solid;
   border-right-color: #b7b7b7;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #d9d9d6;
+  border-bottom-color: #f0f0f0;
 }
 
 .tabs.tabs-vertical.tabs-vertical-right .tabs-heading li.active {
@@ -707,16 +715,6 @@ table td:first-child {
   }
 }
 
-.fund-details .tablesorter-sticky-visible > .SumTable.d-none, .fund-family .tablesorter-sticky-visible > .SumTable.d-none {
-  display: block !important;
-}
-
-@media only screen and (max-width: 991px) {
-  .fund-details .tablesorter-sticky-visible, .fund-family .tablesorter-sticky-visible {
-    top: 80px !important;
-  }
-}
-
 .fund-details .tabs, .fund-family .tabs {
   margin-top: 30px;
   background: #FFFFFF;
@@ -894,9 +892,6 @@ table td:first-child {
   width: 72%;
   padding-left: 3%;
   margin-bottom: 20px;
-  /*@include respond-to(desktop) {
-                    text-align:right;
-                }*/
 }
 
 .fund-details section dl dd:last-of-type, .fund-family section dl dd:last-of-type {
@@ -1020,6 +1015,14 @@ table td:first-child {
   margin-bottom: 10px;
 }
 
+@media print {
+  .fund-details, .fund-family {
+    /*table {
+            page-break-inside: avoid;
+        }*/
+  }
+}
+
 .fund-details table, .fund-family table {
   font-size: 14px;
 }
@@ -1077,6 +1080,16 @@ table td:first-child {
   }
   .fund-details table.stacktable.small-only .st-head-row, .fund-family table.stacktable.small-only .st-head-row {
     padding-top: 20px;
+  }
+}
+
+.fund-details table .tablesorter-sticky-visible > .SumTable.d-none, .fund-family table .tablesorter-sticky-visible > .SumTable.d-none {
+  display: block !important;
+}
+
+@media only screen and (max-width: 991px) {
+  .fund-details table .tablesorter-sticky-visible, .fund-family table .tablesorter-sticky-visible {
+    top: 80px !important;
   }
 }
 
@@ -1186,6 +1199,12 @@ table td:first-child {
   font-size: 14px !important;
 }
 
+@media print {
+  .fund-details table tr, .fund-details table th, .fund-details table td, .fund-family table tr, .fund-family table th, .fund-family table td {
+    font-size: 12px;
+  }
+}
+
 .fund-details table tr.text-center, .fund-details table th.text-center, .fund-details table td.text-center, .fund-family table tr.text-center, .fund-family table th.text-center, .fund-family table td.text-center {
   text-align: center !important;
 }
@@ -1218,6 +1237,15 @@ table td:first-child {
   text-align: left;
 }
 
+@media print {
+  .fund-details table.table-center.SumTable th, .fund-details table.table-center.SumTable td, .fund-details table.table-center #documents th, .fund-details table.table-center #documents td, .fund-family table.table-center.SumTable th, .fund-family table.table-center.SumTable td, .fund-family table.table-center #documents th, .fund-family table.table-center #documents td {
+    padding: 0;
+  }
+  .fund-details table.table-center.SumTable td, .fund-details table.table-center #documents td, .fund-family table.table-center.SumTable td, .fund-family table.table-center #documents td {
+    padding: 5px 0;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .fund-details table.table-center.YieldsTable th:nth-of-type(3), .fund-details table.table-center.YieldsTable th:nth-of-type(4), .fund-details table.table-center.YieldsTable th:nth-of-type(5), .fund-details table.table-center.YieldsTable th:nth-of-type(6), .fund-family table.table-center.YieldsTable th:nth-of-type(3), .fund-family table.table-center.YieldsTable th:nth-of-type(4), .fund-family table.table-center.YieldsTable th:nth-of-type(5), .fund-family table.table-center.YieldsTable th:nth-of-type(6) {
     width: 25%;
@@ -1244,6 +1272,10 @@ table td:first-child {
   .fund-details table.table-center.TickersTable th:last-child, .fund-family table.table-center.TickersTable th:last-child {
     width: 12%;
   }
+}
+
+.fund-details table.table-center#documents .print-tablesorter-only, .fund-family table.table-center#documents .print-tablesorter-only {
+  display: none;
 }
 
 .fund-details table#calendar-year form, .fund-family table#calendar-year form {

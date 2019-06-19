@@ -261,7 +261,7 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
     }
 }
 
-
+/*TEMP*/
 table.filtered-columns td, table.filtered-columns th {
     display: none;
 }
@@ -272,45 +272,46 @@ table.filtered-columns td.static, table.filtered-columns td.show, table.filtered
 
 
 /*stacktable*/
-.plain-html {
-    .stacktable.large-only {display:table}
-    .stacktable.small-only {display: none}
-    @media (max-width:767px) {
-    .stacktable.large-only {display: none}
-    .stacktable.small-only {
-        display: table;
-        width:100%;
-        }
+.stacktable.large-only {display:table}
+.stacktable.small-only {display: none}
+@media (max-width:767px) {
+.stacktable.large-only {display: none}
+.stacktable.small-only {
+    display: table;
+    width:100%;
     }
-    /*stacktable*/
+}
+/*stacktable*/
 
-    .table {
-        th, td {
-            padding:5px 15px;
-        }
+.table {
+    th, td {
+        padding:5px 15px;
     }
-    .table-queue {
-        margin:0;
-        th, td {
-            font-size:$font-small;
-        }
-    }
-    .table-funds {
+}
+
+.table-queue {
+    margin:0;
+    th, td {
         font-size:$font-small;
-        a {
-            color:$text-green;
-            text-decoration:none;
-            &:hover, &:focus {
-                text-decoration:underline;
-            }
-            i, em {
-                color:$text-basic;
-                margin-right:5px;
-                font-size:0.75em;
-            }
+    }
+}
+
+.table-funds {
+    font-size:$font-small;
+    a {
+        color:$text-green;
+        text-decoration:none;
+        &:hover, &:focus {
+            text-decoration:underline;
+        }
+        i, em {
+            color:$text-basic;
+            margin-right:5px;
+            font-size:0.75em;
         }
     }
 }
+/*TEMP*/
 
 iframe {
     width:100%;
@@ -419,4 +420,41 @@ iframe {
 @keyframes arrow-infinite {
     0%   { transform: translateY(50px); }
     100%   { transform: translateY(-50px); }
+}
+
+@media print {
+    @page {}
+    header, #header, .scrolltop-wrap, .privacy-warning, #footer {
+        display:none;
+    }
+    #content {
+        top:0;
+    }
+
+    body, main {
+    font-size:12px;
+      border: 0;
+      float: none;
+      margin: 0;
+      overflow: visible;
+      padding: 0;
+      position: static;
+    }
+
+    @-moz-document url-prefix() {
+        table, tr {
+            /* tries to fix firefox 21+ shrink-to-fit */
+            page-break-inside: avoid;
+        }
+    }
+
+    /*table {
+        height:100% !important;
+        thead {
+        display: table-header-group;
+        }
+        tr{
+            page-break-inside: avoid;
+        } 
+    }*/
 }

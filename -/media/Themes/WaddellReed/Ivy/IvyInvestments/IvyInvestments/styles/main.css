@@ -3373,6 +3373,7 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
   margin-right: 5px;
 }
 
+/*TEMP*/
 table.filtered-columns td, table.filtered-columns th {
   display: none;
 }
@@ -3382,59 +3383,57 @@ table.filtered-columns td.static, table.filtered-columns td.show, table.filtered
 }
 
 /*stacktable*/
-.plain-html {
-  /*stacktable*/
-}
-
-.plain-html .stacktable.large-only {
+.stacktable.large-only {
   display: table;
 }
 
-.plain-html .stacktable.small-only {
+.stacktable.small-only {
   display: none;
 }
 
 @media (max-width: 767px) {
-  .plain-html .stacktable.large-only {
+  .stacktable.large-only {
     display: none;
   }
-  .plain-html .stacktable.small-only {
+  .stacktable.small-only {
     display: table;
     width: 100%;
   }
 }
 
-.plain-html .table th, .plain-html .table td {
+/*stacktable*/
+.table th, .table td {
   padding: 5px 15px;
 }
 
-.plain-html .table-queue {
+.table-queue {
   margin: 0;
 }
 
-.plain-html .table-queue th, .plain-html .table-queue td {
+.table-queue th, .table-queue td {
   font-size: 14px;
 }
 
-.plain-html .table-funds {
+.table-funds {
   font-size: 14px;
 }
 
-.plain-html .table-funds a {
+.table-funds a {
   color: #009639;
   text-decoration: none;
 }
 
-.plain-html .table-funds a:hover, .plain-html .table-funds a:focus {
+.table-funds a:hover, .table-funds a:focus {
   text-decoration: underline;
 }
 
-.plain-html .table-funds a i, .plain-html .table-funds a em {
+.table-funds a i, .table-funds a em {
   color: #000000;
   margin-right: 5px;
   font-size: 0.75em;
 }
 
+/*TEMP*/
 iframe {
   width: 100%;
 }
@@ -3582,4 +3581,37 @@ iframe {
     -webkit-transform: translateY(-50px);
     transform: translateY(-50px);
   }
+}
+
+@media print {
+  @page {}  header, #header, .scrolltop-wrap, .privacy-warning, #footer {
+    display: none;
+  }
+  #content {
+    top: 0;
+  }
+  body, main {
+    font-size: 12px;
+    border: 0;
+    float: none;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    position: static;
+  }
+  @-moz-document url-prefix() {
+    table, tr {
+      /* tries to fix firefox 21+ shrink-to-fit */
+      page-break-inside: avoid;
+    }
+  }
+  /*table {
+        height:100% !important;
+        thead {
+        display: table-header-group;
+        }
+        tr{
+            page-break-inside: avoid;
+        } 
+    }*/
 }
