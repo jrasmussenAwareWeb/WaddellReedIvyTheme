@@ -4,6 +4,17 @@
 @import "base/fonts/fonts";
 @import "base/fontawesome/font-awesome";
 //@import "base/fontawesome5/fontawesome";
+
+//hide scripts in the EE that shouldnt be showing in EE - 529 plan
+body.on-page-editor {
+    .scEnabledChrome {
+        &.hidden {
+            display:none !important;
+        }
+    }
+}
+//hide scripts in the EE that shouldnt be showing in EE - 529 plan
+
 html {
     font-size: 62.5%;
     -webkit-font-smoothing: antialiased;

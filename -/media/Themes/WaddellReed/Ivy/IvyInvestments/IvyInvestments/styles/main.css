@@ -3082,6 +3082,10 @@
   clip: auto;
 }
 
+body.on-page-editor .scEnabledChrome.hidden {
+  display: none !important;
+}
+
 html {
   font-size: 62.5%;
   -webkit-font-smoothing: antialiased;
