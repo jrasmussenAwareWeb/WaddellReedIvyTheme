@@ -332,43 +332,70 @@
                         color:$text-basic;
                         margin:15px 5px 0;
                     }
-                    div {
-                        a {
-                        display: inline;
-                        color:$text-green;
-                            &:hover, &:focus {
-                                color:$text-basic;
-                            }
+                    a {
+                    display: inline;
+                    color:$text-green;
+                        &:hover, &:focus {
+                            color:$text-basic;
                         }
-                        p {
-                            margin:$middle-margin 0;
+                    }
+                    p {
+                        margin:$middle-margin 0;
+                        font-size:$font-small;
+                        strong {
+                            font-size:$font-normal;
+                            line-height:1;
+                        }
+                        a {
                             font-size:$font-small;
-                            strong {
-                                font-size:$font-normal;
-                                line-height:1;
-                            }
-                            a {
-                                font-size:$font-small;
-                            }
                         }
                     }
                     table {
                         width:100%;
-                        font-size:$font-small;
+                        //font-size:$font-small;
+                        font-size:12px;
                         margin-top:15px;
                         margin-left:5px;
+                        &.table-striped {
+                            tbody {
+                                tr {
+                                    &:nth-of-type(odd) {
+                                        td {
+                                            background-color:#d9d9d6;
+                                        }
+                                    }
+                                    &:nth-of-type(even) {
+                                        td {
+                                            background-color:$text-white;
+                                        }
+                                    }
+                                    td {
+                                        &:last-child {
+                                            width:30%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                         a {
                             font-size:$font-small;
                             text-decoration:none;
                              &.track-fund {
-                                color:$text-basic;
-                                &:before {
+                                .fa {
+                                    color:$text-green;
+                                    margin-right:3px;
+                                    font-size:10px;
+                                    font-weight:normal;
+                                    position:relative;
+                                    top:-1px;
+                                }
+                                /*&:before {
                                     font-size:inherit;
                                     @include fa-icon();
                                     content: $fa-var-plus;
                                     color:$text-green;
                                     margin-right:5px;
-                                }
+                                }*/
                             }
                         }
                     }

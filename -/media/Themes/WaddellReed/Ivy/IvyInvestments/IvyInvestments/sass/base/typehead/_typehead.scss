@@ -10,12 +10,16 @@
     background: $bg-basic-color;
     width: 100%;
     border: 1px solid $border-gray;
+    //ivy specific
+    top:105% !important;
+    position:relative;
+    z-index:10;
  }
  .tt-hint {
      color: $tt-color;
  }
  .tt-dropdown-menu {
-     width: 250px;
+     //width: 250px;
      margin-top: 5px;
      background-color: $tt-dropdown-bg;
      border: 1px solid $tt-dropdown-border;
@@ -29,6 +33,9 @@
      overflow: hidden;
      a {
          text-decoration: none;
+         //ivy specific
+         font-size:$font-small;
+         text-transform:uppercase;
      }
      &:last-child {
          border: none;

@@ -1,4 +1,4 @@
-.button-default, .btn-default, .default {
+.button-default, .btn-default, .default, .btn-white {
     //@include border-basic();
     //@include font-size(1.2);
     display: inline-block;
@@ -21,6 +21,7 @@
         color: $text-white;
         background: $bg-green;
         border:2px solid $text-green;
+        text-decoration:none;
     }
 }
 .button-success, .btn-success, .success {
@@ -63,6 +64,33 @@
 }
 
 //Ivy Specific
+.button-primary, .btn-primary, .btn-green {
+    //@include border-basic();
+    //@include font-size(1.2);
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    margin: 5px 0;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    //background: #f6f6f6;
+    //color: $text-basic;
+    //font-weight: bold;
+    //Ivy
+    border:2px solid $text-green;
+    background:$bg-green;
+    color:$text-white;
+    text-transform:uppercase;
+    font-size:$font-normal;
+    &:hover, &:focus {
+        color: $text-green;
+        background: $bg-basic-color;
+        border:2px solid $text-green;
+        text-decoration:none;
+    }
+}
+
 .btn-block {
     width:100%;
 }

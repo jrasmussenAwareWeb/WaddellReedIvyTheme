@@ -1,0 +1,89 @@
+@import "abstracts/mixins";
+@import "abstracts/vars";
+@import "base/fontawesome/font-awesome-mix-var";
+@import "base/links/*";
+
+.fund-search {
+    @include respond-to(tablet) {
+        padding-left:15px;
+    }
+    &.accordion {
+        .item {
+            &:last-child {
+                border-bottom:0;
+            }
+        }
+        .toggle-header {
+            border:1px solid $border-gray;
+            -webkit-box-shadow: none; 
+            -moz-box-shadow: none;
+            box-shadow: none;
+            .label {
+                padding:5px 15px;
+                @include proximaboldcondensed();
+                font-size:$font-extrabig;
+                text-transform:uppercase;
+            }
+            .field-heading {
+                &:after {
+                    @include fa-icon();
+                    font-size: 20px;
+                    position: absolute;
+                    display: block;
+                    content: $fa-var-chevron-down;
+                    color:$text-green;
+                    top: 50%;
+                    right: 10px;
+                    transform: translateY(-50%);
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+        .active {
+            .toggle-header {
+                border-bottom:0;
+            }
+        }
+        .toggle-content {
+            border:1px solid $border-gray;
+            border-top:0;
+            padding:0;
+            ul {
+                width:100%;
+                li {
+                    width:100%;
+                    a {
+                        width:100%;
+                        display:block;
+                        background-color:$bg-basic-color;
+                        text-decoration:none;
+                        padding:3px 15px;
+                        color:$text-green;
+                        font-size:$font-small;
+                        span {
+                            color:$text-basic;
+                        }
+                        &:hover, &:focus {
+                            background-color:$bg-light-gray;
+                        }
+                    }
+                    &:first-child {
+                        a {
+                            padding-top:10px;
+                        }
+                    }
+                        &:last-child {
+                        a {
+                            padding-bottom:10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &:after {
+        clear:both;
+        display:table;
+    }
+}

@@ -1,7 +1,6 @@
 &.content-highlight {
     padding:0;
     //margin-bottom:$extralarge-margin;
-
     
     @include respond-to(mobile-large) {
         .field-title {
@@ -38,7 +37,9 @@
             padding-bottom:5px;
         }
         p {
-            font-size:$font-normal;
+            //font-size:$font-normal;
+            font-size:$font-small;
+            margin:$small-margin 0;
         }
         ul, ol {
             margin-left:0;
@@ -63,10 +64,10 @@
             background-color:$bg-white;
             //http://www.psd-to-css-shadows.com/ color:0,0,0 -  opacity 40% - angle 90 - distance 2 - spread 4 - size 6
             //https://www.cssmatic.com/box-shadow
-            -webkit-box-shadow: 0px 2px 5.76px 0.24px rgba(0, 0, 0, 0.4); 
-            -moz-box-shadow: 0px 2px 5.76px 0.24px rgba(0, 0, 0, 0.4); 
-            box-shadow: 0px 2px 5.76px 0.24px rgba(0, 0, 0, 0.4); 
-            border-right:1px solid rgba(0, 0, 0, 0.1); 
+            -webkit-box-shadow: 0px 0px 5.76px 0.24px rgba(0, 0, 0, 0.4); 
+            -moz-box-shadow: 0px 0px 5.76px 0.24px rgba(0, 0, 0, 0.4); 
+            box-shadow: 0px 0px 5.76px 0.24px rgba(0, 0, 0, 0.4); 
+            border-right:1px solid rgba(0, 0, 0, 0.2); 
             @include respond-to(mobile-large) {
                 margin:$large-margin 0;
             }

@@ -97,7 +97,7 @@
 }
 
 .login table td.sxa-validation .field-validation-error {
-  color: #6d3332;
+  color: red;
   font-size: 14px;
 }
 
@@ -154,10 +154,10 @@
 }
 
 .login table .sxa-login-failed {
-  color: #6d3332;
+  color: red;
 }
 
 .login table .field-validation-error .field-validation-error {
-  color: #6d3332;
+  color: red;
   font-size: 14px;
 }

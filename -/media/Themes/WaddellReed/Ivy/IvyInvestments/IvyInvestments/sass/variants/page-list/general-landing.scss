@@ -28,6 +28,7 @@
             width:50%;
         }
 
+        a {border-bottom:0}
         .field-image, .field-listimage {
             img {
                 width:100%;
@@ -92,6 +93,13 @@
                     max-height:auto;
                 }
             }
+             a {
+                &:hover, &:focus {
+                    img {
+                        opacity:.85;
+                    }
+                }
+            }
             .wrap-labels {
                 line-height:1;
                 margin-bottom:5px;
@@ -100,6 +108,14 @@
                     //font-size:$font-small; //we need to use this for 508c i.e. minimum font size 14px not 12px
                     font-size:12px;
                     text-transform:uppercase;
+                    a {
+                        color:$text-basic;
+                        text-decoration:none;
+                        border-bottom:0;
+                        &:hover, &:focus {
+                            text-decoration:underline;
+                        }
+                    }
                 }
             }
             &:first-of-type {
@@ -140,12 +156,16 @@
                 .wrap-labels {
                     .field-labelsuffix {
                         color:$text-green;
+                        a {
+                            color:$text-green;
+                        }
                     }
                 }
                 .field-title {
                     color:$text-basic;
                     a {
                         color:inherit;
+                        display:inline-block; //for whitespace and the hover - assumes the first item will never be locked
                         &:hover, &:focus {
                             color:$text-green;
                         }
@@ -159,26 +179,57 @@
     }
     &.audio-insights {
         .item {
+            width:33.3%;
+            .field-video {
+                iframe {
+                    height:130px !important;
+                    padding:0 8px 0 0;
+                }
+            }
             @include respond-to(mobile-large) {
-                //width:100%;
-                //float:none;
                 width:50%;
                 float:left;
+                field-video {
+                    iframe {
+                        height:123px !important;
+                    }
+                }
+            }
+             @include respond-to(mobile) { 
+                width:100%; 
+                float:none;
+                .field-video {
+                    iframe {
+                        height:125px !important;
+                    }
+                }
             }
             @include respond-to(tablet-only) {
                 //width:50%;
                 width:33.3%;
                 float:left;
+                min-height:380px;
+                max-height:380px;
+                overflow:hidden;
+                .field-video { 
+                    iframe {
+                        height:110px !important;
+                        padding:0 10px 0 0;
+                    }
+                }
             }
             >div {
                 min-height:auto;
                 max-height:auto;
+                &.field-excerpt {
+                    font-size:$font-normal;
+                }
             }
             @include respond-to(desktop) {
-                min-height:360px;
-                max-height:360px;
+                min-height:350px;
+                max-height:350px;
                 overflow:hidden;
-                 width:24.75%;
+                width:24.75%;
             }
             .wrap-labels {
                 font-size:$font-small;

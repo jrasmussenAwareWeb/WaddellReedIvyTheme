@@ -71,6 +71,94 @@
   text-transform: uppercase;
 }
 
+.related-resources .item .card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #ffffff;
+  background-clip: border-box;
+  padding: 15px 0;
+}
+
+.related-resources .item .card .card-title, .related-resources .item .card strong, .related-resources .item .card .card-text, .related-resources .item .card .card-link {
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.related-resources .item .card .card-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "CopernicusBook", arial, helvetica, sans-serif;
+  color: #009639;
+}
+
+.related-resources .item .card strong {
+  font-size: 16px;
+}
+
+.related-resources .item .card .card-text {
+  padding: 0;
+}
+
+.related-resources .item .card .card-body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.related-resources .item .card .card-body table {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.related-resources .item .card .card-body table th, .related-resources .item .card .card-body table td {
+  font-size: 14px;
+}
+
+.related-resources .item .card .card-body table th {
+  font-weight: normal;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.related-resources .item .card .card-body .card-text {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 14px;
+  margin: 10px auto;
+}
+
+.related-resources .item .card .card-body .card-text span:first-of-type, .related-resources .item .card .card-body .card-text span:last-of-type {
+  font-size: 20px;
+}
+
+.related-resources .item .card .card-body .card-text span:first-of-type {
+  color: #009639;
+}
+
+.related-resources .item .card .card-body .card-link {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.related-resources .item .card .card-body .card-link a i:before {
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 991px) {
+  .related-resources .item .card {
+    margin: 15px auto;
+  }
+}
+
 @media only screen and (min-width: 992px) {
   .related-resources.wrap-4 {
     position: relative;
@@ -158,12 +246,12 @@
   }
 }
 
-.related-resources.wrap-3 .item .wrap-item {
+.related-resources.wrap-3 .item .wrap-item, .related-resources.wrap-3 .item .card {
   box-shadow: 0px 2px 5.76px 0.24px rgba(0, 0, 0, 0.4);
 }
 
 @media only screen and (min-width: 768px) {
-  .related-resources.wrap-3 .item .wrap-item {
+  .related-resources.wrap-3 .item .wrap-item, .related-resources.wrap-3 .item .card {
     min-height: 320px;
     max-height: 320px;
   }

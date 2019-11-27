@@ -257,13 +257,13 @@
 
 .labels-above .required label:after {
   content: "*";
-  color: #6d3332;
+  color: red;
   margin-left: 5px;
   font-family: "ProximaBold", arial, helvetica, sans-serif;
 }
 
 .labels-above .field-validation-error {
-  color: #6d3332;
+  color: red;
   display: block;
   width: 100%;
   font-size: 14px;
@@ -343,6 +343,6 @@
 }
 
 .use-grid form .field-validation-error {
-  color: #6d3332;
+  color: red;
   font-size: 14px;
 }

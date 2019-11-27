@@ -1,12 +1,11 @@
 @import "abstracts/mixins";
 @import "abstracts/vars";
 .tabs {
-    overflow: hidden;
-    position: relative;
     background: none;
     border: none;
     position: relative;
     overflow: hidden;
+    
     //Ivy Specific
     padding:0;
     margin-bottom:$extralarge-margin;

@@ -304,6 +304,24 @@ strong {
   }
 }
 
+.promo.cta.funds {
+  margin-bottom: 30px;
+  background: #FFFFFF;
+  border: 1px solid #009639;
+}
+
+.promo.cta.funds .promo-text {
+  padding: 60px 30px 0;
+  background-color: transparent;
+  border: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .promo.cta.funds {
+    margin-top: 30px;
+  }
+}
+
 .promo.resource[class*="col-"] {
   padding: 0;
 }

@@ -215,28 +215,26 @@
 }
 
 .navigation table, .navigation table tr, .navigation table th, .navigation table td {
-  border-collapse: collapse;
+  border-collapse: separate;
   vertical-align: middle;
 }
 
 .navigation table th, .navigation table td {
   border-top: solid 1px #c2c2c2;
+  padding: 5px 15px;
 }
 
 .navigation table thead th {
   border-bottom: solid 2px #c2c2c2;
 }
 
-.navigation table thead th.table-header-green {
-  color: #00A952;
+.navigation table thead.table-header-green, .navigation table tr.table-header-green {
+  background-color: #00A952;
+  color: #fff;
 }
 
-.navigation table thead th.table-header-grey {
-  color: #DBDCDE;
-}
-
-.navigation table tr, .navigation table th, .navigation table td {
-  padding: 5px;
+.navigation table thead.table-header-grey, .navigation table tr.table-header-grey {
+  background-color: #DBDCDE;
 }
 
 .navigation table caption {
@@ -291,15 +289,11 @@
 }
 
 .navigation .table-striped tbody tr:nth-of-type(odd) {
-  background-color: #d9d9d6;
+  background-color: #f0f0f0;
 }
 
 .navigation .table-striped tbody tr:nth-of-type(odd) th, .navigation .table-striped tbody tr:nth-of-type(odd) td {
-  background-color: #d9d9d6;
-}
-
-.navigation .table-hover tbody tr:hover {
-  background-color: rgba(0, 0, 0, 0.075);
+  background-color: #f0f0f0;
 }
 
 /* breakpoints */
@@ -729,34 +723,46 @@
   margin: 15px 5px 0;
 }
 
-.navigation.navigation-main.navigation-main-horizontal .rel-level2.gray .item-fake div a {
+.navigation.navigation-main.navigation-main-horizontal .rel-level2.gray .item-fake a {
   display: inline;
   color: #009639;
 }
 
-.navigation.navigation-main.navigation-main-horizontal .rel-level2.gray .item-fake div a:hover, .navigation.navigation-main.navigation-main-horizontal .rel-level2.gray .item-fake div a:focus {
+.navigation.navigation-main.navigation-main-horizontal .rel-level2.gray .item-fake a:hover, .navigation.navigation-main.navigation-main-horizontal .rel-level2.gray .item-fake a:focus {
   color: #000000;
 }
 
-.navigation.navigation-main.navigation-main-horizontal .rel-level2.gray .item-fake div p {
+.navigation.navigation-main.navigation-main-horizontal .rel-level2.gray .item-fake p {
   margin: 20px 0;
   font-size: 14px;
 }
 
-.navigation.navigation-main.navigation-main-horizontal .rel-level2.gray .item-fake div p strong {
+.navigation.navigation-main.navigation-main-horizontal .rel-level2.gray .item-fake p strong {
   font-size: 16px;
   line-height: 1;
 }
 
-.navigation.navigation-main.navigation-main-horizontal .rel-level2.gray .item-fake div p a {
+.navigation.navigation-main.navigation-main-horizontal .rel-level2.gray .item-fake p a {
   font-size: 14px;
 }
 
 .navigation.navigation-main.navigation-main-horizontal .rel-level2.gray .item-fake table {
   width: 100%;
-  font-size: 14px;
+  font-size: 12px;
   margin-top: 15px;
   margin-left: 5px;
+}
+
+.navigation.navigation-main.navigation-main-horizontal .rel-level2.gray .item-fake table.table-striped tbody tr:nth-of-type(odd) td {
+  background-color: #d9d9d6;
+}
+
+.navigation.navigation-main.navigation-main-horizontal .rel-level2.gray .item-fake table.table-striped tbody tr:nth-of-type(even) td {
+  background-color: #fff;
+}
+
+.navigation.navigation-main.navigation-main-horizontal .rel-level2.gray .item-fake table.table-striped tbody tr td:last-child {
+  width: 30%;
 }
 
 .navigation.navigation-main.navigation-main-horizontal .rel-level2.gray .item-fake table a {
@@ -765,20 +771,22 @@
 }
 
 .navigation.navigation-main.navigation-main-horizontal .rel-level2.gray .item-fake table a.track-fund {
-  color: #000000;
+  /*&:before {
+                                    font-size:inherit;
+                                    @include fa-icon();
+                                    content: $fa-var-plus;
+                                    color:$text-green;
+                                    margin-right:5px;
+                                }*/
 }
 
-.navigation.navigation-main.navigation-main-horizontal .rel-level2.gray .item-fake table a.track-fund:before {
-  font-size: inherit;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
+.navigation.navigation-main.navigation-main-horizontal .rel-level2.gray .item-fake table a.track-fund .fa {
   color: #009639;
-  margin-right: 5px;
+  margin-right: 3px;
+  font-size: 10px;
+  font-weight: normal;
+  position: relative;
+  top: -1px;
 }
 
 .navigation.navigation-main.navigation-main-horizontal .rel-level2.gray .item-cta {
@@ -1133,10 +1141,6 @@
 }
 
 /* breakpoints */
-.navigation.navigation-mobile {
-  padding: 0;
-}
-
 .navigation.navigation-mobile:not(.genlink) {
   position: relative;
   top: 65px;

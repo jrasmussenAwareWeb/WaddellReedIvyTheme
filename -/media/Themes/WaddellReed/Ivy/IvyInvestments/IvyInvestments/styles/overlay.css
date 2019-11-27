@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* breakpoints */
-.button-default, .btn-default, .default {
+.button-default, .btn-default, .default, .btn-white {
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
@@ -15,10 +15,11 @@
   font-size: 16px;
 }
 
-.button-default:hover, .button-default:focus, .btn-default:hover, .btn-default:focus, .default:hover, .default:focus {
+.button-default:hover, .button-default:focus, .btn-default:hover, .btn-default:focus, .default:hover, .default:focus, .btn-white:hover, .btn-white:focus {
   color: #fff;
   background: #009639;
   border: 2px solid #009639;
+  text-decoration: none;
 }
 
 .button-success, .btn-success, .success {
@@ -63,6 +64,28 @@
 .button-danger:hover, .button-danger:focus, .btn-danger:hover, .btn-danger:focus, .danger:hover, .danger:focus {
   color: #fff;
   background: #6d3332;
+}
+
+.button-primary, .btn-primary, .btn-green {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin: 5px 0;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #009639;
+  background: #009639;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.button-primary:hover, .button-primary:focus, .btn-primary:hover, .btn-primary:focus, .btn-green:hover, .btn-green:focus {
+  color: #009639;
+  background: #FFFFFF;
+  border: 2px solid #009639;
+  text-decoration: none;
 }
 
 .btn-block {

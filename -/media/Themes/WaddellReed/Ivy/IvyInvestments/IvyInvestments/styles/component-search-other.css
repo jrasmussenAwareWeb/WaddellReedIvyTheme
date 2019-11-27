@@ -654,6 +654,9 @@
   background: #FFFFFF;
   width: 100%;
   border: 1px solid #c2c2c2;
+  top: 105% !important;
+  position: relative;
+  z-index: 10;
 }
 
 .location-filter .tt-hint {
@@ -661,7 +664,6 @@
 }
 
 .location-filter .tt-dropdown-menu {
-  width: 250px;
   margin-top: 5px;
   background-color: #f0f0f0;
   border: 1px solid #c2c2c2;
@@ -678,6 +680,8 @@
 
 .location-filter .tt-suggestion a {
   text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .location-filter .tt-suggestion:last-child {
@@ -918,7 +922,6 @@
 
 .page-size {
   /* breakpoints */
-  padding-right: 0;
 }
 
 .page-size label {
@@ -981,31 +984,18 @@
   padding: 5px;
 }
 
-@media (max-width: 630px) {
-  .page-size {
-    position: absolute;
-    top: 25px;
-    right: 0;
-  }
-}
-
-@media only screen and (max-width: 380px) {
-  .page-size {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-}
-
-.page-size label {
-  margin-right: 5px;
-}
-
 @media only screen and (max-width: 767px) {
+  .page-size {
+    padding: 0;
+  }
   .page-size label {
-    color: transparent;
-    width: 0;
-    height: 0;
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .page-size {
+    text-align: right;
   }
 }
 
@@ -1014,9 +1004,15 @@
   width: auto;
 }
 
+.search-results-count {
+  /*@include respond-to(mobile-large) {
+        padding-left:0;
+    }*/
+}
+
 @media only screen and (max-width: 767px) {
   .search-results-count {
-    padding-left: 0;
+    padding: 0;
   }
 }
 
@@ -1193,6 +1189,9 @@
   background: #FFFFFF;
   width: 100%;
   border: 1px solid #c2c2c2;
+  top: 105% !important;
+  position: relative;
+  z-index: 10;
 }
 
 .search-box .tt-hint {
@@ -1200,7 +1199,6 @@
 }
 
 .search-box .tt-dropdown-menu {
-  width: 250px;
   margin-top: 5px;
   background-color: #f0f0f0;
   border: 1px solid #c2c2c2;
@@ -1217,6 +1215,8 @@
 
 .search-box .tt-suggestion a {
   text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .search-box .tt-suggestion:last-child {
@@ -1383,7 +1383,6 @@
 .search-box.navigation {
   padding: 0;
   background: rgba(0, 0, 0, 0.2);
-  border: 1px solid #004d33;
   position: absolute;
   right: 15px;
 }
@@ -1398,6 +1397,12 @@
   }
   .search-box.navigation .component-content > .twitter-typeahead {
     margin: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .search-box.navigation .component-content {
+    border: 1px solid #004d33;
   }
 }
 
@@ -1489,28 +1494,72 @@
 @media only screen and (max-width: 767px) {
   .search-box.navigation {
     background: #FFFFFF;
-    border: 1px solid #c2c2c2;
-    padding: 0 10px 0 0;
     margin: 15px;
     width: 95%;
     z-index: 99;
     right: 0;
+  }
+  .search-box.navigation .component-content {
+    border: 1px solid #c2c2c2;
   }
   .search-box.navigation .search-box-input, .search-box.navigation input[type="text"] {
     color: #000000;
     font-size: 12px;
   }
   .search-box.navigation button {
-    padding: 5px 0;
+    padding: 5px;
     color: #009639;
   }
 }
 
 @media only screen and (max-width: 380px) {
   .search-box.navigation {
-    right: auto;
-    left: -7px;
+    left: 0;
   }
+}
+
+.search-box.navigation .sbox-search-holder {
+  display: none;
+}
+
+.search-box.navigation .sbox-holder {
+  background-color: #FFFFFF;
+  display: block;
+  position: relative;
+  z-index: 110;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.search-box.navigation .sbox-holder h4 {
+  display: none;
+}
+
+.search-box.navigation .sbox-holder ul {
+  width: 100%;
+  border: 1px solid #c2c2c2;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.search-box.navigation .sbox-holder ul li {
+  width: 100%;
+}
+
+.search-box.navigation .sbox-holder ul li a {
+  width: 100%;
+  display: block;
+  background-color: #FFFFFF;
+  text-decoration: none;
+  padding: 0 15px;
+}
+
+.search-box.navigation .sbox-holder ul li a span {
+  color: #777777;
+}
+
+.search-box.navigation .sbox-holder ul li a:hover, .search-box.navigation .sbox-holder ul li a:focus {
+  background-color: #f0f0f0;
 }
 
 /* breakpoints */
@@ -1563,8 +1612,16 @@
   right: 0;
 }
 
-.search-box.search .component-content > .twitter-typeahead {
+.search-box.search .sbox-holder {
+  display: none !important;
+}
+
+.search-box.search .twitter-typeahead {
   margin: 0;
+}
+
+.search-box.search .twitter-typeahead .tt-menu {
+  display: none !important;
 }
 
 .sort-results {

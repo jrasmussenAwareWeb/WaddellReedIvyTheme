@@ -1,8 +1,7 @@
 .search-box.navigation {
     padding:0;
     background:rgba(0, 0, 0, 0.2);
-    border: 1px solid $border-dark-green;
-
+    //border: 1px solid $border-dark-green;
     position:absolute;
     right:15px;
 
@@ -16,6 +15,11 @@
         }
         .component-content > .twitter-typeahead {
             margin: 0;
+        }
+    }
+    @include respond-to(tablet) {
+        .component-content {
+            border: 1px solid $border-dark-green;
         }
     }
     label { 
@@ -74,25 +78,64 @@
         }
     }
     @include respond-to(mobile-large) {
-        background:$bg-basic-color;
-        border:1px solid $border-gray;
+        background:$bg-basic-color; 
+        //border:1px solid $border-gray;
         //without a column sizing
-        padding:0 10px 0 0;
+        //padding:0 10px 0 0;
         margin:15px; //this creates random space
         width:95%;
         z-index:99;
         right:0;
+        .component-content {
+            border:1px solid $border-gray;
+        }
         .search-box-input, input[type="text"] {
             color:$text-basic;
             font-size:12px;
         }
         button {
-            padding:5px 0;
+            padding:5px;
             color:$text-green;
         }
     }
     @include respond-to(mobile) {
-        right:auto;
-        left:-7px;
+        //right:auto;
+        left:0;
+    }
+
+    //funds typeahead
+    .sbox-search-holder {display:none}
+    .sbox-holder {
+        background-color:$bg-basic-color;
+        display:block;
+        //display:none !important; //for testing navigation and search
+        position:relative;
+        z-index:110;
+        text-transform:uppercase;
+        font-size:$font-small;
+
+        h4 {display:none}
+        ul {
+            width:100%;
+            border: 1px solid $border-gray;
+            max-height: 300px;
+            overflow-y: auto;
+            li {
+                width:100%;
+                a {
+                    width:100%;
+                    display:block;
+                    background-color:$bg-basic-color;
+                    text-decoration:none;
+                    padding:0 15px;
+                    span {
+                        color:$text-gray;
+                    }
+                    &:hover, &:focus {
+                        background-color:$bg-light-gray;
+                    }
+                }
+            }
+        }
     }
 }

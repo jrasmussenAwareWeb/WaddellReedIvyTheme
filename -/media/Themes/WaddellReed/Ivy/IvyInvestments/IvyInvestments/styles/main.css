@@ -3153,7 +3153,7 @@ small {
 }
 
 .red {
-  color: #6d3332;
+  color: red;
 }
 
 /*H1 – H6: line-height: 1.4
@@ -3302,7 +3302,7 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
 #content {
   position: relative;
   top: 160px;
-  margin-bottom: 160px;
+  margin-bottom: 130px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -3316,7 +3316,7 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
 }
 
 .home #content {
-  margin-bottom: 180px;
+  margin-bottom: 220px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -3335,6 +3335,197 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
   .home #content {
     top: 220px;
   }
+}
+
+.has-alert #content {
+  top: 220px;
+  margin-bottom: 220px;
+}
+
+@media only screen and (max-width: 380px) {
+  .has-alert #content {
+    top: 160px;
+    margin-bottom: 160px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .has-alert #content {
+    top: 130px;
+  }
+}
+
+.has-alert.home #content {
+  top: 280px;
+  margin-bottom: 280px;
+}
+
+.has-alert .tablesorter-sticky-visible {
+  top: 180px !important;
+}
+
+@media only screen and (max-width: 991px) {
+  .has-alert .tablesorter-sticky-visible {
+    top: 120px !important;
+  }
+}
+
+.investor-type #header {
+  display: none;
+}
+
+.investor-type #content {
+  top: 0;
+  margin-bottom: 0;
+}
+
+.investor-type #content .investor-type-background {
+  max-width: 767px;
+  margin: 60px auto;
+}
+
+.investor-type #content .investor-type-background .component-content {
+  background-size: 120% 100%;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 767px) {
+  .investor-type #content .investor-type-background .component-content {
+    background-size: 100% 100%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .investor-type #content .investor-type-background .component-content .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .investor-type #content .investor-type-background .image {
+    padding: 0;
+  }
+}
+
+.investor-type #content .investor-type-background .title {
+  padding: 0;
+  border-top: 10px solid #000000;
+  border-bottom: 10px solid #000000;
+}
+
+.investor-type #content .investor-type-background .title h1, .investor-type #content .investor-type-background .title h2, .investor-type #content .investor-type-background .title h3, .investor-type #content .investor-type-background .title h4, .investor-type #content .investor-type-background .title h5, .investor-type #content .investor-type-background .title h6 {
+  color: #000000;
+}
+
+.investor-type #content .investor-type-background .title h1 span, .investor-type #content .investor-type-background .title h2 span, .investor-type #content .investor-type-background .title h3 span, .investor-type #content .investor-type-background .title h4 span, .investor-type #content .investor-type-background .title h5 span, .investor-type #content .investor-type-background .title h6 span {
+  color: #009639;
+}
+
+.investor-type #content .investor-type-background .title h1 {
+  font-size: 74px;
+}
+
+@media only screen and (max-width: 767px) {
+  .investor-type #content .investor-type-background .title h1 {
+    font-size: 48px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .investor-type #content .investor-type-background .title h1 {
+    font-size: 36px;
+  }
+}
+
+.investor-type #content .investor-type-background .row.column-splitter {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .investor-type #content .investor-type-background .row.column-splitter div.col-md-4 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.investor-type #content .investor-type-background .row.column-splitter div.col-md-4 .link {
+  padding: 0;
+}
+
+.investor-type #content .investor-type-background .row.column-splitter div.col-md-4 .link .field-link {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 15px;
+  background-color: #009639;
+}
+
+.investor-type #content .investor-type-background .row.column-splitter div.col-md-4 .link .field-link a {
+  font-family: "ProximaBoldCondensed", arial, helvetica, sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .investor-type #content .investor-type-background .row.column-splitter div.col-md-4:nth-of-type(1) {
+    padding-left: 0;
+  }
+}
+
+.investor-type #content .investor-type-background .row.column-splitter div.col-md-4:nth-of-type(2) .field-link {
+  background-color: #006747;
+}
+
+@media only screen and (min-width: 768px) {
+  .investor-type #content .investor-type-background .row.column-splitter div.col-md-4:nth-of-type(3) {
+    padding-right: 0;
+  }
+}
+
+.investor-type #content .investor-type-background .row.column-splitter div.col-md-4:nth-of-type(3) .link .field-link {
+  background-color: #000000;
+}
+
+.investor-type #content .investor-type-background .rich-text, .investor-type #content .investor-type-background .content {
+  padding: 0;
+}
+
+.investor-type #content .investor-type-background .rich-text h2, .investor-type #content .investor-type-background .content h2 {
+  font-family: "ProximaBold", arial, helvetica, sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.investor-type #content .investor-type-background .rich-text h4, .investor-type #content .investor-type-background .content h4 {
+  font-family: "Proxima", arial, helvetica, sans-serif;
+}
+
+.investor-type #content .investor-type-background .rich-text ul, .investor-type #content .investor-type-background .content ul {
+  margin-left: 0;
+}
+
+.investor-type #content .investor-type-background .rich-text ul li, .investor-type #content .investor-type-background .content ul li {
+  margin-left: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .investor-type #content .investor-type-background .plain-html {
+    padding: 0;
+  }
+}
+
+.investor-type #content .investor-type-background .plain-html .form-group {
+  padding: 10px 0;
+}
+
+.investor-type #content .investor-type-background .plain-html .form-group label {
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  top: -2px;
 }
 
 /*misc - spacing*/
@@ -3377,15 +3568,15 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
   margin-right: 5px;
 }
 
-/*TEMP*/
+/*are we using filtered?
 table.filtered-columns td, table.filtered-columns th {
-  display: none;
+    display: none;
 }
 
 table.filtered-columns td.static, table.filtered-columns td.show, table.filtered-columns th.static, table.filtered-columns th.show {
-  display: table-cell;
+    display: table-cell;
 }
-
+are we using filtered? */
 /*stacktable*/
 .stacktable.large-only {
   display: table;
@@ -3406,10 +3597,6 @@ table.filtered-columns td.static, table.filtered-columns td.show, table.filtered
 }
 
 /*stacktable*/
-.table th, .table td {
-  padding: 5px 15px;
-}
-
 .table-queue {
   margin: 0;
 }
@@ -3420,6 +3607,10 @@ table.filtered-columns td.static, table.filtered-columns td.show, table.filtered
 
 .table-funds {
   font-size: 14px;
+}
+
+.table-funds th:first-child, .table-funds td:first-child {
+  padding-left: 0;
 }
 
 .table-funds a {
@@ -3437,7 +3628,6 @@ table.filtered-columns td.static, table.filtered-columns td.show, table.filtered
   font-size: 0.75em;
 }
 
-/*TEMP*/
 iframe {
   width: 100%;
 }

@@ -1,5 +1,8 @@
 @import "abstracts/vars";
 @import "abstracts/mixins";
+@import "base/fontawesome/font-awesome-mix-var";
+@import "base/links/*";
+
 .content, .rich-text {
     background: $rich-content-bg;
     color: $text-basic;
@@ -45,6 +48,12 @@
             &.fine-print {
                 font-size:$font-small;
             }
+            &.name {
+                text-transform:uppercase;
+                font-weight:700;
+                font-size:$font-small;
+                line-height:$font-normal;
+            }
     }
     .lead {
         font-size:$font-lead;
@@ -53,6 +62,33 @@
             font-size:$font-big;
         }
     }
+    h1, h2, h3, h4, h5, h6 {
+        &.text-green {
+            color: $text-green;
+        }
+    }
+
+    a {
+        &.locked {
+            margin-left: 5px;
+            color: $text-green;
+            &:after {
+                font-size:inherit;
+                @include fa-icon();
+                content: $fa-var-lock;
+                margin-left: 5px;
+            }
+        }
+    }
+     
+    //529 fund page
+    .pod {
+        a {
+            text-transform:uppercase;
+            @include proximabold();
+            font-size:$font-small;
+        }
+    } 
     #footer & {
         font-size:$font-small;
         p {

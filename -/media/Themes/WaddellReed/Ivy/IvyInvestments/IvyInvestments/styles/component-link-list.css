@@ -51,7 +51,7 @@
   border-bottom: 1px solid #000000;
 }
 
-.link-list .button-default, .link-list .btn-default, .link-list .default {
+.link-list .button-default, .link-list .btn-default, .link-list .default, .link-list .btn-white {
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
@@ -66,10 +66,11 @@
   font-size: 16px;
 }
 
-.link-list .button-default:hover, .link-list .button-default:focus, .link-list .btn-default:hover, .link-list .btn-default:focus, .link-list .default:hover, .link-list .default:focus {
+.link-list .button-default:hover, .link-list .button-default:focus, .link-list .btn-default:hover, .link-list .btn-default:focus, .link-list .default:hover, .link-list .default:focus, .link-list .btn-white:hover, .link-list .btn-white:focus {
   color: #fff;
   background: #009639;
   border: 2px solid #009639;
+  text-decoration: none;
 }
 
 .link-list .button-success, .link-list .btn-success, .link-list .success {
@@ -114,6 +115,28 @@
 .link-list .button-danger:hover, .link-list .button-danger:focus, .link-list .btn-danger:hover, .link-list .btn-danger:focus, .link-list .danger:hover, .link-list .danger:focus {
   color: #fff;
   background: #6d3332;
+}
+
+.link-list .button-primary, .link-list .btn-primary, .link-list .btn-green {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin: 5px 0;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #009639;
+  background: #009639;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.link-list .button-primary:hover, .link-list .button-primary:focus, .link-list .btn-primary:hover, .link-list .btn-primary:focus, .link-list .btn-green:hover, .link-list .btn-green:focus {
+  color: #009639;
+  background: #FFFFFF;
+  border: 2px solid #009639;
+  text-decoration: none;
 }
 
 .link-list .btn-block {

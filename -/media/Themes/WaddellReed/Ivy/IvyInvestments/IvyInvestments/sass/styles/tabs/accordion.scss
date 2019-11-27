@@ -1,0 +1,60 @@
+@import "../../abstracts/mixins";
+@import "../../abstracts/vars";
+@import "../../base/fontawesome/font-awesome-mix-var";
+
+.tabs {
+    .tabs-inner {
+        .tabs-container {
+            .content {
+                &.col-12 {
+                    padding:0;
+                    &:first-child {
+                        padding-top:15px;
+                    }
+                }
+            }
+        }
+    }
+    .toggle {
+        //an accordion within a tab should get different styling since tabs switch to accordion on mobile
+        .accordion {
+            .toggle-header {
+                .component {
+                    .field-heading {
+                        &::after {
+                            display: none;
+                        }
+                        &::before {
+                            @include fa-icon();
+                            content: $fa-var-plus-square !important;
+                            color:$text-green;
+                            position:relative;
+                            left:0;
+                            top:50%;
+                            float:left;
+                            margin-right:10px;
+                        }
+                    }
+                }
+            }
+            .active {
+                .toggle-header {
+                    -webkit-box-shadow:none;
+                    -moz-box-shadow: none;
+                    box-shadow: none;
+                    .component {
+                        .field-heading {
+                            &::after {
+                                display: none;
+                            }
+                            &::before {
+                                content: $fa-var-minus-square !important;
+                                color:$text-green;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -11,7 +11,7 @@ body.on-page-editor {
         &.hidden {
             display:none !important;
         }
-    }
+    } 
 }
 //hide scripts in the EE that shouldnt be showing in EE - 529 plan
 
@@ -136,7 +136,6 @@ h6 {
     line-height:1.4;
 }
 
-
 .xa-variable {
     border: 0px;
     padding: 1px;
@@ -205,11 +204,11 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
     }
 }
 
-//offset the fixed header / need to figure out what to do when the alert is showing (Ticket #19)
+//offset the fixed header
 #content {
     position:relative;
     top:160px; 
-    margin-bottom:160px;
+    margin-bottom:130px;
     @include respond-to(mobile-large) {
         top:99px;
     }
@@ -220,8 +219,7 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
 }
 .home {
     #content {
-        //top:220px; 
-        margin-bottom:180px;
+        margin-bottom:220px;
         @include respond-to(mobile-large) {
             top:150px;
         }
@@ -230,6 +228,171 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
         }
         @include respond-to(large) {
             top:220px; 
+        }
+    }
+}
+
+//offset the fixed header with alert visible
+.has-alert {
+    #content {
+        top:220px;
+        margin-bottom:220px;
+        @include respond-to(mobile) {
+            top:160px;
+            margin-bottom:160px;
+        }
+        @include respond-to(mobile-large) {
+            top:130px;
+        }
+    }
+    &.home {
+        #content {
+            top:280px;
+            margin-bottom:280px;
+        }
+    }
+    .tablesorter-sticky-visible {
+        top:180px !important;
+    }
+    @include respond-to(all-mobile) {
+        .tablesorter-sticky-visible {
+            top:120px !important;
+        }
+    }
+}
+
+.investor-type {
+    #header {display:none}
+    #content {
+        top:0;
+        margin-bottom:0;
+        .investor-type-background {
+            max-width:767px;
+            margin:60px auto;
+            .component-content {
+                background-size:120% 100%;
+                background-repeat:no-repeat;
+                @include respond-to(mobile-large) {
+                    background-size:100% 100%;
+                }
+                 @include respond-to(all-mobile) {
+                    .container {
+                        padding-left:15px;
+                        padding-right:15px;
+                    }
+                }
+            }
+            .image {
+                @include respond-to(tablet) {
+                    padding:0;
+                }
+            }
+            .title {
+                //@include respond-to(tablet) {
+                    padding:0;
+                //}
+                border-top:10px solid $text-basic;
+                border-bottom:10px solid $text-basic;
+                h1, h2, h3, h4, h5, h6 {
+                    color:$text-basic;
+                    span {
+                        color:$text-green;
+                    }
+                }
+                h1 {
+                    font-size:74px;
+                    @include respond-to(mobile-large) {
+                        font-size:48px;
+                    }
+                     @include respond-to(mobile) {
+                        font-size:36px;
+                    }
+                }
+            }
+            .row {
+                &.column-splitter { 
+                    margin-left:0;
+                    margin-right:0;
+                    div {
+                        &.col-md-4 {
+                            @include respond-to(tablet) {
+                                padding-left:15px;
+                                padding-right:15px;
+                            }
+                            .link {
+                                padding:0;
+                                .field-link {
+                                    //font-size:$font-normal;
+                                    text-align:center;
+                                    text-transform:uppercase;
+                                    padding:20px 15px;
+                                    background-color:$text-green;
+                                    a {
+                                        @include proximaboldcondensed();
+                                        text-transform:uppercase;
+                                        color:$text-white;
+                                        text-decoration:none;
+                                        border-bottom:0;
+                                    }
+                                }
+                            }
+                            &:nth-of-type(1) {
+                                @include respond-to(tablet) {
+                                    padding-left:0;
+                                }
+                            }
+                            &:nth-of-type(2) {
+                                .field-link {
+                                    background-color:$text-dark-green;
+                                }
+                            }
+                            &:nth-of-type(3) {
+                                @include respond-to(tablet) {
+                                    padding-right:0;
+                                }
+                                .link {
+                                    .field-link {
+                                        background-color:$text-basic;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .rich-text, .content {
+                //@include respond-to(tablet) {
+                    padding:0;
+                //}
+                h2 {
+                    @include proximabold();
+                    font-size:$font-medium;
+                    text-transform:uppercase;
+                }
+                h4 {
+                    @include proxima();
+                }
+                ul {
+                    margin-left:0;
+                    li {
+                        margin-left:0;
+                    }
+                }
+            }
+            .plain-html {
+                @include respond-to(mobile-large) {
+                    padding:0;
+                }
+               .form-group {
+                    padding:10px 0;
+                    label {
+                        text-transform:uppercase;
+                        font-size:$font-small;
+                        position:relative;
+                        top:-2px;
+                    }
+                }
+            }
         }
     }
 }
@@ -272,7 +435,7 @@ it is now adding additional 'rows' so we have to correct - added assembla ticket
     }
 }
 
-/*TEMP*/
+/*are we using filtered?
 table.filtered-columns td, table.filtered-columns th {
     display: none;
 }
@@ -280,7 +443,7 @@ table.filtered-columns td, table.filtered-columns th {
 table.filtered-columns td.static, table.filtered-columns td.show, table.filtered-columns th.static, table.filtered-columns th.show {
     display: table-cell;
 }
-
+are we using filtered? */
 
 /*stacktable*/
 .stacktable.large-only {display:table}
@@ -294,12 +457,6 @@ table.filtered-columns td.static, table.filtered-columns td.show, table.filtered
 }
 /*stacktable*/
 
-.table {
-    th, td {
-        padding:5px 15px;
-    }
-}
-
 .table-queue {
     margin:0;
     th, td {
@@ -307,8 +464,14 @@ table.filtered-columns td.static, table.filtered-columns td.show, table.filtered
     }
 }
 
+//my account > funds you track
 .table-funds {
     font-size:$font-small;
+    th, td {
+        &:first-child {
+            padding-left:0;
+        }
+    }
     a {
         color:$text-green;
         text-decoration:none;
@@ -322,7 +485,6 @@ table.filtered-columns td.static, table.filtered-columns td.show, table.filtered
         }
     }
 }
-/*TEMP*/
 
 iframe {
     width:100%;

@@ -1,8 +1,6 @@
 @charset "UTF-8";
 /* breakpoints */
 .tabs {
-  overflow: hidden;
-  position: relative;
   background: none;
   border: none;
   position: relative;
@@ -113,6 +111,70 @@
 
 .tab.active {
   display: block;
+}
+
+/* breakpoints */
+.tabs .tabs-inner .tabs-container .content.col-12 {
+  padding: 0;
+}
+
+.tabs .tabs-inner .tabs-container .content.col-12:first-child {
+  padding-top: 15px;
+}
+
+.tabs .toggle .accordion .toggle-header .component .field-heading::after {
+  display: none;
+}
+
+.tabs .toggle .accordion .toggle-header .component .field-heading::before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "" !important;
+  color: #009639;
+  position: relative;
+  left: 0;
+  top: 50%;
+  float: left;
+  margin-right: 10px;
+}
+
+.tabs .toggle .accordion .active .toggle-header {
+  box-shadow: none;
+}
+
+.tabs .toggle .accordion .active .toggle-header .component .field-heading::after {
+  display: none;
+}
+
+.tabs .toggle .accordion .active .toggle-header .component .field-heading::before {
+  content: "" !important;
+  color: #009639;
+}
+
+@media only screen and (min-width: 1200px) {
+  .tabs.tabs-5 .tabs-heading li {
+    width: 19.85%;
+    text-align: center;
+  }
+  .tabs.tabs-5 .tabs-heading li .component.content {
+    margin: 5px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (min-width: 768px) {
+  .tabs.tabs-5 .tabs-heading li .component.content {
+    padding: 5px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (min-width: 992px) {
+  .tabs.tabs-5 .tabs-heading li .component.content {
+    padding: 5px 25px;
+  }
 }
 
 /* breakpoints */

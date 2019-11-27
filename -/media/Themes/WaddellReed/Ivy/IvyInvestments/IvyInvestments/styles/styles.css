@@ -99,7 +99,7 @@
 }
 
 /* breakpoints */
-.link-button .button-default, .link-button .btn-default, .link-button .default {
+.link-button .button-default, .link-button .btn-default, .link-button .default, .link-button .btn-white {
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
@@ -114,10 +114,11 @@
   font-size: 16px;
 }
 
-.link-button .button-default:hover, .link-button .button-default:focus, .link-button .btn-default:hover, .link-button .btn-default:focus, .link-button .default:hover, .link-button .default:focus {
+.link-button .button-default:hover, .link-button .button-default:focus, .link-button .btn-default:hover, .link-button .btn-default:focus, .link-button .default:hover, .link-button .default:focus, .link-button .btn-white:hover, .link-button .btn-white:focus {
   color: #fff;
   background: #009639;
   border: 2px solid #009639;
+  text-decoration: none;
 }
 
 .link-button .button-success, .link-button .btn-success, .link-button .success {
@@ -162,6 +163,28 @@
 .link-button .button-danger:hover, .link-button .button-danger:focus, .link-button .btn-danger:hover, .link-button .btn-danger:focus, .link-button .danger:hover, .link-button .danger:focus {
   color: #fff;
   background: #6d3332;
+}
+
+.link-button .button-primary, .link-button .btn-primary, .link-button .btn-green {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin: 5px 0;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #009639;
+  background: #009639;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.link-button .button-primary:hover, .link-button .button-primary:focus, .link-button .btn-primary:hover, .link-button .btn-primary:focus, .link-button .btn-green:hover, .link-button .btn-green:focus {
+  color: #009639;
+  background: #FFFFFF;
+  border: 2px solid #009639;
+  text-decoration: none;
 }
 
 .link-button .btn-block {

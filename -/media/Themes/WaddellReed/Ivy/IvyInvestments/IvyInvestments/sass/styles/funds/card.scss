@@ -1,33 +1,33 @@
 $card-bg:#ffffff;
-//$card-border-width:1px; 
-//$card-border-color:gray;
-//$card-border-radius:4px;
 $card-spacer-x:15px;
-$card-spacer-y:15px;
- 
+$card-spacer-y:15px; 
+$card-border-width:1px;
+$card-border-color:gray;
+$card-border-radius:4px;
+
 .card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: $card-bg;
-  background-clip: border-box;
-  //border: $card-border-width solid $card-border-color;
-  //@include border-radius($card-border-radius);
-  padding:15px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0; 
+    word-wrap: break-word;
+    background-color: $card-bg;
+    background-clip: border-box;
+    padding:15px 0;
 
     .card-title, strong, .card-text, .card-link {
         text-align:center;
-    }
-    .card-title, .card-text, .card-link {
-        padding-left:15px;
-        padding-right:15px;
+        padding-left:$card-spacer-x;
+        padding-right:$card-spacer-x;
     }
     .card-title {
         font-size:24px;
         line-height:30px;
+        @include copernicus;
+        color:$text-green;
     }
+    strong {font-size:$font-normal}
+    .card-text {padding:0}
 
     .card-body {
     // Enable `flex-grow: 1` for decks and groups so that card blocks take up
@@ -36,12 +36,10 @@ $card-spacer-y:15px;
 
         table {
             width:100%;
-            margin-top:15px; 
+            margin-top:$card-spacer-y; 
 
             th, td {
                 font-size:$font-small;
-                //padding-left:$card-spacer-x;
-                //padding-right:$card-spacer-x;
             }
 
             th {
@@ -69,13 +67,11 @@ $card-spacer-y:15px;
         .card-link {
             padding-left:$card-spacer-x;
             padding-right:$card-spacer-x;
-            .btn-default, .button-default {
-                &:before {
-                    @include fa-icon();
-                    content: $fa-var-plus;
-                    font-size:10px;
-                    position:relative;
-                    top:-2px;
+            a {
+                i {
+                    &:before {
+                        margin-right:5px;
+                    }
                 }
             }
         }

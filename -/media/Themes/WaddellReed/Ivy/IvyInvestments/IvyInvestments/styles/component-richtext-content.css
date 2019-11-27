@@ -1,5 +1,103 @@
 @charset "UTF-8";
 /* breakpoints */
+.button-default, .btn-default, .default, .btn-white {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin: 5px 0;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #009639;
+  background: #FFFFFF;
+  color: #009639;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.button-default:hover, .button-default:focus, .btn-default:hover, .btn-default:focus, .default:hover, .default:focus, .btn-white:hover, .btn-white:focus {
+  color: #fff;
+  background: #009639;
+  border: 2px solid #009639;
+  text-decoration: none;
+}
+
+.button-success, .btn-success, .success {
+  font-size: 12px;
+  font-size: 1.2rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000000;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin: 5px 0;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  background: #a0ce4e;
+  color: #fff;
+  font-weight: bold;
+}
+
+.button-success:hover, .button-success:focus, .btn-success:hover, .btn-success:focus, .success:hover, .success:focus {
+  color: #fff;
+  background: #92be43;
+}
+
+.button-danger, .btn-danger, .danger {
+  font-size: 12px;
+  font-size: 1.2rem;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin: 5px 0;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  background: #FFFFFF;
+  color: #6d3332;
+  border: 2px solid #6d3332;
+  text-transform: uppercase;
+}
+
+.button-danger:hover, .button-danger:focus, .btn-danger:hover, .btn-danger:focus, .danger:hover, .danger:focus {
+  color: #fff;
+  background: #6d3332;
+}
+
+.button-primary, .btn-primary, .btn-green {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin: 5px 0;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #009639;
+  background: #009639;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.button-primary:hover, .button-primary:focus, .btn-primary:hover, .btn-primary:focus, .btn-green:hover, .btn-green:focus {
+  color: #009639;
+  background: #FFFFFF;
+  border: 2px solid #009639;
+  text-decoration: none;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn-sm {
+  margin: 3px 0;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
 .content, .rich-text {
   background: transparent;
   color: #000000;
@@ -159,28 +257,26 @@ strong {
 }
 
 .content table, .content table tr, .content table th, .content table td, .rich-text table, .rich-text table tr, .rich-text table th, .rich-text table td {
-  border-collapse: collapse;
+  border-collapse: separate;
   vertical-align: middle;
 }
 
 .content table th, .content table td, .rich-text table th, .rich-text table td {
   border-top: solid 1px #c2c2c2;
+  padding: 5px 15px;
 }
 
 .content table thead th, .rich-text table thead th {
   border-bottom: solid 2px #c2c2c2;
 }
 
-.content table thead th.table-header-green, .rich-text table thead th.table-header-green {
-  color: #00A952;
+.content table thead.table-header-green, .content table tr.table-header-green, .rich-text table thead.table-header-green, .rich-text table tr.table-header-green {
+  background-color: #00A952;
+  color: #fff;
 }
 
-.content table thead th.table-header-grey, .rich-text table thead th.table-header-grey {
-  color: #DBDCDE;
-}
-
-.content table tr, .content table th, .content table td, .rich-text table tr, .rich-text table th, .rich-text table td {
-  padding: 5px;
+.content table thead.table-header-grey, .content table tr.table-header-grey, .rich-text table thead.table-header-grey, .rich-text table tr.table-header-grey {
+  background-color: #DBDCDE;
 }
 
 .content table caption, .rich-text table caption {
@@ -241,18 +337,14 @@ strong {
 }
 
 .content .table-striped tbody tr:nth-of-type(odd), .rich-text .table-striped tbody tr:nth-of-type(odd) {
-  background-color: #d9d9d6;
+  background-color: #f0f0f0;
 }
 
 .content .table-striped tbody tr:nth-of-type(odd) th, .content .table-striped tbody tr:nth-of-type(odd) td, .rich-text .table-striped tbody tr:nth-of-type(odd) th, .rich-text .table-striped tbody tr:nth-of-type(odd) td {
-  background-color: #d9d9d6;
+  background-color: #f0f0f0;
 }
 
-.content .table-hover tbody tr:hover, .rich-text .table-hover tbody tr:hover {
-  background-color: rgba(0, 0, 0, 0.075);
-}
-
-.content .button-default, .content .btn-default, .content .default, .rich-text .button-default, .rich-text .btn-default, .rich-text .default {
+.content .button-default, .content .btn-default, .content .default, .content .btn-white, .rich-text .button-default, .rich-text .btn-default, .rich-text .default, .rich-text .btn-white {
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
@@ -267,10 +359,11 @@ strong {
   font-size: 16px;
 }
 
-.content .button-default:hover, .content .button-default:focus, .content .btn-default:hover, .content .btn-default:focus, .content .default:hover, .content .default:focus, .rich-text .button-default:hover, .rich-text .button-default:focus, .rich-text .btn-default:hover, .rich-text .btn-default:focus, .rich-text .default:hover, .rich-text .default:focus {
+.content .button-default:hover, .content .button-default:focus, .content .btn-default:hover, .content .btn-default:focus, .content .default:hover, .content .default:focus, .content .btn-white:hover, .content .btn-white:focus, .rich-text .button-default:hover, .rich-text .button-default:focus, .rich-text .btn-default:hover, .rich-text .btn-default:focus, .rich-text .default:hover, .rich-text .default:focus, .rich-text .btn-white:hover, .rich-text .btn-white:focus {
   color: #fff;
   background: #009639;
   border: 2px solid #009639;
+  text-decoration: none;
 }
 
 .content .button-success, .content .btn-success, .content .success, .rich-text .button-success, .rich-text .btn-success, .rich-text .success {
@@ -317,6 +410,28 @@ strong {
   background: #6d3332;
 }
 
+.content .button-primary, .content .btn-primary, .content .btn-green, .rich-text .button-primary, .rich-text .btn-primary, .rich-text .btn-green {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin: 5px 0;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #009639;
+  background: #009639;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.content .button-primary:hover, .content .button-primary:focus, .content .btn-primary:hover, .content .btn-primary:focus, .content .btn-green:hover, .content .btn-green:focus, .rich-text .button-primary:hover, .rich-text .button-primary:focus, .rich-text .btn-primary:hover, .rich-text .btn-primary:focus, .rich-text .btn-green:hover, .rich-text .btn-green:focus {
+  color: #009639;
+  background: #FFFFFF;
+  border: 2px solid #009639;
+  text-decoration: none;
+}
+
 .content .btn-block, .rich-text .btn-block {
   width: 100%;
 }
@@ -339,6 +454,29 @@ strong {
             padding:0;
         }
     }*/
+}
+
+.rich-text.alert {
+  padding: 0 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  .rich-text.alert {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .rich-text.alert {
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .rich-text.alert {
+    padding: 0 15px;
+  }
 }
 
 .rich-text.alert p {
@@ -450,9 +588,6 @@ strong {
 .rich-text.section-title h1, .rich-text.section-title h2, .rich-text.section-title h3, .rich-text.section-title h4, .rich-text.section-title h5, .rich-text.section-title h6 {
   font-family: "ProximaBoldCondensed", arial, helvetica, sans-serif;
   text-transform: uppercase;
-}
-
-.rich-text.section-title h2 {
   border-bottom: 3px solid #000000;
   margin-bottom: 30px;
 }
@@ -571,7 +706,8 @@ strong {
 }
 
 .content.content-highlight .highlight p {
-  font-size: 16px;
+  font-size: 14px;
+  margin: 10px 0;
 }
 
 .content.content-highlight .highlight ul, .content.content-highlight .highlight ol {
@@ -601,8 +737,8 @@ strong {
 
 .content.content-highlight.image .highlight {
   background-color: #FFFFFF;
-  box-shadow: 0px 2px 5.76px 0.24px rgba(0, 0, 0, 0.4);
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5.76px 0.24px rgba(0, 0, 0, 0.4);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 @media only screen and (max-width: 767px) {
@@ -937,6 +1073,13 @@ strong {
   font-size: 14px;
 }
 
+.rich-text p.name, .content p.name {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+
 .rich-text .lead, .content .lead {
   font-size: 22px;
 }
@@ -945,6 +1088,33 @@ strong {
   .rich-text .lead, .content .lead {
     font-size: 20px;
   }
+}
+
+.rich-text h1.text-green, .rich-text h2.text-green, .rich-text h3.text-green, .rich-text h4.text-green, .rich-text h5.text-green, .rich-text h6.text-green, .content h1.text-green, .content h2.text-green, .content h3.text-green, .content h4.text-green, .content h5.text-green, .content h6.text-green {
+  color: #009639;
+}
+
+.rich-text a.locked, .content a.locked {
+  margin-left: 5px;
+  color: #009639;
+}
+
+.rich-text a.locked:after, .content a.locked:after {
+  font-size: inherit;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  margin-left: 5px;
+}
+
+.rich-text .pod a, .content .pod a {
+  text-transform: uppercase;
+  font-family: "ProximaBold", arial, helvetica, sans-serif;
+  font-size: 14px;
 }
 
 #footer .rich-text, #footer .content {

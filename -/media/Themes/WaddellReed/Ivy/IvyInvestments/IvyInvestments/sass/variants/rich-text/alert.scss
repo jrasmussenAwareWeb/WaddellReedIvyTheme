@@ -1,5 +1,16 @@
 &.alert {
-    p {
+    padding:0 15px;
+    @include respond-to(mobile-large) {
+        margin-left:15px;
+        margin-right:15px;
+    }
+    @include respond-to(tablet) {
+        padding:0 30px;
+    }
+    @include respond-to(large) {
+        padding:0 15px;
+    }
+    p { 
         margin:10px 0;
     }
 }

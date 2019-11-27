@@ -2,7 +2,7 @@
 @import "../../abstracts/mixins";
 @import "../../base/fontawesome/font-awesome-mix-var";
 .navigation.navigation-mobile {
-    padding:0;
+    //padding:0;
     &:not(.genlink) {
         position:relative;
         top:65px;

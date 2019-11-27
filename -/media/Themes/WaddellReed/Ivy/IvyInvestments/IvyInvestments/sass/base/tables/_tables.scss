@@ -10,7 +10,7 @@ $table-cell-padding-sm:       .3rem !default;
 
 $table-bg:                    transparent !default;
 //$table-accent-bg:             rgba($bg-black, .05) !default;
-$table-accent-bg:             #d9d9d6;
+$table-accent-bg:             #f0f0f0;
 $table-hover-bg:              rgba($bg-black, .075) !default;
 $table-active-bg:             $table-hover-bg !default;
 
@@ -38,23 +38,24 @@ table {
   //border: 1px solid $border-gray;
   &, tr, th, td {
       //background: $bg-basic-color;
-      border-collapse: collapse;
+      border-collapse: separate;
       vertical-align: middle;
   }
   th, td {
     border-top: solid 1px $border-gray;
+    padding:5px 15px;
   }
   thead th {
     border-bottom: solid 2px $border-gray;
-      &.table-header-green {
-        color:$table-header-green;
-      }
-      &.table-header-grey {
-        color:$table-header-grey;
-      }
   }
-  tr, th, td {
-      padding: 5px;
+  thead, tr {
+    &.table-header-green {
+      background-color:$table-header-green;
+      color:$text-white;
+    }
+    &.table-header-grey {
+      background-color:$table-header-grey;
+    }
   }
   caption {
       background-color: $bg-light-gray;
@@ -141,7 +142,7 @@ table {
 .table-hover {
   tbody tr {
     &:hover {
-      background-color: $table-hover-bg;
+      //background-color: $table-hover-bg;
     }
   }
 }

@@ -38,8 +38,13 @@
                 right:0;
             }
         }
-        >.twitter-typeahead {
-            margin:0;
+    }
+    .sbox-holder {display:none !important}
+    .twitter-typeahead {
+        margin:0;
+        //hide the standard typeahead on the search page
+        .tt-menu {
+            display:none !important;
         }
     }
 }

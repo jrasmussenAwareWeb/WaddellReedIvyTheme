@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* breakpoints */
-.button-default, .btn-default, .default {
+.button-default, .btn-default, .default, .btn-white {
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
@@ -15,10 +15,11 @@
   font-size: 16px;
 }
 
-.button-default:hover, .button-default:focus, .btn-default:hover, .btn-default:focus, .default:hover, .default:focus {
+.button-default:hover, .button-default:focus, .btn-default:hover, .btn-default:focus, .default:hover, .default:focus, .btn-white:hover, .btn-white:focus {
   color: #fff;
   background: #009639;
   border: 2px solid #009639;
+  text-decoration: none;
 }
 
 .button-success, .btn-success, .success {
@@ -65,6 +66,28 @@
   background: #6d3332;
 }
 
+.button-primary, .btn-primary, .btn-green {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin: 5px 0;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #009639;
+  background: #009639;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.button-primary:hover, .button-primary:focus, .btn-primary:hover, .btn-primary:focus, .btn-green:hover, .btn-green:focus {
+  color: #009639;
+  background: #FFFFFF;
+  border: 2px solid #009639;
+  text-decoration: none;
+}
+
 .btn-block {
   width: 100%;
 }
@@ -80,28 +103,26 @@ table {
 }
 
 table, table tr, table th, table td {
-  border-collapse: collapse;
+  border-collapse: separate;
   vertical-align: middle;
 }
 
 table th, table td {
   border-top: solid 1px #c2c2c2;
+  padding: 5px 15px;
 }
 
 table thead th {
   border-bottom: solid 2px #c2c2c2;
 }
 
-table thead th.table-header-green {
-  color: #00A952;
+table thead.table-header-green, table tr.table-header-green {
+  background-color: #00A952;
+  color: #fff;
 }
 
-table thead th.table-header-grey {
-  color: #DBDCDE;
-}
-
-table tr, table th, table td {
-  padding: 5px;
+table thead.table-header-grey, table tr.table-header-grey {
+  background-color: #DBDCDE;
 }
 
 table caption {
@@ -156,15 +177,75 @@ table td:first-child {
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
-  background-color: #d9d9d6;
+  background-color: #f0f0f0;
 }
 
 .table-striped tbody tr:nth-of-type(odd) th, .table-striped tbody tr:nth-of-type(odd) td {
-  background-color: #d9d9d6;
+  background-color: #f0f0f0;
 }
 
-.table-hover tbody tr:hover {
-  background-color: rgba(0, 0, 0, 0.075);
+/* breakpoints */
+.tabs .tabs-inner .tabs-container .content.col-12 {
+  padding: 0;
+}
+
+.tabs .tabs-inner .tabs-container .content.col-12:first-child {
+  padding-top: 15px;
+}
+
+.tabs .toggle .accordion .toggle-header .component .field-heading::after {
+  display: none;
+}
+
+.tabs .toggle .accordion .toggle-header .component .field-heading::before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "" !important;
+  color: #009639;
+  position: relative;
+  left: 0;
+  top: 50%;
+  float: left;
+  margin-right: 10px;
+}
+
+.tabs .toggle .accordion .active .toggle-header {
+  box-shadow: none;
+}
+
+.tabs .toggle .accordion .active .toggle-header .component .field-heading::after {
+  display: none;
+}
+
+.tabs .toggle .accordion .active .toggle-header .component .field-heading::before {
+  content: "" !important;
+  color: #009639;
+}
+
+@media only screen and (min-width: 1200px) {
+  .tabs.tabs-5 .tabs-heading li {
+    width: 19.85%;
+    text-align: center;
+  }
+  .tabs.tabs-5 .tabs-heading li .component.content {
+    margin: 5px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (min-width: 768px) {
+  .tabs.tabs-5 .tabs-heading li .component.content {
+    padding: 5px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (min-width: 992px) {
+  .tabs.tabs-5 .tabs-heading li .component.content {
+    padding: 5px 25px;
+  }
 }
 
 /* breakpoints */
@@ -639,7 +720,6 @@ table td:first-child {
   color: #000000;
   display: inline;
   font-family: "ProximaBoldCondensed", arial, helvetica, sans-serif;
-  text-transform: uppercase;
 }
 
 .fund-details .fund-title h1.copernicus, .fund-details .fund-title h2.copernicus, .fund-details .fund-title h3.copernicus, .fund-details .fund-title h4.copernicus, .fund-details .fund-title h5.copernicus, .fund-details .fund-title h6.copernicus, .fund-family .fund-title h1.copernicus, .fund-family .fund-title h2.copernicus, .fund-family .fund-title h3.copernicus, .fund-family .fund-title h4.copernicus, .fund-family .fund-title h5.copernicus, .fund-family .fund-title h6.copernicus {
@@ -656,6 +736,10 @@ table td:first-child {
     /*margin:30px 0 20px;*/
     margin: 30px 0 0;
   }
+}
+
+.fund-details .fund-title h4, .fund-family .fund-title h4 {
+  font-size: 28px;
 }
 
 .fund-details .fund-detail-summary, .fund-family .fund-detail-summary {
@@ -683,6 +767,7 @@ table td:first-child {
 
 .fund-details .fund-detail-summary a.track-fund i, .fund-family .fund-detail-summary a.track-fund i {
   color: #009639;
+  margin-right: 5px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -717,7 +802,6 @@ table td:first-child {
 
 .fund-details .tabs, .fund-family .tabs {
   margin-top: 30px;
-  background: #FFFFFF;
 }
 
 @media only screen and (max-width: 767px) {
@@ -804,6 +888,7 @@ table td:first-child {
 }
 
 .fund-details section, .fund-family section {
+  width: 100%;
   margin-bottom: 30px;
 }
 
@@ -820,6 +905,7 @@ table td:first-child {
   font-weight: normal;
   text-transform: lowercase;
   font-size: 14px;
+  display: block;
 }
 
 .fund-details section h4 span.subtitle, .fund-family section h4 span.subtitle {
@@ -851,7 +937,6 @@ table td:first-child {
 
 .fund-details section#portfolio-management, .fund-family section#portfolio-management {
   clear: both;
-  padding-top: 20px;
 }
 
 .fund-details section .portfolio-management section, .fund-family section .portfolio-management section {
@@ -965,7 +1050,7 @@ table td:first-child {
 }
 
 .fund-details .filters, .fund-family .filters {
-  margin-top: 30px;
+  padding-top: 30px;
 }
 
 .fund-details .filters .row [class*="col-"], .fund-family .filters .row [class*="col-"] {
@@ -1025,6 +1110,7 @@ table td:first-child {
 
 .fund-details table, .fund-family table {
   font-size: 14px;
+  width: 100%;
 }
 
 .fund-details table caption, .fund-family table caption {
@@ -1053,7 +1139,6 @@ table td:first-child {
 }
 
 .fund-details table tr td a, .fund-family table tr td a {
-  text-transform: uppercase;
   color: #009639;
   text-decoration: none;
 }
@@ -1083,34 +1168,39 @@ table td:first-child {
   }
 }
 
-.fund-details table .tablesorter-sticky-visible > .SumTable.d-none, .fund-family table .tablesorter-sticky-visible > .SumTable.d-none {
-  display: block !important;
+.fund-details table.tablesorter.border-top, .fund-family table.tablesorter.border-top {
+  border-top: 1px solid #b7b7b7;
 }
 
-@media only screen and (max-width: 991px) {
-  .fund-details table .tablesorter-sticky-visible, .fund-family table .tablesorter-sticky-visible {
-    top: 80px !important;
-  }
+.fund-details table.tablesorter colgroup col, .fund-family table.tablesorter colgroup col {
+  width: auto !important;
 }
 
-.fund-details table.tablesorter, .fund-family table.tablesorter {
-  /* TABLE BACKGROUND color (match the original theme) */
-  /* ODD ZEBRA STRIPE color (needs zebra widget) */
-  /* EVEN ZEBRA STRIPE color (needs zebra widget) */
-  /* HOVER ROW highlight colors */
-  /* HOVER COLUMN highlight colors */
-  /* ************************************************* */
-  /* **** No need to modify the definitions below **** */
-  /* ************************************************* */
-  /* required styles */
-  /* override the tablesorter theme styling */
-  /* table background positioned under the highlight */
+.fund-details table.tablesorter .row-group-header h2, .fund-family table.tablesorter .row-group-header h2 {
+  font-family: "ProximaBoldCondensed", arial, helvetica, sans-serif;
+  font-weight: normal;
+  color: #000000;
+  text-transform: uppercase;
+  border-bottom: 3px solid #000000;
+  margin-top: 30px;
+}
+
+.fund-details table.tablesorter .row-group-header h4, .fund-family table.tablesorter .row-group-header h4 {
+  font-family: "CopernicusBook", arial, helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 20px;
+  text-transform: capitalize;
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .fund-details table.tablesorter th, .fund-family table.tablesorter th {
   background-color: #FFFFFF !important;
   vertical-align: bottom;
   border: 0;
+  font-weight: bold;
 }
 
 .fund-details table.tablesorter th.tablesorter-headerUnSorted .fa-caret-down, .fund-details table.tablesorter th.tablesorter-headerUnSorted .fa-caret-up, .fund-family table.tablesorter th.tablesorter-headerUnSorted .fa-caret-down, .fund-family table.tablesorter th.tablesorter-headerUnSorted .fa-caret-up {
@@ -1129,74 +1219,16 @@ table td:first-child {
   display: none;
 }
 
-.fund-details table.tablesorter.hover-highlight td:before, .fund-family table.tablesorter.hover-highlight td:before {
-  background: #fff;
-}
-
-.fund-details table.tablesorter.hover-highlight .odd td:before, .fund-details table.tablesorter.hover-highlight .odd th:before, .fund-family table.tablesorter.hover-highlight .odd td:before, .fund-family table.tablesorter.hover-highlight .odd th:before {
-  background: #f0f0f0;
-}
-
-.fund-details table.tablesorter.hover-highlight .even td:before, .fund-details table.tablesorter.hover-highlight .even th:before, .fund-family table.tablesorter.hover-highlight .even td:before, .fund-family table.tablesorter.hover-highlight .even th:before {
-  background-color: #fff;
-}
-
-.fund-details table.tablesorter.hover-highlight tbody > tr:hover > td,
-.fund-details table.tablesorter.hover-highlight tbody > tr.odd:hover > td,
-.fund-details table.tablesorter.hover-highlight tbody > tr.even:hover > td, .fund-family table.tablesorter.hover-highlight tbody > tr:hover > td,
-.fund-family table.tablesorter.hover-highlight tbody > tr.odd:hover > td,
-.fund-family table.tablesorter.hover-highlight tbody > tr.even:hover > td {
-  background-color: #ffa;
-}
-
-.fund-details table.tablesorter.hover-highlight tbody tr td:hover::after,
-.fund-details table.tablesorter.hover-highlight tbody tr th:hover::after, .fund-family table.tablesorter.hover-highlight tbody tr td:hover::after,
-.fund-family table.tablesorter.hover-highlight tbody tr th:hover::after {
-  background-color: #ffa;
-}
-
-.fund-details table.tablesorter.hover-highlight td:hover::after, .fund-details table.tablesorter.hover-highlight th:hover::after, .fund-family table.tablesorter.hover-highlight td:hover::after, .fund-family table.tablesorter.hover-highlight th:hover::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 999em;
-  left: 0;
-  top: -555em;
-  z-index: -1;
-}
-
-.fund-details table.tablesorter.hover-highlight, .fund-family table.tablesorter.hover-highlight {
-  overflow: hidden;
-}
-
-.fund-details table.tablesorter.hover-highlight td, .fund-details table.tablesorter.hover-highlight th, .fund-family table.tablesorter.hover-highlight td, .fund-family table.tablesorter.hover-highlight th {
-  outline: 0;
-}
-
-.fund-details table.tablesorter.hover-highlight, .fund-details table.tablesorter.hover-highlight tbody > tr > td,
-.fund-details table.tablesorter.hover-highlight tbody tr.even > th,
-.fund-details table.tablesorter.hover-highlight tbody tr.even > td,
-.fund-details table.tablesorter.hover-highlight tbody tr.odd > th,
-.fund-details table.tablesorter.hover-highlight tbody tr.odd > td, .fund-family table.tablesorter.hover-highlight, .fund-family table.tablesorter.hover-highlight tbody > tr > td,
-.fund-family table.tablesorter.hover-highlight tbody tr.even > th,
-.fund-family table.tablesorter.hover-highlight tbody tr.even > td,
-.fund-family table.tablesorter.hover-highlight tbody tr.odd > th,
-.fund-family table.tablesorter.hover-highlight tbody tr.odd > td {
-  background: transparent;
-}
-
-.fund-details table.tablesorter.hover-highlight td:before, .fund-family table.tablesorter.hover-highlight td:before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  z-index: -3;
-}
-
 .fund-details table tr, .fund-details table th, .fund-details table td, .fund-family table tr, .fund-family table th, .fund-family table td {
   font-size: 14px !important;
+  padding: 5px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .fund-details table tr, .fund-details table th, .fund-details table td, .fund-family table tr, .fund-family table th, .fund-family table td {
+    font-size: 12px !important;
+    padding: 5px 3px;
+  }
 }
 
 @media print {
@@ -1280,6 +1312,20 @@ table td:first-child {
 
 .fund-details table#calendar-year form, .fund-family table#calendar-year form {
   float: right;
+}
+
+.fund-details .tablesorter-sticky-visible > .SumTable.d-none, .fund-family .tablesorter-sticky-visible > .SumTable.d-none {
+  display: block !important;
+}
+
+.fund-details .tablesorter-sticky-visible, .fund-family .tablesorter-sticky-visible {
+  top: 133px !important;
+}
+
+@media only screen and (max-width: 991px) {
+  .fund-details .tablesorter-sticky-visible, .fund-family .tablesorter-sticky-visible {
+    top: 80px !important;
+  }
 }
 
 .fund-details .morningstar-grid, .fund-family .morningstar-grid {
@@ -1502,4 +1548,128 @@ table td:first-child {
 
 .fund-details .toggle .container > .indent-top section, .fund-family .toggle .container > .indent-top section {
   margin-bottom: 30px;
+}
+
+.fund-family {
+  /* TABLE BACKGROUND color (match the original theme) */
+  /* ODD ZEBRA STRIPE color (needs zebra widget) */
+  /* EVEN ZEBRA STRIPE color (needs zebra widget) */
+  /* FOCUS ROW highlight color (touch devices) */
+  /* FOCUS COLUMN highlight color (touch devices) */
+  /* FOCUS CELL highlight color */
+  /* HOVER ROW highlight colors */
+  /* HOVER COLUMN highlight colors */
+  /* ************************************************* */
+  /* **** No need to modify the definitions below **** */
+  /* ************************************************* */
+  /* required styles */
+  /* override the tablesorter theme styling */
+  /* table background positioned under the highlight */
+}
+
+.fund-family .fund-title h1, .fund-family .fund-title h2, .fund-family .fund-title h3, .fund-family .fund-title h4, .fund-family .fund-title h5, .fund-family .fund-title h6 {
+  text-transform: uppercase;
+}
+
+.fund-family .hover-highlight td:before,
+.fund-family .focus-highlight td:before {
+  background: #fff;
+}
+
+.fund-family .hover-highlight .odd td:before, .fund-family .hover-highlight .odd th:before,
+.fund-family .focus-highlight .odd td:before, .fund-family .focus-highlight .odd th:before,
+.fund-family .table-zebra tr:nth-of-type(odd) td:before {
+  background-color: #f0f0f0;
+}
+
+.fund-family .hover-highlight .even td:before, .fund-family .hover-highlight .even th:before,
+.fund-family .focus-highlight .even td:before, .fund-family .focus-highlight .even th:before,
+.fund-family .table-zebra tr:nth-of-type(even) td:before {
+  background-color: #fff;
+}
+
+.fund-family .focus-highlight td:focus::before, .fund-family .focus-highlight th:focus::before {
+  background-color: lightblue;
+}
+
+.fund-family .focus-highlight td:focus::after, .fund-family .focus-highlight th:focus::after {
+  background-color: lightblue;
+}
+
+.fund-family .focus-highlight th:focus, .fund-family .focus-highlight td:focus,
+.fund-family .focus-highlight .even th:focus, .fund-family .focus-highlight .even td:focus,
+.fund-family .focus-highlight .odd th:focus, .fund-family .focus-highlight .odd td:focus {
+  background-color: #d9d9d9;
+  color: #333;
+}
+
+.fund-family .hover-highlight tbody > tr:hover > td,
+.fund-family .hover-highlight tbody > tr.odd:hover > td,
+.fund-family .hover-highlight tbody > tr.even:hover > td,
+.fund-family .hover-highlight.table-zebra tbody > tr:nth-of-type(odd):hover > td,
+.fund-family .hover-highlight.table-zebra tbody > tr:nth-of-type(even):hover > td {
+  background-color: #d1d1d1;
+}
+
+.fund-family .hover-highlight tbody tr td:hover::after,
+.fund-family .hover-highlight tbody tr th:hover::after,
+.fund-family .hover-highlight.table-zebra tbody tr:nth-of-type(odd) td:hover::after,
+.fund-family .hover-highlight.table-zebra tbody tr:nth-of-type(even) td:hover::after {
+  background-color: #d1d1d1;
+}
+
+.fund-family .focus-highlight td:focus::after, .fund-family .focus-highlight th:focus::after,
+.fund-family .hover-highlight td:hover::after, .fund-family .hover-highlight th:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 999em;
+  left: 0;
+  top: -555em;
+  z-index: -1;
+}
+
+.fund-family .focus-highlight td:focus::before, .fund-family .focus-highlight th:focus::before {
+  content: '';
+  position: absolute;
+  width: 999em;
+  height: 100%;
+  left: -555em;
+  top: 0;
+  z-index: -2;
+}
+
+.fund-family .hover-highlight,
+.fund-family .focus-highlight {
+  overflow: hidden;
+}
+
+.fund-family .hover-highlight td, .fund-family .hover-highlight th,
+.fund-family .focus-highlight td, .fund-family .focus-highlight th {
+  position: relative;
+  outline: 0;
+}
+
+.fund-family .hover-highlight, .fund-family table.hover-highlight tbody > tr > td,
+.fund-family .focus-highlight, .fund-family table.focus-highlight tbody > tr > td,
+.fund-family .hover-highlight tbody tr.even > th,
+.fund-family .hover-highlight tbody tr.even > td,
+.fund-family .hover-highlight tbody tr.odd > th,
+.fund-family .hover-highlight tbody tr.odd > td,
+.fund-family .focus-highlight tbody tr.even > th,
+.fund-family .focus-highlight tbody tr.even > td,
+.fund-family .focus-highlight tbody tr.odd > th,
+.fund-family .focus-highlight tbody tr.odd > td {
+  background: transparent;
+}
+
+.fund-family .hover-highlight td:before,
+.fund-family .focus-highlight td:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -3;
 }
