@@ -277,7 +277,6 @@ strong {
 @media only screen and (min-width: 768px) {
   .promo.cta.col-md-4 .promo-text, .promo.cta.col-md-6 .promo-text {
     min-height: 335px;
-    max-height: 335px;
   }
 }
 

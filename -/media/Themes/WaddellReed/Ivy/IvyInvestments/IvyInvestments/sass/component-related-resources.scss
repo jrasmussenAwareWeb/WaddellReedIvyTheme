@@ -1,7 +1,7 @@
 @import "abstracts/vars";
 @import "abstracts/mixins";
 @import "base/fontawesome/font-awesome-mix-var";
-
+ 
 .related-resources {
     .title {
         h3 {
@@ -91,14 +91,16 @@
                 padding:0;
                 margin-bottom:30px;
             }
-            /*
+            
             @include respond-to(tablet) {
-                .field-excerpt {
-                    min-height:110px;
-                    max-height:110px;
-                    overflow:hidden;
+                //this is what they do the current site rather than set a min/max height
+                &:nth-of-type(odd) {
+                  clear:both;
                 }
-            }*/
+            }
+            img {
+              border:1px solid $border-gray;
+            }
         }
     }
     //content 
@@ -135,8 +137,8 @@
                 -moz-box-shadow:  0px 2px 5.76px 0.24px rgba(0, 0, 0, 0.4); 
                 box-shadow:  0px 2px 5.76px 0.24px rgba(0, 0, 0, 0.4); 
                 @include respond-to(tablet) {
-                    min-height:320px; //was 360px
-                    max-height:320px; 
+                    min-height:100%;
+                    max-height:100%; 
                 }
             }
             .wrap-text {padding:5px 15px 20px}

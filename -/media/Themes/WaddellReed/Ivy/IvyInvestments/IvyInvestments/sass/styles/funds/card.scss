@@ -13,26 +13,35 @@ $card-border-radius:4px;
     word-wrap: break-word;
     background-color: $card-bg;
     background-clip: border-box;
-    padding:15px 0;
+    padding:15px;
 
-    .card-title, strong, .card-text, .card-link {
+    .card-title, > a, .card-text, .card-link {
         text-align:center;
-        padding-left:$card-spacer-x;
-        padding-right:$card-spacer-x;
     }
+
     .card-title {
         font-size:24px;
         line-height:30px;
         @include copernicus;
         color:$text-green;
     }
-    strong {font-size:$font-normal}
-    .card-text {padding:0}
+
+    > a {
+      text-decoration:none;
+      @include respond-to(tablet) {
+        min-height:60px;
+      }
+      strong {font-size:$font-normal}
+      &:hover, &:focus {
+        text-decoration:underline;
+      }
+    }
 
     .card-body {
     // Enable `flex-grow: 1` for decks and groups so that card blocks take up
     // as much space as possible, ensuring footers are aligned to the bottom.
     flex: 1 1 auto;
+    margin:0 -15px;
 
         table {
             width:100%;
@@ -54,6 +63,9 @@ $card-border-radius:4px;
             padding-right:$card-spacer-x;
             font-size:$font-small;
             margin:$small-margin auto;
+            @include respond-to(tablet) {
+              min-height:50px;
+            }
             span {
                 &:first-of-type, &:last-of-type {
                     font-size:$font-big;
